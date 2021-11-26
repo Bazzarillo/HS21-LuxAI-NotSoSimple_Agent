@@ -1,0 +1,10 @@
+=== Agent Install Log ===
+=== Agent Compile Log ===
+=== Agent Error Log ===
+Traceback (most recent call last):
+  File "main.py", line 3, in <module>
+    from agent import agent
+  File "/Users/mircobazzani/Desktop/HS21-LuxAI-NotSoSimple_Agent/agent.py", line 68
+    def get_closest_resource(unit, resource_tiles, player)
+                                                         ^
+SyntaxError: invalid syntax
