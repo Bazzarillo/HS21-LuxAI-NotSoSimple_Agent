@@ -17,9 +17,9 @@ from datetime import datetime
 # We need a Log that tells us what happened during the game
 # Logs should not overwrite, thus we create a log per game.
 now = datetime.now()
-day = now.strftime(“%Y-%m-%d”)
-current_time = now.strftime(“%H_%M_%S”)
-logfile = “agent_” + day + “_” + current_time + “.log”
+day = now.strftime("%Y-%m-%d")
+current_time = now.strftime("%H_%M_%S")
+logfile = "agent_" + day + "_" + current_time + ".log"
 
 open(logfile,"w")
 
