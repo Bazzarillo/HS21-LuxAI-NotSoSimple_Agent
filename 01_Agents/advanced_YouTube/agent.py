@@ -7,6 +7,7 @@ from lux import annotate
 import numpy as np
 from collections import deque
 import random
+from datetime import datetime
 
 # create log-file
 # import logging 
@@ -18,8 +19,13 @@ DIRECTIONS = Constants.DIRECTIONS
 game_state = None
 build_location = None
 
-logfile = "agent.log"
-statsfile = "agent.txt"
+now = datetime.now()
+day = now.strftime("%Y-%m-%d")
+current_time = now.strftime("%H_%M_%S")
+logfile = "agent_YouTube_" + day + "_" + current_time + ".log"
+
+# statsfile captures number of city tiles...
+statsfile = "agent_stats_YouTube_" + day + "_" + current_time + ".txt"
 
 unit_to_city_dict = {}
 unit_to_resource_dict = {}
