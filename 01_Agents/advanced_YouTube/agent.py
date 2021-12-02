@@ -1,4 +1,3 @@
-# Code associated w/: https://youtu.be/6_GXTbTL9Uc
 import math, sys
 from lux.game import Game
 from lux.game_map import Cell, RESOURCE_TYPES
@@ -9,24 +8,29 @@ import numpy as np
 from collections import deque
 import random
 
-logfile = "agent.log"
+# create log-file
+# import logging 
+# logging.basicConfig(filename = "agnet.log", level = logging.INFO)
 
-open(logfile,"w")
 
+# specify variables
 DIRECTIONS = Constants.DIRECTIONS
 game_state = None
 build_location = None
+
+logfile = "agent.log"
+statsfile = "agent.txt"
 
 unit_to_city_dict = {}
 unit_to_resource_dict = {}
 worker_positions = {}
 
-statsfile = "agent.txt"
 
-'''
-This function goes through every tile and appends the coordinates of ressource tiles to a list of cells.
-'''
 
+
+######################## define funtions needed below ########################
+
+## 1) get_resource_tiles
 def get_resource_tiles(game_state, width, height):
     resource_tiles: list[Cell] = []
     for y in range(height):
@@ -34,59 +38,59 @@ def get_resource_tiles(game_state, width, height):
             cell = game_state.map.get_cell(x, y)
             if cell.has_resource():
                 resource_tiles.append(cell)
+
     return resource_tiles
 
-'''
 
-'''
+## 2) get_close_resource
 def get_close_resource(unit, resource_tiles, player):
     closest_dist = math.inf
     closest_resource_tile = None
     # if the unit is a worker and we have space in cargo, lets find the nearest resource tile and try to mine it
     for resource_tile in resource_tiles:
-        # Check if ressource tile is coal and if uranium is already researched.
         if resource_tile.resource.type == Constants.RESOURCE_TYPES.COAL and not player.researched_coal(): continue
-        # Check if ressource tile is uranium and if uranium is already researched.
-        #TODO: Implement ressource optimization - Always carry 80% wood, 15% Coal, 5% Uraniuum
         if resource_tile.resource.type == Constants.RESOURCE_TYPES.URANIUM and not player.researched_uranium(): continue
-        # This dict contains a mapping of every active Unit. It gets assigned a ressource tile which it is going to harvest.
         if resource_tile in unit_to_resource_dict.values(): continue    
 
         dist = resource_tile.pos.distance_to(unit.pos)
-        #This chunck of code takes the first value (form "infinite", to finite) and then optimizes for every resouce_tile in the list
         if dist < closest_dist:
             closest_dist = dist
             closest_resource_tile = resource_tile
+    
     return closest_resource_tile
 
 
+## 3) get_close_city
 def get_close_city(player, unit):
     closest_dist = math.inf
     closest_city_tile = None
-    
     for k, city in player.cities.items():
         for city_tile in city.citytiles:
             dist = city_tile.pos.distance_to(unit.pos)
             if dist < closest_dist:
                 closest_dist = dist
                 closest_city_tile = city_tile
+    
     return closest_city_tile
 
 
+## 4) find_empty_city_near
 def find_empty_tile_near(near_what, game_state, observation):
-
+    
     build_location = None
-
+    
+    # 1) directions
     dirs = [(1,0), (0,1), (-1,0), (0,-1)]
-    # may later need to try: dirs = [(1,-1), (-1,1), (-1,-1), (1,1)] too.
+    
     for d in dirs:
         try:
             possible_empty_tile = game_state.map.get_cell(near_what.pos.x+d[0], near_what.pos.y+d[1])
-            #logging.INFO(f"{observation['step']}: Checking:{possible_empty_tile.pos}")
+            
             if possible_empty_tile.resource == None and possible_empty_tile.road == 0 and possible_empty_tile.citytile == None:
                 build_location = possible_empty_tile
                 with open(logfile,"a") as f:
                     f.write(f"{observation['step']}: Found build location:{build_location.pos}\n")
+
 
                 return build_location
         except Exception as e:
@@ -96,9 +100,11 @@ def find_empty_tile_near(near_what, game_state, observation):
 
     with open(logfile,"a") as f:
         f.write(f"{observation['step']}: Couldn't find a tile next to, checking diagonals instead...\n")
-
+    
+        
+    # 2) try other directions
     dirs = [(1,-1), (-1,1), (-1,-1), (1,1)] 
-    # may later need to try: dirs = [(1,-1), (-1,1), (-1,-1), (1,1)] too.
+    
     for d in dirs:
         try:
             possible_empty_tile = game_state.map.get_cell(near_what.pos.x+d[0], near_what.pos.y+d[1])
@@ -123,7 +129,7 @@ def find_empty_tile_near(near_what, game_state, observation):
     return None
 
 
-
+######################## Actual AI-Code starts here ##########################
 
 def agent(observation, configuration):
     global game_state
