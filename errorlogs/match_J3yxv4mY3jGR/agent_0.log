@@ -1,0 +1,8 @@
+=== Agent Install Log ===
+=== Agent Compile Log ===
+=== Agent Error Log ===
+Traceback (most recent call last):
+  File "base_agent.py", line 2, in <module>
+    from lux.game import Game
+ModuleNotFoundError: No module named 'lux'
+Agent timed out
