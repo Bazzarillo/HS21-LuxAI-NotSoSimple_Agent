@@ -1,4 +1,3 @@
-# Code associated w/: https://youtu.be/6_GXTbTL9Uc
 import math, sys
 from lux.game import Game
 from lux.game_map import Cell, RESOURCE_TYPES
@@ -11,28 +10,32 @@ import random
 from datetime import datetime
 
 
-# We need a Log that tells us what happened during the game
-# Logs should not overwrite, thus we create a log per game.
-now = datetime.now()
-day = now.strftime("%Y-%m-%d")
-current_time = now.strftime("%H_%M_%S")
-logfile = "agent_Mirco_" + day + "_" + current_time + ".log"
-
-
-# statsfile captures number of city tiles...
-statsfile = "agents_stats_Mirco_" + day + "_" + current_time + ".txt"
-
-open(logfile,"w")
-
+# specify variables
 DIRECTIONS = Constants.DIRECTIONS
 game_state = None
 build_location = None
 
+# create dictonaries needed to store information
 unit_to_city_dict = {}
 unit_to_resource_dict = {}
 worker_positions = {}
 
+# create log-file
+now = datetime.now()
+day = now.strftime("%Y-%m-%d")
+current_time = now.strftime("%H_%M_%S")
+logfile = "agent_YouTube_" + day + "_" + current_time + ".log"
 
+# create statsfile (captures number of city tiles at the end of the game)
+statsfile = "agent_stats_YouTube_" + day + "_" + current_time + ".txt"
+
+
+
+
+
+######################## define funtions needed below ########################
+
+## 1) get_resource_tiles
 def get_resource_tiles(game_state, width, height):
     resource_tiles: list[Cell] = []
     for y in range(height):
@@ -40,9 +43,11 @@ def get_resource_tiles(game_state, width, height):
             cell = game_state.map.get_cell(x, y)
             if cell.has_resource():
                 resource_tiles.append(cell)
+
     return resource_tiles
 
 
+## 2) get_close_resource
 def get_close_resource(unit, resource_tiles, player):
     closest_dist = math.inf
     closest_resource_tile = None
@@ -56,9 +61,11 @@ def get_close_resource(unit, resource_tiles, player):
         if dist < closest_dist:
             closest_dist = dist
             closest_resource_tile = resource_tile
+    
     return closest_resource_tile
 
 
+## 3) get_close_city
 def get_close_city(player, unit):
     closest_dist = math.inf
     closest_city_tile = None
@@ -68,25 +75,33 @@ def get_close_city(player, unit):
             if dist < closest_dist:
                 closest_dist = dist
                 closest_city_tile = city_tile
+    
     return closest_city_tile
 
 
+## 4) find_empty_tile_near
 def find_empty_tile_near(near_what, game_state, observation):
-
+    
     build_location = None
-
+    
+    # 1) directions
+    # checks all adjacent tiles
     dirs = [(1,0), (0,1), (-1,0), (0,-1)]
-    # may later need to try: dirs = [(1,-1), (-1,1), (-1,-1), (1,1)] too.
+    
     for d in dirs:
         try:
             possible_empty_tile = game_state.map.get_cell(near_what.pos.x+d[0], near_what.pos.y+d[1])
-            #logging.INFO(f"{observation['step']}: Checking:{possible_empty_tile.pos}")
+            
             if possible_empty_tile.resource == None and possible_empty_tile.road == 0 and possible_empty_tile.citytile == None:
                 build_location = possible_empty_tile
+                
+                # logging
                 with open(logfile,"a") as f:
                     f.write(f"{observation['step']}: Found build location:{build_location.pos}\n")
 
                 return build_location
+        
+        # catch errors
         except Exception as e:
             with open(logfile,"a") as f:
                 f.write(f"{observation['step']}: While searching for empty tiles:{str(e)}\n")
@@ -94,9 +109,11 @@ def find_empty_tile_near(near_what, game_state, observation):
 
     with open(logfile,"a") as f:
         f.write(f"{observation['step']}: Couldn't find a tile next to, checking diagonals instead...\n")
-
+    
+ """       
+    # 2) try other directions
     dirs = [(1,-1), (-1,1), (-1,-1), (1,1)] 
-    # may later need to try: dirs = [(1,-1), (-1,1), (-1,-1), (1,1)] too.
+    
     for d in dirs:
         try:
             possible_empty_tile = game_state.map.get_cell(near_what.pos.x+d[0], near_what.pos.y+d[1])
@@ -119,9 +136,9 @@ def find_empty_tile_near(near_what, game_state, observation):
     with open(logfile,"a") as f:
         f.write(f"{observation['step']}: Something likely went wrong, couldn't find any empty tile\n")
     return None
+"""
 
-
-
+######################## Actual AI-Code starts here ##########################
 
 def agent(observation, configuration):
     global game_state
@@ -148,6 +165,8 @@ def agent(observation, configuration):
     resource_tiles = get_resource_tiles(game_state, width, height)
     workers = [u for u in player.units if u.is_worker()]
 
+
+    ### Setup
     for w in workers:
 
         if w.id in worker_positions:
@@ -157,8 +176,10 @@ def agent(observation, configuration):
             worker_positions[w.id].append((w.pos.x, w.pos.y))
 
         if w.id not in unit_to_city_dict:
+            
             with open(logfile, "a") as f:
                 f.write(f"{observation['step']} Found worker unaccounted for {w.id}\n")
+            
             city_assignment = get_close_city(player, w)
             unit_to_city_dict[w.id] = city_assignment
 
@@ -192,25 +213,29 @@ def agent(observation, configuration):
     except:
         build_city = True
 
+
+
+    ### Action
     # we iterate over all our units and do something with them
     for unit in player.units:
+        
         if unit.is_worker() and unit.can_act():
-
+            
             try:
                 last_positions = worker_positions[unit.id]
+                
                 if len(last_positions) >=2:
                     hm_positions = set(last_positions)
+                    
                     if len(list(hm_positions)) == 1:
+                        
+                        # logging
                         with open(logfile, "a") as f:
                             f.write(f"{observation['step']} Looks like a stuck worker {unit.id} - {last_positions}\n")
-
+                        
+                        # collision-solver ("random walk")
                         actions.append(unit.move(random.choice(["n","s","e","w"])))
                         continue
-
-
-
-
-
 
 
                 
@@ -227,9 +252,7 @@ def agent(observation, configuration):
                         actions.append(unit.move(unit.pos.direction_to(intended_resource.pos)))
 
 
-
-
-
+                ### Building a City
                 else:
                     if build_city:
 
@@ -240,6 +263,7 @@ def agent(observation, configuration):
                             unit_city_size = len(unit_city.citytiles)
 
                             enough_fuel = (unit_city_fuel/unit_city_size) > 300
+                        
                         except: continue
 
                         with open(logfile, "a") as f:
@@ -247,23 +271,31 @@ def agent(observation, configuration):
 
 
                         if enough_fuel:
+                            
                             with open(logfile, "a") as f:
                                 f.write(f"{observation['step']} We want to build a city!\n")
+                            
                             if build_location is None:
                                 empty_near = get_close_city(player, unit)
                                 build_location = find_empty_tile_near(empty_near, game_state, observation)
 
-
+                            # If the unit is already on a build location 
+                            # => build!
                             if unit.pos == build_location.pos:
                                 action = unit.build_city()
                                 actions.append(action)
 
+                                # reset variables
                                 build_city = False
                                 build_location = None
+                                
                                 with open(logfile, "a") as f:
                                     f.write(f"{observation['step']} Built the city!\n")
+                                
                                 continue   
-
+                            
+                            # If the uni is not on a build location
+                            # => Navigating to where we wish to build a City
                             else:
                                 with open(logfile, "a") as f:
                                     f.write(f"{observation['step']}: Navigating to where we wish to build!\n")
@@ -273,6 +305,7 @@ def agent(observation, configuration):
                                 xdiff = dir_diff[0]
                                 ydiff = dir_diff[1]
 
+                                # Where to go?
                                 # decrease in x? West
                                 # increase in x? East
                                 # decrease in y? North
@@ -312,7 +345,7 @@ def agent(observation, configuration):
 
 
                                 continue
-
+                        
                         elif len(player.cities) > 0:
                             if unit.id in unit_to_city_dict and unit_to_city_dict[unit.id] in city_tiles:
                                 move_dir = unit.pos.direction_to(unit_to_city_dict[unit.id].pos)
@@ -336,6 +369,7 @@ def agent(observation, configuration):
                             unit_to_city_dict[unit.id] = get_close_city(player,unit)
                             move_dir = unit.pos.direction_to(unit_to_city_dict[unit.id].pos)
                             actions.append(unit.move(move_dir))
+            
             except Exception as e:
                 with open(logfile, "a") as f:
                     f.write(f"{observation['step']}: Unit error {str(e)} \n")
@@ -359,6 +393,8 @@ def agent(observation, configuration):
 
 
     if observation["step"] == 359:
+
+        # capture number of CityTiles at the end of the game
         with open(statsfile,"a") as f:
             f.write(f"{len(city_tiles)}\n")
 
