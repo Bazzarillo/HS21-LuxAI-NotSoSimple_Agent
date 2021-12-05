@@ -1,0 +1,1217 @@
+0: Found a hight density position:[12, 12]
+0 Found worker unaccounted for u_2
+0 Worker Positions {'u_2': deque([(21, 23)], maxlen=3)}
+0: Doing research! 
+1 Worker Positions {'u_1': deque([(21, 8), (22, 8)], maxlen=3)}
+1 Worker Positions {'u_2': deque([(21, 23), (21, 22)], maxlen=3)}
+2 Worker Positions {'u_1': deque([(21, 8), (22, 8), (22, 8)], maxlen=3)}
+2 Worker Positions {'u_2': deque([(21, 23), (21, 22), (21, 22)], maxlen=3)}
+3 Worker Positions {'u_2': deque([(21, 22), (21, 22), (21, 22)], maxlen=3)}
+3 Looks like a stuck worker u_2 - deque([(21, 22), (21, 22), (21, 22)], maxlen=3)
+3 Worker Positions {'u_1': deque([(22, 8), (22, 8), (22, 8)], maxlen=3)}
+3 Looks like a stuck worker u_1 - deque([(22, 8), (22, 8), (22, 8)], maxlen=3)
+4 Worker Positions {'u_2': deque([(21, 22), (21, 22), (20, 22)], maxlen=3)}
+4 Worker Positions {'u_1': deque([(22, 8), (22, 8), (21, 8)], maxlen=3)}
+5 Worker Positions {'u_1': deque([(22, 8), (21, 8), (22, 8)], maxlen=3)}
+5 Worker Positions {'u_2': deque([(21, 22), (20, 22), (20, 22)], maxlen=3)}
+5 Build city stuff: c_2, fuel 0.0, size 1, enough fuel False
+6 Worker Positions {'u_2': deque([(20, 22), (20, 22), (21, 22)], maxlen=3)}
+6 Worker Positions {'u_1': deque([(21, 8), (22, 8), (22, 8)], maxlen=3)}
+7 Worker Positions {'u_2': deque([(20, 22), (21, 22), (21, 22)], maxlen=3)}
+7 Worker Positions {'u_1': deque([(22, 8), (22, 8), (22, 8)], maxlen=3)}
+7 Build city stuff: c_2, fuel 0.0, size 1, enough fuel False
+7 Looks like a stuck worker u_1 - deque([(22, 8), (22, 8), (22, 8)], maxlen=3)
+8 Worker Positions {'u_2': deque([(21, 22), (21, 22), (21, 23)], maxlen=3)}
+8 Worker Positions {'u_1': deque([(22, 8), (22, 8), (21, 8)], maxlen=3)}
+9 Worker Positions {'u_2': deque([(21, 22), (21, 23), (21, 22)], maxlen=3)}
+9 Worker Positions {'u_1': deque([(22, 8), (21, 8), (22, 8)], maxlen=3)}
+10 Worker Positions {'u_1': deque([(21, 8), (22, 8), (22, 8)], maxlen=3)}
+10: Doing research! 
+10 Worker Positions {'u_2': deque([(21, 23), (21, 22), (21, 22)], maxlen=3)}
+10: Doing research! 
+11 Worker Positions {'u_1': deque([(22, 8), (22, 8), (22, 8)], maxlen=3)}
+11 Worker Positions {'u_2': deque([(21, 22), (21, 22), (21, 22)], maxlen=3)}
+11 Looks like a stuck worker u_2 - deque([(21, 22), (21, 22), (21, 22)], maxlen=3)
+11 Looks like a stuck worker u_1 - deque([(22, 8), (22, 8), (22, 8)], maxlen=3)
+12 Worker Positions {'u_1': deque([(22, 8), (22, 8), (23, 8)], maxlen=3)}
+12 Worker Positions {'u_2': deque([(21, 22), (21, 22), (22, 22)], maxlen=3)}
+13 Worker Positions {'u_2': deque([(21, 22), (22, 22), (22, 22)], maxlen=3)}
+13 Build city stuff: c_2, fuel 100.0, size 1, enough fuel False
+13 Worker Positions {'u_1': deque([(22, 8), (23, 8), (23, 8)], maxlen=3)}
+13 Build city stuff: c_1, fuel 200.0, size 1, enough fuel False
+14 Worker Positions {'u_1': deque([(23, 8), (23, 8), (22, 8)], maxlen=3)}
+14 Worker Positions {'u_2': deque([(22, 22), (22, 22), (22, 23)], maxlen=3)}
+15 Worker Positions {'u_2': deque([(22, 22), (22, 23), (22, 23)], maxlen=3)}
+15 Build city stuff: c_2, fuel 100.0, size 1, enough fuel False
+15 Worker Positions {'u_1': deque([(23, 8), (22, 8), (22, 8)], maxlen=3)}
+15 Build city stuff: c_1, fuel 200.0, size 1, enough fuel False
+16 Worker Positions {'u_1': deque([(22, 8), (22, 8), (21, 8)], maxlen=3)}
+16 Worker Positions {'u_2': deque([(22, 23), (22, 23), (21, 23)], maxlen=3)}
+17 Worker Positions {'u_1': deque([(22, 8), (21, 8), (22, 8)], maxlen=3)}
+17 Worker Positions {'u_2': deque([(22, 23), (21, 23), (21, 22)], maxlen=3)}
+18 Worker Positions {'u_1': deque([(21, 8), (22, 8), (22, 8)], maxlen=3)}
+18 Worker Positions {'u_2': deque([(21, 23), (21, 22), (21, 22)], maxlen=3)}
+19 Worker Positions {'u_1': deque([(22, 8), (22, 8), (22, 8)], maxlen=3)}
+19 Looks like a stuck worker u_1 - deque([(22, 8), (22, 8), (22, 8)], maxlen=3)
+19 Worker Positions {'u_2': deque([(21, 22), (21, 22), (21, 22)], maxlen=3)}
+19 Looks like a stuck worker u_2 - deque([(21, 22), (21, 22), (21, 22)], maxlen=3)
+20 Worker Positions {'u_2': deque([(21, 22), (21, 22), (20, 22)], maxlen=3)}
+20: Doing research! 
+20 Worker Positions {'u_1': deque([(22, 8), (22, 8), (22, 7)], maxlen=3)}
+20: Doing research! 
+21 Worker Positions {'u_1': deque([(22, 8), (22, 7), (22, 7)], maxlen=3)}
+21 Worker Positions {'u_2': deque([(21, 22), (20, 22), (20, 22)], maxlen=3)}
+21 Build city stuff: c_1, fuel 300.0, size 1, enough fuel False
+21 Build city stuff: c_2, fuel 200.0, size 1, enough fuel False
+22 Worker Positions {'u_2': deque([(20, 22), (20, 22), (21, 22)], maxlen=3)}
+22 Worker Positions {'u_1': deque([(22, 7), (22, 7), (22, 8)], maxlen=3)}
+23 Worker Positions {'u_2': deque([(20, 22), (21, 22), (21, 22)], maxlen=3)}
+23 Build city stuff: c_2, fuel 200.0, size 1, enough fuel False
+23 Worker Positions {'u_1': deque([(22, 7), (22, 8), (22, 8)], maxlen=3)}
+23 Build city stuff: c_1, fuel 300.0, size 1, enough fuel False
+24 Worker Positions {'u_1': deque([(22, 8), (22, 8), (21, 8)], maxlen=3)}
+24 Worker Positions {'u_2': deque([(21, 22), (21, 22), (21, 23)], maxlen=3)}
+25 Worker Positions {'u_1': deque([(22, 8), (21, 8), (22, 8)], maxlen=3)}
+25 Worker Positions {'u_2': deque([(21, 22), (21, 23), (21, 22)], maxlen=3)}
+26 Worker Positions {'u_2': deque([(21, 23), (21, 22), (21, 22)], maxlen=3)}
+26 Worker Positions {'u_1': deque([(21, 8), (22, 8), (22, 8)], maxlen=3)}
+27 Worker Positions {'u_2': deque([(21, 22), (21, 22), (21, 22)], maxlen=3)}
+27 Worker Positions {'u_1': deque([(22, 8), (22, 8), (22, 8)], maxlen=3)}
+27 Looks like a stuck worker u_2 - deque([(21, 22), (21, 22), (21, 22)], maxlen=3)
+27 Looks like a stuck worker u_1 - deque([(22, 8), (22, 8), (22, 8)], maxlen=3)
+28 Worker Positions {'u_1': deque([(22, 8), (22, 8), (22, 9)], maxlen=3)}
+28 Worker Positions {'u_2': deque([(21, 22), (21, 22), (22, 22)], maxlen=3)}
+29 Worker Positions {'u_2': deque([(21, 22), (22, 22), (22, 22)], maxlen=3)}
+29 Worker Positions {'u_1': deque([(22, 8), (22, 9), (22, 9)], maxlen=3)}
+29 Build city stuff: c_2, fuel 300.0, size 1, enough fuel False
+29 Build city stuff: c_1, fuel 400.0, size 1, enough fuel True
+29 We want to build a city!
+29: Found build location:(20, 8)
+29: Navigating to where we wish to build!
+30 Worker Positions {'u_1': deque([(22, 9), (22, 9), (21, 9)], maxlen=3)}
+30 Worker Positions {'u_2': deque([(22, 22), (22, 22), (22, 23)], maxlen=3)}
+30: Doing research! 
+30: Doing research! 
+31 Worker Positions {'u_2': deque([(22, 22), (22, 23), (22, 23)], maxlen=3)}
+31 Worker Positions {'u_1': deque([(22, 9), (21, 9), (21, 9)], maxlen=3)}
+32 Worker Positions {'u_1': deque([(21, 9), (21, 9), (21, 9)], maxlen=3)}
+32 Worker Positions {'u_2': deque([(22, 23), (22, 23), (22, 23)], maxlen=3)}
+32 Looks like a stuck worker u_1 - deque([(21, 9), (21, 9), (21, 9)], maxlen=3)
+32 Looks like a stuck worker u_2 - deque([(22, 23), (22, 23), (22, 23)], maxlen=3)
+33 Worker Positions {'u_1': deque([(21, 9), (21, 9), (20, 9)], maxlen=3)}
+33 Worker Positions {'u_2': deque([(22, 23), (22, 23), (23, 23)], maxlen=3)}
+34 Worker Positions {'u_1': deque([(21, 9), (20, 9), (20, 9)], maxlen=3)}
+34 Worker Positions {'u_2': deque([(22, 23), (23, 23), (23, 23)], maxlen=3)}
+35 Worker Positions {'u_1': deque([(20, 9), (20, 9), (20, 9)], maxlen=3)}
+35 Worker Positions {'u_2': deque([(23, 23), (23, 23), (23, 23)], maxlen=3)}
+36 Worker Positions {'u_2': deque([(23, 23), (23, 23), (23, 23)], maxlen=3)}
+36 Worker Positions {'u_1': deque([(20, 9), (20, 9), (20, 9)], maxlen=3)}
+36 Looks like a stuck worker u_2 - deque([(23, 23), (23, 23), (23, 23)], maxlen=3)
+36 Looks like a stuck worker u_1 - deque([(20, 9), (20, 9), (20, 9)], maxlen=3)
+37 Worker Positions {'u_1': deque([(20, 9), (20, 9), (21, 9)], maxlen=3)}
+37 Worker Positions {'u_2': deque([(23, 23), (23, 23), (24, 23)], maxlen=3)}
+38 Worker Positions {'u_1': deque([(20, 9), (21, 9), (21, 9)], maxlen=3)}
+38 Worker Positions {'u_2': deque([(23, 23), (24, 23), (24, 23)], maxlen=3)}
+39 Worker Positions {'u_2': deque([(24, 23), (24, 23), (24, 23)], maxlen=3)}
+39 Worker Positions {'u_1': deque([(21, 9), (21, 9), (21, 9)], maxlen=3)}
+40 Worker Positions {'u_1': deque([(21, 9), (21, 9), (21, 9)], maxlen=3)}
+40 Worker Positions {'u_2': deque([(24, 23), (24, 23), (24, 23)], maxlen=3)}
+40 Looks like a stuck worker u_2 - deque([(24, 23), (24, 23), (24, 23)], maxlen=3)
+40 Looks like a stuck worker u_1 - deque([(21, 9), (21, 9), (21, 9)], maxlen=3)
+40: Doing research! 
+40: Doing research! 
+41 Worker Positions {'u_1': deque([(21, 9), (21, 9), (21, 10)], maxlen=3)}
+41 Worker Positions {'u_2': deque([(24, 23), (24, 23), (24, 24)], maxlen=3)}
+42 Worker Positions {'u_2': deque([(24, 23), (24, 24), (24, 24)], maxlen=3)}
+42 Worker Positions {'u_1': deque([(21, 9), (21, 10), (21, 10)], maxlen=3)}
+42 Build city stuff: c_1, fuel 170.0, size 1, enough fuel False
+43 Worker Positions {'u_2': deque([(24, 24), (24, 24), (25, 24)], maxlen=3)}
+43 Worker Positions {'u_1': deque([(21, 10), (21, 10), (21, 9)], maxlen=3)}
+44 Worker Positions {'u_2': deque([(24, 24), (25, 24), (25, 24)], maxlen=3)}
+44 Worker Positions {'u_1': deque([(21, 10), (21, 9), (21, 9)], maxlen=3)}
+44 Build city stuff: c_1, fuel 170.0, size 1, enough fuel False
+44 Build city stuff: c_2, fuel 70.0, size 1, enough fuel False
+45 Worker Positions {'u_2': deque([(25, 24), (25, 24), (25, 23)], maxlen=3)}
+45 Worker Positions {'u_1': deque([(21, 9), (21, 9), (21, 8)], maxlen=3)}
+46 Worker Positions {'u_2': deque([(25, 24), (25, 23), (25, 23)], maxlen=3)}
+46 Worker Positions {'u_1': deque([(21, 9), (21, 8), (22, 8)], maxlen=3)}
+46 Build city stuff: c_2, fuel 70.0, size 1, enough fuel False
+47 Worker Positions {'u_2': deque([(25, 23), (25, 23), (24, 23)], maxlen=3)}
+47 Worker Positions {'u_1': deque([(21, 8), (22, 8), (22, 8)], maxlen=3)}
+48 Worker Positions {'u_2': deque([(25, 23), (24, 23), (24, 23)], maxlen=3)}
+48 Build city stuff: c_2, fuel 70.0, size 1, enough fuel False
+48 Worker Positions {'u_1': deque([(22, 8), (22, 8), (22, 8)], maxlen=3)}
+48 Looks like a stuck worker u_1 - deque([(22, 8), (22, 8), (22, 8)], maxlen=3)
+49 Worker Positions {'u_2': deque([(24, 23), (24, 23), (23, 23)], maxlen=3)}
+49 Worker Positions {'u_1': deque([(22, 8), (22, 8), (22, 9)], maxlen=3)}
+50 Worker Positions {'u_2': deque([(24, 23), (23, 23), (23, 23)], maxlen=3)}
+50 Build city stuff: c_2, fuel 70.0, size 1, enough fuel False
+50 Worker Positions {'u_1': deque([(22, 8), (22, 9), (22, 9)], maxlen=3)}
+50: Doing research! 
+50 Build city stuff: c_1, fuel 270.0, size 1, enough fuel False
+50: Doing research! 
+51 Worker Positions {'u_1': deque([(22, 9), (22, 9), (22, 8)], maxlen=3)}
+51 Worker Positions {'u_2': deque([(23, 23), (23, 23), (22, 23)], maxlen=3)}
+52 Worker Positions {'u_1': deque([(22, 9), (22, 8), (22, 8)], maxlen=3)}
+52 Build city stuff: c_1, fuel 270.0, size 1, enough fuel False
+52 Worker Positions {'u_2': deque([(23, 23), (22, 23), (22, 23)], maxlen=3)}
+52 Build city stuff: c_2, fuel 70.0, size 1, enough fuel False
+53 Worker Positions {'u_1': deque([(22, 8), (22, 8), (21, 8)], maxlen=3)}
+53 Worker Positions {'u_2': deque([(22, 23), (22, 23), (21, 23)], maxlen=3)}
+54 Worker Positions {'u_1': deque([(22, 8), (21, 8), (22, 8)], maxlen=3)}
+54 Worker Positions {'u_2': deque([(22, 23), (21, 23), (21, 22)], maxlen=3)}
+55 Worker Positions {'u_2': deque([(21, 23), (21, 22), (21, 22)], maxlen=3)}
+55 Worker Positions {'u_1': deque([(21, 8), (22, 8), (22, 8)], maxlen=3)}
+56 Worker Positions {'u_1': deque([(22, 8), (22, 8), (22, 8)], maxlen=3)}
+56 Worker Positions {'u_2': deque([(21, 22), (21, 22), (21, 22)], maxlen=3)}
+56 Looks like a stuck worker u_2 - deque([(21, 22), (21, 22), (21, 22)], maxlen=3)
+56 Looks like a stuck worker u_1 - deque([(22, 8), (22, 8), (22, 8)], maxlen=3)
+57 Worker Positions {'u_2': deque([(21, 22), (21, 22), (21, 23)], maxlen=3)}
+57 Worker Positions {'u_1': deque([(22, 8), (22, 8), (23, 8)], maxlen=3)}
+58 Worker Positions {'u_1': deque([(22, 8), (23, 8), (23, 8)], maxlen=3)}
+58 Worker Positions {'u_2': deque([(21, 22), (21, 23), (21, 22)], maxlen=3)}
+58 Build city stuff: c_1, fuel 370.0, size 1, enough fuel True
+58 We want to build a city!
+58: Navigating to where we wish to build!
+59 Worker Positions {'u_1': deque([(23, 8), (23, 8), (22, 8)], maxlen=3)}
+59 Worker Positions {'u_2': deque([(21, 23), (21, 22), (21, 22)], maxlen=3)}
+60 Worker Positions {'u_1': deque([(23, 8), (22, 8), (22, 8)], maxlen=3)}
+60 Worker Positions {'u_2': deque([(21, 22), (21, 22), (21, 22)], maxlen=3)}
+60 Looks like a stuck worker u_2 - deque([(21, 22), (21, 22), (21, 22)], maxlen=3)
+60 Build city stuff: c_1, fuel 370.0, size 1, enough fuel True
+60: Doing research! 
+60 We want to build a city!
+60: Navigating to where we wish to build!
+60: Doing research! 
+61 Worker Positions {'u_1': deque([(22, 8), (22, 8), (22, 7)], maxlen=3)}
+61 Worker Positions {'u_2': deque([(21, 22), (21, 22), (21, 23)], maxlen=3)}
+62 Worker Positions {'u_2': deque([(21, 22), (21, 23), (21, 22)], maxlen=3)}
+62 Worker Positions {'u_1': deque([(22, 8), (22, 7), (22, 7)], maxlen=3)}
+62 Build city stuff: c_1, fuel 370.0, size 1, enough fuel True
+62 We want to build a city!
+62: Navigating to where we wish to build!
+63 Worker Positions {'u_2': deque([(21, 23), (21, 22), (21, 22)], maxlen=3)}
+63 Worker Positions {'u_1': deque([(22, 7), (22, 7), (21, 7)], maxlen=3)}
+64 Worker Positions {'u_1': deque([(22, 7), (21, 7), (21, 7)], maxlen=3)}
+64 Build city stuff: c_1, fuel 370.0, size 1, enough fuel True
+64 We want to build a city!
+64 Worker Positions {'u_2': deque([(21, 22), (21, 22), (21, 22)], maxlen=3)}
+64: Navigating to where we wish to build!
+64 Looks like a stuck worker u_2 - deque([(21, 22), (21, 22), (21, 22)], maxlen=3)
+65 Worker Positions {'u_1': deque([(21, 7), (21, 7), (20, 7)], maxlen=3)}
+65 Worker Positions {'u_2': deque([(21, 22), (21, 22), (21, 23)], maxlen=3)}
+66 Worker Positions {'u_2': deque([(21, 22), (21, 23), (21, 22)], maxlen=3)}
+66 Worker Positions {'u_1': deque([(21, 7), (20, 7), (20, 7)], maxlen=3)}
+66 Build city stuff: c_1, fuel 370.0, size 1, enough fuel True
+66 We want to build a city!
+66: Navigating to where we wish to build!
+67 Worker Positions {'u_2': deque([(21, 23), (21, 22), (21, 22)], maxlen=3)}
+67 Worker Positions {'u_1': deque([(20, 7), (20, 7), (20, 8)], maxlen=3)}
+68 Worker Positions {'u_2': deque([(21, 22), (21, 22), (21, 22)], maxlen=3)}
+68 Worker Positions {'u_1': deque([(20, 7), (20, 8), (20, 8)], maxlen=3)}
+68 Looks like a stuck worker u_2 - deque([(21, 22), (21, 22), (21, 22)], maxlen=3)
+68 Build city stuff: c_1, fuel 370.0, size 1, enough fuel True
+68 We want to build a city!
+68 Built the city!
+69 Worker Positions {'u_2': deque([(21, 22), (21, 22), (21, 21)], maxlen=3)}
+69 Worker Positions {'u_1': deque([(20, 8), (20, 8), (20, 8)], maxlen=3)}
+69 Looks like a stuck worker u_1 - deque([(20, 8), (20, 8), (20, 8)], maxlen=3)
+69: Created and worker 
+70 Worker Positions {'u_2': deque([(21, 22), (21, 21), (21, 21)], maxlen=3)}
+70 Found worker unaccounted for u_3
+70 Worker Positions {'u_1': deque([(20, 8), (20, 8), (21, 8)], maxlen=3), 'u_3': deque([(20, 8)], maxlen=3)}
+70 Found worker w/o resource u_3
+70 Build city stuff: c_2, fuel 470.0, size 1, enough fuel True
+70: Doing research! 
+70 We want to build a city!
+70: Found build location:(21, 24)
+70: Navigating to where we wish to build!
+70: Doing research! 
+71 Worker Positions {'u_1': deque([(20, 8), (21, 8), (21, 9)], maxlen=3), 'u_3': deque([(20, 8), (20, 9)], maxlen=3)}
+71 Worker Positions {'u_2': deque([(21, 21), (21, 21), (21, 22)], maxlen=3)}
+72 Worker Positions {'u_1': deque([(21, 8), (21, 9), (21, 9)], maxlen=3), 'u_3': deque([(20, 8), (20, 9), (20, 9)], maxlen=3)}
+72 Worker Positions {'u_2': deque([(21, 21), (21, 22), (21, 22)], maxlen=3)}
+73 Worker Positions {'u_1': deque([(21, 9), (21, 9), (21, 9)], maxlen=3), 'u_3': deque([(20, 9), (20, 9), (20, 9)], maxlen=3)}
+73 Worker Positions {'u_2': deque([(21, 22), (21, 22), (21, 22)], maxlen=3)}
+74 Worker Positions {'u_1': deque([(21, 9), (21, 9), (21, 9)], maxlen=3), 'u_3': deque([(20, 9), (20, 9), (20, 9)], maxlen=3)}
+74 Worker Positions {'u_2': deque([(21, 22), (21, 22), (21, 22)], maxlen=3)}
+74 Looks like a stuck worker u_1 - deque([(21, 9), (21, 9), (21, 9)], maxlen=3)
+74 Looks like a stuck worker u_3 - deque([(20, 9), (20, 9), (20, 9)], maxlen=3)
+74 Looks like a stuck worker u_2 - deque([(21, 22), (21, 22), (21, 22)], maxlen=3)
+75 Worker Positions {'u_1': deque([(21, 9), (21, 9), (21, 8)], maxlen=3), 'u_3': deque([(20, 9), (20, 9), (20, 8)], maxlen=3)}
+75 Worker Positions {'u_2': deque([(21, 22), (21, 22), (22, 22)], maxlen=3)}
+76 Worker Positions {'u_1': deque([(21, 9), (21, 8), (21, 9)], maxlen=3), 'u_3': deque([(20, 9), (20, 8), (20, 9)], maxlen=3)}
+76 Worker Positions {'u_2': deque([(21, 22), (22, 22), (22, 22)], maxlen=3)}
+77 Worker Positions {'u_2': deque([(22, 22), (22, 22), (22, 22)], maxlen=3)}
+77 Worker Positions {'u_1': deque([(21, 8), (21, 9), (21, 9)], maxlen=3), 'u_3': deque([(20, 8), (20, 9), (20, 9)], maxlen=3)}
+78 Worker Positions {'u_2': deque([(22, 22), (22, 22), (22, 22)], maxlen=3)}
+78 Worker Positions {'u_1': deque([(21, 9), (21, 9), (21, 9)], maxlen=3), 'u_3': deque([(20, 9), (20, 9), (20, 9)], maxlen=3)}
+78 Looks like a stuck worker u_2 - deque([(22, 22), (22, 22), (22, 22)], maxlen=3)
+79 Worker Positions {'u_1': deque([(21, 9), (21, 9), (21, 9)], maxlen=3), 'u_3': deque([(20, 9), (20, 9), (20, 9)], maxlen=3)}
+79 Worker Positions {'u_2': deque([(22, 22), (22, 22), (23, 22)], maxlen=3)}
+79 Looks like a stuck worker u_1 - deque([(21, 9), (21, 9), (21, 9)], maxlen=3)
+79 Looks like a stuck worker u_3 - deque([(20, 9), (20, 9), (20, 9)], maxlen=3)
+79: Doing research! 
+80 Worker Positions {'u_1': deque([(21, 9), (21, 9), (21, 10)], maxlen=3), 'u_3': deque([(20, 9), (20, 9), (19, 9)], maxlen=3)}
+80 Worker Positions {'u_2': deque([(22, 22), (23, 22), (23, 22)], maxlen=3)}
+80: Doing research! 
+80: Doing research! 
+81 Worker Positions {'u_2': deque([(23, 22), (23, 22), (23, 22)], maxlen=3)}
+81 Worker Positions {'u_1': deque([(21, 9), (21, 10), (21, 10)], maxlen=3), 'u_3': deque([(20, 9), (19, 9), (19, 9)], maxlen=3)}
+82 Worker Positions {'u_1': deque([(21, 10), (21, 10), (21, 10)], maxlen=3), 'u_3': deque([(19, 9), (19, 9), (19, 9)], maxlen=3)}
+82 Worker Positions {'u_2': deque([(23, 22), (23, 22), (23, 22)], maxlen=3)}
+82 Looks like a stuck worker u_2 - deque([(23, 22), (23, 22), (23, 22)], maxlen=3)
+83 Worker Positions {'u_2': deque([(23, 22), (23, 22), (22, 22)], maxlen=3)}
+83 Worker Positions {'u_1': deque([(21, 10), (21, 10), (21, 10)], maxlen=3), 'u_3': deque([(19, 9), (19, 9), (19, 9)], maxlen=3)}
+83 Looks like a stuck worker u_1 - deque([(21, 10), (21, 10), (21, 10)], maxlen=3)
+83 Looks like a stuck worker u_3 - deque([(19, 9), (19, 9), (19, 9)], maxlen=3)
+84 Worker Positions {'u_1': deque([(21, 10), (21, 10), (21, 11)], maxlen=3), 'u_3': deque([(19, 9), (19, 9), (19, 8)], maxlen=3)}
+84 Worker Positions {'u_2': deque([(23, 22), (22, 22), (22, 22)], maxlen=3)}
+84 Build city stuff: c_2, fuel 240.0, size 1, enough fuel False
+85 Worker Positions {'u_2': deque([(22, 22), (22, 22), (22, 23)], maxlen=3)}
+85 Worker Positions {'u_1': deque([(21, 10), (21, 11), (21, 11)], maxlen=3), 'u_3': deque([(19, 9), (19, 8), (19, 8)], maxlen=3)}
+85 Build city stuff: c_1, fuel 214.0, size 2, enough fuel False
+86 Worker Positions {'u_2': deque([(22, 22), (22, 23), (22, 23)], maxlen=3)}
+86 Worker Positions {'u_1': deque([(21, 11), (21, 11), (21, 10)], maxlen=3), 'u_3': deque([(19, 8), (19, 8), (19, 9)], maxlen=3)}
+86 Build city stuff: c_2, fuel 240.0, size 1, enough fuel False
+87 Worker Positions {'u_2': deque([(22, 23), (22, 23), (21, 23)], maxlen=3)}
+87 Worker Positions {'u_1': deque([(21, 11), (21, 10), (21, 10)], maxlen=3), 'u_3': deque([(19, 8), (19, 9), (19, 9)], maxlen=3)}
+87 Build city stuff: c_1, fuel 214.0, size 2, enough fuel False
+88 Worker Positions {'u_2': deque([(22, 23), (21, 23), (21, 22)], maxlen=3)}
+88 Worker Positions {'u_1': deque([(21, 10), (21, 10), (21, 9)], maxlen=3), 'u_3': deque([(19, 9), (19, 9), (19, 10)], maxlen=3)}
+89 Worker Positions {'u_2': deque([(21, 23), (21, 22), (21, 22)], maxlen=3)}
+89 Worker Positions {'u_1': deque([(21, 10), (21, 9), (21, 9)], maxlen=3), 'u_3': deque([(19, 9), (19, 10), (19, 10)], maxlen=3)}
+89 Build city stuff: c_1, fuel 214.0, size 2, enough fuel False
+89: Doing research! 
+90 Worker Positions {'u_2': deque([(21, 22), (21, 22), (21, 22)], maxlen=3)}
+90 Worker Positions {'u_1': deque([(21, 9), (21, 9), (21, 8)], maxlen=3), 'u_3': deque([(19, 10), (19, 10), (19, 11)], maxlen=3)}
+90: Doing research! 
+90 Looks like a stuck worker u_2 - deque([(21, 22), (21, 22), (21, 22)], maxlen=3)
+90: Doing research! 
+91 Worker Positions {'u_1': deque([(21, 9), (21, 8), (21, 9)], maxlen=3), 'u_3': deque([(19, 10), (19, 11), (19, 11)], maxlen=3)}
+91 Worker Positions {'u_2': deque([(21, 22), (21, 22), (21, 21)], maxlen=3)}
+92 Worker Positions {'u_2': deque([(21, 22), (21, 21), (21, 21)], maxlen=3)}
+92 Worker Positions {'u_1': deque([(21, 8), (21, 9), (21, 9)], maxlen=3), 'u_3': deque([(19, 11), (19, 11), (19, 12)], maxlen=3)}
+92 Build city stuff: c_2, fuel 340.0, size 1, enough fuel True
+92 We want to build a city!
+92: Navigating to where we wish to build!
+93 Worker Positions {'u_1': deque([(21, 9), (21, 9), (21, 10)], maxlen=3), 'u_3': deque([(19, 11), (19, 12), (19, 12)], maxlen=3)}
+93 Worker Positions {'u_2': deque([(21, 21), (21, 21), (21, 22)], maxlen=3)}
+94 Worker Positions {'u_1': deque([(21, 9), (21, 10), (21, 10)], maxlen=3), 'u_3': deque([(19, 12), (19, 12), (18, 12)], maxlen=3)}
+94 Worker Positions {'u_2': deque([(21, 21), (21, 22), (21, 22)], maxlen=3)}
+94 Build city stuff: c_1, fuel 314.0, size 2, enough fuel False
+94 Build city stuff: c_2, fuel 340.0, size 1, enough fuel True
+94 We want to build a city!
+94: Navigating to where we wish to build!
+95 Worker Positions {'u_1': deque([(21, 10), (21, 10), (21, 9)], maxlen=3), 'u_3': deque([(19, 12), (18, 12), (18, 12)], maxlen=3)}
+95 Worker Positions {'u_2': deque([(21, 22), (21, 22), (20, 22)], maxlen=3)}
+96 Worker Positions {'u_2': deque([(21, 22), (20, 22), (20, 22)], maxlen=3)}
+96 Worker Positions {'u_1': deque([(21, 10), (21, 9), (21, 9)], maxlen=3), 'u_3': deque([(18, 12), (18, 12), (17, 12)], maxlen=3)}
+96 Build city stuff: c_2, fuel 340.0, size 1, enough fuel True
+96 Build city stuff: c_1, fuel 314.0, size 2, enough fuel False
+96 We want to build a city!
+96: Navigating to where we wish to build!
+97 Worker Positions {'u_2': deque([(20, 22), (20, 22), (20, 23)], maxlen=3)}
+97 Worker Positions {'u_1': deque([(21, 9), (21, 9), (21, 8)], maxlen=3), 'u_3': deque([(18, 12), (17, 12), (17, 12)], maxlen=3)}
+98 Worker Positions {'u_2': deque([(20, 22), (20, 23), (20, 23)], maxlen=3)}
+98 Worker Positions {'u_1': deque([(21, 9), (21, 8), (21, 9)], maxlen=3), 'u_3': deque([(17, 12), (17, 12), (16, 12)], maxlen=3)}
+98 Build city stuff: c_2, fuel 340.0, size 1, enough fuel True
+98 We want to build a city!
+98: Navigating to where we wish to build!
+99 Worker Positions {'u_2': deque([(20, 23), (20, 23), (20, 24)], maxlen=3)}
+99 Worker Positions {'u_1': deque([(21, 8), (21, 9), (21, 9)], maxlen=3), 'u_3': deque([(17, 12), (16, 12), (16, 12)], maxlen=3)}
+99: Doing research! 
+100 Worker Positions {'u_2': deque([(20, 23), (20, 24), (20, 24)], maxlen=3)}
+100 Worker Positions {'u_1': deque([(21, 9), (21, 9), (21, 10)], maxlen=3), 'u_3': deque([(16, 12), (16, 12), (15, 12)], maxlen=3)}
+100: Doing research! 
+100 Build city stuff: c_2, fuel 340.0, size 1, enough fuel True
+100 We want to build a city!
+100: Navigating to where we wish to build!
+100: Doing research! 
+101 Worker Positions {'u_1': deque([(21, 9), (21, 10), (21, 10)], maxlen=3), 'u_3': deque([(16, 12), (15, 12), (15, 12)], maxlen=3)}
+101 Worker Positions {'u_2': deque([(20, 24), (20, 24), (21, 24)], maxlen=3)}
+101 Build city stuff: c_1, fuel 414.0, size 2, enough fuel False
+102 Worker Positions {'u_2': deque([(20, 24), (21, 24), (21, 24)], maxlen=3)}
+102 Worker Positions {'u_1': deque([(21, 10), (21, 10), (21, 9)], maxlen=3), 'u_3': deque([(15, 12), (15, 12), (14, 12)], maxlen=3)}
+102 Build city stuff: c_2, fuel 340.0, size 1, enough fuel True
+102 We want to build a city!
+102 Built the city!
+103 Worker Positions {'u_2': deque([(21, 24), (21, 24), (21, 24)], maxlen=3)}
+103 Worker Positions {'u_1': deque([(21, 10), (21, 9), (21, 9)], maxlen=3), 'u_3': deque([(15, 12), (14, 12), (14, 12)], maxlen=3)}
+103 Looks like a stuck worker u_2 - deque([(21, 24), (21, 24), (21, 24)], maxlen=3)
+103 Build city stuff: c_1, fuel 414.0, size 2, enough fuel False
+103: Created and worker 
+103 Build city stuff: c_1, fuel 414.0, size 2, enough fuel False
+104 Worker Positions {'u_1': deque([(21, 9), (21, 9), (21, 8)], maxlen=3), 'u_3': deque([(14, 12), (14, 12), (14, 11)], maxlen=3)}
+104 Found worker unaccounted for u_4
+104 Worker Positions {'u_2': deque([(21, 24), (21, 24), (22, 24)], maxlen=3), 'u_4': deque([(21, 24)], maxlen=3)}
+104 Found worker w/o resource u_4
+105 Worker Positions {'u_2': deque([(21, 24), (22, 24), (22, 24)], maxlen=3), 'u_4': deque([(21, 24), (21, 23)], maxlen=3)}
+105 Worker Positions {'u_1': deque([(21, 9), (21, 8), (21, 9)], maxlen=3), 'u_3': deque([(14, 12), (14, 11), (14, 11)], maxlen=3)}
+105 Build city stuff: c_1, fuel 514.0, size 2, enough fuel False
+106 Worker Positions {'u_1': deque([(21, 8), (21, 9), (21, 9)], maxlen=3), 'u_3': deque([(14, 11), (14, 11), (14, 10)], maxlen=3)}
+106 Worker Positions {'u_2': deque([(22, 24), (22, 24), (22, 23)], maxlen=3), 'u_4': deque([(21, 24), (21, 23), (21, 22)], maxlen=3)}
+107 Worker Positions {'u_2': deque([(22, 24), (22, 23), (22, 23)], maxlen=3), 'u_4': deque([(21, 23), (21, 22), (21, 22)], maxlen=3)}
+107 Worker Positions {'u_1': deque([(21, 9), (21, 9), (21, 10)], maxlen=3), 'u_3': deque([(14, 11), (14, 10), (14, 10)], maxlen=3)}
+107 Build city stuff: c_2, fuel 380.0, size 2, enough fuel False
+107 Build city stuff: c_1, fuel 514.0, size 2, enough fuel False
+108 Worker Positions {'u_1': deque([(21, 9), (21, 10), (21, 10)], maxlen=3), 'u_3': deque([(14, 10), (14, 10), (14, 9)], maxlen=3)}
+108 Worker Positions {'u_2': deque([(22, 23), (22, 23), (21, 23)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 21)], maxlen=3)}
+108 Build city stuff: c_1, fuel 514.0, size 2, enough fuel False
+109 Worker Positions {'u_2': deque([(22, 23), (21, 23), (21, 22)], maxlen=3), 'u_4': deque([(21, 22), (21, 21), (21, 21)], maxlen=3)}
+109 Build city stuff: c_2, fuel 480.0, size 2, enough fuel False
+109 Worker Positions {'u_1': deque([(21, 10), (21, 10), (21, 9)], maxlen=3), 'u_3': deque([(14, 10), (14, 9), (14, 9)], maxlen=3)}
+109 Build city stuff: c_1, fuel 514.0, size 2, enough fuel False
+109: Doing research! 
+110 Worker Positions {'u_2': deque([(21, 23), (21, 22), (21, 22)], maxlen=3), 'u_4': deque([(21, 21), (21, 21), (21, 21)], maxlen=3)}
+110 Worker Positions {'u_1': deque([(21, 10), (21, 9), (21, 9)], maxlen=3), 'u_3': deque([(14, 9), (14, 9), (14, 8)], maxlen=3)}
+110 Looks like a stuck worker u_4 - deque([(21, 21), (21, 21), (21, 21)], maxlen=3)
+110: Doing research! 
+110 Build city stuff: c_1, fuel 514.0, size 2, enough fuel False
+110: Doing research! 
+111 Worker Positions {'u_1': deque([(21, 9), (21, 9), (21, 8)], maxlen=3), 'u_3': deque([(14, 9), (14, 8), (14, 8)], maxlen=3)}
+111 Worker Positions {'u_2': deque([(21, 22), (21, 22), (21, 21)], maxlen=3), 'u_4': deque([(21, 21), (21, 21), (22, 21)], maxlen=3)}
+112 Worker Positions {'u_1': deque([(21, 9), (21, 8), (21, 9)], maxlen=3), 'u_3': deque([(14, 8), (14, 8), (14, 9)], maxlen=3)}
+112 Worker Positions {'u_2': deque([(21, 22), (21, 21), (21, 21)], maxlen=3), 'u_4': deque([(21, 21), (22, 21), (22, 21)], maxlen=3)}
+113 Worker Positions {'u_2': deque([(21, 21), (21, 21), (21, 21)], maxlen=3), 'u_4': deque([(22, 21), (22, 21), (22, 21)], maxlen=3)}
+113 Worker Positions {'u_1': deque([(21, 8), (21, 9), (21, 9)], maxlen=3), 'u_3': deque([(14, 8), (14, 9), (14, 9)], maxlen=3)}
+113: Doing research! 
+114 Worker Positions {'u_2': deque([(21, 21), (21, 21), (21, 21)], maxlen=3), 'u_4': deque([(22, 21), (22, 21), (22, 21)], maxlen=3)}
+114 Worker Positions {'u_1': deque([(21, 9), (21, 9), (21, 9)], maxlen=3), 'u_3': deque([(14, 9), (14, 9), (14, 9)], maxlen=3)}
+114 Looks like a stuck worker u_2 - deque([(21, 21), (21, 21), (21, 21)], maxlen=3)
+114 Looks like a stuck worker u_4 - deque([(22, 21), (22, 21), (22, 21)], maxlen=3)
+115 Worker Positions {'u_1': deque([(21, 9), (21, 9), (21, 9)], maxlen=3), 'u_3': deque([(14, 9), (14, 9), (14, 9)], maxlen=3)}
+115 Worker Positions {'u_2': deque([(21, 21), (21, 21), (21, 20)], maxlen=3), 'u_4': deque([(22, 21), (22, 21), (22, 20)], maxlen=3)}
+115 Looks like a stuck worker u_1 - deque([(21, 9), (21, 9), (21, 9)], maxlen=3)
+115 Looks like a stuck worker u_3 - deque([(14, 9), (14, 9), (14, 9)], maxlen=3)
+116 Worker Positions {'u_2': deque([(21, 21), (21, 20), (21, 20)], maxlen=3), 'u_4': deque([(22, 21), (22, 20), (22, 20)], maxlen=3)}
+116 Worker Positions {'u_1': deque([(21, 9), (21, 9), (20, 9)], maxlen=3), 'u_3': deque([(14, 9), (14, 9), (15, 9)], maxlen=3)}
+117 Worker Positions {'u_2': deque([(21, 20), (21, 20), (21, 20)], maxlen=3), 'u_4': deque([(22, 20), (22, 20), (22, 20)], maxlen=3)}
+117 Worker Positions {'u_1': deque([(21, 9), (20, 9), (20, 9)], maxlen=3), 'u_3': deque([(14, 9), (15, 9), (15, 9)], maxlen=3)}
+118 Worker Positions {'u_1': deque([(20, 9), (20, 9), (20, 9)], maxlen=3), 'u_3': deque([(15, 9), (15, 9), (15, 9)], maxlen=3)}
+118 Worker Positions {'u_2': deque([(21, 20), (21, 20), (21, 20)], maxlen=3), 'u_4': deque([(22, 20), (22, 20), (22, 20)], maxlen=3)}
+118 Looks like a stuck worker u_2 - deque([(21, 20), (21, 20), (21, 20)], maxlen=3)
+118 Looks like a stuck worker u_4 - deque([(22, 20), (22, 20), (22, 20)], maxlen=3)
+119 Worker Positions {'u_1': deque([(20, 9), (20, 9), (20, 9)], maxlen=3), 'u_3': deque([(15, 9), (15, 9), (15, 9)], maxlen=3)}
+119 Worker Positions {'u_2': deque([(21, 20), (21, 20), (21, 19)], maxlen=3), 'u_4': deque([(22, 20), (22, 20), (22, 21)], maxlen=3)}
+119 Looks like a stuck worker u_1 - deque([(20, 9), (20, 9), (20, 9)], maxlen=3)
+119 Looks like a stuck worker u_3 - deque([(15, 9), (15, 9), (15, 9)], maxlen=3)
+119: Doing research! 
+120 Worker Positions {'u_1': deque([(20, 9), (20, 9), (21, 9)], maxlen=3), 'u_3': deque([(15, 9), (15, 9), (14, 9)], maxlen=3)}
+120 Worker Positions {'u_2': deque([(21, 20), (21, 19), (21, 19)], maxlen=3), 'u_4': deque([(22, 20), (22, 21), (22, 21)], maxlen=3)}
+120: Doing research! 
+120: Doing research! 
+121 Worker Positions {'u_1': deque([(20, 9), (21, 9), (21, 9)], maxlen=3), 'u_3': deque([(15, 9), (14, 9), (14, 9)], maxlen=3)}
+121 Worker Positions {'u_2': deque([(21, 19), (21, 19), (21, 19)], maxlen=3), 'u_4': deque([(22, 21), (22, 21), (22, 21)], maxlen=3)}
+122 Worker Positions {'u_2': deque([(21, 19), (21, 19), (21, 19)], maxlen=3), 'u_4': deque([(22, 21), (22, 21), (22, 21)], maxlen=3)}
+122 Worker Positions {'u_1': deque([(21, 9), (21, 9), (21, 9)], maxlen=3), 'u_3': deque([(14, 9), (14, 9), (14, 9)], maxlen=3)}
+122 Looks like a stuck worker u_2 - deque([(21, 19), (21, 19), (21, 19)], maxlen=3)
+122 Looks like a stuck worker u_4 - deque([(22, 21), (22, 21), (22, 21)], maxlen=3)
+123 Worker Positions {'u_1': deque([(21, 9), (21, 9), (21, 9)], maxlen=3), 'u_3': deque([(14, 9), (14, 9), (14, 9)], maxlen=3)}
+123 Worker Positions {'u_2': deque([(21, 19), (21, 19), (20, 19)], maxlen=3), 'u_4': deque([(22, 21), (22, 21), (21, 21)], maxlen=3)}
+123 Looks like a stuck worker u_1 - deque([(21, 9), (21, 9), (21, 9)], maxlen=3)
+123: Doing research! 
+123 Looks like a stuck worker u_3 - deque([(14, 9), (14, 9), (14, 9)], maxlen=3)
+124 Worker Positions {'u_2': deque([(21, 19), (20, 19), (20, 19)], maxlen=3), 'u_4': deque([(22, 21), (21, 21), (21, 21)], maxlen=3)}
+124 Worker Positions {'u_1': deque([(21, 9), (21, 9), (20, 9)], maxlen=3), 'u_3': deque([(14, 9), (14, 9), (14, 8)], maxlen=3)}
+124 Build city stuff: c_2, fuel 120.0, size 2, enough fuel False
+125 Worker Positions {'u_1': deque([(21, 9), (20, 9), (20, 9)], maxlen=3), 'u_3': deque([(14, 9), (14, 8), (14, 8)], maxlen=3)}
+125 Worker Positions {'u_2': deque([(20, 19), (20, 19), (20, 18)], maxlen=3), 'u_4': deque([(21, 21), (21, 21), (21, 22)], maxlen=3)}
+125 Build city stuff: c_1, fuel 254.0, size 2, enough fuel False
+126 Worker Positions {'u_2': deque([(20, 19), (20, 18), (20, 18)], maxlen=3), 'u_4': deque([(21, 21), (21, 22), (21, 22)], maxlen=3)}
+126 Worker Positions {'u_1': deque([(20, 9), (20, 9), (20, 8)], maxlen=3), 'u_3': deque([(14, 8), (14, 8), (14, 9)], maxlen=3)}
+126 Build city stuff: c_2, fuel 120.0, size 2, enough fuel False
+127 Worker Positions {'u_1': deque([(20, 9), (20, 8), (20, 9)], maxlen=3), 'u_3': deque([(14, 8), (14, 9), (14, 9)], maxlen=3)}
+127 Worker Positions {'u_2': deque([(20, 18), (20, 18), (20, 17)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 23)], maxlen=3)}
+128 Worker Positions {'u_1': deque([(20, 8), (20, 9), (20, 9)], maxlen=3), 'u_3': deque([(14, 9), (14, 9), (14, 10)], maxlen=3)}
+128 Worker Positions {'u_2': deque([(20, 18), (20, 17), (20, 17)], maxlen=3), 'u_4': deque([(21, 22), (21, 23), (21, 22)], maxlen=3)}
+129 Worker Positions {'u_2': deque([(20, 17), (20, 17), (20, 16)], maxlen=3), 'u_4': deque([(21, 23), (21, 22), (21, 22)], maxlen=3)}
+129 Worker Positions {'u_1': deque([(20, 9), (20, 9), (20, 10)], maxlen=3), 'u_3': deque([(14, 9), (14, 10), (14, 10)], maxlen=3)}
+129: Doing research! 
+130 Worker Positions {'u_2': deque([(20, 17), (20, 16), (20, 16)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 21)], maxlen=3)}
+130 Worker Positions {'u_1': deque([(20, 9), (20, 10), (20, 10)], maxlen=3), 'u_3': deque([(14, 10), (14, 10), (14, 11)], maxlen=3)}
+130: Doing research! 
+130: Doing research! 
+131 Worker Positions {'u_1': deque([(20, 10), (20, 10), (20, 11)], maxlen=3), 'u_3': deque([(14, 10), (14, 11), (14, 11)], maxlen=3)}
+131 Worker Positions {'u_2': deque([(20, 16), (20, 16), (20, 15)], maxlen=3), 'u_4': deque([(21, 22), (21, 21), (21, 21)], maxlen=3)}
+131 Build city stuff: c_2, fuel 220.0, size 2, enough fuel False
+132 Worker Positions {'u_1': deque([(20, 10), (20, 11), (20, 11)], maxlen=3), 'u_3': deque([(14, 11), (14, 11), (14, 12)], maxlen=3)}
+132 Worker Positions {'u_2': deque([(20, 16), (20, 15), (20, 15)], maxlen=3), 'u_4': deque([(21, 21), (21, 21), (21, 22)], maxlen=3)}
+133 Worker Positions {'u_1': deque([(20, 11), (20, 11), (20, 12)], maxlen=3), 'u_3': deque([(14, 11), (14, 12), (14, 12)], maxlen=3)}
+133 Worker Positions {'u_2': deque([(20, 15), (20, 15), (20, 14)], maxlen=3), 'u_4': deque([(21, 21), (21, 22), (21, 22)], maxlen=3)}
+133 Build city stuff: c_1, fuel 354.0, size 2, enough fuel False
+133 Build city stuff: c_2, fuel 220.0, size 2, enough fuel False
+133: Doing research! 
+134 Worker Positions {'u_1': deque([(20, 11), (20, 12), (20, 12)], maxlen=3), 'u_3': deque([(14, 12), (14, 12), (14, 11)], maxlen=3)}
+134 Worker Positions {'u_2': deque([(20, 15), (20, 14), (20, 14)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 23)], maxlen=3)}
+135 Worker Positions {'u_1': deque([(20, 12), (20, 12), (19, 12)], maxlen=3), 'u_3': deque([(14, 12), (14, 11), (14, 11)], maxlen=3)}
+135 Worker Positions {'u_2': deque([(20, 14), (20, 14), (20, 13)], maxlen=3), 'u_4': deque([(21, 22), (21, 23), (21, 22)], maxlen=3)}
+135 Build city stuff: c_1, fuel 354.0, size 2, enough fuel False
+136 Worker Positions {'u_1': deque([(20, 12), (19, 12), (19, 12)], maxlen=3), 'u_3': deque([(14, 11), (14, 11), (14, 10)], maxlen=3)}
+136 Worker Positions {'u_2': deque([(20, 14), (20, 13), (20, 13)], maxlen=3), 'u_4': deque([(21, 23), (21, 22), (21, 22)], maxlen=3)}
+137 Worker Positions {'u_2': deque([(20, 13), (20, 13), (20, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 21)], maxlen=3)}
+137 Worker Positions {'u_1': deque([(19, 12), (19, 12), (18, 12)], maxlen=3), 'u_3': deque([(14, 11), (14, 10), (14, 10)], maxlen=3)}
+137 Build city stuff: c_1, fuel 354.0, size 2, enough fuel False
+138 Worker Positions {'u_2': deque([(20, 13), (20, 12), (20, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 21), (21, 21)], maxlen=3)}
+138 Worker Positions {'u_1': deque([(19, 12), (18, 12), (18, 12)], maxlen=3), 'u_3': deque([(14, 10), (14, 10), (14, 9)], maxlen=3)}
+138 Build city stuff: c_2, fuel 320.0, size 2, enough fuel False
+139 Worker Positions {'u_1': deque([(18, 12), (18, 12), (17, 12)], maxlen=3), 'u_3': deque([(14, 10), (14, 9), (14, 9)], maxlen=3)}
+139 Worker Positions {'u_2': deque([(20, 12), (20, 12), (19, 12)], maxlen=3), 'u_4': deque([(21, 21), (21, 21), (21, 22)], maxlen=3)}
+139 Build city stuff: c_1, fuel 354.0, size 2, enough fuel False
+139: Doing research! 
+140 Worker Positions {'u_1': deque([(18, 12), (17, 12), (17, 12)], maxlen=3), 'u_3': deque([(14, 9), (14, 9), (14, 8)], maxlen=3)}
+140 Worker Positions {'u_2': deque([(20, 12), (19, 12), (19, 12)], maxlen=3), 'u_4': deque([(21, 21), (21, 22), (21, 22)], maxlen=3)}
+140: Doing research! 
+140 Build city stuff: c_2, fuel 320.0, size 2, enough fuel False
+140: Doing research! 
+141 Worker Positions {'u_2': deque([(19, 12), (19, 12), (18, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 23)], maxlen=3)}
+141 Worker Positions {'u_1': deque([(17, 12), (17, 12), (16, 12)], maxlen=3), 'u_3': deque([(14, 9), (14, 8), (14, 8)], maxlen=3)}
+141 Build city stuff: c_1, fuel 354.0, size 2, enough fuel False
+142 Worker Positions {'u_1': deque([(17, 12), (16, 12), (16, 12)], maxlen=3), 'u_3': deque([(14, 8), (14, 8), (15, 8)], maxlen=3)}
+142 Worker Positions {'u_2': deque([(19, 12), (18, 12), (18, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 23), (21, 22)], maxlen=3)}
+143 Worker Positions {'u_1': deque([(16, 12), (16, 12), (15, 12)], maxlen=3), 'u_3': deque([(14, 8), (15, 8), (15, 8)], maxlen=3)}
+143 Build city stuff: c_1, fuel 354.0, size 2, enough fuel False
+143 Worker Positions {'u_2': deque([(18, 12), (18, 12), (17, 12)], maxlen=3), 'u_4': deque([(21, 23), (21, 22), (21, 22)], maxlen=3)}
+143: Doing research! 
+144 Worker Positions {'u_1': deque([(16, 12), (15, 12), (15, 12)], maxlen=3), 'u_3': deque([(15, 8), (15, 8), (16, 8)], maxlen=3)}
+144 Worker Positions {'u_2': deque([(18, 12), (17, 12), (17, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 21)], maxlen=3)}
+145 Worker Positions {'u_2': deque([(17, 12), (17, 12), (16, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 21), (21, 21)], maxlen=3)}
+145 Build city stuff: c_2, fuel 420.0, size 2, enough fuel False
+145 Worker Positions {'u_1': deque([(15, 12), (15, 12), (14, 12)], maxlen=3), 'u_3': deque([(15, 8), (16, 8), (16, 8)], maxlen=3)}
+145 Build city stuff: c_1, fuel 354.0, size 2, enough fuel False
+146 Worker Positions {'u_2': deque([(17, 12), (16, 12), (16, 12)], maxlen=3), 'u_4': deque([(21, 21), (21, 21), (21, 22)], maxlen=3)}
+146 Worker Positions {'u_1': deque([(15, 12), (14, 12), (14, 12)], maxlen=3), 'u_3': deque([(16, 8), (16, 8), (17, 8)], maxlen=3)}
+147 Worker Positions {'u_1': deque([(14, 12), (14, 12), (13, 12)], maxlen=3), 'u_3': deque([(16, 8), (17, 8), (17, 8)], maxlen=3)}
+147 Worker Positions {'u_2': deque([(16, 12), (16, 12), (15, 12)], maxlen=3), 'u_4': deque([(21, 21), (21, 22), (21, 22)], maxlen=3)}
+147 Build city stuff: c_2, fuel 420.0, size 2, enough fuel False
+147 Build city stuff: c_1, fuel 354.0, size 2, enough fuel False
+148 Worker Positions {'u_2': deque([(16, 12), (15, 12), (15, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 23)], maxlen=3)}
+148 Worker Positions {'u_1': deque([(14, 12), (13, 12), (13, 12)], maxlen=3), 'u_3': deque([(17, 8), (17, 8), (18, 8)], maxlen=3)}
+148 Build city stuff: c_1, fuel 354.0, size 2, enough fuel False
+149 Worker Positions {'u_1': deque([(13, 12), (13, 12), (13, 11)], maxlen=3), 'u_3': deque([(17, 8), (18, 8), (18, 8)], maxlen=3)}
+149 Worker Positions {'u_2': deque([(15, 12), (15, 12), (14, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 23), (21, 22)], maxlen=3)}
+149 Build city stuff: c_1, fuel 354.0, size 2, enough fuel False
+149: Doing research! 
+150 Worker Positions {'u_1': deque([(13, 12), (13, 11), (13, 11)], maxlen=3), 'u_3': deque([(18, 8), (18, 8), (19, 8)], maxlen=3)}
+150 Worker Positions {'u_2': deque([(15, 12), (14, 12), (14, 12)], maxlen=3), 'u_4': deque([(21, 23), (21, 22), (21, 22)], maxlen=3)}
+150 Build city stuff: c_2, fuel 520.0, size 2, enough fuel False
+150 Build city stuff: c_1, fuel 354.0, size 2, enough fuel False
+150: Doing research! 
+150: Doing research! 
+151 Worker Positions {'u_1': deque([(13, 11), (13, 11), (13, 10)], maxlen=3), 'u_3': deque([(18, 8), (19, 8), (19, 8)], maxlen=3)}
+151 Worker Positions {'u_2': deque([(14, 12), (14, 12), (15, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 21)], maxlen=3)}
+152 Worker Positions {'u_1': deque([(13, 11), (13, 10), (13, 10)], maxlen=3), 'u_3': deque([(19, 8), (19, 8), (19, 9)], maxlen=3)}
+152 Worker Positions {'u_2': deque([(14, 12), (15, 12), (15, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 21), (21, 21)], maxlen=3)}
+153 Worker Positions {'u_1': deque([(13, 10), (13, 10), (13, 10)], maxlen=3), 'u_3': deque([(19, 8), (19, 9), (19, 9)], maxlen=3)}
+153 Worker Positions {'u_2': deque([(15, 12), (15, 12), (15, 12)], maxlen=3), 'u_4': deque([(21, 21), (21, 21), (21, 21)], maxlen=3)}
+153: Doing research! 
+154 Worker Positions {'u_2': deque([(15, 12), (15, 12), (15, 12)], maxlen=3), 'u_4': deque([(21, 21), (21, 21), (21, 21)], maxlen=3)}
+154 Worker Positions {'u_1': deque([(13, 10), (13, 10), (13, 10)], maxlen=3), 'u_3': deque([(19, 9), (19, 9), (19, 9)], maxlen=3)}
+154 Looks like a stuck worker u_2 - deque([(15, 12), (15, 12), (15, 12)], maxlen=3)
+154 Looks like a stuck worker u_1 - deque([(13, 10), (13, 10), (13, 10)], maxlen=3)
+154 Looks like a stuck worker u_4 - deque([(21, 21), (21, 21), (21, 21)], maxlen=3)
+155 Worker Positions {'u_2': deque([(15, 12), (15, 12), (15, 13)], maxlen=3), 'u_4': deque([(21, 21), (21, 21), (21, 22)], maxlen=3)}
+155 Worker Positions {'u_1': deque([(13, 10), (13, 10), (13, 11)], maxlen=3), 'u_3': deque([(19, 9), (19, 9), (19, 9)], maxlen=3)}
+155 Looks like a stuck worker u_3 - deque([(19, 9), (19, 9), (19, 9)], maxlen=3)
+156 Worker Positions {'u_1': deque([(13, 10), (13, 11), (13, 11)], maxlen=3), 'u_3': deque([(19, 9), (19, 9), (18, 9)], maxlen=3)}
+156 Worker Positions {'u_2': deque([(15, 12), (15, 13), (15, 13)], maxlen=3), 'u_4': deque([(21, 21), (21, 22), (21, 22)], maxlen=3)}
+157 Worker Positions {'u_1': deque([(13, 11), (13, 11), (13, 11)], maxlen=3), 'u_3': deque([(19, 9), (18, 9), (18, 9)], maxlen=3)}
+157 Worker Positions {'u_2': deque([(15, 13), (15, 13), (15, 13)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 22)], maxlen=3)}
+158 Worker Positions {'u_1': deque([(13, 11), (13, 11), (13, 11)], maxlen=3), 'u_3': deque([(18, 9), (18, 9), (18, 9)], maxlen=3)}
+158 Worker Positions {'u_2': deque([(15, 13), (15, 13), (15, 13)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 22)], maxlen=3)}
+158 Looks like a stuck worker u_1 - deque([(13, 11), (13, 11), (13, 11)], maxlen=3)
+158 Looks like a stuck worker u_2 - deque([(15, 13), (15, 13), (15, 13)], maxlen=3)
+158 Looks like a stuck worker u_4 - deque([(21, 22), (21, 22), (21, 22)], maxlen=3)
+159 Worker Positions {'u_1': deque([(13, 11), (13, 11), (13, 10)], maxlen=3), 'u_3': deque([(18, 9), (18, 9), (18, 9)], maxlen=3)}
+159 Worker Positions {'u_2': deque([(15, 13), (15, 13), (15, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (20, 22)], maxlen=3)}
+159 Looks like a stuck worker u_3 - deque([(18, 9), (18, 9), (18, 9)], maxlen=3)
+159: Doing research! 
+160 Worker Positions {'u_2': deque([(15, 13), (15, 12), (15, 12)], maxlen=3), 'u_4': deque([(21, 22), (20, 22), (20, 22)], maxlen=3)}
+160 Worker Positions {'u_1': deque([(13, 11), (13, 10), (13, 10)], maxlen=3), 'u_3': deque([(18, 9), (18, 9), (19, 9)], maxlen=3)}
+160: Doing research! 
+161 Worker Positions {'u_2': deque([(15, 12), (15, 12), (15, 12)], maxlen=3), 'u_4': deque([(20, 22), (20, 22), (20, 22)], maxlen=3)}
+161 Worker Positions {'u_1': deque([(13, 10), (13, 10), (13, 10)], maxlen=3), 'u_3': deque([(18, 9), (19, 9), (19, 9)], maxlen=3)}
+162 Worker Positions {'u_1': deque([(13, 10), (13, 10), (13, 10)], maxlen=3), 'u_3': deque([(19, 9), (19, 9), (19, 9)], maxlen=3)}
+162 Worker Positions {'u_2': deque([(15, 12), (15, 12), (15, 12)], maxlen=3), 'u_4': deque([(20, 22), (20, 22), (20, 22)], maxlen=3)}
+162 Looks like a stuck worker u_1 - deque([(13, 10), (13, 10), (13, 10)], maxlen=3)
+162 Looks like a stuck worker u_2 - deque([(15, 12), (15, 12), (15, 12)], maxlen=3)
+162 Looks like a stuck worker u_4 - deque([(20, 22), (20, 22), (20, 22)], maxlen=3)
+163 Worker Positions {'u_1': deque([(13, 10), (13, 10), (13, 9)], maxlen=3), 'u_3': deque([(19, 9), (19, 9), (19, 9)], maxlen=3)}
+163 Worker Positions {'u_2': deque([(15, 12), (15, 12), (15, 13)], maxlen=3), 'u_4': deque([(20, 22), (20, 22), (20, 23)], maxlen=3)}
+163 Looks like a stuck worker u_3 - deque([(19, 9), (19, 9), (19, 9)], maxlen=3)
+163: Doing research! 
+164 Worker Positions {'u_1': deque([(13, 10), (13, 9), (13, 9)], maxlen=3), 'u_3': deque([(19, 9), (19, 9), (20, 9)], maxlen=3)}
+164 Worker Positions {'u_2': deque([(15, 12), (15, 13), (15, 13)], maxlen=3), 'u_4': deque([(20, 22), (20, 23), (20, 23)], maxlen=3)}
+164 Build city stuff: c_2, fuel 160.0, size 2, enough fuel False
+165 Worker Positions {'u_1': deque([(13, 9), (13, 9), (13, 10)], maxlen=3), 'u_3': deque([(19, 9), (20, 9), (20, 9)], maxlen=3)}
+165 Worker Positions {'u_2': deque([(15, 13), (15, 13), (15, 12)], maxlen=3), 'u_4': deque([(20, 23), (20, 23), (21, 23)], maxlen=3)}
+166 Worker Positions {'u_2': deque([(15, 13), (15, 12), (15, 12)], maxlen=3), 'u_4': deque([(20, 23), (21, 23), (21, 22)], maxlen=3)}
+166 Worker Positions {'u_1': deque([(13, 9), (13, 10), (13, 10)], maxlen=3), 'u_3': deque([(20, 9), (20, 9), (20, 9)], maxlen=3)}
+166 Looks like a stuck worker u_3 - deque([(20, 9), (20, 9), (20, 9)], maxlen=3)
+167 Worker Positions {'u_1': deque([(13, 10), (13, 10), (13, 11)], maxlen=3), 'u_3': deque([(20, 9), (20, 9), (19, 9)], maxlen=3)}
+167 Worker Positions {'u_2': deque([(15, 12), (15, 12), (14, 12)], maxlen=3), 'u_4': deque([(21, 23), (21, 22), (21, 22)], maxlen=3)}
+168 Worker Positions {'u_1': deque([(13, 10), (13, 11), (13, 11)], maxlen=3), 'u_3': deque([(20, 9), (19, 9), (19, 9)], maxlen=3)}
+168 Worker Positions {'u_2': deque([(15, 12), (14, 12), (14, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 21)], maxlen=3)}
+168 Build city stuff: c_2, fuel 260.0, size 2, enough fuel False
+169 Worker Positions {'u_1': deque([(13, 11), (13, 11), (13, 11)], maxlen=3), 'u_3': deque([(19, 9), (19, 9), (19, 9)], maxlen=3)}
+169 Worker Positions {'u_2': deque([(14, 12), (14, 12), (15, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 21), (21, 21)], maxlen=3)}
+169 Looks like a stuck worker u_1 - deque([(13, 11), (13, 11), (13, 11)], maxlen=3)
+169 Looks like a stuck worker u_3 - deque([(19, 9), (19, 9), (19, 9)], maxlen=3)
+169 Build city stuff: c_2, fuel 260.0, size 2, enough fuel False
+170 Worker Positions {'u_1': deque([(13, 11), (13, 11), (12, 11)], maxlen=3), 'u_3': deque([(19, 9), (19, 9), (19, 10)], maxlen=3)}
+170 Worker Positions {'u_2': deque([(14, 12), (15, 12), (15, 12)], maxlen=3), 'u_4': deque([(21, 21), (21, 21), (21, 22)], maxlen=3)}
+170 Build city stuff: c_2, fuel 260.0, size 2, enough fuel False
+170: Doing research! 
+171 Worker Positions {'u_1': deque([(13, 11), (12, 11), (12, 11)], maxlen=3), 'u_3': deque([(19, 9), (19, 10), (19, 10)], maxlen=3)}
+171 Worker Positions {'u_2': deque([(15, 12), (15, 12), (16, 12)], maxlen=3), 'u_4': deque([(21, 21), (21, 22), (21, 22)], maxlen=3)}
+171 Build city stuff: c_2, fuel 260.0, size 2, enough fuel False
+172 Worker Positions {'u_2': deque([(15, 12), (16, 12), (16, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 23)], maxlen=3)}
+172 Worker Positions {'u_1': deque([(12, 11), (12, 11), (12, 11)], maxlen=3), 'u_3': deque([(19, 10), (19, 10), (19, 10)], maxlen=3)}
+172 Build city stuff: c_2, fuel 360.0, size 2, enough fuel False
+172 Looks like a stuck worker u_1 - deque([(12, 11), (12, 11), (12, 11)], maxlen=3)
+172 Looks like a stuck worker u_3 - deque([(19, 10), (19, 10), (19, 10)], maxlen=3)
+173 Worker Positions {'u_1': deque([(12, 11), (12, 11), (12, 12)], maxlen=3), 'u_3': deque([(19, 10), (19, 10), (19, 9)], maxlen=3)}
+173 Worker Positions {'u_2': deque([(16, 12), (16, 12), (17, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 23), (21, 22)], maxlen=3)}
+173: Doing research! 
+174 Worker Positions {'u_1': deque([(12, 11), (12, 12), (12, 12)], maxlen=3), 'u_3': deque([(19, 10), (19, 9), (19, 9)], maxlen=3)}
+174 Worker Positions {'u_2': deque([(16, 12), (17, 12), (17, 12)], maxlen=3), 'u_4': deque([(21, 23), (21, 22), (21, 22)], maxlen=3)}
+174 Build city stuff: c_2, fuel 360.0, size 2, enough fuel False
+175 Worker Positions {'u_2': deque([(17, 12), (17, 12), (18, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 21)], maxlen=3)}
+175 Worker Positions {'u_1': deque([(12, 12), (12, 12), (12, 12)], maxlen=3), 'u_3': deque([(19, 9), (19, 9), (19, 9)], maxlen=3)}
+175 Looks like a stuck worker u_1 - deque([(12, 12), (12, 12), (12, 12)], maxlen=3)
+175 Looks like a stuck worker u_3 - deque([(19, 9), (19, 9), (19, 9)], maxlen=3)
+176 Worker Positions {'u_1': deque([(12, 12), (12, 12), (11, 12)], maxlen=3), 'u_3': deque([(19, 9), (19, 9), (19, 10)], maxlen=3)}
+176 Worker Positions {'u_2': deque([(17, 12), (18, 12), (18, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 21), (21, 21)], maxlen=3)}
+176 Build city stuff: c_2, fuel 360.0, size 2, enough fuel False
+176 Build city stuff: c_2, fuel 360.0, size 2, enough fuel False
+177 Worker Positions {'u_1': deque([(12, 12), (11, 12), (11, 12)], maxlen=3), 'u_3': deque([(19, 9), (19, 10), (19, 10)], maxlen=3)}
+177 Worker Positions {'u_2': deque([(18, 12), (18, 12), (19, 12)], maxlen=3), 'u_4': deque([(21, 21), (21, 21), (21, 22)], maxlen=3)}
+178 Worker Positions {'u_1': deque([(11, 12), (11, 12), (11, 12)], maxlen=3), 'u_3': deque([(19, 10), (19, 10), (19, 10)], maxlen=3)}
+178 Worker Positions {'u_2': deque([(18, 12), (19, 12), (19, 12)], maxlen=3), 'u_4': deque([(21, 21), (21, 22), (21, 22)], maxlen=3)}
+178 Looks like a stuck worker u_1 - deque([(11, 12), (11, 12), (11, 12)], maxlen=3)
+178 Looks like a stuck worker u_3 - deque([(19, 10), (19, 10), (19, 10)], maxlen=3)
+178 Build city stuff: c_2, fuel 360.0, size 2, enough fuel False
+178 Build city stuff: c_2, fuel 360.0, size 2, enough fuel False
+179 Worker Positions {'u_2': deque([(19, 12), (19, 12), (20, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 23)], maxlen=3)}
+179 Worker Positions {'u_1': deque([(11, 12), (11, 12), (10, 12)], maxlen=3), 'u_3': deque([(19, 10), (19, 10), (18, 10)], maxlen=3)}
+180 Worker Positions {'u_1': deque([(11, 12), (10, 12), (10, 12)], maxlen=3), 'u_3': deque([(19, 10), (18, 10), (18, 10)], maxlen=3)}
+180 Worker Positions {'u_2': deque([(19, 12), (20, 12), (20, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 23), (21, 22)], maxlen=3)}
+180 Build city stuff: c_2, fuel 460.0, size 2, enough fuel False
+180: Doing research! 
+181 Worker Positions {'u_1': deque([(10, 12), (10, 12), (10, 12)], maxlen=3), 'u_3': deque([(18, 10), (18, 10), (18, 10)], maxlen=3)}
+181 Worker Positions {'u_2': deque([(20, 12), (20, 12), (21, 12)], maxlen=3), 'u_4': deque([(21, 23), (21, 22), (21, 22)], maxlen=3)}
+181 Looks like a stuck worker u_1 - deque([(10, 12), (10, 12), (10, 12)], maxlen=3)
+181 Looks like a stuck worker u_3 - deque([(18, 10), (18, 10), (18, 10)], maxlen=3)
+182 Worker Positions {'u_2': deque([(20, 12), (21, 12), (21, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 21)], maxlen=3)}
+182 Worker Positions {'u_1': deque([(10, 12), (10, 12), (10, 11)], maxlen=3), 'u_3': deque([(18, 10), (18, 10), (18, 11)], maxlen=3)}
+182 Build city stuff: c_2, fuel 460.0, size 2, enough fuel False
+183 Worker Positions {'u_1': deque([(10, 12), (10, 11), (10, 11)], maxlen=3), 'u_3': deque([(18, 10), (18, 11), (18, 11)], maxlen=3)}
+183 Worker Positions {'u_2': deque([(21, 12), (21, 12), (21, 13)], maxlen=3), 'u_4': deque([(21, 22), (21, 21), (21, 21)], maxlen=3)}
+183 Build city stuff: c_2, fuel 460.0, size 2, enough fuel False
+183: Doing research! 
+184 Worker Positions {'u_1': deque([(10, 11), (10, 11), (10, 11)], maxlen=3), 'u_3': deque([(18, 11), (18, 11), (18, 11)], maxlen=3)}
+184 Worker Positions {'u_2': deque([(21, 12), (21, 13), (21, 13)], maxlen=3), 'u_4': deque([(21, 21), (21, 21), (21, 22)], maxlen=3)}
+184 Looks like a stuck worker u_1 - deque([(10, 11), (10, 11), (10, 11)], maxlen=3)
+184 Build city stuff: c_2, fuel 460.0, size 2, enough fuel False
+184 Looks like a stuck worker u_3 - deque([(18, 11), (18, 11), (18, 11)], maxlen=3)
+185 Worker Positions {'u_1': deque([(10, 11), (10, 11), (11, 11)], maxlen=3), 'u_3': deque([(18, 11), (18, 11), (18, 12)], maxlen=3)}
+185 Worker Positions {'u_2': deque([(21, 13), (21, 13), (21, 14)], maxlen=3), 'u_4': deque([(21, 21), (21, 22), (21, 22)], maxlen=3)}
+185 Build city stuff: c_2, fuel 460.0, size 2, enough fuel False
+186 Worker Positions {'u_2': deque([(21, 13), (21, 14), (21, 14)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 23)], maxlen=3)}
+186 Worker Positions {'u_1': deque([(10, 11), (11, 11), (11, 11)], maxlen=3), 'u_3': deque([(18, 11), (18, 12), (18, 12)], maxlen=3)}
+186 Build city stuff: c_2, fuel 560.0, size 2, enough fuel False
+187 Worker Positions {'u_2': deque([(21, 14), (21, 14), (21, 15)], maxlen=3), 'u_4': deque([(21, 22), (21, 23), (21, 22)], maxlen=3)}
+187 Worker Positions {'u_1': deque([(11, 11), (11, 11), (11, 11)], maxlen=3), 'u_3': deque([(18, 12), (18, 12), (18, 12)], maxlen=3)}
+187 Looks like a stuck worker u_1 - deque([(11, 11), (11, 11), (11, 11)], maxlen=3)
+187 Looks like a stuck worker u_3 - deque([(18, 12), (18, 12), (18, 12)], maxlen=3)
+188 Worker Positions {'u_1': deque([(11, 11), (11, 11), (11, 10)], maxlen=3), 'u_3': deque([(18, 12), (18, 12), (18, 11)], maxlen=3)}
+188 Worker Positions {'u_2': deque([(21, 14), (21, 15), (21, 15)], maxlen=3), 'u_4': deque([(21, 23), (21, 22), (21, 22)], maxlen=3)}
+188 Build city stuff: c_2, fuel 560.0, size 2, enough fuel False
+189 Worker Positions {'u_1': deque([(11, 11), (11, 10), (11, 10)], maxlen=3), 'u_3': deque([(18, 12), (18, 11), (18, 11)], maxlen=3)}
+189 Worker Positions {'u_2': deque([(21, 15), (21, 15), (21, 16)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 21)], maxlen=3)}
+190 Worker Positions {'u_2': deque([(21, 15), (21, 16), (21, 16)], maxlen=3), 'u_4': deque([(21, 22), (21, 21), (21, 21)], maxlen=3)}
+190 Worker Positions {'u_1': deque([(11, 10), (11, 10), (11, 10)], maxlen=3), 'u_3': deque([(18, 11), (18, 11), (18, 11)], maxlen=3)}
+190 Build city stuff: c_2, fuel 560.0, size 2, enough fuel False
+190 Build city stuff: c_2, fuel 560.0, size 2, enough fuel False
+190 Looks like a stuck worker u_1 - deque([(11, 10), (11, 10), (11, 10)], maxlen=3)
+190 Looks like a stuck worker u_3 - deque([(18, 11), (18, 11), (18, 11)], maxlen=3)
+190: Doing research! 
+191 Worker Positions {'u_1': deque([(11, 10), (11, 10), (11, 9)], maxlen=3), 'u_3': deque([(18, 11), (18, 11), (17, 11)], maxlen=3)}
+191 Worker Positions {'u_2': deque([(21, 16), (21, 16), (21, 17)], maxlen=3), 'u_4': deque([(21, 21), (21, 21), (21, 22)], maxlen=3)}
+192 Worker Positions {'u_1': deque([(11, 10), (11, 9), (11, 9)], maxlen=3), 'u_3': deque([(18, 11), (17, 11), (17, 11)], maxlen=3)}
+192 Worker Positions {'u_2': deque([(21, 16), (21, 17), (21, 17)], maxlen=3), 'u_4': deque([(21, 21), (21, 22), (21, 22)], maxlen=3)}
+193 Worker Positions {'u_1': deque([(11, 9), (11, 9), (11, 9)], maxlen=3), 'u_3': deque([(17, 11), (17, 11), (17, 11)], maxlen=3)}
+193 Worker Positions {'u_2': deque([(21, 17), (21, 17), (21, 17)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 22)], maxlen=3)}
+193: Doing research! 
+194 Worker Positions {'u_1': deque([(11, 9), (11, 9), (11, 9)], maxlen=3), 'u_3': deque([(17, 11), (17, 11), (17, 11)], maxlen=3)}
+194 Worker Positions {'u_2': deque([(21, 17), (21, 17), (21, 17)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 22)], maxlen=3)}
+194 Looks like a stuck worker u_1 - deque([(11, 9), (11, 9), (11, 9)], maxlen=3)
+194 Looks like a stuck worker u_2 - deque([(21, 17), (21, 17), (21, 17)], maxlen=3)
+194 Looks like a stuck worker u_3 - deque([(17, 11), (17, 11), (17, 11)], maxlen=3)
+194 Looks like a stuck worker u_4 - deque([(21, 22), (21, 22), (21, 22)], maxlen=3)
+195 Worker Positions {'u_1': deque([(11, 9), (11, 9), (11, 8)], maxlen=3), 'u_3': deque([(17, 11), (17, 11), (17, 10)], maxlen=3)}
+195 Worker Positions {'u_2': deque([(21, 17), (21, 17), (20, 17)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (22, 22)], maxlen=3)}
+196 Worker Positions {'u_2': deque([(21, 17), (20, 17), (20, 17)], maxlen=3), 'u_4': deque([(21, 22), (22, 22), (22, 22)], maxlen=3)}
+196 Worker Positions {'u_1': deque([(11, 9), (11, 8), (11, 8)], maxlen=3), 'u_3': deque([(17, 11), (17, 10), (17, 10)], maxlen=3)}
+197 Worker Positions {'u_2': deque([(20, 17), (20, 17), (20, 17)], maxlen=3), 'u_4': deque([(22, 22), (22, 22), (22, 22)], maxlen=3)}
+197 Worker Positions {'u_1': deque([(11, 8), (11, 8), (11, 8)], maxlen=3), 'u_3': deque([(17, 10), (17, 10), (17, 10)], maxlen=3)}
+198 Worker Positions {'u_2': deque([(20, 17), (20, 17), (20, 17)], maxlen=3), 'u_4': deque([(22, 22), (22, 22), (22, 22)], maxlen=3)}
+198 Worker Positions {'u_1': deque([(11, 8), (11, 8), (11, 8)], maxlen=3), 'u_3': deque([(17, 10), (17, 10), (17, 10)], maxlen=3)}
+198 Looks like a stuck worker u_2 - deque([(20, 17), (20, 17), (20, 17)], maxlen=3)
+198 Looks like a stuck worker u_4 - deque([(22, 22), (22, 22), (22, 22)], maxlen=3)
+198 Looks like a stuck worker u_1 - deque([(11, 8), (11, 8), (11, 8)], maxlen=3)
+198 Looks like a stuck worker u_3 - deque([(17, 10), (17, 10), (17, 10)], maxlen=3)
+199 Worker Positions {'u_1': deque([(11, 8), (11, 8), (11, 7)], maxlen=3), 'u_3': deque([(17, 10), (17, 10), (17, 9)], maxlen=3)}
+199 Worker Positions {'u_2': deque([(20, 17), (20, 17), (20, 16)], maxlen=3), 'u_4': deque([(22, 22), (22, 22), (22, 23)], maxlen=3)}
+200 Worker Positions {'u_1': deque([(11, 8), (11, 7), (11, 7)], maxlen=3), 'u_3': deque([(17, 10), (17, 9), (17, 9)], maxlen=3)}
+200 Worker Positions {'u_2': deque([(20, 17), (20, 16), (20, 16)], maxlen=3), 'u_4': deque([(22, 22), (22, 23), (22, 23)], maxlen=3)}
+200: Doing research! 
+201 Worker Positions {'u_1': deque([(11, 7), (11, 7), (11, 7)], maxlen=3), 'u_3': deque([(17, 9), (17, 9), (17, 9)], maxlen=3)}
+201 Worker Positions {'u_2': deque([(20, 16), (20, 16), (20, 16)], maxlen=3), 'u_4': deque([(22, 23), (22, 23), (22, 23)], maxlen=3)}
+202 Worker Positions {'u_2': deque([(20, 16), (20, 16), (20, 16)], maxlen=3), 'u_4': deque([(22, 23), (22, 23), (22, 23)], maxlen=3)}
+202 Worker Positions {'u_1': deque([(11, 7), (11, 7), (11, 7)], maxlen=3), 'u_3': deque([(17, 9), (17, 9), (17, 9)], maxlen=3)}
+202 Looks like a stuck worker u_2 - deque([(20, 16), (20, 16), (20, 16)], maxlen=3)
+202 Looks like a stuck worker u_4 - deque([(22, 23), (22, 23), (22, 23)], maxlen=3)
+202 Looks like a stuck worker u_1 - deque([(11, 7), (11, 7), (11, 7)], maxlen=3)
+202 Looks like a stuck worker u_3 - deque([(17, 9), (17, 9), (17, 9)], maxlen=3)
+203 Worker Positions {'u_1': deque([(11, 7), (11, 7), (10, 7)], maxlen=3), 'u_3': deque([(17, 9), (17, 9), (16, 9)], maxlen=3)}
+203 Worker Positions {'u_2': deque([(20, 16), (20, 16), (20, 17)], maxlen=3), 'u_4': deque([(22, 23), (22, 23), (22, 22)], maxlen=3)}
+203: Doing research! 
+204 Worker Positions {'u_1': deque([(11, 7), (10, 7), (10, 7)], maxlen=3), 'u_3': deque([(17, 9), (16, 9), (16, 9)], maxlen=3)}
+204 Worker Positions {'u_2': deque([(20, 16), (20, 17), (20, 17)], maxlen=3), 'u_4': deque([(22, 23), (22, 22), (22, 22)], maxlen=3)}
+204 Build city stuff: c_2, fuel 200.0, size 2, enough fuel False
+205 Worker Positions {'u_1': deque([(10, 7), (10, 7), (11, 7)], maxlen=3), 'u_3': deque([(16, 9), (16, 9), (16, 10)], maxlen=3)}
+205 Worker Positions {'u_2': deque([(20, 17), (20, 17), (20, 16)], maxlen=3), 'u_4': deque([(22, 22), (22, 22), (22, 23)], maxlen=3)}
+206 Worker Positions {'u_2': deque([(20, 17), (20, 16), (20, 16)], maxlen=3), 'u_4': deque([(22, 22), (22, 23), (22, 23)], maxlen=3)}
+206 Worker Positions {'u_1': deque([(10, 7), (11, 7), (11, 7)], maxlen=3), 'u_3': deque([(16, 9), (16, 10), (16, 10)], maxlen=3)}
+206 Build city stuff: c_2, fuel 200.0, size 2, enough fuel False
+207 Worker Positions {'u_1': deque([(11, 7), (11, 7), (12, 7)], maxlen=3), 'u_3': deque([(16, 10), (16, 10), (16, 11)], maxlen=3)}
+207 Worker Positions {'u_2': deque([(20, 16), (20, 16), (20, 15)], maxlen=3), 'u_4': deque([(22, 23), (22, 23), (21, 23)], maxlen=3)}
+208 Worker Positions {'u_2': deque([(20, 16), (20, 15), (20, 15)], maxlen=3), 'u_4': deque([(22, 23), (21, 23), (21, 22)], maxlen=3)}
+208 Worker Positions {'u_1': deque([(11, 7), (12, 7), (12, 7)], maxlen=3), 'u_3': deque([(16, 10), (16, 11), (16, 11)], maxlen=3)}
+209 Worker Positions {'u_2': deque([(20, 15), (20, 15), (20, 14)], maxlen=3), 'u_4': deque([(21, 23), (21, 22), (21, 22)], maxlen=3)}
+209 Worker Positions {'u_1': deque([(12, 7), (12, 7), (13, 7)], maxlen=3), 'u_3': deque([(16, 11), (16, 11), (16, 12)], maxlen=3)}
+210 Worker Positions {'u_1': deque([(12, 7), (13, 7), (13, 7)], maxlen=3), 'u_3': deque([(16, 11), (16, 12), (16, 12)], maxlen=3)}
+210 Worker Positions {'u_2': deque([(20, 15), (20, 14), (20, 14)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 21)], maxlen=3)}
+210: Doing research! 
+211 Worker Positions {'u_2': deque([(20, 14), (20, 14), (20, 13)], maxlen=3), 'u_4': deque([(21, 22), (21, 21), (21, 21)], maxlen=3)}
+211 Worker Positions {'u_1': deque([(13, 7), (13, 7), (13, 8)], maxlen=3), 'u_3': deque([(16, 12), (16, 12), (15, 12)], maxlen=3)}
+211 Build city stuff: c_2, fuel 300.0, size 2, enough fuel False
+212 Worker Positions {'u_2': deque([(20, 14), (20, 13), (20, 13)], maxlen=3), 'u_4': deque([(21, 21), (21, 21), (21, 22)], maxlen=3)}
+212 Worker Positions {'u_1': deque([(13, 7), (13, 8), (13, 8)], maxlen=3), 'u_3': deque([(16, 12), (15, 12), (15, 12)], maxlen=3)}
+213 Worker Positions {'u_1': deque([(13, 8), (13, 8), (13, 9)], maxlen=3), 'u_3': deque([(15, 12), (15, 12), (14, 12)], maxlen=3)}
+213 Worker Positions {'u_2': deque([(20, 13), (20, 13), (20, 12)], maxlen=3), 'u_4': deque([(21, 21), (21, 22), (21, 22)], maxlen=3)}
+213 Build city stuff: c_2, fuel 300.0, size 2, enough fuel False
+213: Doing research! 
+214 Worker Positions {'u_2': deque([(20, 13), (20, 12), (20, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 23)], maxlen=3)}
+214 Worker Positions {'u_1': deque([(13, 8), (13, 9), (13, 9)], maxlen=3), 'u_3': deque([(15, 12), (14, 12), (14, 12)], maxlen=3)}
+215 Worker Positions {'u_1': deque([(13, 9), (13, 9), (13, 10)], maxlen=3), 'u_3': deque([(14, 12), (14, 12), (14, 12)], maxlen=3)}
+215 Worker Positions {'u_2': deque([(20, 12), (20, 12), (19, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 23), (21, 22)], maxlen=3)}
+215 Looks like a stuck worker u_3 - deque([(14, 12), (14, 12), (14, 12)], maxlen=3)
+216 Worker Positions {'u_1': deque([(13, 9), (13, 10), (13, 10)], maxlen=3), 'u_3': deque([(14, 12), (14, 12), (14, 13)], maxlen=3)}
+216 Worker Positions {'u_2': deque([(20, 12), (19, 12), (19, 12)], maxlen=3), 'u_4': deque([(21, 23), (21, 22), (21, 22)], maxlen=3)}
+217 Worker Positions {'u_2': deque([(19, 12), (19, 12), (18, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 21)], maxlen=3)}
+217 Worker Positions {'u_1': deque([(13, 10), (13, 10), (13, 11)], maxlen=3), 'u_3': deque([(14, 12), (14, 13), (14, 13)], maxlen=3)}
+218 Worker Positions {'u_2': deque([(19, 12), (18, 12), (18, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 21), (21, 21)], maxlen=3)}
+218 Worker Positions {'u_1': deque([(13, 10), (13, 11), (13, 11)], maxlen=3), 'u_3': deque([(14, 13), (14, 13), (14, 13)], maxlen=3)}
+218 Build city stuff: c_2, fuel 400.0, size 2, enough fuel False
+218 Looks like a stuck worker u_3 - deque([(14, 13), (14, 13), (14, 13)], maxlen=3)
+219 Worker Positions {'u_2': deque([(18, 12), (18, 12), (17, 12)], maxlen=3), 'u_4': deque([(21, 21), (21, 21), (21, 22)], maxlen=3)}
+219 Worker Positions {'u_1': deque([(13, 11), (13, 11), (13, 11)], maxlen=3), 'u_3': deque([(14, 13), (14, 13), (14, 12)], maxlen=3)}
+219 Looks like a stuck worker u_1 - deque([(13, 11), (13, 11), (13, 11)], maxlen=3)
+220 Worker Positions {'u_1': deque([(13, 11), (13, 11), (13, 12)], maxlen=3), 'u_3': deque([(14, 13), (14, 12), (14, 12)], maxlen=3)}
+220 Worker Positions {'u_2': deque([(18, 12), (17, 12), (17, 12)], maxlen=3), 'u_4': deque([(21, 21), (21, 22), (21, 22)], maxlen=3)}
+220 Build city stuff: c_2, fuel 400.0, size 2, enough fuel False
+220: Doing research! 
+221 Worker Positions {'u_2': deque([(17, 12), (17, 12), (16, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 23)], maxlen=3)}
+221 Worker Positions {'u_1': deque([(13, 11), (13, 12), (13, 12)], maxlen=3), 'u_3': deque([(14, 12), (14, 12), (14, 12)], maxlen=3)}
+221 Looks like a stuck worker u_3 - deque([(14, 12), (14, 12), (14, 12)], maxlen=3)
+222 Worker Positions {'u_1': deque([(13, 12), (13, 12), (13, 12)], maxlen=3), 'u_3': deque([(14, 12), (14, 12), (14, 13)], maxlen=3)}
+222 Worker Positions {'u_2': deque([(17, 12), (16, 12), (16, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 23), (21, 22)], maxlen=3)}
+222 Looks like a stuck worker u_1 - deque([(13, 12), (13, 12), (13, 12)], maxlen=3)
+223 Worker Positions {'u_1': deque([(13, 12), (13, 12), (12, 12)], maxlen=3), 'u_3': deque([(14, 12), (14, 13), (14, 13)], maxlen=3)}
+223 Worker Positions {'u_2': deque([(16, 12), (16, 12), (15, 12)], maxlen=3), 'u_4': deque([(21, 23), (21, 22), (21, 22)], maxlen=3)}
+223: Doing research! 
+224 Worker Positions {'u_2': deque([(16, 12), (15, 12), (15, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 21)], maxlen=3)}
+224 Worker Positions {'u_1': deque([(13, 12), (12, 12), (12, 12)], maxlen=3), 'u_3': deque([(14, 13), (14, 13), (14, 13)], maxlen=3)}
+224 Looks like a stuck worker u_3 - deque([(14, 13), (14, 13), (14, 13)], maxlen=3)
+225 Worker Positions {'u_1': deque([(12, 12), (12, 12), (12, 12)], maxlen=3), 'u_3': deque([(14, 13), (14, 13), (15, 13)], maxlen=3)}
+225 Worker Positions {'u_2': deque([(15, 12), (15, 12), (14, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 21), (21, 21)], maxlen=3)}
+225 Looks like a stuck worker u_1 - deque([(12, 12), (12, 12), (12, 12)], maxlen=3)
+225 Build city stuff: c_2, fuel 500.0, size 2, enough fuel False
+226 Worker Positions {'u_2': deque([(15, 12), (14, 12), (14, 12)], maxlen=3), 'u_4': deque([(21, 21), (21, 21), (21, 22)], maxlen=3)}
+226 Worker Positions {'u_1': deque([(12, 12), (12, 12), (12, 13)], maxlen=3), 'u_3': deque([(14, 13), (15, 13), (15, 13)], maxlen=3)}
+226 Build city stuff: c_2, fuel 500.0, size 2, enough fuel False
+227 Worker Positions {'u_2': deque([(14, 12), (14, 12), (15, 12)], maxlen=3), 'u_4': deque([(21, 21), (21, 22), (21, 22)], maxlen=3)}
+227 Worker Positions {'u_1': deque([(12, 12), (12, 13), (12, 13)], maxlen=3), 'u_3': deque([(15, 13), (15, 13), (15, 13)], maxlen=3)}
+227 Build city stuff: c_2, fuel 500.0, size 2, enough fuel False
+227 Looks like a stuck worker u_3 - deque([(15, 13), (15, 13), (15, 13)], maxlen=3)
+228 Worker Positions {'u_2': deque([(14, 12), (15, 12), (15, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 23)], maxlen=3)}
+228 Worker Positions {'u_1': deque([(12, 13), (12, 13), (12, 13)], maxlen=3), 'u_3': deque([(15, 13), (15, 13), (16, 13)], maxlen=3)}
+228 Build city stuff: c_2, fuel 600.0, size 2, enough fuel False
+228 Looks like a stuck worker u_1 - deque([(12, 13), (12, 13), (12, 13)], maxlen=3)
+229 Worker Positions {'u_1': deque([(12, 13), (12, 13), (12, 12)], maxlen=3), 'u_3': deque([(15, 13), (16, 13), (16, 13)], maxlen=3)}
+229 Worker Positions {'u_2': deque([(15, 12), (15, 12), (16, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 23), (21, 22)], maxlen=3)}
+230 Worker Positions {'u_1': deque([(12, 13), (12, 12), (12, 12)], maxlen=3), 'u_3': deque([(16, 13), (16, 13), (16, 13)], maxlen=3)}
+230 Worker Positions {'u_2': deque([(15, 12), (16, 12), (16, 12)], maxlen=3), 'u_4': deque([(21, 23), (21, 22), (21, 22)], maxlen=3)}
+230 Looks like a stuck worker u_3 - deque([(16, 13), (16, 13), (16, 13)], maxlen=3)
+230 Build city stuff: c_2, fuel 600.0, size 2, enough fuel False
+230: Doing research! 
+231 Worker Positions {'u_2': deque([(16, 12), (16, 12), (17, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 21)], maxlen=3)}
+231 Worker Positions {'u_1': deque([(12, 12), (12, 12), (12, 12)], maxlen=3), 'u_3': deque([(16, 13), (16, 13), (16, 12)], maxlen=3)}
+231 Looks like a stuck worker u_1 - deque([(12, 12), (12, 12), (12, 12)], maxlen=3)
+232 Worker Positions {'u_1': deque([(12, 12), (12, 12), (12, 13)], maxlen=3), 'u_3': deque([(16, 13), (16, 12), (16, 12)], maxlen=3)}
+232 Worker Positions {'u_2': deque([(16, 12), (17, 12), (17, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 21), (21, 21)], maxlen=3)}
+233 Worker Positions {'u_2': deque([(17, 12), (17, 12), (17, 12)], maxlen=3), 'u_4': deque([(21, 21), (21, 21), (21, 21)], maxlen=3)}
+233 Worker Positions {'u_1': deque([(12, 12), (12, 13), (12, 13)], maxlen=3), 'u_3': deque([(16, 12), (16, 12), (16, 12)], maxlen=3)}
+233: Doing research! 
+234 Worker Positions {'u_2': deque([(17, 12), (17, 12), (17, 12)], maxlen=3), 'u_4': deque([(21, 21), (21, 21), (21, 21)], maxlen=3)}
+234 Worker Positions {'u_1': deque([(12, 13), (12, 13), (12, 13)], maxlen=3), 'u_3': deque([(16, 12), (16, 12), (16, 12)], maxlen=3)}
+234 Looks like a stuck worker u_2 - deque([(17, 12), (17, 12), (17, 12)], maxlen=3)
+234 Looks like a stuck worker u_4 - deque([(21, 21), (21, 21), (21, 21)], maxlen=3)
+234 Looks like a stuck worker u_3 - deque([(16, 12), (16, 12), (16, 12)], maxlen=3)
+235 Worker Positions {'u_1': deque([(12, 13), (12, 13), (12, 13)], maxlen=3), 'u_3': deque([(16, 12), (16, 12), (16, 11)], maxlen=3)}
+235 Worker Positions {'u_2': deque([(17, 12), (17, 12), (17, 11)], maxlen=3), 'u_4': deque([(21, 21), (21, 21), (22, 21)], maxlen=3)}
+235 Looks like a stuck worker u_1 - deque([(12, 13), (12, 13), (12, 13)], maxlen=3)
+236 Worker Positions {'u_2': deque([(17, 12), (17, 11), (17, 11)], maxlen=3), 'u_4': deque([(21, 21), (22, 21), (22, 21)], maxlen=3)}
+236 Worker Positions {'u_1': deque([(12, 13), (12, 13), (13, 13)], maxlen=3), 'u_3': deque([(16, 12), (16, 11), (16, 11)], maxlen=3)}
+237 Worker Positions {'u_1': deque([(12, 13), (13, 13), (13, 13)], maxlen=3), 'u_3': deque([(16, 11), (16, 11), (16, 11)], maxlen=3)}
+237 Worker Positions {'u_2': deque([(17, 11), (17, 11), (17, 11)], maxlen=3), 'u_4': deque([(22, 21), (22, 21), (22, 21)], maxlen=3)}
+238 Worker Positions {'u_1': deque([(13, 13), (13, 13), (13, 13)], maxlen=3), 'u_3': deque([(16, 11), (16, 11), (16, 11)], maxlen=3)}
+238 Worker Positions {'u_2': deque([(17, 11), (17, 11), (17, 11)], maxlen=3), 'u_4': deque([(22, 21), (22, 21), (22, 21)], maxlen=3)}
+238 Looks like a stuck worker u_3 - deque([(16, 11), (16, 11), (16, 11)], maxlen=3)
+238 Looks like a stuck worker u_2 - deque([(17, 11), (17, 11), (17, 11)], maxlen=3)
+238 Looks like a stuck worker u_4 - deque([(22, 21), (22, 21), (22, 21)], maxlen=3)
+239 Worker Positions {'u_2': deque([(17, 11), (17, 11), (17, 12)], maxlen=3), 'u_4': deque([(22, 21), (22, 21), (22, 22)], maxlen=3)}
+239 Worker Positions {'u_1': deque([(13, 13), (13, 13), (13, 13)], maxlen=3), 'u_3': deque([(16, 11), (16, 11), (16, 12)], maxlen=3)}
+239 Looks like a stuck worker u_1 - deque([(13, 13), (13, 13), (13, 13)], maxlen=3)
+240 Worker Positions {'u_2': deque([(17, 11), (17, 12), (17, 12)], maxlen=3), 'u_4': deque([(22, 21), (22, 22), (22, 22)], maxlen=3)}
+240 Worker Positions {'u_1': deque([(13, 13), (13, 13), (12, 13)], maxlen=3), 'u_3': deque([(16, 11), (16, 12), (16, 12)], maxlen=3)}
+240: Doing research! 
+241 Worker Positions {'u_2': deque([(17, 12), (17, 12), (17, 12)], maxlen=3), 'u_4': deque([(22, 22), (22, 22), (22, 22)], maxlen=3)}
+241 Worker Positions {'u_1': deque([(13, 13), (12, 13), (12, 13)], maxlen=3), 'u_3': deque([(16, 12), (16, 12), (16, 12)], maxlen=3)}
+242 Worker Positions {'u_2': deque([(17, 12), (17, 12), (17, 12)], maxlen=3), 'u_4': deque([(22, 22), (22, 22), (22, 22)], maxlen=3)}
+242 Looks like a stuck worker u_2 - deque([(17, 12), (17, 12), (17, 12)], maxlen=3)
+242 Looks like a stuck worker u_4 - deque([(22, 22), (22, 22), (22, 22)], maxlen=3)
+242 Worker Positions {'u_1': deque([(12, 13), (12, 13), (12, 13)], maxlen=3), 'u_3': deque([(16, 12), (16, 12), (16, 12)], maxlen=3)}
+242 Looks like a stuck worker u_3 - deque([(16, 12), (16, 12), (16, 12)], maxlen=3)
+243 Worker Positions {'u_1': deque([(12, 13), (12, 13), (12, 13)], maxlen=3), 'u_3': deque([(16, 12), (16, 12), (16, 13)], maxlen=3)}
+243 Worker Positions {'u_2': deque([(17, 12), (17, 12), (17, 11)], maxlen=3), 'u_4': deque([(22, 22), (22, 22), (21, 22)], maxlen=3)}
+243 Looks like a stuck worker u_1 - deque([(12, 13), (12, 13), (12, 13)], maxlen=3)
+243: Doing research! 
+244 Worker Positions {'u_2': deque([(17, 12), (17, 11), (17, 11)], maxlen=3), 'u_4': deque([(22, 22), (21, 22), (21, 22)], maxlen=3)}
+244 Worker Positions {'u_1': deque([(12, 13), (12, 13), (11, 13)], maxlen=3), 'u_3': deque([(16, 12), (16, 13), (16, 13)], maxlen=3)}
+244 Build city stuff: c_2, fuel 240.0, size 2, enough fuel False
+245 Worker Positions {'u_1': deque([(12, 13), (11, 13), (11, 13)], maxlen=3), 'u_3': deque([(16, 13), (16, 13), (16, 12)], maxlen=3)}
+245 Worker Positions {'u_2': deque([(17, 11), (17, 11), (17, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 23)], maxlen=3)}
+246 Worker Positions {'u_2': deque([(17, 11), (17, 12), (17, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 23), (21, 22)], maxlen=3)}
+246 Worker Positions {'u_1': deque([(11, 13), (11, 13), (11, 13)], maxlen=3), 'u_3': deque([(16, 13), (16, 12), (16, 12)], maxlen=3)}
+246 Looks like a stuck worker u_1 - deque([(11, 13), (11, 13), (11, 13)], maxlen=3)
+247 Worker Positions {'u_2': deque([(17, 12), (17, 12), (16, 12)], maxlen=3), 'u_4': deque([(21, 23), (21, 22), (21, 22)], maxlen=3)}
+247 Worker Positions {'u_1': deque([(11, 13), (11, 13), (11, 12)], maxlen=3), 'u_3': deque([(16, 12), (16, 12), (15, 12)], maxlen=3)}
+248 Worker Positions {'u_1': deque([(11, 13), (11, 12), (11, 12)], maxlen=3), 'u_3': deque([(16, 12), (15, 12), (15, 12)], maxlen=3)}
+248 Worker Positions {'u_2': deque([(17, 12), (16, 12), (16, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 21)], maxlen=3)}
+249 Worker Positions {'u_1': deque([(11, 12), (11, 12), (11, 12)], maxlen=3), 'u_3': deque([(15, 12), (15, 12), (14, 12)], maxlen=3)}
+249 Worker Positions {'u_2': deque([(16, 12), (16, 12), (15, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 21), (21, 21)], maxlen=3)}
+249 Looks like a stuck worker u_1 - deque([(11, 12), (11, 12), (11, 12)], maxlen=3)
+249 Build city stuff: c_2, fuel 340.0, size 2, enough fuel False
+250 Worker Positions {'u_2': deque([(16, 12), (15, 12), (15, 12)], maxlen=3), 'u_4': deque([(21, 21), (21, 21), (21, 22)], maxlen=3)}
+250 Worker Positions {'u_1': deque([(11, 12), (11, 12), (11, 11)], maxlen=3), 'u_3': deque([(15, 12), (14, 12), (14, 12)], maxlen=3)}
+250: Doing research! 
+251 Worker Positions {'u_1': deque([(11, 12), (11, 11), (11, 11)], maxlen=3), 'u_3': deque([(14, 12), (14, 12), (14, 12)], maxlen=3)}
+251 Worker Positions {'u_2': deque([(15, 12), (15, 12), (15, 12)], maxlen=3), 'u_4': deque([(21, 21), (21, 22), (21, 22)], maxlen=3)}
+251 Looks like a stuck worker u_3 - deque([(14, 12), (14, 12), (14, 12)], maxlen=3)
+251 Looks like a stuck worker u_2 - deque([(15, 12), (15, 12), (15, 12)], maxlen=3)
+251 Build city stuff: c_2, fuel 340.0, size 2, enough fuel False
+252 Worker Positions {'u_1': deque([(11, 11), (11, 11), (11, 11)], maxlen=3), 'u_3': deque([(14, 12), (14, 12), (14, 11)], maxlen=3)}
+252 Worker Positions {'u_2': deque([(15, 12), (15, 12), (14, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 23)], maxlen=3)}
+252 Looks like a stuck worker u_1 - deque([(11, 11), (11, 11), (11, 11)], maxlen=3)
+253 Worker Positions {'u_2': deque([(15, 12), (14, 12), (14, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 23), (21, 22)], maxlen=3)}
+253 Worker Positions {'u_1': deque([(11, 11), (11, 11), (12, 11)], maxlen=3), 'u_3': deque([(14, 12), (14, 11), (14, 11)], maxlen=3)}
+253 Build city stuff: c_2, fuel 440.0, size 2, enough fuel False
+253: Doing research! 
+254 Worker Positions {'u_2': deque([(14, 12), (14, 12), (15, 12)], maxlen=3), 'u_4': deque([(21, 23), (21, 22), (21, 22)], maxlen=3)}
+254 Worker Positions {'u_1': deque([(11, 11), (12, 11), (12, 11)], maxlen=3), 'u_3': deque([(14, 11), (14, 11), (14, 11)], maxlen=3)}
+254 Looks like a stuck worker u_3 - deque([(14, 11), (14, 11), (14, 11)], maxlen=3)
+255 Worker Positions {'u_1': deque([(12, 11), (12, 11), (12, 11)], maxlen=3), 'u_3': deque([(14, 11), (14, 11), (15, 11)], maxlen=3)}
+255 Worker Positions {'u_2': deque([(14, 12), (15, 12), (15, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 21)], maxlen=3)}
+255 Looks like a stuck worker u_1 - deque([(12, 11), (12, 11), (12, 11)], maxlen=3)
+255 Build city stuff: c_2, fuel 440.0, size 2, enough fuel False
+256 Worker Positions {'u_1': deque([(12, 11), (12, 11), (13, 11)], maxlen=3), 'u_3': deque([(14, 11), (15, 11), (15, 11)], maxlen=3)}
+256 Worker Positions {'u_2': deque([(15, 12), (15, 12), (16, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 21), (21, 21)], maxlen=3)}
+256 Build city stuff: c_2, fuel 440.0, size 2, enough fuel False
+257 Worker Positions {'u_2': deque([(15, 12), (16, 12), (16, 12)], maxlen=3), 'u_4': deque([(21, 21), (21, 21), (21, 22)], maxlen=3)}
+257 Worker Positions {'u_1': deque([(12, 11), (13, 11), (13, 11)], maxlen=3), 'u_3': deque([(15, 11), (15, 11), (15, 11)], maxlen=3)}
+257 Build city stuff: c_2, fuel 440.0, size 2, enough fuel False
+257 Looks like a stuck worker u_3 - deque([(15, 11), (15, 11), (15, 11)], maxlen=3)
+258 Worker Positions {'u_1': deque([(13, 11), (13, 11), (13, 11)], maxlen=3), 'u_3': deque([(15, 11), (15, 11), (14, 11)], maxlen=3)}
+258 Worker Positions {'u_2': deque([(16, 12), (16, 12), (17, 12)], maxlen=3), 'u_4': deque([(21, 21), (21, 22), (21, 22)], maxlen=3)}
+258 Looks like a stuck worker u_1 - deque([(13, 11), (13, 11), (13, 11)], maxlen=3)
+258 Build city stuff: c_2, fuel 440.0, size 2, enough fuel False
+259 Worker Positions {'u_1': deque([(13, 11), (13, 11), (12, 11)], maxlen=3), 'u_3': deque([(15, 11), (14, 11), (14, 11)], maxlen=3)}
+259 Worker Positions {'u_2': deque([(16, 12), (17, 12), (17, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 23)], maxlen=3)}
+259 Build city stuff: c_2, fuel 540.0, size 2, enough fuel False
+260 Worker Positions {'u_1': deque([(13, 11), (12, 11), (12, 11)], maxlen=3), 'u_3': deque([(14, 11), (14, 11), (14, 11)], maxlen=3)}
+260 Worker Positions {'u_2': deque([(17, 12), (17, 12), (18, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 23), (21, 22)], maxlen=3)}
+260 Looks like a stuck worker u_3 - deque([(14, 11), (14, 11), (14, 11)], maxlen=3)
+260: Doing research! 
+261 Worker Positions {'u_1': deque([(12, 11), (12, 11), (12, 11)], maxlen=3), 'u_3': deque([(14, 11), (14, 11), (14, 10)], maxlen=3)}
+261 Looks like a stuck worker u_1 - deque([(12, 11), (12, 11), (12, 11)], maxlen=3)
+261 Worker Positions {'u_2': deque([(17, 12), (18, 12), (18, 12)], maxlen=3), 'u_4': deque([(21, 23), (21, 22), (21, 22)], maxlen=3)}
+261 Build city stuff: c_2, fuel 540.0, size 2, enough fuel False
+262 Worker Positions {'u_1': deque([(12, 11), (12, 11), (13, 11)], maxlen=3), 'u_3': deque([(14, 11), (14, 10), (14, 10)], maxlen=3)}
+262 Worker Positions {'u_2': deque([(18, 12), (18, 12), (19, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 21)], maxlen=3)}
+263 Worker Positions {'u_2': deque([(18, 12), (19, 12), (19, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 21), (21, 21)], maxlen=3)}
+263 Worker Positions {'u_1': deque([(12, 11), (13, 11), (13, 11)], maxlen=3), 'u_3': deque([(14, 10), (14, 10), (14, 10)], maxlen=3)}
+263 Build city stuff: c_2, fuel 540.0, size 2, enough fuel False
+263 Looks like a stuck worker u_3 - deque([(14, 10), (14, 10), (14, 10)], maxlen=3)
+263 Build city stuff: c_2, fuel 540.0, size 2, enough fuel False
+263: Doing research! 
+264 Worker Positions {'u_1': deque([(13, 11), (13, 11), (13, 11)], maxlen=3), 'u_3': deque([(14, 10), (14, 10), (14, 9)], maxlen=3)}
+264 Worker Positions {'u_2': deque([(19, 12), (19, 12), (20, 12)], maxlen=3), 'u_4': deque([(21, 21), (21, 21), (21, 22)], maxlen=3)}
+264 Looks like a stuck worker u_1 - deque([(13, 11), (13, 11), (13, 11)], maxlen=3)
+265 Worker Positions {'u_1': deque([(13, 11), (13, 11), (13, 12)], maxlen=3), 'u_3': deque([(14, 10), (14, 9), (14, 9)], maxlen=3)}
+265 Worker Positions {'u_2': deque([(19, 12), (20, 12), (20, 12)], maxlen=3), 'u_4': deque([(21, 21), (21, 22), (21, 22)], maxlen=3)}
+265 Build city stuff: c_2, fuel 540.0, size 2, enough fuel False
+265 Build city stuff: c_2, fuel 540.0, size 2, enough fuel False
+266 Worker Positions {'u_1': deque([(13, 11), (13, 12), (13, 12)], maxlen=3), 'u_3': deque([(14, 9), (14, 9), (14, 9)], maxlen=3)}
+266 Worker Positions {'u_2': deque([(20, 12), (20, 12), (21, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 23)], maxlen=3)}
+266 Looks like a stuck worker u_3 - deque([(14, 9), (14, 9), (14, 9)], maxlen=3)
+267 Worker Positions {'u_1': deque([(13, 12), (13, 12), (13, 12)], maxlen=3), 'u_3': deque([(14, 9), (14, 9), (13, 9)], maxlen=3)}
+267 Worker Positions {'u_2': deque([(20, 12), (21, 12), (21, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 23), (21, 22)], maxlen=3)}
+267 Looks like a stuck worker u_1 - deque([(13, 12), (13, 12), (13, 12)], maxlen=3)
+267 Build city stuff: c_2, fuel 640.0, size 2, enough fuel True
+267 We want to build a city!
+267: Found build location:(20, 23)
+267: Navigating to where we wish to build!
+268 Worker Positions {'u_2': deque([(21, 12), (21, 12), (21, 13)], maxlen=3), 'u_4': deque([(21, 23), (21, 22), (21, 22)], maxlen=3)}
+268 Worker Positions {'u_1': deque([(13, 12), (13, 12), (13, 13)], maxlen=3), 'u_3': deque([(14, 9), (13, 9), (13, 9)], maxlen=3)}
+269 Worker Positions {'u_1': deque([(13, 12), (13, 13), (13, 13)], maxlen=3), 'u_3': deque([(13, 9), (13, 9), (13, 9)], maxlen=3)}
+269 Worker Positions {'u_2': deque([(21, 12), (21, 13), (21, 13)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 21)], maxlen=3)}
+269 Looks like a stuck worker u_3 - deque([(13, 9), (13, 9), (13, 9)], maxlen=3)
+269 Build city stuff: c_2, fuel 640.0, size 2, enough fuel True
+269 We want to build a city!
+269: Navigating to where we wish to build!
+270 Worker Positions {'u_1': deque([(13, 13), (13, 13), (13, 13)], maxlen=3), 'u_3': deque([(13, 9), (13, 9), (13, 8)], maxlen=3)}
+270 Looks like a stuck worker u_1 - deque([(13, 13), (13, 13), (13, 13)], maxlen=3)
+270 Worker Positions {'u_2': deque([(21, 13), (21, 13), (21, 14)], maxlen=3), 'u_4': deque([(21, 22), (21, 21), (21, 21)], maxlen=3)}
+270 Build city stuff: c_2, fuel 640.0, size 2, enough fuel True
+270 We want to build a city!
+270: Navigating to where we wish to build!
+270: Doing research! 
+271 Worker Positions {'u_2': deque([(21, 13), (21, 14), (21, 14)], maxlen=3), 'u_4': deque([(21, 21), (21, 21), (21, 22)], maxlen=3)}
+271 Worker Positions {'u_1': deque([(13, 13), (13, 13), (13, 14)], maxlen=3), 'u_3': deque([(13, 9), (13, 8), (13, 8)], maxlen=3)}
+272 Worker Positions {'u_1': deque([(13, 13), (13, 14), (13, 14)], maxlen=3), 'u_3': deque([(13, 8), (13, 8), (13, 9)], maxlen=3)}
+272 Worker Positions {'u_2': deque([(21, 14), (21, 14), (21, 13)], maxlen=3), 'u_4': deque([(21, 21), (21, 22), (21, 22)], maxlen=3)}
+273 Worker Positions {'u_1': deque([(13, 14), (13, 14), (13, 14)], maxlen=3), 'u_3': deque([(13, 8), (13, 9), (13, 9)], maxlen=3)}
+273 Worker Positions {'u_2': deque([(21, 14), (21, 13), (21, 13)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 22)], maxlen=3)}
+273: Doing research! 
+274 Worker Positions {'u_1': deque([(13, 14), (13, 14), (13, 14)], maxlen=3), 'u_3': deque([(13, 9), (13, 9), (13, 9)], maxlen=3)}
+274 Worker Positions {'u_2': deque([(21, 13), (21, 13), (21, 13)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 22)], maxlen=3)}
+274 Looks like a stuck worker u_1 - deque([(13, 14), (13, 14), (13, 14)], maxlen=3)
+274 Looks like a stuck worker u_4 - deque([(21, 22), (21, 22), (21, 22)], maxlen=3)
+275 Worker Positions {'u_1': deque([(13, 14), (13, 14), (12, 14)], maxlen=3), 'u_3': deque([(13, 9), (13, 9), (13, 9)], maxlen=3)}
+275 Looks like a stuck worker u_3 - deque([(13, 9), (13, 9), (13, 9)], maxlen=3)
+275 Worker Positions {'u_2': deque([(21, 13), (21, 13), (21, 13)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (22, 22)], maxlen=3)}
+275 Looks like a stuck worker u_2 - deque([(21, 13), (21, 13), (21, 13)], maxlen=3)
+276 Worker Positions {'u_1': deque([(13, 14), (12, 14), (12, 14)], maxlen=3), 'u_3': deque([(13, 9), (13, 9), (14, 9)], maxlen=3)}
+276 Worker Positions {'u_2': deque([(21, 13), (21, 13), (21, 14)], maxlen=3), 'u_4': deque([(21, 22), (22, 22), (22, 22)], maxlen=3)}
+277 Worker Positions {'u_1': deque([(12, 14), (12, 14), (12, 14)], maxlen=3), 'u_3': deque([(13, 9), (14, 9), (14, 9)], maxlen=3)}
+277 Worker Positions {'u_2': deque([(21, 13), (21, 14), (21, 14)], maxlen=3), 'u_4': deque([(22, 22), (22, 22), (22, 22)], maxlen=3)}
+278 Worker Positions {'u_1': deque([(12, 14), (12, 14), (12, 14)], maxlen=3), 'u_3': deque([(14, 9), (14, 9), (14, 9)], maxlen=3)}
+278 Worker Positions {'u_2': deque([(21, 14), (21, 14), (21, 14)], maxlen=3), 'u_4': deque([(22, 22), (22, 22), (22, 22)], maxlen=3)}
+278 Looks like a stuck worker u_1 - deque([(12, 14), (12, 14), (12, 14)], maxlen=3)
+278 Looks like a stuck worker u_4 - deque([(22, 22), (22, 22), (22, 22)], maxlen=3)
+279 Worker Positions {'u_1': deque([(12, 14), (12, 14), (13, 14)], maxlen=3), 'u_3': deque([(14, 9), (14, 9), (14, 9)], maxlen=3)}
+279 Worker Positions {'u_2': deque([(21, 14), (21, 14), (21, 14)], maxlen=3), 'u_4': deque([(22, 22), (22, 22), (21, 22)], maxlen=3)}
+279 Looks like a stuck worker u_3 - deque([(14, 9), (14, 9), (14, 9)], maxlen=3)
+279 Looks like a stuck worker u_2 - deque([(21, 14), (21, 14), (21, 14)], maxlen=3)
+280 Worker Positions {'u_2': deque([(21, 14), (21, 14), (21, 15)], maxlen=3), 'u_4': deque([(22, 22), (21, 22), (21, 22)], maxlen=3)}
+280 Worker Positions {'u_1': deque([(12, 14), (13, 14), (13, 14)], maxlen=3), 'u_3': deque([(14, 9), (14, 9), (15, 9)], maxlen=3)}
+280: Doing research! 
+281 Worker Positions {'u_1': deque([(13, 14), (13, 14), (13, 14)], maxlen=3), 'u_3': deque([(14, 9), (15, 9), (15, 9)], maxlen=3)}
+281 Worker Positions {'u_2': deque([(21, 14), (21, 15), (21, 15)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 22)], maxlen=3)}
+282 Worker Positions {'u_2': deque([(21, 15), (21, 15), (21, 15)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 22)], maxlen=3)}
+282 Worker Positions {'u_1': deque([(13, 14), (13, 14), (13, 14)], maxlen=3), 'u_3': deque([(15, 9), (15, 9), (15, 9)], maxlen=3)}
+282 Looks like a stuck worker u_4 - deque([(21, 22), (21, 22), (21, 22)], maxlen=3)
+282 Looks like a stuck worker u_1 - deque([(13, 14), (13, 14), (13, 14)], maxlen=3)
+283 Worker Positions {'u_2': deque([(21, 15), (21, 15), (21, 15)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (20, 22)], maxlen=3)}
+283 Worker Positions {'u_1': deque([(13, 14), (13, 14), (13, 13)], maxlen=3), 'u_3': deque([(15, 9), (15, 9), (15, 9)], maxlen=3)}
+283 Looks like a stuck worker u_2 - deque([(21, 15), (21, 15), (21, 15)], maxlen=3)
+283 Looks like a stuck worker u_3 - deque([(15, 9), (15, 9), (15, 9)], maxlen=3)
+283: Doing research! 
+284 Worker Positions {'u_2': deque([(21, 15), (21, 15), (21, 16)], maxlen=3), 'u_4': deque([(21, 22), (20, 22), (20, 22)], maxlen=3)}
+284 Worker Positions {'u_1': deque([(13, 14), (13, 13), (13, 13)], maxlen=3), 'u_3': deque([(15, 9), (15, 9), (15, 8)], maxlen=3)}
+284 Build city stuff: c_2, fuel 280.0, size 2, enough fuel False
+285 Worker Positions {'u_1': deque([(13, 13), (13, 13), (13, 13)], maxlen=3), 'u_3': deque([(15, 9), (15, 8), (15, 8)], maxlen=3)}
+285 Worker Positions {'u_2': deque([(21, 15), (21, 16), (21, 16)], maxlen=3), 'u_4': deque([(20, 22), (20, 22), (21, 22)], maxlen=3)}
+285 Looks like a stuck worker u_1 - deque([(13, 13), (13, 13), (13, 13)], maxlen=3)
+286 Worker Positions {'u_2': deque([(21, 16), (21, 16), (21, 15)], maxlen=3), 'u_4': deque([(20, 22), (21, 22), (21, 22)], maxlen=3)}
+286 Build city stuff: c_2, fuel 280.0, size 2, enough fuel False
+286 Worker Positions {'u_1': deque([(13, 13), (13, 13), (13, 12)], maxlen=3), 'u_3': deque([(15, 8), (15, 8), (15, 9)], maxlen=3)}
+287 Worker Positions {'u_1': deque([(13, 13), (13, 12), (13, 12)], maxlen=3), 'u_3': deque([(15, 8), (15, 9), (15, 9)], maxlen=3)}
+287 Worker Positions {'u_2': deque([(21, 16), (21, 15), (21, 15)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 23)], maxlen=3)}
+288 Worker Positions {'u_2': deque([(21, 15), (21, 15), (21, 14)], maxlen=3), 'u_4': deque([(21, 22), (21, 23), (21, 22)], maxlen=3)}
+288 Worker Positions {'u_1': deque([(13, 12), (13, 12), (13, 12)], maxlen=3), 'u_3': deque([(15, 9), (15, 9), (15, 10)], maxlen=3)}
+288 Looks like a stuck worker u_1 - deque([(13, 12), (13, 12), (13, 12)], maxlen=3)
+289 Worker Positions {'u_1': deque([(13, 12), (13, 12), (12, 12)], maxlen=3), 'u_3': deque([(15, 9), (15, 10), (15, 10)], maxlen=3)}
+289 Worker Positions {'u_2': deque([(21, 15), (21, 14), (21, 14)], maxlen=3), 'u_4': deque([(21, 23), (21, 22), (21, 22)], maxlen=3)}
+290 Worker Positions {'u_2': deque([(21, 14), (21, 14), (21, 13)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 21)], maxlen=3)}
+290 Worker Positions {'u_1': deque([(13, 12), (12, 12), (12, 12)], maxlen=3), 'u_3': deque([(15, 10), (15, 10), (15, 11)], maxlen=3)}
+290: Doing research! 
+291 Worker Positions {'u_2': deque([(21, 14), (21, 13), (21, 13)], maxlen=3), 'u_4': deque([(21, 22), (21, 21), (21, 21)], maxlen=3)}
+291 Worker Positions {'u_1': deque([(12, 12), (12, 12), (12, 12)], maxlen=3), 'u_3': deque([(15, 10), (15, 11), (15, 11)], maxlen=3)}
+291 Looks like a stuck worker u_1 - deque([(12, 12), (12, 12), (12, 12)], maxlen=3)
+291 Build city stuff: c_2, fuel 380.0, size 2, enough fuel False
+292 Worker Positions {'u_2': deque([(21, 13), (21, 13), (21, 12)], maxlen=3), 'u_4': deque([(21, 21), (21, 21), (21, 22)], maxlen=3)}
+292 Worker Positions {'u_1': deque([(12, 12), (12, 12), (12, 11)], maxlen=3), 'u_3': deque([(15, 11), (15, 11), (15, 12)], maxlen=3)}
+293 Worker Positions {'u_1': deque([(12, 12), (12, 11), (12, 11)], maxlen=3), 'u_3': deque([(15, 11), (15, 12), (15, 12)], maxlen=3)}
+293 Worker Positions {'u_2': deque([(21, 13), (21, 12), (21, 12)], maxlen=3), 'u_4': deque([(21, 21), (21, 22), (21, 22)], maxlen=3)}
+293 Build city stuff: c_2, fuel 380.0, size 2, enough fuel False
+293: Doing research! 
+294 Worker Positions {'u_2': deque([(21, 12), (21, 12), (20, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 23)], maxlen=3)}
+294 Worker Positions {'u_1': deque([(12, 11), (12, 11), (12, 11)], maxlen=3), 'u_3': deque([(15, 12), (15, 12), (14, 12)], maxlen=3)}
+294 Looks like a stuck worker u_1 - deque([(12, 11), (12, 11), (12, 11)], maxlen=3)
+295 Worker Positions {'u_1': deque([(12, 11), (12, 11), (13, 11)], maxlen=3), 'u_3': deque([(15, 12), (14, 12), (14, 12)], maxlen=3)}
+295 Worker Positions {'u_2': deque([(21, 12), (20, 12), (20, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 23), (21, 22)], maxlen=3)}
+296 Worker Positions {'u_2': deque([(20, 12), (20, 12), (19, 12)], maxlen=3), 'u_4': deque([(21, 23), (21, 22), (21, 22)], maxlen=3)}
+296 Worker Positions {'u_1': deque([(12, 11), (13, 11), (13, 11)], maxlen=3), 'u_3': deque([(14, 12), (14, 12), (14, 12)], maxlen=3)}
+296 Looks like a stuck worker u_3 - deque([(14, 12), (14, 12), (14, 12)], maxlen=3)
+297 Worker Positions {'u_2': deque([(20, 12), (19, 12), (19, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 21)], maxlen=3)}
+297 Worker Positions {'u_1': deque([(13, 11), (13, 11), (13, 11)], maxlen=3), 'u_3': deque([(14, 12), (14, 12), (14, 11)], maxlen=3)}
+297 Looks like a stuck worker u_1 - deque([(13, 11), (13, 11), (13, 11)], maxlen=3)
+298 Worker Positions {'u_2': deque([(19, 12), (19, 12), (18, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 21), (21, 21)], maxlen=3)}
+298 Worker Positions {'u_1': deque([(13, 11), (13, 11), (12, 11)], maxlen=3), 'u_3': deque([(14, 12), (14, 11), (14, 11)], maxlen=3)}
+298 Build city stuff: c_2, fuel 480.0, size 2, enough fuel False
+299 Worker Positions {'u_1': deque([(13, 11), (12, 11), (12, 11)], maxlen=3), 'u_3': deque([(14, 11), (14, 11), (14, 11)], maxlen=3)}
+299 Worker Positions {'u_2': deque([(19, 12), (18, 12), (18, 12)], maxlen=3), 'u_4': deque([(21, 21), (21, 21), (21, 22)], maxlen=3)}
+299 Looks like a stuck worker u_3 - deque([(14, 11), (14, 11), (14, 11)], maxlen=3)
+300 Worker Positions {'u_2': deque([(18, 12), (18, 12), (17, 12)], maxlen=3), 'u_4': deque([(21, 21), (21, 22), (21, 22)], maxlen=3)}
+300 Worker Positions {'u_1': deque([(12, 11), (12, 11), (12, 11)], maxlen=3), 'u_3': deque([(14, 11), (14, 11), (15, 11)], maxlen=3)}
+300 Build city stuff: c_2, fuel 480.0, size 2, enough fuel False
+300 Looks like a stuck worker u_1 - deque([(12, 11), (12, 11), (12, 11)], maxlen=3)
+300: Doing research! 
+301 Worker Positions {'u_1': deque([(12, 11), (12, 11), (12, 10)], maxlen=3), 'u_3': deque([(14, 11), (15, 11), (15, 11)], maxlen=3)}
+301 Worker Positions {'u_2': deque([(18, 12), (17, 12), (17, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 23)], maxlen=3)}
+302 Worker Positions {'u_2': deque([(17, 12), (17, 12), (16, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 23), (21, 22)], maxlen=3)}
+302 Worker Positions {'u_1': deque([(12, 11), (12, 10), (12, 10)], maxlen=3), 'u_3': deque([(15, 11), (15, 11), (15, 11)], maxlen=3)}
+302 Looks like a stuck worker u_3 - deque([(15, 11), (15, 11), (15, 11)], maxlen=3)
+303 Worker Positions {'u_1': deque([(12, 10), (12, 10), (12, 10)], maxlen=3), 'u_3': deque([(15, 11), (15, 11), (16, 11)], maxlen=3)}
+303 Worker Positions {'u_2': deque([(17, 12), (16, 12), (16, 12)], maxlen=3), 'u_4': deque([(21, 23), (21, 22), (21, 22)], maxlen=3)}
+303 Looks like a stuck worker u_1 - deque([(12, 10), (12, 10), (12, 10)], maxlen=3)
+303: Doing research! 
+304 Worker Positions {'u_1': deque([(12, 10), (12, 10), (11, 10)], maxlen=3), 'u_3': deque([(15, 11), (16, 11), (16, 11)], maxlen=3)}
+304 Worker Positions {'u_2': deque([(16, 12), (16, 12), (15, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 21)], maxlen=3)}
+305 Worker Positions {'u_1': deque([(12, 10), (11, 10), (11, 10)], maxlen=3), 'u_3': deque([(16, 11), (16, 11), (16, 11)], maxlen=3)}
+305 Worker Positions {'u_2': deque([(16, 12), (15, 12), (15, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 21), (21, 21)], maxlen=3)}
+305 Looks like a stuck worker u_3 - deque([(16, 11), (16, 11), (16, 11)], maxlen=3)
+305 Build city stuff: c_2, fuel 580.0, size 2, enough fuel False
+306 Worker Positions {'u_2': deque([(15, 12), (15, 12), (14, 12)], maxlen=3), 'u_4': deque([(21, 21), (21, 21), (21, 22)], maxlen=3)}
+306 Worker Positions {'u_1': deque([(11, 10), (11, 10), (11, 10)], maxlen=3), 'u_3': deque([(16, 11), (16, 11), (16, 10)], maxlen=3)}
+306 Looks like a stuck worker u_1 - deque([(11, 10), (11, 10), (11, 10)], maxlen=3)
+307 Worker Positions {'u_1': deque([(11, 10), (11, 10), (11, 11)], maxlen=3), 'u_3': deque([(16, 11), (16, 10), (16, 10)], maxlen=3)}
+307 Worker Positions {'u_2': deque([(15, 12), (14, 12), (14, 12)], maxlen=3), 'u_4': deque([(21, 21), (21, 22), (21, 22)], maxlen=3)}
+307 Build city stuff: c_2, fuel 580.0, size 2, enough fuel False
+307 Build city stuff: c_2, fuel 580.0, size 2, enough fuel False
+308 Worker Positions {'u_1': deque([(11, 10), (11, 11), (11, 11)], maxlen=3), 'u_3': deque([(16, 10), (16, 10), (16, 10)], maxlen=3)}
+308 Worker Positions {'u_2': deque([(14, 12), (14, 12), (15, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 23)], maxlen=3)}
+308 Looks like a stuck worker u_3 - deque([(16, 10), (16, 10), (16, 10)], maxlen=3)
+309 Worker Positions {'u_1': deque([(11, 11), (11, 11), (11, 11)], maxlen=3), 'u_3': deque([(16, 10), (16, 10), (15, 10)], maxlen=3)}
+309 Worker Positions {'u_2': deque([(14, 12), (15, 12), (15, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 23), (21, 22)], maxlen=3)}
+309 Looks like a stuck worker u_1 - deque([(11, 11), (11, 11), (11, 11)], maxlen=3)
+309 Build city stuff: c_2, fuel 680.0, size 2, enough fuel True
+309 We want to build a city!
+309: Navigating to where we wish to build!
+310 Worker Positions {'u_2': deque([(15, 12), (15, 12), (15, 13)], maxlen=3), 'u_4': deque([(21, 23), (21, 22), (21, 22)], maxlen=3)}
+310 Worker Positions {'u_1': deque([(11, 11), (11, 11), (10, 11)], maxlen=3), 'u_3': deque([(16, 10), (15, 10), (15, 10)], maxlen=3)}
+310: Doing research! 
+311 Worker Positions {'u_2': deque([(15, 12), (15, 13), (15, 13)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 21)], maxlen=3)}
+311 Worker Positions {'u_1': deque([(11, 11), (10, 11), (10, 11)], maxlen=3), 'u_3': deque([(15, 10), (15, 10), (15, 10)], maxlen=3)}
+311 Looks like a stuck worker u_3 - deque([(15, 10), (15, 10), (15, 10)], maxlen=3)
+312 Worker Positions {'u_1': deque([(10, 11), (10, 11), (11, 11)], maxlen=3), 'u_3': deque([(15, 10), (15, 10), (15, 11)], maxlen=3)}
+312 Worker Positions {'u_2': deque([(15, 13), (15, 13), (15, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 21), (21, 21)], maxlen=3)}
+313 Worker Positions {'u_2': deque([(15, 13), (15, 12), (15, 12)], maxlen=3), 'u_4': deque([(21, 21), (21, 21), (21, 21)], maxlen=3)}
+313 Worker Positions {'u_1': deque([(10, 11), (11, 11), (11, 11)], maxlen=3), 'u_3': deque([(15, 10), (15, 11), (15, 11)], maxlen=3)}
+313: Doing research! 
+314 Worker Positions {'u_1': deque([(11, 11), (11, 11), (11, 11)], maxlen=3), 'u_3': deque([(15, 11), (15, 11), (15, 11)], maxlen=3)}
+314 Worker Positions {'u_2': deque([(15, 12), (15, 12), (15, 12)], maxlen=3), 'u_4': deque([(21, 21), (21, 21), (21, 21)], maxlen=3)}
+314 Looks like a stuck worker u_4 - deque([(21, 21), (21, 21), (21, 21)], maxlen=3)
+315 Worker Positions {'u_1': deque([(11, 11), (11, 11), (11, 11)], maxlen=3), 'u_3': deque([(15, 11), (15, 11), (15, 11)], maxlen=3)}
+315 Worker Positions {'u_2': deque([(15, 12), (15, 12), (15, 12)], maxlen=3), 'u_4': deque([(21, 21), (21, 21), (22, 21)], maxlen=3)}
+315 Looks like a stuck worker u_1 - deque([(11, 11), (11, 11), (11, 11)], maxlen=3)
+315 Looks like a stuck worker u_3 - deque([(15, 11), (15, 11), (15, 11)], maxlen=3)
+315 Looks like a stuck worker u_2 - deque([(15, 12), (15, 12), (15, 12)], maxlen=3)
+316 Worker Positions {'u_2': deque([(15, 12), (15, 12), (15, 11)], maxlen=3), 'u_4': deque([(21, 21), (22, 21), (22, 21)], maxlen=3)}
+316 Worker Positions {'u_1': deque([(11, 11), (11, 11), (11, 12)], maxlen=3), 'u_3': deque([(15, 11), (15, 11), (16, 11)], maxlen=3)}
+317 Worker Positions {'u_1': deque([(11, 11), (11, 12), (11, 12)], maxlen=3), 'u_3': deque([(15, 11), (16, 11), (16, 11)], maxlen=3)}
+317 Worker Positions {'u_2': deque([(15, 12), (15, 11), (15, 11)], maxlen=3), 'u_4': deque([(22, 21), (22, 21), (22, 21)], maxlen=3)}
+318 Worker Positions {'u_1': deque([(11, 12), (11, 12), (11, 12)], maxlen=3), 'u_3': deque([(16, 11), (16, 11), (16, 11)], maxlen=3)}
+318 Worker Positions {'u_2': deque([(15, 11), (15, 11), (15, 11)], maxlen=3), 'u_4': deque([(22, 21), (22, 21), (22, 21)], maxlen=3)}
+318 Looks like a stuck worker u_4 - deque([(22, 21), (22, 21), (22, 21)], maxlen=3)
+319 Worker Positions {'u_1': deque([(11, 12), (11, 12), (11, 12)], maxlen=3), 'u_3': deque([(16, 11), (16, 11), (16, 11)], maxlen=3)}
+319 Worker Positions {'u_2': deque([(15, 11), (15, 11), (15, 11)], maxlen=3), 'u_4': deque([(22, 21), (22, 21), (21, 21)], maxlen=3)}
+319 Looks like a stuck worker u_1 - deque([(11, 12), (11, 12), (11, 12)], maxlen=3)
+319 Looks like a stuck worker u_3 - deque([(16, 11), (16, 11), (16, 11)], maxlen=3)
+319 Looks like a stuck worker u_2 - deque([(15, 11), (15, 11), (15, 11)], maxlen=3)
+320 Worker Positions {'u_2': deque([(15, 11), (15, 11), (16, 11)], maxlen=3), 'u_4': deque([(22, 21), (21, 21), (21, 21)], maxlen=3)}
+320 Worker Positions {'u_1': deque([(11, 12), (11, 12), (12, 12)], maxlen=3), 'u_3': deque([(16, 11), (16, 11), (16, 12)], maxlen=3)}
+320: Doing research! 
+321 Worker Positions {'u_2': deque([(15, 11), (16, 11), (16, 11)], maxlen=3), 'u_4': deque([(21, 21), (21, 21), (21, 21)], maxlen=3)}
+321 Worker Positions {'u_1': deque([(11, 12), (12, 12), (12, 12)], maxlen=3), 'u_3': deque([(16, 11), (16, 12), (16, 12)], maxlen=3)}
+322 Worker Positions {'u_2': deque([(16, 11), (16, 11), (16, 11)], maxlen=3), 'u_4': deque([(21, 21), (21, 21), (21, 21)], maxlen=3)}
+322 Worker Positions {'u_1': deque([(12, 12), (12, 12), (12, 12)], maxlen=3), 'u_3': deque([(16, 12), (16, 12), (16, 12)], maxlen=3)}
+322 Looks like a stuck worker u_4 - deque([(21, 21), (21, 21), (21, 21)], maxlen=3)
+323 Worker Positions {'u_1': deque([(12, 12), (12, 12), (12, 12)], maxlen=3), 'u_3': deque([(16, 12), (16, 12), (16, 12)], maxlen=3)}
+323 Worker Positions {'u_2': deque([(16, 11), (16, 11), (16, 11)], maxlen=3), 'u_4': deque([(21, 21), (21, 21), (21, 22)], maxlen=3)}
+323 Looks like a stuck worker u_2 - deque([(16, 11), (16, 11), (16, 11)], maxlen=3)
+323 Looks like a stuck worker u_1 - deque([(12, 12), (12, 12), (12, 12)], maxlen=3)
+323: Doing research! 
+323 Looks like a stuck worker u_3 - deque([(16, 12), (16, 12), (16, 12)], maxlen=3)
+324 Worker Positions {'u_2': deque([(16, 11), (16, 11), (16, 12)], maxlen=3), 'u_4': deque([(21, 21), (21, 22), (21, 22)], maxlen=3)}
+324 Worker Positions {'u_1': deque([(12, 12), (12, 12), (12, 13)], maxlen=3), 'u_3': deque([(16, 12), (16, 12), (16, 11)], maxlen=3)}
+324 Build city stuff: c_2, fuel 320.0, size 2, enough fuel False
+325 Worker Positions {'u_2': deque([(16, 11), (16, 12), (16, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 23)], maxlen=3)}
+325 Worker Positions {'u_1': deque([(12, 12), (12, 13), (12, 13)], maxlen=3), 'u_3': deque([(16, 12), (16, 11), (16, 11)], maxlen=3)}
+326 Worker Positions {'u_2': deque([(16, 12), (16, 12), (15, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 23), (21, 22)], maxlen=3)}
+326 Worker Positions {'u_1': deque([(12, 13), (12, 13), (12, 13)], maxlen=3), 'u_3': deque([(16, 11), (16, 11), (16, 12)], maxlen=3)}
+326 Looks like a stuck worker u_1 - deque([(12, 13), (12, 13), (12, 13)], maxlen=3)
+327 Worker Positions {'u_2': deque([(16, 12), (15, 12), (15, 12)], maxlen=3), 'u_4': deque([(21, 23), (21, 22), (21, 22)], maxlen=3)}
+327 Worker Positions {'u_1': deque([(12, 13), (12, 13), (12, 14)], maxlen=3), 'u_3': deque([(16, 11), (16, 12), (16, 12)], maxlen=3)}
+328 Worker Positions {'u_1': deque([(12, 13), (12, 14), (12, 14)], maxlen=3), 'u_3': deque([(16, 12), (16, 12), (15, 12)], maxlen=3)}
+328 Worker Positions {'u_2': deque([(15, 12), (15, 12), (14, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 21)], maxlen=3)}
+329 Worker Positions {'u_1': deque([(12, 14), (12, 14), (12, 14)], maxlen=3), 'u_3': deque([(16, 12), (15, 12), (15, 12)], maxlen=3)}
+329 Worker Positions {'u_2': deque([(15, 12), (14, 12), (14, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 21), (21, 21)], maxlen=3)}
+329 Looks like a stuck worker u_1 - deque([(12, 14), (12, 14), (12, 14)], maxlen=3)
+329 Build city stuff: c_2, fuel 420.0, size 2, enough fuel False
+329 Build city stuff: c_2, fuel 420.0, size 2, enough fuel False
+330 Worker Positions {'u_1': deque([(12, 14), (12, 14), (11, 14)], maxlen=3), 'u_3': deque([(15, 12), (15, 12), (14, 12)], maxlen=3)}
+330 Worker Positions {'u_2': deque([(14, 12), (14, 12), (15, 12)], maxlen=3), 'u_4': deque([(21, 21), (21, 21), (21, 22)], maxlen=3)}
+330: Doing research! 
+331 Worker Positions {'u_1': deque([(12, 14), (11, 14), (11, 14)], maxlen=3), 'u_3': deque([(15, 12), (14, 12), (14, 12)], maxlen=3)}
+331 Worker Positions {'u_2': deque([(14, 12), (15, 12), (15, 12)], maxlen=3), 'u_4': deque([(21, 21), (21, 22), (21, 22)], maxlen=3)}
+331 Build city stuff: c_2, fuel 420.0, size 2, enough fuel False
+331 Build city stuff: c_2, fuel 420.0, size 2, enough fuel False
+332 Worker Positions {'u_2': deque([(15, 12), (15, 12), (16, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 23)], maxlen=3)}
+332 Worker Positions {'u_1': deque([(11, 14), (11, 14), (11, 14)], maxlen=3), 'u_3': deque([(14, 12), (14, 12), (14, 12)], maxlen=3)}
+332 Looks like a stuck worker u_1 - deque([(11, 14), (11, 14), (11, 14)], maxlen=3)
+332 Looks like a stuck worker u_3 - deque([(14, 12), (14, 12), (14, 12)], maxlen=3)
+333 Worker Positions {'u_1': deque([(11, 14), (11, 14), (12, 14)], maxlen=3), 'u_3': deque([(14, 12), (14, 12), (15, 12)], maxlen=3)}
+333 Worker Positions {'u_2': deque([(15, 12), (16, 12), (16, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 23), (21, 22)], maxlen=3)}
+333 Build city stuff: c_2, fuel 520.0, size 2, enough fuel False
+333: Doing research! 
+334 Worker Positions {'u_1': deque([(11, 14), (12, 14), (12, 14)], maxlen=3), 'u_3': deque([(14, 12), (15, 12), (15, 12)], maxlen=3)}
+334 Worker Positions {'u_2': deque([(16, 12), (16, 12), (17, 12)], maxlen=3), 'u_4': deque([(21, 23), (21, 22), (21, 22)], maxlen=3)}
+335 Worker Positions {'u_1': deque([(12, 14), (12, 14), (12, 14)], maxlen=3), 'u_3': deque([(15, 12), (15, 12), (15, 12)], maxlen=3)}
+335 Worker Positions {'u_2': deque([(16, 12), (17, 12), (17, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 21)], maxlen=3)}
+335 Looks like a stuck worker u_1 - deque([(12, 14), (12, 14), (12, 14)], maxlen=3)
+335 Build city stuff: c_2, fuel 520.0, size 2, enough fuel False
+335 Looks like a stuck worker u_3 - deque([(15, 12), (15, 12), (15, 12)], maxlen=3)
+336 Worker Positions {'u_1': deque([(12, 14), (12, 14), (13, 14)], maxlen=3), 'u_3': deque([(15, 12), (15, 12), (15, 11)], maxlen=3)}
+336 Worker Positions {'u_2': deque([(17, 12), (17, 12), (18, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 21), (21, 21)], maxlen=3)}
+336 Build city stuff: c_2, fuel 520.0, size 2, enough fuel False
+337 Worker Positions {'u_2': deque([(17, 12), (18, 12), (18, 12)], maxlen=3), 'u_4': deque([(21, 21), (21, 21), (21, 22)], maxlen=3)}
+337 Worker Positions {'u_1': deque([(12, 14), (13, 14), (13, 14)], maxlen=3), 'u_3': deque([(15, 12), (15, 11), (15, 11)], maxlen=3)}
+337 Build city stuff: c_2, fuel 520.0, size 2, enough fuel False
+338 Worker Positions {'u_1': deque([(13, 14), (13, 14), (13, 14)], maxlen=3), 'u_3': deque([(15, 11), (15, 11), (15, 11)], maxlen=3)}
+338 Worker Positions {'u_2': deque([(18, 12), (18, 12), (19, 12)], maxlen=3), 'u_4': deque([(21, 21), (21, 22), (21, 22)], maxlen=3)}
+338 Looks like a stuck worker u_1 - deque([(13, 14), (13, 14), (13, 14)], maxlen=3)
+338 Looks like a stuck worker u_3 - deque([(15, 11), (15, 11), (15, 11)], maxlen=3)
+338 Build city stuff: c_2, fuel 520.0, size 2, enough fuel False
+339 Worker Positions {'u_1': deque([(13, 14), (13, 14), (12, 14)], maxlen=3), 'u_3': deque([(15, 11), (15, 11), (15, 12)], maxlen=3)}
+339 Worker Positions {'u_2': deque([(18, 12), (19, 12), (19, 12)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 23)], maxlen=3)}
+339 Build city stuff: c_2, fuel 620.0, size 2, enough fuel True
+339 We want to build a city!
+339: Navigating to where we wish to build!
+340 Worker Positions {'u_1': deque([(13, 14), (12, 14), (12, 14)], maxlen=3), 'u_3': deque([(15, 11), (15, 12), (15, 12)], maxlen=3)}
+340 Worker Positions {'u_2': deque([(19, 12), (19, 12), (19, 13)], maxlen=3), 'u_4': deque([(21, 22), (21, 23), (21, 22)], maxlen=3)}
+340: Doing research! 
+341 Worker Positions {'u_2': deque([(19, 12), (19, 13), (19, 13)], maxlen=3), 'u_4': deque([(21, 23), (21, 22), (21, 22)], maxlen=3)}
+341 Worker Positions {'u_1': deque([(12, 14), (12, 14), (12, 14)], maxlen=3), 'u_3': deque([(15, 12), (15, 12), (15, 12)], maxlen=3)}
+341 Build city stuff: c_2, fuel 620.0, size 2, enough fuel True
+341 We want to build a city!
+341 Looks like a stuck worker u_1 - deque([(12, 14), (12, 14), (12, 14)], maxlen=3)
+341 Looks like a stuck worker u_3 - deque([(15, 12), (15, 12), (15, 12)], maxlen=3)
+341: Navigating to where we wish to build!
+342 Worker Positions {'u_1': deque([(12, 14), (12, 14), (13, 14)], maxlen=3), 'u_3': deque([(15, 12), (15, 12), (15, 13)], maxlen=3)}
+342 Worker Positions {'u_2': deque([(19, 13), (19, 13), (19, 14)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (21, 21)], maxlen=3)}
+343 Worker Positions {'u_2': deque([(19, 13), (19, 14), (19, 14)], maxlen=3), 'u_4': deque([(21, 22), (21, 21), (21, 21)], maxlen=3)}
+343 Worker Positions {'u_1': deque([(12, 14), (13, 14), (13, 14)], maxlen=3), 'u_3': deque([(15, 12), (15, 13), (15, 13)], maxlen=3)}
+343 Build city stuff: c_2, fuel 620.0, size 2, enough fuel True
+343 We want to build a city!
+343: Navigating to where we wish to build!
+343 Build city stuff: c_2, fuel 620.0, size 2, enough fuel True
+343 We want to build a city!
+343: Navigating to where we wish to build!
+343: Doing research! 
+344 Worker Positions {'u_2': deque([(19, 14), (19, 14), (19, 15)], maxlen=3), 'u_4': deque([(21, 21), (21, 21), (21, 22)], maxlen=3)}
+344 Worker Positions {'u_1': deque([(13, 14), (13, 14), (13, 14)], maxlen=3), 'u_3': deque([(15, 13), (15, 13), (15, 13)], maxlen=3)}
+344 Looks like a stuck worker u_1 - deque([(13, 14), (13, 14), (13, 14)], maxlen=3)
+344 Looks like a stuck worker u_3 - deque([(15, 13), (15, 13), (15, 13)], maxlen=3)
+345 Worker Positions {'u_1': deque([(13, 14), (13, 14), (13, 13)], maxlen=3), 'u_3': deque([(15, 13), (15, 13), (14, 13)], maxlen=3)}
+345 Worker Positions {'u_2': deque([(19, 14), (19, 15), (19, 15)], maxlen=3), 'u_4': deque([(21, 21), (21, 22), (21, 22)], maxlen=3)}
+345 Build city stuff: c_2, fuel 620.0, size 2, enough fuel True
+345 We want to build a city!
+345: Navigating to where we wish to build!
+345 Build city stuff: c_2, fuel 620.0, size 2, enough fuel True
+345 We want to build a city!
+345: Navigating to where we wish to build!
+346 Worker Positions {'u_1': deque([(13, 14), (13, 13), (13, 13)], maxlen=3), 'u_3': deque([(15, 13), (14, 13), (14, 13)], maxlen=3)}
+346 Worker Positions {'u_2': deque([(19, 15), (19, 15), (19, 16)], maxlen=3), 'u_4': deque([(21, 22), (21, 22), (20, 22)], maxlen=3)}
+347 Worker Positions {'u_1': deque([(13, 13), (13, 13), (13, 13)], maxlen=3), 'u_3': deque([(14, 13), (14, 13), (14, 13)], maxlen=3)}
+347 Worker Positions {'u_2': deque([(19, 15), (19, 16), (19, 16)], maxlen=3), 'u_4': deque([(21, 22), (20, 22), (20, 22)], maxlen=3)}
+347 Looks like a stuck worker u_1 - deque([(13, 13), (13, 13), (13, 13)], maxlen=3)
+347 Looks like a stuck worker u_3 - deque([(14, 13), (14, 13), (14, 13)], maxlen=3)
+347 Build city stuff: c_2, fuel 620.0, size 2, enough fuel True
+347 We want to build a city!
+347: Navigating to where we wish to build!
+347 Build city stuff: c_2, fuel 620.0, size 2, enough fuel True
+347 We want to build a city!
+347: Navigating to where we wish to build!
+348 Worker Positions {'u_1': deque([(13, 13), (13, 13), (13, 14)], maxlen=3), 'u_3': deque([(14, 13), (14, 13), (13, 13)], maxlen=3)}
+348 Worker Positions {'u_2': deque([(19, 16), (19, 16), (19, 17)], maxlen=3), 'u_4': deque([(20, 22), (20, 22), (20, 23)], maxlen=3)}
+349 Worker Positions {'u_2': deque([(19, 16), (19, 17), (19, 17)], maxlen=3), 'u_4': deque([(20, 22), (20, 23), (20, 23)], maxlen=3)}
+349 Worker Positions {'u_1': deque([(13, 13), (13, 14), (13, 14)], maxlen=3), 'u_3': deque([(14, 13), (13, 13), (13, 13)], maxlen=3)}
+349 Build city stuff: c_2, fuel 620.0, size 2, enough fuel True
+349 We want to build a city!
+349: Navigating to where we wish to build!
+349 Build city stuff: c_2, fuel 620.0, size 2, enough fuel True
+349 We want to build a city!
+349 Built the city!
+350 Worker Positions {'u_1': deque([(13, 14), (13, 14), (13, 14)], maxlen=3), 'u_3': deque([(13, 13), (13, 13), (13, 13)], maxlen=3)}
+350 Worker Positions {'u_2': deque([(19, 17), (19, 17), (19, 18)], maxlen=3), 'u_4': deque([(20, 23), (20, 23), (20, 23)], maxlen=3)}
+350 Looks like a stuck worker u_1 - deque([(13, 14), (13, 14), (13, 14)], maxlen=3)
+350 Looks like a stuck worker u_3 - deque([(13, 13), (13, 13), (13, 13)], maxlen=3)
+350 Looks like a stuck worker u_4 - deque([(20, 23), (20, 23), (20, 23)], maxlen=3)
+350: Created and worker 
+350: Doing research! 
+351 Found worker unaccounted for u_5
+351 Worker Positions {'u_1': deque([(13, 14), (13, 14), (12, 14)], maxlen=3), 'u_3': deque([(13, 13), (13, 13), (13, 12)], maxlen=3)}
+351 Worker Positions {'u_2': deque([(19, 17), (19, 18), (19, 18)], maxlen=3), 'u_4': deque([(20, 23), (20, 23), (20, 23)], maxlen=3), 'u_5': deque([(21, 23)], maxlen=3)}
+351 Found worker w/o resource u_5
+352 Worker Positions {'u_1': deque([(13, 14), (12, 14), (12, 14)], maxlen=3), 'u_3': deque([(13, 13), (13, 12), (13, 12)], maxlen=3)}
+352 Worker Positions {'u_2': deque([(19, 18), (19, 18), (19, 17)], maxlen=3), 'u_4': deque([(20, 23), (20, 23), (20, 23)], maxlen=3), 'u_5': deque([(21, 23), (21, 22)], maxlen=3)}
+353 Worker Positions {'u_1': deque([(12, 14), (12, 14), (12, 14)], maxlen=3), 'u_3': deque([(13, 12), (13, 12), (13, 12)], maxlen=3)}
+353 Worker Positions {'u_2': deque([(19, 18), (19, 17), (19, 17)], maxlen=3), 'u_4': deque([(20, 23), (20, 23), (20, 23)], maxlen=3), 'u_5': deque([(21, 23), (21, 22), (21, 22)], maxlen=3)}
+353: Created and worker 
+354 Worker Positions {'u_1': deque([(12, 14), (12, 14), (12, 14)], maxlen=3), 'u_3': deque([(13, 12), (13, 12), (13, 12)], maxlen=3)}
+354 Found worker unaccounted for u_6
+354 Looks like a stuck worker u_1 - deque([(12, 14), (12, 14), (12, 14)], maxlen=3)
+354 Looks like a stuck worker u_3 - deque([(13, 12), (13, 12), (13, 12)], maxlen=3)
+354 Worker Positions {'u_2': deque([(19, 17), (19, 17), (19, 17)], maxlen=3), 'u_4': deque([(20, 23), (20, 23), (20, 23)], maxlen=3), 'u_5': deque([(21, 22), (21, 22), (21, 22)], maxlen=3), 'u_6': deque([(21, 24)], maxlen=3)}
+355 Worker Positions {'u_1': deque([(12, 14), (12, 14), (13, 14)], maxlen=3), 'u_3': deque([(13, 12), (13, 12), (13, 13)], maxlen=3)}
+355 Worker Positions {'u_2': deque([(19, 17), (19, 17), (19, 17)], maxlen=3), 'u_4': deque([(20, 23), (20, 23), (20, 23)], maxlen=3), 'u_5': deque([(21, 22), (21, 22), (21, 22)], maxlen=3), 'u_6': deque([(21, 24), (21, 23)], maxlen=3)}
+355 Looks like a stuck worker u_2 - deque([(19, 17), (19, 17), (19, 17)], maxlen=3)
+355 Looks like a stuck worker u_5 - deque([(21, 22), (21, 22), (21, 22)], maxlen=3)
+356 Worker Positions {'u_1': deque([(12, 14), (13, 14), (13, 14)], maxlen=3), 'u_3': deque([(13, 12), (13, 13), (13, 13)], maxlen=3)}
+356 Worker Positions {'u_2': deque([(19, 17), (19, 17), (18, 17)], maxlen=3), 'u_4': deque([(20, 23), (20, 23), (20, 23)], maxlen=3), 'u_5': deque([(21, 22), (21, 22), (20, 22)], maxlen=3), 'u_6': deque([(21, 24), (21, 23), (22, 23)], maxlen=3)}
+357 Worker Positions {'u_1': deque([(13, 14), (13, 14), (13, 14)], maxlen=3), 'u_3': deque([(13, 13), (13, 13), (13, 13)], maxlen=3)}
+357 Worker Positions {'u_2': deque([(19, 17), (18, 17), (18, 17)], maxlen=3), 'u_4': deque([(20, 23), (20, 23), (20, 23)], maxlen=3), 'u_5': deque([(21, 22), (20, 22), (20, 22)], maxlen=3), 'u_6': deque([(21, 23), (22, 23), (22, 23)], maxlen=3)}
+358 Worker Positions {'u_1': deque([(13, 14), (13, 14), (13, 14)], maxlen=3), 'u_3': deque([(13, 13), (13, 13), (13, 13)], maxlen=3)}
+358 Worker Positions {'u_2': deque([(18, 17), (18, 17), (18, 17)], maxlen=3), 'u_4': deque([(20, 23), (20, 23), (20, 23)], maxlen=3), 'u_5': deque([(20, 22), (20, 22), (20, 22)], maxlen=3), 'u_6': deque([(22, 23), (22, 23), (22, 23)], maxlen=3)}
+358 Looks like a stuck worker u_1 - deque([(13, 14), (13, 14), (13, 14)], maxlen=3)
+358 Looks like a stuck worker u_3 - deque([(13, 13), (13, 13), (13, 13)], maxlen=3)
+359 Worker Positions {'u_1': deque([(13, 14), (13, 14), (14, 14)], maxlen=3), 'u_3': deque([(13, 13), (13, 13), (14, 13)], maxlen=3)}
+359 Worker Positions {'u_2': deque([(18, 17), (18, 17), (18, 17)], maxlen=3), 'u_4': deque([(20, 23), (20, 23), (20, 23)], maxlen=3), 'u_5': deque([(20, 22), (20, 22), (20, 22)], maxlen=3), 'u_6': deque([(22, 23), (22, 23), (22, 23)], maxlen=3)}
+359 Looks like a stuck worker u_2 - deque([(18, 17), (18, 17), (18, 17)], maxlen=3)
+359 Looks like a stuck worker u_5 - deque([(20, 22), (20, 22), (20, 22)], maxlen=3)
+359 Looks like a stuck worker u_6 - deque([(22, 23), (22, 23), (22, 23)], maxlen=3)

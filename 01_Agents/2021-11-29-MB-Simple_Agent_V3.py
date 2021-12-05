@@ -1,5 +1,7 @@
 # Code associated w/: https://youtu.be/6_GXTbTL9Uc
 import math, sys
+
+from pandas.core.frame import DataFrame
 from lux.game import Game
 from lux.game_map import Cell, RESOURCE_TYPES
 from lux.constants import Constants
@@ -392,5 +394,6 @@ def agent(observation, configuration):
         with open(statsfile,"a") as f:
             f.write(f"{len(city_tiles)}\n")
 
-    
+    df = DataFrame(resource_tiles)
+    df.to_csv("test.csv")
     return actions

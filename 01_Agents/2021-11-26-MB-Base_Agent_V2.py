@@ -62,6 +62,18 @@ def get_ressource_types(resource_tiles):
     resource_frame["resource"] = resource_types
     return resource_frame
 
+def create_resource_frame(resource_tiles):
+    resource_tiles = resource_tiles
+    resource = []
+    amount = []
+    
+    for cell in resource_tiles:
+        resource.append(cell.Resource.type)
+        amount.append(cell.Resource.amount)
+    resource_frame = pd.DataFrame({"coordinates": resource_tiles,
+                                    "resource" : resource,
+                                    "amount": amount})
+    return resource_frame
 '''
 Further decluttering basic agent agent code.
 '''
@@ -76,6 +88,7 @@ def get_closest_resource(unit, resource_tiles, player):
                             closest_dist = dist
                             closest_resource_tile = resource_tile
     return closest_resource_tile
+
 
 def agent(observation, configuration):
     global game_state
@@ -102,7 +115,7 @@ def agent(observation, configuration):
 
 
     resource_tiles = get_ressources(game_state, width, height)
-    resource_frame = get_ressource_types(resource_tiles)
+    resource_frame = create_resource_frame(resource_tiles)
 
     # Creates a list of workers
     workers = [u for u in player.units if u.is_worker()]
@@ -112,9 +125,6 @@ def agent(observation, configuration):
         if w.id in worker_positions:
             worker_positions[w.id].append((w.pos.x, w.pos.y))
         else:
-            #TODO: is deque really needed? If still works while being commented
-            #out: delete
-
             worker_positions[w.id] = deque(maxlen=3)
             worker_positions[w.id].append((w.pos.x, w.pos.y))
 
@@ -147,7 +157,5 @@ def agent(observation, configuration):
 
     # you can add debug annotations using the functions in the annotate object
     # actions.append(annotate.circle(0, 0))
-
+    resource_frame.to_csv("resource_frame.csv")
     return actions
-
-resource_frame.to_csv("resource_frame.csv")
