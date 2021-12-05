@@ -13,7 +13,7 @@ cd "C:\Users\LucaK\Desktop\Uni Luzern\Master\2. Semester\Introduction to Compute
 ###################################### LUX-AI PLAY A GAME #######################################
 
 
-1) Open anaconda promp
+1) Open anaconda promp => switch to LUX-AI environment (activate LUX-AI)
 
 
 2) set working directory 
