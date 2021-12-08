@@ -1,0 +1,2 @@
+CityTiles: 0
+Research Points: 99

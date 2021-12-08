@@ -15,7 +15,7 @@ DIRECTIONS = Constants.DIRECTIONS
 game_state = None
 build_location = None
 
-# create dictonaries needed to store information
+# create dictonaries needed to store relevant information
 unit_to_city_dict = {}
 unit_to_resource_dict = {}
 worker_positions = {}
@@ -24,10 +24,10 @@ worker_positions = {}
 now = datetime.now()
 day = now.strftime("%Y-%m-%d")
 current_time = now.strftime("%H_%M_%S")
-logfile = "agent_YouTube_" + day + "_" + current_time + ".log"
+logfile = "agent_Luca_" + day + "_" + current_time + ".log"
 
 # create statsfile (captures number of city tiles at the end of the game)
-statsfile = "agent_stats_YouTube_" + day + "_" + current_time + ".txt"
+statsfile = "agent_stats_Luca_" + day + "_" + current_time + ".txt"
 
 
 
@@ -97,21 +97,21 @@ def find_empty_tile_near(near_what, game_state, observation):
                 
                 # logging
                 with open(logfile,"a") as f:
-                    f.write(f"{observation['step']}: Found build location:{build_location.pos}\n")
+                    f.write(f"{observation['step']}: Found build location:{build_location.pos}\n\n")
 
                 return build_location
         
         # catch errors
         except Exception as e:
             with open(logfile,"a") as f:
-                f.write(f"{observation['step']}: While searching for empty tiles:{str(e)}\n")
+                f.write(f"{observation['step']}: While searching for empty tiles:{str(e)}\n\n")
 
 
     with open(logfile,"a") as f:
-        f.write(f"{observation['step']}: Couldn't find a tile next to, checking diagonals instead...\n")
+        f.write(f"{observation['step']}: Couldn't find a tile next to, checking diagonals instead...\n\n")
     
- """       
-    # 2) try other directions
+    """       
+    # 2) try other directions => tiles that are further away (not just one tile away...)
     dirs = [(1,-1), (-1,1), (-1,-1), (1,1)] 
     
     for d in dirs:
@@ -121,12 +121,12 @@ def find_empty_tile_near(near_what, game_state, observation):
             if possible_empty_tile.resource == None and possible_empty_tile.road == 0 and possible_empty_tile.citytile == None:
                 build_location = possible_empty_tile
                 with open(logfile,"a") as f:
-                    f.write(f"{observation['step']}: Found build location:{build_location.pos}\n")
+                    f.write(f"{observation['step']}: Found build location:{build_location.pos}\n\n")
 
                 return build_location
         except Exception as e:
             with open(logfile,"a") as f:
-                f.write(f"{observation['step']}: While searching for empty tiles:{str(e)}\n")
+                f.write(f"{observation['step']}: While searching for empty tiles:{str(e)}\n\n")
 
 
     # PROBABLY should continue our search out with something like dirs = [(2,0), (0,2), (-2,0), (0,-2)]...
@@ -134,9 +134,9 @@ def find_empty_tile_near(near_what, game_state, observation):
 
 
     with open(logfile,"a") as f:
-        f.write(f"{observation['step']}: Something likely went wrong, couldn't find any empty tile\n")
+        f.write(f"{observation['step']}: Something likely went wrong, couldn't find any empty tile\n\n")
     return None
-"""
+    """
 
 ######################## Actual AI-Code starts here ##########################
 
@@ -172,25 +172,26 @@ def agent(observation, configuration):
         if w.id in worker_positions:
             worker_positions[w.id].append((w.pos.x, w.pos.y))
         else:
+            # only log the last 3 rounds (max)
             worker_positions[w.id] = deque(maxlen=3)
             worker_positions[w.id].append((w.pos.x, w.pos.y))
 
         if w.id not in unit_to_city_dict:
             
             with open(logfile, "a") as f:
-                f.write(f"{observation['step']} Found worker unaccounted for {w.id}\n")
+                f.write(f"{observation['step']} Found worker unaccounted for {w.id}\n\n")
             
             city_assignment = get_close_city(player, w)
             unit_to_city_dict[w.id] = city_assignment
 
     with open(logfile, "a") as f:
-        f.write(f"{observation['step']} Worker Positions {worker_positions}\n")
+        f.write(f"{observation['step']} Worker Positions {worker_positions}\n\n")
 
 
     for w in workers:
         if w.id not in unit_to_resource_dict:
             with open(logfile, "a") as f:
-                f.write(f"{observation['step']} Found worker w/o resource {w.id}\n")
+                f.write(f"{observation['step']} Found worker w/o resource {w.id}\n\n")
 
             resource_assignment = get_close_resource(w, resource_tiles, player)
             unit_to_resource_dict[w.id] = resource_assignment
@@ -224,14 +225,19 @@ def agent(observation, configuration):
             try:
                 last_positions = worker_positions[unit.id]
                 
+                # if the worker does not move for >= 2 rounds
+                # => worker stuck
                 if len(last_positions) >=2:
+                    # get rid of duplicates
                     hm_positions = set(last_positions)
                     
+                    # if the list is composed of only 1 pair of coordinates 
+                    # => worker is stuck!
                     if len(list(hm_positions)) == 1:
                         
                         # logging
                         with open(logfile, "a") as f:
-                            f.write(f"{observation['step']} Looks like a stuck worker {unit.id} - {last_positions}\n")
+                            f.write(f"{observation['step']} Looks like a stuck worker {unit.id} - {last_positions}\n\n")
                         
                         # collision-solver ("random walk")
                         actions.append(unit.move(random.choice(["n","s","e","w"])))
@@ -260,20 +266,22 @@ def agent(observation, configuration):
                             associated_city_id = unit_to_city_dict[unit.id].cityid
                             unit_city = [c for c in cities if c.cityid == associated_city_id][0]
                             unit_city_fuel = unit_city.fuel
+                            # Number of CityTiles
                             unit_city_size = len(unit_city.citytiles)
-
+                            
+                            # fuel needed to survive the night
                             enough_fuel = (unit_city_fuel/unit_city_size) > 300
                         
                         except: continue
 
                         with open(logfile, "a") as f:
-                            f.write(f"{observation['step']} Build city stuff: {associated_city_id}, fuel {unit_city_fuel}, size {unit_city_size}, enough fuel {enough_fuel}\n")
+                            f.write(f"{observation['step']} Stuff needed for building a City ({associated_city_id}) fuel: {unit_city_fuel}, size: {unit_city_size}, enough fuel: {enough_fuel}\n\n")
 
-
+                        # if we have enough fuel, we can try to build another city
                         if enough_fuel:
                             
                             with open(logfile, "a") as f:
-                                f.write(f"{observation['step']} We want to build a city!\n")
+                                f.write(f"{observation['step']} We want to build a city!\n\n")
                             
                             if build_location is None:
                                 empty_near = get_close_city(player, unit)
@@ -290,15 +298,15 @@ def agent(observation, configuration):
                                 build_location = None
                                 
                                 with open(logfile, "a") as f:
-                                    f.write(f"{observation['step']} Built the city!\n")
+                                    f.write(f"{observation['step']} Built the city!\n\n")
                                 
                                 continue   
                             
-                            # If the uni is not on a build location
+                            # If the unit is not on a build location
                             # => Navigating to where we wish to build a City
                             else:
                                 with open(logfile, "a") as f:
-                                    f.write(f"{observation['step']}: Navigating to where we wish to build!\n")
+                                    f.write(f"{observation['step']}: Navigating to where we wish to build!\n\n")
 
                                 #actions.append(unit.move(unit.pos.direction_to(build_location.pos)))
                                 dir_diff = (build_location.pos.x-unit.pos.x, build_location.pos.y-unit.pos.y)
@@ -372,7 +380,7 @@ def agent(observation, configuration):
             
             except Exception as e:
                 with open(logfile, "a") as f:
-                    f.write(f"{observation['step']}: Unit error {str(e)} \n")
+                    f.write(f"{observation['step']}: Unit error {str(e)} \n\n")
 
 
 
@@ -385,18 +393,18 @@ def agent(observation, configuration):
                     actions.append(city_tile.build_worker())
                     can_create -= 1
                     with open(logfile, "a") as f:
-                        f.write(f"{observation['step']}: Created and worker \n")
+                        f.write(f"{observation['step']}: Created and worker \n\n")
                 else:
                     actions.append(city_tile.research())
                     with open(logfile, "a") as f:
-                        f.write(f"{observation['step']}: Doing research! \n")
+                        f.write(f"{observation['step']}: Doing research! \n\n")
 
 
     if observation["step"] == 359:
 
         # capture number of CityTiles at the end of the game
         with open(statsfile,"a") as f:
-            f.write(f"{len(city_tiles)}\n")
+            f.write(f"CityTiles: {len(city_tiles)}\nResearch Points: {player.research_points}")
 
     
     return actions
