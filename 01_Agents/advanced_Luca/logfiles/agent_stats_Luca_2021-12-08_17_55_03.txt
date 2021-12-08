@@ -1,0 +1,3 @@
+CityTiles: 11
+Numer of Workers: 10
+Research Points: 177

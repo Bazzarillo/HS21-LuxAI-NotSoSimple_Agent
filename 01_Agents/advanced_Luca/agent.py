@@ -167,48 +167,65 @@ def agent(observation, configuration):
 
 
     ### Setup
+
+    ## 1)
     for w in workers:
 
+        # capture wokers' positions
         if w.id in worker_positions:
             worker_positions[w.id].append((w.pos.x, w.pos.y))
         else:
-            # only log the last 3 rounds (max)
+            # only log the last 3 rounds
             worker_positions[w.id] = deque(maxlen=3)
             worker_positions[w.id].append((w.pos.x, w.pos.y))
 
+        
+        # capture if workers are accounted to a city  
         if w.id not in unit_to_city_dict:
             
             with open(logfile, "a") as f:
                 f.write(f"{observation['step']} Found worker unaccounted for {w.id}\n\n")
             
+            # assign them to a city
             city_assignment = get_close_city(player, w)
             unit_to_city_dict[w.id] = city_assignment
 
+    # log wokers' positions
     with open(logfile, "a") as f:
         f.write(f"{observation['step']} Worker Positions {worker_positions}\n\n")
 
 
+
+    ## 2)
     for w in workers:
+
+        # capture if workers have resources
         if w.id not in unit_to_resource_dict:
             with open(logfile, "a") as f:
                 f.write(f"{observation['step']} Found worker w/o resource {w.id}\n\n")
 
+            # resource assignment
             resource_assignment = get_close_resource(w, resource_tiles, player)
             unit_to_resource_dict[w.id] = resource_assignment
 
 
 
+    ## 3)
     cities = player.cities.values()
     city_tiles = []
 
+    # create list with city tiles
     for city in cities:
         for c_tile in city.citytiles:
             city_tiles.append(c_tile)
 
 
+    # conditions need to be met before building a city...
     build_city = False
 
     try:
+        # what is a good worker to city-tiles-ratio?
+        # Assumption: 3/4 => more city tiles is better...
         if len(workers) / len(city_tiles) >= 0.75:
             build_city = True
     except:
@@ -220,13 +237,15 @@ def agent(observation, configuration):
     # we iterate over all our units and do something with them
     for unit in player.units:
         
+
+        ## workers
         if unit.is_worker() and unit.can_act():
             
             try:
                 last_positions = worker_positions[unit.id]
                 
                 # if the worker does not move for >= 2 rounds
-                # => worker stuck
+                # => worker is stuck...
                 if len(last_positions) >=2:
                     # get rid of duplicates
                     hm_positions = set(last_positions)
@@ -244,32 +263,41 @@ def agent(observation, configuration):
                         continue
 
 
-                
+                # all workers with cargo space left are assigned to mine
                 if unit.get_cargo_space_left() > 0:
+
+                    # where is the unit going?
                     intended_resource = unit_to_resource_dict[unit.id]
                     cell = game_state.map.get_cell(intended_resource.pos.x, intended_resource.pos.y)
 
+                    # does the intended cell have resources?
+                    # yes!
                     if cell.has_resource():
                         actions.append(unit.move(unit.pos.direction_to(intended_resource.pos)))
 
+                    # no!
                     else:
                         intended_resource = get_close_resource(unit, resource_tiles, player)
                         unit_to_resource_dict[unit.id] = intended_resource
                         actions.append(unit.move(unit.pos.direction_to(intended_resource.pos)))
 
 
-                ### Building a City
+                # some workers should build cities!
                 else:
+
+                    # build_city = true if the worker-city_tile-ratio is 0.75
                     if build_city:
 
                         try:
+                            # to which city is the worker assigned to?
                             associated_city_id = unit_to_city_dict[unit.id].cityid
+                            # take the first city
                             unit_city = [c for c in cities if c.cityid == associated_city_id][0]
                             unit_city_fuel = unit_city.fuel
-                            # Number of CityTiles
                             unit_city_size = len(unit_city.citytiles)
                             
-                            # fuel needed to survive the night
+                            # we need some fuel ot survive the night, but how much?
+                            # assumption: 300 
                             enough_fuel = (unit_city_fuel/unit_city_size) > 300
                         
                         except: continue
@@ -283,6 +311,11 @@ def agent(observation, configuration):
                             with open(logfile, "a") as f:
                                 f.write(f"{observation['step']} We want to build a city!\n\n")
                             
+                            
+                            # but where do we want to build it?
+                            
+                            # if we do not have a build location yet...
+                            # find one near an existing one
                             if build_location is None:
                                 empty_near = get_close_city(player, unit)
                                 build_location = find_empty_tile_near(empty_near, game_state, observation)
@@ -301,15 +334,16 @@ def agent(observation, configuration):
                                     f.write(f"{observation['step']} Built the city!\n\n")
                                 
                                 continue   
-                            
+
                             # If the unit is not on a build location
-                            # => Navigating to where we wish to build a City
                             else:
                                 with open(logfile, "a") as f:
                                     f.write(f"{observation['step']}: Navigating to where we wish to build!\n\n")
 
-                                #actions.append(unit.move(unit.pos.direction_to(build_location.pos)))
-                                dir_diff = (build_location.pos.x-unit.pos.x, build_location.pos.y-unit.pos.y)
+                                
+                                # Navigating to where we wish to build a City
+                                # actions.append(unit.move(unit.pos.direction_to(build_location.pos)))
+                                dir_diff = (build_location.pos.x - unit.pos.x, build_location.pos.y - unit.pos.y)
                                 xdiff = dir_diff[0]
                                 ydiff = dir_diff[1]
 
@@ -329,7 +363,8 @@ def agent(observation, configuration):
                                             actions.append(unit.move("n"))
 
                                     else:
-                                        # there's a city tile, so we want to move in the other direction that we overall want to move
+                                        # if there is a city tile 
+                                        # => move in the other direction that we overall want to move
                                         if np.sign(xdiff) == 1:
                                             actions.append(unit.move("e"))
                                         else:
@@ -383,17 +418,24 @@ def agent(observation, configuration):
                     f.write(f"{observation['step']}: Unit error {str(e)} \n\n")
 
 
-
+    ## cities
     can_create = len(city_tiles) - len(workers)
 
     if len(city_tiles) > 0:
         for city_tile in city_tiles:
+
+            # if cooldown is < 1 => unit can act
             if city_tile.can_act():
+            
+                # cities can only create workers if the # of workers + # of carts < # of city tiles
+                # if ture => create a worker!
                 if can_create > 0:
                     actions.append(city_tile.build_worker())
                     can_create -= 1
                     with open(logfile, "a") as f:
-                        f.write(f"{observation['step']}: Created and worker \n\n")
+                        f.write(f"{observation['step']}: Created a worker! \n\n")
+
+                # if we cannot create a worker: => research!
                 else:
                     actions.append(city_tile.research())
                     with open(logfile, "a") as f:
@@ -404,7 +446,7 @@ def agent(observation, configuration):
 
         # capture number of CityTiles at the end of the game
         with open(statsfile,"a") as f:
-            f.write(f"CityTiles: {len(city_tiles)}\nResearch Points: {player.research_points}")
+            f.write(f"CityTiles: {len(city_tiles)}\nNumer of Workers: {len(workers)}\nResearch Points: {player.research_points}")
 
     
     return actions
