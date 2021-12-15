@@ -1,0 +1,12 @@
+=== Agent Install Log ===
+=== Agent Compile Log ===
+=== Agent Error Log ===
+Traceback (most recent call last):
+  File "main.py", line 3, in <module>
+    from agent import agent
+  File "C:\Users\LucaK\Desktop\Uni Luzern\Master\2. Semester\Introduction to Computer Science and Programming\GitHub_LuxAI\HS21-LuxAI-NotSoSimple_Agent\01_Agents\advanced_Merged\agent.py", line 17, in <module>
+    from functions import *
+  File "C:\Users\LucaK\Desktop\Uni Luzern\Master\2. Semester\Introduction to Computer Science and Programming\GitHub_LuxAI\HS21-LuxAI-NotSoSimple_Agent\01_Agents\advanced_Merged\functions.py", line 26, in <module>
+    now = datetime.now()
+NameError: name 'datetime' is not defined
+Agent timed out

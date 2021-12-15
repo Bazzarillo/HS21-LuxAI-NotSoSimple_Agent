@@ -1,0 +1,12 @@
+=== Agent Install Log ===
+=== Agent Compile Log ===
+=== Agent Error Log ===
+Traceback (most recent call last):
+  File "main.py", line 32, in <module>
+    actions = agent(observation, None)
+  File "C:\Users\LucaK\Desktop\Uni Luzern\Master\2. Semester\Introduction to Computer Science and Programming\GitHub_LuxAI\HS21-LuxAI-NotSoSimple_Agent\01_Agents\advanced_Merged\agent.py", line 77, in agent
+    max_cell = get_resource_density(game_state, height, width, observation)
+  File "C:\Users\LucaK\Desktop\Uni Luzern\Master\2. Semester\Introduction to Computer Science and Programming\GitHub_LuxAI\HS21-LuxAI-NotSoSimple_Agent\01_Agents\advanced_Merged\functions.py", line 100, in get_resource_density
+    with open(logfile,"a") as f:
+NameError: name 'logfile' is not defined
+Agent timed out

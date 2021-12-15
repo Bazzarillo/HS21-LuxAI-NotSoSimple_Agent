@@ -1,0 +1,10 @@
+=== Agent Install Log ===
+=== Agent Compile Log ===
+=== Agent Error Log ===
+Traceback (most recent call last):
+  File "main.py", line 32, in <module>
+    actions = agent(observation, None)
+  File "C:\Users\LucaK\Desktop\Uni Luzern\Master\2. Semester\Introduction to Computer Science and Programming\GitHub_LuxAI\HS21-LuxAI-NotSoSimple_Agent\01_Agents\advanced_Luca\agent.py", line 474, in agent
+    f.write(f"GAME STATS:\n\nNumber of City Tiles: {len(city_tiles)}\nNumer of Workers: {len(workers)}\nResearch Points: {player.research_points}\n\nFuel: {unit_city.fuel}\n\n")
+UnboundLocalError: local variable 'unit_city' referenced before assignment
+Agent timed out

@@ -1,0 +1,1658 @@
+0 Found worker unaccounted for u_2
+
+0 Worker Positions {'u_2': deque([(7, 1)], maxlen=3)}
+
+0 Found worker w/o resource u_2
+
+0: Doing research! 
+
+1 Worker Positions {'u_2': deque([(7, 1), (7, 0)], maxlen=3)}
+
+2 Worker Positions {'u_2': deque([(7, 1), (7, 0), (7, 0)], maxlen=3)}
+
+2 Stuff needed for building a City (c_2) fuel: 0.0, size: 1, enough fuel: False
+
+3 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 1)], maxlen=3)}
+
+4 Worker Positions {'u_2': deque([(7, 0), (7, 1), (7, 0)], maxlen=3)}
+
+5 Worker Positions {'u_2': deque([(7, 1), (7, 0), (7, 0)], maxlen=3)}
+
+5 Stuff needed for building a City (c_2) fuel: 100.0, size: 1, enough fuel: False
+
+6 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 1)], maxlen=3)}
+
+7 Worker Positions {'u_2': deque([(7, 0), (7, 1), (7, 0)], maxlen=3)}
+
+8 Worker Positions {'u_2': deque([(7, 1), (7, 0), (7, 0)], maxlen=3)}
+
+8 Stuff needed for building a City (c_2) fuel: 200.0, size: 1, enough fuel: False
+
+9 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 1)], maxlen=3)}
+
+10 Worker Positions {'u_2': deque([(7, 0), (7, 1), (7, 0)], maxlen=3)}
+
+10: Doing research! 
+
+11 Worker Positions {'u_2': deque([(7, 1), (7, 0), (7, 0)], maxlen=3)}
+
+11 Stuff needed for building a City (c_2) fuel: 300.0, size: 1, enough fuel: False
+
+12 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 1)], maxlen=3)}
+
+13 Worker Positions {'u_2': deque([(7, 0), (7, 1), (7, 0)], maxlen=3)}
+
+14 Worker Positions {'u_2': deque([(7, 1), (7, 0), (7, 0)], maxlen=3)}
+
+14 Stuff needed for building a City (c_2) fuel: 400.0, size: 1, enough fuel: True
+
+14 We want to build a city!
+
+14: While searching for empty tiles:'list' object has no attribute 'pos'
+
+14: While searching for empty tiles:'list' object has no attribute 'pos'
+
+14: While searching for empty tiles:'list' object has no attribute 'pos'
+
+14: While searching for empty tiles:'list' object has no attribute 'pos'
+
+14: Something likely went wrong, couldn't find any empty tile
+
+14: Unit error 'NoneType' object has no attribute 'pos' 
+
+15 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+15 Looks like a stuck worker u_2 - deque([(7, 0), (7, 0), (7, 0)], maxlen=3)
+
+16 Worker Positions {'u_2': deque([(7, 0), (7, 0), (8, 0)], maxlen=3)}
+
+17 Worker Positions {'u_2': deque([(7, 0), (8, 0), (8, 0)], maxlen=3)}
+
+17 Stuff needed for building a City (c_2) fuel: 400.0, size: 1, enough fuel: True
+
+17 We want to build a city!
+
+17: While searching for empty tiles:'list' object has no attribute 'pos'
+
+17: While searching for empty tiles:'list' object has no attribute 'pos'
+
+17: While searching for empty tiles:'list' object has no attribute 'pos'
+
+17: While searching for empty tiles:'list' object has no attribute 'pos'
+
+17: Something likely went wrong, couldn't find any empty tile
+
+17: Unit error 'NoneType' object has no attribute 'pos' 
+
+18 Worker Positions {'u_2': deque([(8, 0), (8, 0), (8, 0)], maxlen=3)}
+
+18 Looks like a stuck worker u_2 - deque([(8, 0), (8, 0), (8, 0)], maxlen=3)
+
+19 Worker Positions {'u_2': deque([(8, 0), (8, 0), (8, 1)], maxlen=3)}
+
+20 Worker Positions {'u_2': deque([(8, 0), (8, 1), (8, 1)], maxlen=3)}
+
+20 Stuff needed for building a City (c_2) fuel: 400.0, size: 1, enough fuel: True
+
+20 We want to build a city!
+
+20: While searching for empty tiles:'list' object has no attribute 'pos'
+
+20: While searching for empty tiles:'list' object has no attribute 'pos'
+
+20: While searching for empty tiles:'list' object has no attribute 'pos'
+
+20: While searching for empty tiles:'list' object has no attribute 'pos'
+
+20: Something likely went wrong, couldn't find any empty tile
+
+20: Unit error 'NoneType' object has no attribute 'pos' 
+
+20: Doing research! 
+
+21 Worker Positions {'u_2': deque([(8, 1), (8, 1), (8, 1)], maxlen=3)}
+
+21 Looks like a stuck worker u_2 - deque([(8, 1), (8, 1), (8, 1)], maxlen=3)
+
+22 Worker Positions {'u_2': deque([(8, 1), (8, 1), (9, 1)], maxlen=3)}
+
+23 Worker Positions {'u_2': deque([(8, 1), (9, 1), (9, 1)], maxlen=3)}
+
+23 Stuff needed for building a City (c_2) fuel: 400.0, size: 1, enough fuel: True
+
+23 We want to build a city!
+
+23: While searching for empty tiles:'list' object has no attribute 'pos'
+
+23: While searching for empty tiles:'list' object has no attribute 'pos'
+
+23: While searching for empty tiles:'list' object has no attribute 'pos'
+
+23: While searching for empty tiles:'list' object has no attribute 'pos'
+
+23: Something likely went wrong, couldn't find any empty tile
+
+23: Unit error 'NoneType' object has no attribute 'pos' 
+
+24 Worker Positions {'u_2': deque([(9, 1), (9, 1), (9, 1)], maxlen=3)}
+
+24 Looks like a stuck worker u_2 - deque([(9, 1), (9, 1), (9, 1)], maxlen=3)
+
+25 Worker Positions {'u_2': deque([(9, 1), (9, 1), (9, 2)], maxlen=3)}
+
+26 Worker Positions {'u_2': deque([(9, 1), (9, 2), (9, 2)], maxlen=3)}
+
+26 Stuff needed for building a City (c_2) fuel: 400.0, size: 1, enough fuel: True
+
+26 We want to build a city!
+
+26: While searching for empty tiles:'list' object has no attribute 'pos'
+
+26: While searching for empty tiles:'list' object has no attribute 'pos'
+
+26: While searching for empty tiles:'list' object has no attribute 'pos'
+
+26: While searching for empty tiles:'list' object has no attribute 'pos'
+
+26: Something likely went wrong, couldn't find any empty tile
+
+26: Unit error 'NoneType' object has no attribute 'pos' 
+
+27 Worker Positions {'u_2': deque([(9, 2), (9, 2), (9, 2)], maxlen=3)}
+
+27 Looks like a stuck worker u_2 - deque([(9, 2), (9, 2), (9, 2)], maxlen=3)
+
+28 Worker Positions {'u_2': deque([(9, 2), (9, 2), (10, 2)], maxlen=3)}
+
+29 Worker Positions {'u_2': deque([(9, 2), (10, 2), (10, 2)], maxlen=3)}
+
+29 Stuff needed for building a City (c_2) fuel: 400.0, size: 1, enough fuel: True
+
+29 We want to build a city!
+
+29: While searching for empty tiles:'list' object has no attribute 'pos'
+
+29: While searching for empty tiles:'list' object has no attribute 'pos'
+
+29: While searching for empty tiles:'list' object has no attribute 'pos'
+
+29: While searching for empty tiles:'list' object has no attribute 'pos'
+
+29: Something likely went wrong, couldn't find any empty tile
+
+29: Unit error 'NoneType' object has no attribute 'pos' 
+
+30 Worker Positions {'u_2': deque([(10, 2), (10, 2), (10, 2)], maxlen=3)}
+
+30 Looks like a stuck worker u_2 - deque([(10, 2), (10, 2), (10, 2)], maxlen=3)
+
+30: Doing research! 
+
+31 Worker Positions {'u_2': deque([(10, 2), (10, 2), (11, 2)], maxlen=3)}
+
+32 Worker Positions {'u_2': deque([(10, 2), (11, 2), (11, 2)], maxlen=3)}
+
+33 Worker Positions {'u_2': deque([(11, 2), (11, 2), (11, 2)], maxlen=3)}
+
+34 Worker Positions {'u_2': deque([(11, 2), (11, 2), (11, 2)], maxlen=3)}
+
+34 Looks like a stuck worker u_2 - deque([(11, 2), (11, 2), (11, 2)], maxlen=3)
+
+35 Worker Positions {'u_2': deque([(11, 2), (11, 2), (11, 1)], maxlen=3)}
+
+36 Worker Positions {'u_2': deque([(11, 2), (11, 1), (11, 1)], maxlen=3)}
+
+37 Worker Positions {'u_2': deque([(11, 1), (11, 1), (11, 1)], maxlen=3)}
+
+38 Worker Positions {'u_2': deque([(11, 1), (11, 1), (11, 1)], maxlen=3)}
+
+38 Looks like a stuck worker u_2 - deque([(11, 1), (11, 1), (11, 1)], maxlen=3)
+
+39 Worker Positions {'u_2': deque([(11, 1), (11, 1), (11, 0)], maxlen=3)}
+
+40 Worker Positions {'u_2': deque([(11, 1), (11, 0), (11, 0)], maxlen=3)}
+
+40: Doing research! 
+
+41 Worker Positions {'u_2': deque([(11, 0), (11, 0), (11, 0)], maxlen=3)}
+
+42 Worker Positions {'u_2': deque([(11, 0), (11, 0), (11, 0)], maxlen=3)}
+
+42 Looks like a stuck worker u_2 - deque([(11, 0), (11, 0), (11, 0)], maxlen=3)
+
+43 Worker Positions {'u_2': deque([(11, 0), (11, 0), (11, 0)], maxlen=3)}
+
+43 Looks like a stuck worker u_2 - deque([(11, 0), (11, 0), (11, 0)], maxlen=3)
+
+44 Worker Positions {'u_2': deque([(11, 0), (11, 0), (10, 0)], maxlen=3)}
+
+45 Worker Positions {'u_2': deque([(11, 0), (10, 0), (10, 0)], maxlen=3)}
+
+46 Worker Positions {'u_2': deque([(10, 0), (10, 0), (9, 0)], maxlen=3)}
+
+47 Worker Positions {'u_2': deque([(10, 0), (9, 0), (9, 0)], maxlen=3)}
+
+47 Stuff needed for building a City (c_2) fuel: 170.0, size: 1, enough fuel: False
+
+48 Worker Positions {'u_2': deque([(9, 0), (9, 0), (9, 1)], maxlen=3)}
+
+49 Worker Positions {'u_2': deque([(9, 0), (9, 1), (9, 1)], maxlen=3)}
+
+49 Stuff needed for building a City (c_2) fuel: 170.0, size: 1, enough fuel: False
+
+50 Worker Positions {'u_2': deque([(9, 1), (9, 1), (8, 1)], maxlen=3)}
+
+50: Doing research! 
+
+51 Worker Positions {'u_2': deque([(9, 1), (8, 1), (8, 1)], maxlen=3)}
+
+51 Stuff needed for building a City (c_2) fuel: 170.0, size: 1, enough fuel: False
+
+52 Worker Positions {'u_2': deque([(8, 1), (8, 1), (7, 1)], maxlen=3)}
+
+53 Worker Positions {'u_2': deque([(8, 1), (7, 1), (7, 0)], maxlen=3)}
+
+54 Worker Positions {'u_2': deque([(7, 1), (7, 0), (7, 0)], maxlen=3)}
+
+54 Stuff needed for building a City (c_2) fuel: 270.0, size: 1, enough fuel: False
+
+55 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 1)], maxlen=3)}
+
+56 Worker Positions {'u_2': deque([(7, 0), (7, 1), (7, 0)], maxlen=3)}
+
+57 Worker Positions {'u_2': deque([(7, 1), (7, 0), (7, 0)], maxlen=3)}
+
+57 Stuff needed for building a City (c_2) fuel: 370.0, size: 1, enough fuel: True
+
+57 We want to build a city!
+
+57: While searching for empty tiles:'list' object has no attribute 'pos'
+
+57: While searching for empty tiles:'list' object has no attribute 'pos'
+
+57: While searching for empty tiles:'list' object has no attribute 'pos'
+
+57: While searching for empty tiles:'list' object has no attribute 'pos'
+
+57: Something likely went wrong, couldn't find any empty tile
+
+57: Unit error 'NoneType' object has no attribute 'pos' 
+
+58 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+58 Looks like a stuck worker u_2 - deque([(7, 0), (7, 0), (7, 0)], maxlen=3)
+
+59 Worker Positions {'u_2': deque([(7, 0), (7, 0), (8, 0)], maxlen=3)}
+
+60 Worker Positions {'u_2': deque([(7, 0), (8, 0), (8, 0)], maxlen=3)}
+
+60 Stuff needed for building a City (c_2) fuel: 370.0, size: 1, enough fuel: True
+
+60 We want to build a city!
+
+60: While searching for empty tiles:'list' object has no attribute 'pos'
+
+60: While searching for empty tiles:'list' object has no attribute 'pos'
+
+60: While searching for empty tiles:'list' object has no attribute 'pos'
+
+60: While searching for empty tiles:'list' object has no attribute 'pos'
+
+60: Something likely went wrong, couldn't find any empty tile
+
+60: Unit error 'NoneType' object has no attribute 'pos' 
+
+60: Doing research! 
+
+61 Worker Positions {'u_2': deque([(8, 0), (8, 0), (8, 0)], maxlen=3)}
+
+61 Looks like a stuck worker u_2 - deque([(8, 0), (8, 0), (8, 0)], maxlen=3)
+
+62 Worker Positions {'u_2': deque([(8, 0), (8, 0), (8, 0)], maxlen=3)}
+
+62 Looks like a stuck worker u_2 - deque([(8, 0), (8, 0), (8, 0)], maxlen=3)
+
+63 Worker Positions {'u_2': deque([(8, 0), (8, 0), (8, 0)], maxlen=3)}
+
+63 Looks like a stuck worker u_2 - deque([(8, 0), (8, 0), (8, 0)], maxlen=3)
+
+64 Worker Positions {'u_2': deque([(8, 0), (8, 0), (9, 0)], maxlen=3)}
+
+65 Worker Positions {'u_2': deque([(8, 0), (9, 0), (9, 0)], maxlen=3)}
+
+65 Stuff needed for building a City (c_2) fuel: 370.0, size: 1, enough fuel: True
+
+65 We want to build a city!
+
+65: While searching for empty tiles:'list' object has no attribute 'pos'
+
+65: While searching for empty tiles:'list' object has no attribute 'pos'
+
+65: While searching for empty tiles:'list' object has no attribute 'pos'
+
+65: While searching for empty tiles:'list' object has no attribute 'pos'
+
+65: Something likely went wrong, couldn't find any empty tile
+
+65: Unit error 'NoneType' object has no attribute 'pos' 
+
+66 Worker Positions {'u_2': deque([(9, 0), (9, 0), (9, 0)], maxlen=3)}
+
+66 Looks like a stuck worker u_2 - deque([(9, 0), (9, 0), (9, 0)], maxlen=3)
+
+67 Worker Positions {'u_2': deque([(9, 0), (9, 0), (10, 0)], maxlen=3)}
+
+68 Worker Positions {'u_2': deque([(9, 0), (10, 0), (10, 0)], maxlen=3)}
+
+68 Stuff needed for building a City (c_2) fuel: 370.0, size: 1, enough fuel: True
+
+68 We want to build a city!
+
+68: While searching for empty tiles:'list' object has no attribute 'pos'
+
+68: While searching for empty tiles:'list' object has no attribute 'pos'
+
+68: While searching for empty tiles:'list' object has no attribute 'pos'
+
+68: While searching for empty tiles:'list' object has no attribute 'pos'
+
+68: Something likely went wrong, couldn't find any empty tile
+
+68: Unit error 'NoneType' object has no attribute 'pos' 
+
+69 Worker Positions {'u_2': deque([(10, 0), (10, 0), (10, 0)], maxlen=3)}
+
+69 Looks like a stuck worker u_2 - deque([(10, 0), (10, 0), (10, 0)], maxlen=3)
+
+70 Worker Positions {'u_2': deque([(10, 0), (10, 0), (10, 1)], maxlen=3)}
+
+70: Doing research! 
+
+71 Worker Positions {'u_2': deque([(10, 0), (10, 1), (10, 1)], maxlen=3)}
+
+72 Worker Positions {'u_2': deque([(10, 1), (10, 1), (10, 0)], maxlen=3)}
+
+73 Worker Positions {'u_2': deque([(10, 1), (10, 0), (10, 0)], maxlen=3)}
+
+74 Worker Positions {'u_2': deque([(10, 0), (10, 0), (10, 0)], maxlen=3)}
+
+75 Worker Positions {'u_2': deque([(10, 0), (10, 0), (10, 0)], maxlen=3)}
+
+75 Looks like a stuck worker u_2 - deque([(10, 0), (10, 0), (10, 0)], maxlen=3)
+
+76 Worker Positions {'u_2': deque([(10, 0), (10, 0), (10, 1)], maxlen=3)}
+
+77 Worker Positions {'u_2': deque([(10, 0), (10, 1), (10, 1)], maxlen=3)}
+
+78 Worker Positions {'u_2': deque([(10, 1), (10, 1), (10, 1)], maxlen=3)}
+
+79 Worker Positions {'u_2': deque([(10, 1), (10, 1), (10, 1)], maxlen=3)}
+
+79 Looks like a stuck worker u_2 - deque([(10, 1), (10, 1), (10, 1)], maxlen=3)
+
+80 Worker Positions {'u_2': deque([(10, 1), (10, 1), (9, 1)], maxlen=3)}
+
+80: Doing research! 
+
+81 Worker Positions {'u_2': deque([(10, 1), (9, 1), (9, 1)], maxlen=3)}
+
+82 Worker Positions {'u_2': deque([(9, 1), (9, 1), (9, 1)], maxlen=3)}
+
+83 Worker Positions {'u_2': deque([(9, 1), (9, 1), (9, 1)], maxlen=3)}
+
+83 Looks like a stuck worker u_2 - deque([(9, 1), (9, 1), (9, 1)], maxlen=3)
+
+84 Worker Positions {'u_2': deque([(9, 1), (9, 1), (10, 1)], maxlen=3)}
+
+85 Worker Positions {'u_2': deque([(9, 1), (10, 1), (10, 1)], maxlen=3)}
+
+86 Worker Positions {'u_2': deque([(10, 1), (10, 1), (10, 0)], maxlen=3)}
+
+87 Worker Positions {'u_2': deque([(10, 1), (10, 0), (10, 0)], maxlen=3)}
+
+88 Worker Positions {'u_2': deque([(10, 0), (10, 0), (9, 0)], maxlen=3)}
+
+89 Worker Positions {'u_2': deque([(10, 0), (9, 0), (9, 0)], maxlen=3)}
+
+89 Stuff needed for building a City (c_2) fuel: 140.0, size: 1, enough fuel: False
+
+90 Worker Positions {'u_2': deque([(9, 0), (9, 0), (9, 1)], maxlen=3)}
+
+90: Doing research! 
+
+91 Worker Positions {'u_2': deque([(9, 0), (9, 1), (9, 1)], maxlen=3)}
+
+91 Stuff needed for building a City (c_2) fuel: 140.0, size: 1, enough fuel: False
+
+92 Worker Positions {'u_2': deque([(9, 1), (9, 1), (8, 1)], maxlen=3)}
+
+93 Worker Positions {'u_2': deque([(9, 1), (8, 1), (8, 1)], maxlen=3)}
+
+93 Stuff needed for building a City (c_2) fuel: 140.0, size: 1, enough fuel: False
+
+94 Worker Positions {'u_2': deque([(8, 1), (8, 1), (7, 1)], maxlen=3)}
+
+95 Worker Positions {'u_2': deque([(8, 1), (7, 1), (7, 0)], maxlen=3)}
+
+96 Worker Positions {'u_2': deque([(7, 1), (7, 0), (7, 0)], maxlen=3)}
+
+96 Stuff needed for building a City (c_2) fuel: 240.0, size: 1, enough fuel: False
+
+97 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 1)], maxlen=3)}
+
+98 Worker Positions {'u_2': deque([(7, 0), (7, 1), (7, 0)], maxlen=3)}
+
+99 Worker Positions {'u_2': deque([(7, 1), (7, 0), (7, 0)], maxlen=3)}
+
+99 Stuff needed for building a City (c_2) fuel: 340.0, size: 1, enough fuel: True
+
+99 We want to build a city!
+
+99: While searching for empty tiles:'list' object has no attribute 'pos'
+
+99: While searching for empty tiles:'list' object has no attribute 'pos'
+
+99: While searching for empty tiles:'list' object has no attribute 'pos'
+
+99: While searching for empty tiles:'list' object has no attribute 'pos'
+
+99: Something likely went wrong, couldn't find any empty tile
+
+99: Unit error 'NoneType' object has no attribute 'pos' 
+
+100 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+100 Looks like a stuck worker u_2 - deque([(7, 0), (7, 0), (7, 0)], maxlen=3)
+
+100: Doing research! 
+
+101 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+101 Looks like a stuck worker u_2 - deque([(7, 0), (7, 0), (7, 0)], maxlen=3)
+
+102 Worker Positions {'u_2': deque([(7, 0), (7, 0), (8, 0)], maxlen=3)}
+
+103 Worker Positions {'u_2': deque([(7, 0), (8, 0), (8, 0)], maxlen=3)}
+
+103 Stuff needed for building a City (c_2) fuel: 340.0, size: 1, enough fuel: True
+
+103 We want to build a city!
+
+103: While searching for empty tiles:'list' object has no attribute 'pos'
+
+103: While searching for empty tiles:'list' object has no attribute 'pos'
+
+103: While searching for empty tiles:'list' object has no attribute 'pos'
+
+103: While searching for empty tiles:'list' object has no attribute 'pos'
+
+103: Something likely went wrong, couldn't find any empty tile
+
+103: Unit error 'NoneType' object has no attribute 'pos' 
+
+104 Worker Positions {'u_2': deque([(8, 0), (8, 0), (8, 0)], maxlen=3)}
+
+104 Looks like a stuck worker u_2 - deque([(8, 0), (8, 0), (8, 0)], maxlen=3)
+
+105 Worker Positions {'u_2': deque([(8, 0), (8, 0), (8, 0)], maxlen=3)}
+
+105 Looks like a stuck worker u_2 - deque([(8, 0), (8, 0), (8, 0)], maxlen=3)
+
+106 Worker Positions {'u_2': deque([(8, 0), (8, 0), (9, 0)], maxlen=3)}
+
+107 Worker Positions {'u_2': deque([(8, 0), (9, 0), (9, 0)], maxlen=3)}
+
+107 Stuff needed for building a City (c_2) fuel: 340.0, size: 1, enough fuel: True
+
+107 We want to build a city!
+
+107: While searching for empty tiles:'list' object has no attribute 'pos'
+
+107: While searching for empty tiles:'list' object has no attribute 'pos'
+
+107: While searching for empty tiles:'list' object has no attribute 'pos'
+
+107: While searching for empty tiles:'list' object has no attribute 'pos'
+
+107: Something likely went wrong, couldn't find any empty tile
+
+107: Unit error 'NoneType' object has no attribute 'pos' 
+
+108 Worker Positions {'u_2': deque([(9, 0), (9, 0), (9, 0)], maxlen=3)}
+
+108 Looks like a stuck worker u_2 - deque([(9, 0), (9, 0), (9, 0)], maxlen=3)
+
+109 Worker Positions {'u_2': deque([(9, 0), (9, 0), (9, 0)], maxlen=3)}
+
+109 Looks like a stuck worker u_2 - deque([(9, 0), (9, 0), (9, 0)], maxlen=3)
+
+110 Worker Positions {'u_2': deque([(9, 0), (9, 0), (9, 0)], maxlen=3)}
+
+110 Looks like a stuck worker u_2 - deque([(9, 0), (9, 0), (9, 0)], maxlen=3)
+
+110: Doing research! 
+
+111 Worker Positions {'u_2': deque([(9, 0), (9, 0), (8, 0)], maxlen=3)}
+
+112 Worker Positions {'u_2': deque([(9, 0), (8, 0), (8, 0)], maxlen=3)}
+
+113 Worker Positions {'u_2': deque([(8, 0), (8, 0), (8, 0)], maxlen=3)}
+
+114 Worker Positions {'u_2': deque([(8, 0), (8, 0), (8, 0)], maxlen=3)}
+
+114 Looks like a stuck worker u_2 - deque([(8, 0), (8, 0), (8, 0)], maxlen=3)
+
+115 Worker Positions {'u_2': deque([(8, 0), (8, 0), (7, 0)], maxlen=3)}
+
+116 Worker Positions {'u_2': deque([(8, 0), (7, 0), (7, 0)], maxlen=3)}
+
+117 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+118 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+118 Looks like a stuck worker u_2 - deque([(7, 0), (7, 0), (7, 0)], maxlen=3)
+
+119 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+119 Looks like a stuck worker u_2 - deque([(7, 0), (7, 0), (7, 0)], maxlen=3)
+
+120 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+120 Looks like a stuck worker u_2 - deque([(7, 0), (7, 0), (7, 0)], maxlen=3)
+
+120: Doing research! 
+
+121 Worker Positions {'u_2': deque([(7, 0), (7, 0), (8, 0)], maxlen=3)}
+
+122 Worker Positions {'u_2': deque([(7, 0), (8, 0), (8, 0)], maxlen=3)}
+
+122 Stuff needed for building a City (c_2) fuel: 110.0, size: 1, enough fuel: False
+
+123 Worker Positions {'u_2': deque([(8, 0), (8, 0), (8, 1)], maxlen=3)}
+
+124 Worker Positions {'u_2': deque([(8, 0), (8, 1), (8, 1)], maxlen=3)}
+
+124 Stuff needed for building a City (c_2) fuel: 110.0, size: 1, enough fuel: False
+
+125 Worker Positions {'u_2': deque([(8, 1), (8, 1), (7, 1)], maxlen=3)}
+
+126 Worker Positions {'u_2': deque([(8, 1), (7, 1), (7, 0)], maxlen=3)}
+
+127 Worker Positions {'u_2': deque([(7, 1), (7, 0), (7, 0)], maxlen=3)}
+
+127 Stuff needed for building a City (c_2) fuel: 210.0, size: 1, enough fuel: False
+
+128 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 1)], maxlen=3)}
+
+129 Worker Positions {'u_2': deque([(7, 0), (7, 1), (7, 0)], maxlen=3)}
+
+130 Worker Positions {'u_2': deque([(7, 1), (7, 0), (7, 0)], maxlen=3)}
+
+130 Stuff needed for building a City (c_2) fuel: 310.0, size: 1, enough fuel: True
+
+130 We want to build a city!
+
+130: While searching for empty tiles:'list' object has no attribute 'pos'
+
+130: While searching for empty tiles:'list' object has no attribute 'pos'
+
+130: While searching for empty tiles:'list' object has no attribute 'pos'
+
+130: While searching for empty tiles:'list' object has no attribute 'pos'
+
+130: Something likely went wrong, couldn't find any empty tile
+
+130: Unit error 'NoneType' object has no attribute 'pos' 
+
+130: Doing research! 
+
+131 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+131 Looks like a stuck worker u_2 - deque([(7, 0), (7, 0), (7, 0)], maxlen=3)
+
+132 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+132 Looks like a stuck worker u_2 - deque([(7, 0), (7, 0), (7, 0)], maxlen=3)
+
+133 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+133 Looks like a stuck worker u_2 - deque([(7, 0), (7, 0), (7, 0)], maxlen=3)
+
+134 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 1)], maxlen=3)}
+
+135 Worker Positions {'u_2': deque([(7, 0), (7, 1), (7, 0)], maxlen=3)}
+
+136 Worker Positions {'u_2': deque([(7, 1), (7, 0), (7, 0)], maxlen=3)}
+
+136 Stuff needed for building a City (c_2) fuel: 410.0, size: 1, enough fuel: True
+
+136 We want to build a city!
+
+136: While searching for empty tiles:'list' object has no attribute 'pos'
+
+136: While searching for empty tiles:'list' object has no attribute 'pos'
+
+136: While searching for empty tiles:'list' object has no attribute 'pos'
+
+136: While searching for empty tiles:'list' object has no attribute 'pos'
+
+136: Something likely went wrong, couldn't find any empty tile
+
+136: Unit error 'NoneType' object has no attribute 'pos' 
+
+137 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+137 Looks like a stuck worker u_2 - deque([(7, 0), (7, 0), (7, 0)], maxlen=3)
+
+138 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+138 Looks like a stuck worker u_2 - deque([(7, 0), (7, 0), (7, 0)], maxlen=3)
+
+139 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+139 Looks like a stuck worker u_2 - deque([(7, 0), (7, 0), (7, 0)], maxlen=3)
+
+140 Worker Positions {'u_2': deque([(7, 0), (7, 0), (8, 0)], maxlen=3)}
+
+140: Doing research! 
+
+141 Worker Positions {'u_2': deque([(7, 0), (8, 0), (8, 0)], maxlen=3)}
+
+141 Stuff needed for building a City (c_2) fuel: 410.0, size: 1, enough fuel: True
+
+141 We want to build a city!
+
+141: While searching for empty tiles:'list' object has no attribute 'pos'
+
+141: While searching for empty tiles:'list' object has no attribute 'pos'
+
+141: While searching for empty tiles:'list' object has no attribute 'pos'
+
+141: While searching for empty tiles:'list' object has no attribute 'pos'
+
+141: Something likely went wrong, couldn't find any empty tile
+
+141: Unit error 'NoneType' object has no attribute 'pos' 
+
+142 Worker Positions {'u_2': deque([(8, 0), (8, 0), (8, 0)], maxlen=3)}
+
+142 Looks like a stuck worker u_2 - deque([(8, 0), (8, 0), (8, 0)], maxlen=3)
+
+143 Worker Positions {'u_2': deque([(8, 0), (8, 0), (8, 1)], maxlen=3)}
+
+144 Worker Positions {'u_2': deque([(8, 0), (8, 1), (8, 1)], maxlen=3)}
+
+144 Stuff needed for building a City (c_2) fuel: 410.0, size: 1, enough fuel: True
+
+144 We want to build a city!
+
+144: While searching for empty tiles:'list' object has no attribute 'pos'
+
+144: While searching for empty tiles:'list' object has no attribute 'pos'
+
+144: While searching for empty tiles:'list' object has no attribute 'pos'
+
+144: While searching for empty tiles:'list' object has no attribute 'pos'
+
+144: Something likely went wrong, couldn't find any empty tile
+
+144: Unit error 'NoneType' object has no attribute 'pos' 
+
+145 Worker Positions {'u_2': deque([(8, 1), (8, 1), (8, 1)], maxlen=3)}
+
+145 Looks like a stuck worker u_2 - deque([(8, 1), (8, 1), (8, 1)], maxlen=3)
+
+146 Worker Positions {'u_2': deque([(8, 1), (8, 1), (8, 0)], maxlen=3)}
+
+147 Worker Positions {'u_2': deque([(8, 1), (8, 0), (8, 0)], maxlen=3)}
+
+147 Stuff needed for building a City (c_2) fuel: 410.0, size: 1, enough fuel: True
+
+147 We want to build a city!
+
+147: While searching for empty tiles:'list' object has no attribute 'pos'
+
+147: While searching for empty tiles:'list' object has no attribute 'pos'
+
+147: While searching for empty tiles:'list' object has no attribute 'pos'
+
+147: While searching for empty tiles:'list' object has no attribute 'pos'
+
+147: Something likely went wrong, couldn't find any empty tile
+
+147: Unit error 'NoneType' object has no attribute 'pos' 
+
+148 Worker Positions {'u_2': deque([(8, 0), (8, 0), (8, 0)], maxlen=3)}
+
+148 Looks like a stuck worker u_2 - deque([(8, 0), (8, 0), (8, 0)], maxlen=3)
+
+149 Worker Positions {'u_2': deque([(8, 0), (8, 0), (8, 0)], maxlen=3)}
+
+149 Looks like a stuck worker u_2 - deque([(8, 0), (8, 0), (8, 0)], maxlen=3)
+
+150 Worker Positions {'u_2': deque([(8, 0), (8, 0), (8, 0)], maxlen=3)}
+
+150 Looks like a stuck worker u_2 - deque([(8, 0), (8, 0), (8, 0)], maxlen=3)
+
+150: Doing research! 
+
+151 Worker Positions {'u_2': deque([(8, 0), (8, 0), (8, 0)], maxlen=3)}
+
+151 Looks like a stuck worker u_2 - deque([(8, 0), (8, 0), (8, 0)], maxlen=3)
+
+152 Worker Positions {'u_2': deque([(8, 0), (8, 0), (8, 0)], maxlen=3)}
+
+152 Looks like a stuck worker u_2 - deque([(8, 0), (8, 0), (8, 0)], maxlen=3)
+
+153 Worker Positions {'u_2': deque([(8, 0), (8, 0), (9, 0)], maxlen=3)}
+
+154 Worker Positions {'u_2': deque([(8, 0), (9, 0), (9, 0)], maxlen=3)}
+
+155 Worker Positions {'u_2': deque([(9, 0), (9, 0), (9, 0)], maxlen=3)}
+
+156 Worker Positions {'u_2': deque([(9, 0), (9, 0), (9, 0)], maxlen=3)}
+
+156 Looks like a stuck worker u_2 - deque([(9, 0), (9, 0), (9, 0)], maxlen=3)
+
+157 Worker Positions {'u_2': deque([(9, 0), (9, 0), (9, 1)], maxlen=3)}
+
+158 Worker Positions {'u_2': deque([(9, 0), (9, 1), (9, 1)], maxlen=3)}
+
+159 Worker Positions {'u_2': deque([(9, 1), (9, 1), (9, 1)], maxlen=3)}
+
+160 Worker Positions {'u_2': deque([(9, 1), (9, 1), (9, 1)], maxlen=3)}
+
+160 Looks like a stuck worker u_2 - deque([(9, 1), (9, 1), (9, 1)], maxlen=3)
+
+160: Doing research! 
+
+161 Worker Positions {'u_2': deque([(9, 1), (9, 1), (8, 1)], maxlen=3)}
+
+162 Worker Positions {'u_2': deque([(9, 1), (8, 1), (8, 1)], maxlen=3)}
+
+162 Stuff needed for building a City (c_2) fuel: 180.0, size: 1, enough fuel: False
+
+163 Worker Positions {'u_2': deque([(8, 1), (8, 1), (7, 1)], maxlen=3)}
+
+164 Worker Positions {'u_2': deque([(8, 1), (7, 1), (7, 0)], maxlen=3)}
+
+165 Worker Positions {'u_2': deque([(7, 1), (7, 0), (7, 0)], maxlen=3)}
+
+165 Stuff needed for building a City (c_2) fuel: 280.0, size: 1, enough fuel: False
+
+166 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 1)], maxlen=3)}
+
+167 Worker Positions {'u_2': deque([(7, 0), (7, 1), (7, 0)], maxlen=3)}
+
+168 Worker Positions {'u_2': deque([(7, 1), (7, 0), (7, 0)], maxlen=3)}
+
+168 Stuff needed for building a City (c_2) fuel: 380.0, size: 1, enough fuel: True
+
+168 We want to build a city!
+
+168: While searching for empty tiles:'list' object has no attribute 'pos'
+
+168: While searching for empty tiles:'list' object has no attribute 'pos'
+
+168: While searching for empty tiles:'list' object has no attribute 'pos'
+
+168: While searching for empty tiles:'list' object has no attribute 'pos'
+
+168: Something likely went wrong, couldn't find any empty tile
+
+168: Unit error 'NoneType' object has no attribute 'pos' 
+
+169 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+169 Looks like a stuck worker u_2 - deque([(7, 0), (7, 0), (7, 0)], maxlen=3)
+
+170 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+170 Looks like a stuck worker u_2 - deque([(7, 0), (7, 0), (7, 0)], maxlen=3)
+
+170: Doing research! 
+
+171 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+171 Looks like a stuck worker u_2 - deque([(7, 0), (7, 0), (7, 0)], maxlen=3)
+
+172 Worker Positions {'u_2': deque([(7, 0), (7, 0), (8, 0)], maxlen=3)}
+
+173 Worker Positions {'u_2': deque([(7, 0), (8, 0), (8, 0)], maxlen=3)}
+
+173 Stuff needed for building a City (c_2) fuel: 380.0, size: 1, enough fuel: True
+
+173 We want to build a city!
+
+173: While searching for empty tiles:'list' object has no attribute 'pos'
+
+173: While searching for empty tiles:'list' object has no attribute 'pos'
+
+173: While searching for empty tiles:'list' object has no attribute 'pos'
+
+173: While searching for empty tiles:'list' object has no attribute 'pos'
+
+173: Something likely went wrong, couldn't find any empty tile
+
+173: Unit error 'NoneType' object has no attribute 'pos' 
+
+174 Worker Positions {'u_2': deque([(8, 0), (8, 0), (8, 0)], maxlen=3)}
+
+174 Looks like a stuck worker u_2 - deque([(8, 0), (8, 0), (8, 0)], maxlen=3)
+
+175 Worker Positions {'u_2': deque([(8, 0), (8, 0), (7, 0)], maxlen=3)}
+
+176 Worker Positions {'u_2': deque([(8, 0), (7, 0), (7, 0)], maxlen=3)}
+
+176 Stuff needed for building a City (c_2) fuel: 380.0, size: 1, enough fuel: True
+
+176 We want to build a city!
+
+176: While searching for empty tiles:'list' object has no attribute 'pos'
+
+176: While searching for empty tiles:'list' object has no attribute 'pos'
+
+176: While searching for empty tiles:'list' object has no attribute 'pos'
+
+176: While searching for empty tiles:'list' object has no attribute 'pos'
+
+176: Something likely went wrong, couldn't find any empty tile
+
+176: Unit error 'NoneType' object has no attribute 'pos' 
+
+177 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+177 Looks like a stuck worker u_2 - deque([(7, 0), (7, 0), (7, 0)], maxlen=3)
+
+178 Worker Positions {'u_2': deque([(7, 0), (7, 0), (8, 0)], maxlen=3)}
+
+179 Worker Positions {'u_2': deque([(7, 0), (8, 0), (8, 0)], maxlen=3)}
+
+179 Stuff needed for building a City (c_2) fuel: 380.0, size: 1, enough fuel: True
+
+179 We want to build a city!
+
+179: While searching for empty tiles:'list' object has no attribute 'pos'
+
+179: While searching for empty tiles:'list' object has no attribute 'pos'
+
+179: While searching for empty tiles:'list' object has no attribute 'pos'
+
+179: While searching for empty tiles:'list' object has no attribute 'pos'
+
+179: Something likely went wrong, couldn't find any empty tile
+
+179: Unit error 'NoneType' object has no attribute 'pos' 
+
+180 Worker Positions {'u_2': deque([(8, 0), (8, 0), (8, 0)], maxlen=3)}
+
+180 Looks like a stuck worker u_2 - deque([(8, 0), (8, 0), (8, 0)], maxlen=3)
+
+180: Doing research! 
+
+181 Worker Positions {'u_2': deque([(8, 0), (8, 0), (7, 0)], maxlen=3)}
+
+182 Worker Positions {'u_2': deque([(8, 0), (7, 0), (7, 0)], maxlen=3)}
+
+182 Stuff needed for building a City (c_2) fuel: 380.0, size: 1, enough fuel: True
+
+182 We want to build a city!
+
+182: While searching for empty tiles:'list' object has no attribute 'pos'
+
+182: While searching for empty tiles:'list' object has no attribute 'pos'
+
+182: While searching for empty tiles:'list' object has no attribute 'pos'
+
+182: While searching for empty tiles:'list' object has no attribute 'pos'
+
+182: Something likely went wrong, couldn't find any empty tile
+
+182: Unit error 'NoneType' object has no attribute 'pos' 
+
+183 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+183 Looks like a stuck worker u_2 - deque([(7, 0), (7, 0), (7, 0)], maxlen=3)
+
+184 Worker Positions {'u_2': deque([(7, 0), (7, 0), (6, 0)], maxlen=3)}
+
+185 Worker Positions {'u_2': deque([(7, 0), (6, 0), (6, 0)], maxlen=3)}
+
+185 Stuff needed for building a City (c_2) fuel: 380.0, size: 1, enough fuel: True
+
+185 We want to build a city!
+
+185: While searching for empty tiles:'list' object has no attribute 'pos'
+
+185: While searching for empty tiles:'list' object has no attribute 'pos'
+
+185: While searching for empty tiles:'list' object has no attribute 'pos'
+
+185: While searching for empty tiles:'list' object has no attribute 'pos'
+
+185: Something likely went wrong, couldn't find any empty tile
+
+185: Unit error 'NoneType' object has no attribute 'pos' 
+
+186 Worker Positions {'u_2': deque([(6, 0), (6, 0), (6, 0)], maxlen=3)}
+
+186 Looks like a stuck worker u_2 - deque([(6, 0), (6, 0), (6, 0)], maxlen=3)
+
+187 Worker Positions {'u_2': deque([(6, 0), (6, 0), (7, 0)], maxlen=3)}
+
+188 Worker Positions {'u_2': deque([(6, 0), (7, 0), (7, 0)], maxlen=3)}
+
+188 Stuff needed for building a City (c_2) fuel: 380.0, size: 1, enough fuel: True
+
+188 We want to build a city!
+
+188: While searching for empty tiles:'list' object has no attribute 'pos'
+
+188: While searching for empty tiles:'list' object has no attribute 'pos'
+
+188: While searching for empty tiles:'list' object has no attribute 'pos'
+
+188: While searching for empty tiles:'list' object has no attribute 'pos'
+
+188: Something likely went wrong, couldn't find any empty tile
+
+188: Unit error 'NoneType' object has no attribute 'pos' 
+
+189 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+189 Looks like a stuck worker u_2 - deque([(7, 0), (7, 0), (7, 0)], maxlen=3)
+
+190 Worker Positions {'u_2': deque([(7, 0), (7, 0), (8, 0)], maxlen=3)}
+
+190: Doing research! 
+
+191 Worker Positions {'u_2': deque([(7, 0), (8, 0), (8, 0)], maxlen=3)}
+
+192 Worker Positions {'u_2': deque([(8, 0), (8, 0), (7, 0)], maxlen=3)}
+
+193 Worker Positions {'u_2': deque([(8, 0), (7, 0), (7, 0)], maxlen=3)}
+
+194 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+195 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+195 Looks like a stuck worker u_2 - deque([(7, 0), (7, 0), (7, 0)], maxlen=3)
+
+196 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 1)], maxlen=3)}
+
+197 Worker Positions {'u_2': deque([(7, 0), (7, 1), (7, 0)], maxlen=3)}
+
+198 Worker Positions {'u_2': deque([(7, 1), (7, 0), (7, 0)], maxlen=3)}
+
+199 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+200 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+200 Looks like a stuck worker u_2 - deque([(7, 0), (7, 0), (7, 0)], maxlen=3)
+
+200: Doing research! 
+
+201 Worker Positions {'u_2': deque([(7, 0), (7, 0), (6, 0)], maxlen=3)}
+
+202 Worker Positions {'u_2': deque([(7, 0), (6, 0), (6, 0)], maxlen=3)}
+
+202 Stuff needed for building a City (c_2) fuel: 250.0, size: 1, enough fuel: False
+
+203 Worker Positions {'u_2': deque([(6, 0), (6, 0), (7, 0)], maxlen=3)}
+
+204 Worker Positions {'u_2': deque([(6, 0), (7, 0), (7, 0)], maxlen=3)}
+
+204 Stuff needed for building a City (c_2) fuel: 250.0, size: 1, enough fuel: False
+
+205 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 1)], maxlen=3)}
+
+206 Worker Positions {'u_2': deque([(7, 0), (7, 1), (7, 0)], maxlen=3)}
+
+207 Worker Positions {'u_2': deque([(7, 1), (7, 0), (7, 0)], maxlen=3)}
+
+208 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+208 Looks like a stuck worker u_2 - deque([(7, 0), (7, 0), (7, 0)], maxlen=3)
+
+209 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+209 Looks like a stuck worker u_2 - deque([(7, 0), (7, 0), (7, 0)], maxlen=3)
+
+210 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 1)], maxlen=3)}
+
+210: Doing research! 
+
+211 Worker Positions {'u_2': deque([(7, 0), (7, 1), (7, 0)], maxlen=3)}
+
+212 Worker Positions {'u_2': deque([(7, 1), (7, 0), (7, 0)], maxlen=3)}
+
+213 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+213 Looks like a stuck worker u_2 - deque([(7, 0), (7, 0), (7, 0)], maxlen=3)
+
+214 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+214 Looks like a stuck worker u_2 - deque([(7, 0), (7, 0), (7, 0)], maxlen=3)
+
+215 Worker Positions {'u_2': deque([(7, 0), (7, 0), (8, 0)], maxlen=3)}
+
+216 Worker Positions {'u_2': deque([(7, 0), (8, 0), (8, 0)], maxlen=3)}
+
+216 Stuff needed for building a City (c_2) fuel: 450.0, size: 1, enough fuel: True
+
+216 We want to build a city!
+
+216: While searching for empty tiles:'list' object has no attribute 'pos'
+
+216: While searching for empty tiles:'list' object has no attribute 'pos'
+
+216: While searching for empty tiles:'list' object has no attribute 'pos'
+
+216: While searching for empty tiles:'list' object has no attribute 'pos'
+
+216: Something likely went wrong, couldn't find any empty tile
+
+216: Unit error 'NoneType' object has no attribute 'pos' 
+
+217 Worker Positions {'u_2': deque([(8, 0), (8, 0), (8, 0)], maxlen=3)}
+
+217 Looks like a stuck worker u_2 - deque([(8, 0), (8, 0), (8, 0)], maxlen=3)
+
+218 Worker Positions {'u_2': deque([(8, 0), (8, 0), (8, 1)], maxlen=3)}
+
+219 Worker Positions {'u_2': deque([(8, 0), (8, 1), (8, 1)], maxlen=3)}
+
+219 Stuff needed for building a City (c_2) fuel: 450.0, size: 1, enough fuel: True
+
+219 We want to build a city!
+
+219: While searching for empty tiles:'list' object has no attribute 'pos'
+
+219: While searching for empty tiles:'list' object has no attribute 'pos'
+
+219: While searching for empty tiles:'list' object has no attribute 'pos'
+
+219: While searching for empty tiles:'list' object has no attribute 'pos'
+
+219: Something likely went wrong, couldn't find any empty tile
+
+219: Unit error 'NoneType' object has no attribute 'pos' 
+
+220 Worker Positions {'u_2': deque([(8, 1), (8, 1), (8, 1)], maxlen=3)}
+
+220 Looks like a stuck worker u_2 - deque([(8, 1), (8, 1), (8, 1)], maxlen=3)
+
+220: Doing research! 
+
+221 Worker Positions {'u_2': deque([(8, 1), (8, 1), (8, 0)], maxlen=3)}
+
+222 Worker Positions {'u_2': deque([(8, 1), (8, 0), (8, 0)], maxlen=3)}
+
+222 Stuff needed for building a City (c_2) fuel: 450.0, size: 1, enough fuel: True
+
+222 We want to build a city!
+
+222: While searching for empty tiles:'list' object has no attribute 'pos'
+
+222: While searching for empty tiles:'list' object has no attribute 'pos'
+
+222: While searching for empty tiles:'list' object has no attribute 'pos'
+
+222: While searching for empty tiles:'list' object has no attribute 'pos'
+
+222: Something likely went wrong, couldn't find any empty tile
+
+222: Unit error 'NoneType' object has no attribute 'pos' 
+
+223 Worker Positions {'u_2': deque([(8, 0), (8, 0), (8, 0)], maxlen=3)}
+
+223 Looks like a stuck worker u_2 - deque([(8, 0), (8, 0), (8, 0)], maxlen=3)
+
+224 Worker Positions {'u_2': deque([(8, 0), (8, 0), (8, 1)], maxlen=3)}
+
+225 Worker Positions {'u_2': deque([(8, 0), (8, 1), (8, 1)], maxlen=3)}
+
+225 Stuff needed for building a City (c_2) fuel: 450.0, size: 1, enough fuel: True
+
+225 We want to build a city!
+
+225: While searching for empty tiles:'list' object has no attribute 'pos'
+
+225: While searching for empty tiles:'list' object has no attribute 'pos'
+
+225: While searching for empty tiles:'list' object has no attribute 'pos'
+
+225: While searching for empty tiles:'list' object has no attribute 'pos'
+
+225: Something likely went wrong, couldn't find any empty tile
+
+225: Unit error 'NoneType' object has no attribute 'pos' 
+
+226 Worker Positions {'u_2': deque([(8, 1), (8, 1), (8, 1)], maxlen=3)}
+
+226 Looks like a stuck worker u_2 - deque([(8, 1), (8, 1), (8, 1)], maxlen=3)
+
+227 Worker Positions {'u_2': deque([(8, 1), (8, 1), (8, 0)], maxlen=3)}
+
+228 Worker Positions {'u_2': deque([(8, 1), (8, 0), (8, 0)], maxlen=3)}
+
+228 Stuff needed for building a City (c_2) fuel: 450.0, size: 1, enough fuel: True
+
+228 We want to build a city!
+
+228: While searching for empty tiles:'list' object has no attribute 'pos'
+
+228: While searching for empty tiles:'list' object has no attribute 'pos'
+
+228: While searching for empty tiles:'list' object has no attribute 'pos'
+
+228: While searching for empty tiles:'list' object has no attribute 'pos'
+
+228: Something likely went wrong, couldn't find any empty tile
+
+228: Unit error 'NoneType' object has no attribute 'pos' 
+
+229 Worker Positions {'u_2': deque([(8, 0), (8, 0), (8, 0)], maxlen=3)}
+
+229 Looks like a stuck worker u_2 - deque([(8, 0), (8, 0), (8, 0)], maxlen=3)
+
+230 Worker Positions {'u_2': deque([(8, 0), (8, 0), (9, 0)], maxlen=3)}
+
+230: Doing research! 
+
+231 Worker Positions {'u_2': deque([(8, 0), (9, 0), (9, 0)], maxlen=3)}
+
+232 Worker Positions {'u_2': deque([(9, 0), (9, 0), (9, 0)], maxlen=3)}
+
+232 Looks like a stuck worker u_2 - deque([(9, 0), (9, 0), (9, 0)], maxlen=3)
+
+233 Worker Positions {'u_2': deque([(9, 0), (9, 0), (9, 0)], maxlen=3)}
+
+233 Looks like a stuck worker u_2 - deque([(9, 0), (9, 0), (9, 0)], maxlen=3)
+
+234 Worker Positions {'u_2': deque([(9, 0), (9, 0), (10, 0)], maxlen=3)}
+
+235 Worker Positions {'u_2': deque([(9, 0), (10, 0), (10, 0)], maxlen=3)}
+
+236 Worker Positions {'u_2': deque([(10, 0), (10, 0), (10, 0)], maxlen=3)}
+
+237 Worker Positions {'u_2': deque([(10, 0), (10, 0), (10, 0)], maxlen=3)}
+
+237 Looks like a stuck worker u_2 - deque([(10, 0), (10, 0), (10, 0)], maxlen=3)
+
+238 Worker Positions {'u_2': deque([(10, 0), (10, 0), (10, 1)], maxlen=3)}
+
+239 Worker Positions {'u_2': deque([(10, 0), (10, 1), (10, 1)], maxlen=3)}
+
+240 Worker Positions {'u_2': deque([(10, 1), (10, 1), (10, 1)], maxlen=3)}
+
+240: Doing research! 
+
+241 Worker Positions {'u_2': deque([(10, 1), (10, 1), (10, 1)], maxlen=3)}
+
+241 Looks like a stuck worker u_2 - deque([(10, 1), (10, 1), (10, 1)], maxlen=3)
+
+242 Worker Positions {'u_2': deque([(10, 1), (10, 1), (10, 2)], maxlen=3)}
+
+243 Worker Positions {'u_2': deque([(10, 1), (10, 2), (10, 2)], maxlen=3)}
+
+244 Worker Positions {'u_2': deque([(10, 2), (10, 2), (10, 1)], maxlen=3)}
+
+245 Worker Positions {'u_2': deque([(10, 2), (10, 1), (10, 1)], maxlen=3)}
+
+246 Worker Positions {'u_2': deque([(10, 1), (10, 1), (10, 0)], maxlen=3)}
+
+247 Worker Positions {'u_2': deque([(10, 1), (10, 0), (10, 0)], maxlen=3)}
+
+248 Worker Positions {'u_2': deque([(10, 0), (10, 0), (9, 0)], maxlen=3)}
+
+249 Worker Positions {'u_2': deque([(10, 0), (9, 0), (9, 0)], maxlen=3)}
+
+249 Stuff needed for building a City (c_2) fuel: 220.0, size: 1, enough fuel: False
+
+250 Worker Positions {'u_2': deque([(9, 0), (9, 0), (9, 1)], maxlen=3)}
+
+250: Doing research! 
+
+251 Worker Positions {'u_2': deque([(9, 0), (9, 1), (9, 1)], maxlen=3)}
+
+251 Stuff needed for building a City (c_2) fuel: 220.0, size: 1, enough fuel: False
+
+252 Worker Positions {'u_2': deque([(9, 1), (9, 1), (8, 1)], maxlen=3)}
+
+253 Worker Positions {'u_2': deque([(9, 1), (8, 1), (8, 1)], maxlen=3)}
+
+253 Stuff needed for building a City (c_2) fuel: 220.0, size: 1, enough fuel: False
+
+254 Worker Positions {'u_2': deque([(8, 1), (8, 1), (7, 1)], maxlen=3)}
+
+255 Worker Positions {'u_2': deque([(8, 1), (7, 1), (7, 0)], maxlen=3)}
+
+256 Worker Positions {'u_2': deque([(7, 1), (7, 0), (7, 0)], maxlen=3)}
+
+257 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+257 Looks like a stuck worker u_2 - deque([(7, 0), (7, 0), (7, 0)], maxlen=3)
+
+258 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+258 Looks like a stuck worker u_2 - deque([(7, 0), (7, 0), (7, 0)], maxlen=3)
+
+259 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+259 Looks like a stuck worker u_2 - deque([(7, 0), (7, 0), (7, 0)], maxlen=3)
+
+260 Worker Positions {'u_2': deque([(7, 0), (7, 0), (8, 0)], maxlen=3)}
+
+260: Doing research! 
+
+261 Worker Positions {'u_2': deque([(7, 0), (8, 0), (8, 0)], maxlen=3)}
+
+261 Stuff needed for building a City (c_2) fuel: 320.0, size: 1, enough fuel: True
+
+261 We want to build a city!
+
+261: While searching for empty tiles:'list' object has no attribute 'pos'
+
+261: While searching for empty tiles:'list' object has no attribute 'pos'
+
+261: While searching for empty tiles:'list' object has no attribute 'pos'
+
+261: While searching for empty tiles:'list' object has no attribute 'pos'
+
+261: Something likely went wrong, couldn't find any empty tile
+
+261: Unit error 'NoneType' object has no attribute 'pos' 
+
+262 Worker Positions {'u_2': deque([(8, 0), (8, 0), (8, 0)], maxlen=3)}
+
+262 Looks like a stuck worker u_2 - deque([(8, 0), (8, 0), (8, 0)], maxlen=3)
+
+263 Worker Positions {'u_2': deque([(8, 0), (8, 0), (8, 0)], maxlen=3)}
+
+263 Looks like a stuck worker u_2 - deque([(8, 0), (8, 0), (8, 0)], maxlen=3)
+
+264 Worker Positions {'u_2': deque([(8, 0), (8, 0), (9, 0)], maxlen=3)}
+
+265 Worker Positions {'u_2': deque([(8, 0), (9, 0), (9, 0)], maxlen=3)}
+
+265 Stuff needed for building a City (c_2) fuel: 320.0, size: 1, enough fuel: True
+
+265 We want to build a city!
+
+265: While searching for empty tiles:'list' object has no attribute 'pos'
+
+265: While searching for empty tiles:'list' object has no attribute 'pos'
+
+265: While searching for empty tiles:'list' object has no attribute 'pos'
+
+265: While searching for empty tiles:'list' object has no attribute 'pos'
+
+265: Something likely went wrong, couldn't find any empty tile
+
+265: Unit error 'NoneType' object has no attribute 'pos' 
+
+266 Worker Positions {'u_2': deque([(9, 0), (9, 0), (9, 0)], maxlen=3)}
+
+266 Looks like a stuck worker u_2 - deque([(9, 0), (9, 0), (9, 0)], maxlen=3)
+
+267 Worker Positions {'u_2': deque([(9, 0), (9, 0), (10, 0)], maxlen=3)}
+
+268 Worker Positions {'u_2': deque([(9, 0), (10, 0), (10, 0)], maxlen=3)}
+
+268 Stuff needed for building a City (c_2) fuel: 320.0, size: 1, enough fuel: True
+
+268 We want to build a city!
+
+268: While searching for empty tiles:'list' object has no attribute 'pos'
+
+268: While searching for empty tiles:'list' object has no attribute 'pos'
+
+268: While searching for empty tiles:'list' object has no attribute 'pos'
+
+268: While searching for empty tiles:'list' object has no attribute 'pos'
+
+268: Something likely went wrong, couldn't find any empty tile
+
+268: Unit error 'NoneType' object has no attribute 'pos' 
+
+269 Worker Positions {'u_2': deque([(10, 0), (10, 0), (10, 0)], maxlen=3)}
+
+269 Looks like a stuck worker u_2 - deque([(10, 0), (10, 0), (10, 0)], maxlen=3)
+
+270 Worker Positions {'u_2': deque([(10, 0), (10, 0), (10, 1)], maxlen=3)}
+
+270: Doing research! 
+
+271 Worker Positions {'u_2': deque([(10, 0), (10, 1), (10, 1)], maxlen=3)}
+
+272 Worker Positions {'u_2': deque([(10, 1), (10, 1), (10, 0)], maxlen=3)}
+
+273 Worker Positions {'u_2': deque([(10, 1), (10, 0), (10, 0)], maxlen=3)}
+
+274 Worker Positions {'u_2': deque([(10, 0), (10, 0), (10, 0)], maxlen=3)}
+
+275 Worker Positions {'u_2': deque([(10, 0), (10, 0), (10, 0)], maxlen=3)}
+
+275 Looks like a stuck worker u_2 - deque([(10, 0), (10, 0), (10, 0)], maxlen=3)
+
+276 Worker Positions {'u_2': deque([(10, 0), (10, 0), (10, 0)], maxlen=3)}
+
+276 Looks like a stuck worker u_2 - deque([(10, 0), (10, 0), (10, 0)], maxlen=3)
+
+277 Worker Positions {'u_2': deque([(10, 0), (10, 0), (11, 0)], maxlen=3)}
+
+278 Worker Positions {'u_2': deque([(10, 0), (11, 0), (11, 0)], maxlen=3)}
+
+279 Worker Positions {'u_2': deque([(11, 0), (11, 0), (11, 0)], maxlen=3)}
+
+280 Worker Positions {'u_2': deque([(11, 0), (11, 0), (11, 0)], maxlen=3)}
+
+280 Looks like a stuck worker u_2 - deque([(11, 0), (11, 0), (11, 0)], maxlen=3)
+
+280: Doing research! 
+
+281 Worker Positions {'u_2': deque([(11, 0), (11, 0), (11, 1)], maxlen=3)}
+
+282 Worker Positions {'u_2': deque([(11, 0), (11, 1), (11, 1)], maxlen=3)}
+
+283 Worker Positions {'u_2': deque([(11, 1), (11, 1), (11, 0)], maxlen=3)}
+
+284 Worker Positions {'u_2': deque([(11, 1), (11, 0), (11, 0)], maxlen=3)}
+
+285 Worker Positions {'u_2': deque([(11, 0), (11, 0), (10, 0)], maxlen=3)}
+
+286 Worker Positions {'u_2': deque([(11, 0), (10, 0), (10, 0)], maxlen=3)}
+
+287 Worker Positions {'u_2': deque([(10, 0), (10, 0), (9, 0)], maxlen=3)}
+
+288 Worker Positions {'u_2': deque([(10, 0), (9, 0), (9, 0)], maxlen=3)}
+
+288 Stuff needed for building a City (c_2) fuel: 90.0, size: 1, enough fuel: False
+
+289 Worker Positions {'u_2': deque([(9, 0), (9, 0), (9, 1)], maxlen=3)}
+
+290 Worker Positions {'u_2': deque([(9, 0), (9, 1), (9, 1)], maxlen=3)}
+
+290 Stuff needed for building a City (c_2) fuel: 90.0, size: 1, enough fuel: False
+
+290: Doing research! 
+
+291 Worker Positions {'u_2': deque([(9, 1), (9, 1), (8, 1)], maxlen=3)}
+
+292 Worker Positions {'u_2': deque([(9, 1), (8, 1), (8, 1)], maxlen=3)}
+
+292 Stuff needed for building a City (c_2) fuel: 90.0, size: 1, enough fuel: False
+
+293 Worker Positions {'u_2': deque([(8, 1), (8, 1), (7, 1)], maxlen=3)}
+
+294 Worker Positions {'u_2': deque([(8, 1), (7, 1), (7, 0)], maxlen=3)}
+
+295 Worker Positions {'u_2': deque([(7, 1), (7, 0), (7, 0)], maxlen=3)}
+
+296 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+296 Looks like a stuck worker u_2 - deque([(7, 0), (7, 0), (7, 0)], maxlen=3)
+
+297 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 1)], maxlen=3)}
+
+298 Worker Positions {'u_2': deque([(7, 0), (7, 1), (7, 0)], maxlen=3)}
+
+299 Worker Positions {'u_2': deque([(7, 1), (7, 0), (7, 0)], maxlen=3)}
+
+300 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+300 Looks like a stuck worker u_2 - deque([(7, 0), (7, 0), (7, 0)], maxlen=3)
+
+300: Doing research! 
+
+301 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+301 Looks like a stuck worker u_2 - deque([(7, 0), (7, 0), (7, 0)], maxlen=3)
+
+302 Worker Positions {'u_2': deque([(7, 0), (7, 0), (8, 0)], maxlen=3)}
+
+303 Worker Positions {'u_2': deque([(7, 0), (8, 0), (8, 0)], maxlen=3)}
+
+303 Stuff needed for building a City (c_2) fuel: 290.0, size: 1, enough fuel: False
+
+304 Worker Positions {'u_2': deque([(8, 0), (8, 0), (8, 1)], maxlen=3)}
+
+305 Worker Positions {'u_2': deque([(8, 0), (8, 1), (8, 1)], maxlen=3)}
+
+305 Stuff needed for building a City (c_2) fuel: 290.0, size: 1, enough fuel: False
+
+306 Worker Positions {'u_2': deque([(8, 1), (8, 1), (7, 1)], maxlen=3)}
+
+307 Worker Positions {'u_2': deque([(8, 1), (7, 1), (7, 0)], maxlen=3)}
+
+308 Worker Positions {'u_2': deque([(7, 1), (7, 0), (7, 0)], maxlen=3)}
+
+309 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+309 Looks like a stuck worker u_2 - deque([(7, 0), (7, 0), (7, 0)], maxlen=3)
+
+310 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+310 Looks like a stuck worker u_2 - deque([(7, 0), (7, 0), (7, 0)], maxlen=3)
+
+310: Doing research! 
+
+311 Worker Positions {'u_2': deque([(7, 0), (7, 0), (8, 0)], maxlen=3)}
+
+312 Worker Positions {'u_2': deque([(7, 0), (8, 0), (8, 0)], maxlen=3)}
+
+313 Worker Positions {'u_2': deque([(8, 0), (8, 0), (8, 0)], maxlen=3)}
+
+314 Worker Positions {'u_2': deque([(8, 0), (8, 0), (8, 0)], maxlen=3)}
+
+314 Looks like a stuck worker u_2 - deque([(8, 0), (8, 0), (8, 0)], maxlen=3)
+
+315 Worker Positions {'u_2': deque([(8, 0), (8, 0), (8, 1)], maxlen=3)}
+
+316 Worker Positions {'u_2': deque([(8, 0), (8, 1), (8, 1)], maxlen=3)}
+
+317 Worker Positions {'u_2': deque([(8, 1), (8, 1), (8, 1)], maxlen=3)}
+
+318 Worker Positions {'u_2': deque([(8, 1), (8, 1), (8, 1)], maxlen=3)}
+
+318 Looks like a stuck worker u_2 - deque([(8, 1), (8, 1), (8, 1)], maxlen=3)
+
+319 Worker Positions {'u_2': deque([(8, 1), (8, 1), (8, 2)], maxlen=3)}
+
+320 Worker Positions {'u_2': deque([(8, 1), (8, 2), (8, 2)], maxlen=3)}
+
+320: Doing research! 
+
+321 Worker Positions {'u_2': deque([(8, 2), (8, 2), (8, 2)], maxlen=3)}
+
+322 Worker Positions {'u_2': deque([(8, 2), (8, 2), (8, 2)], maxlen=3)}
+
+322 Looks like a stuck worker u_2 - deque([(8, 2), (8, 2), (8, 2)], maxlen=3)
+
+323 Worker Positions {'u_2': deque([(8, 2), (8, 2), (7, 2)], maxlen=3)}
+
+324 Worker Positions {'u_2': deque([(8, 2), (7, 2), (7, 2)], maxlen=3)}
+
+325 Worker Positions {'u_2': deque([(7, 2), (7, 2), (7, 1)], maxlen=3)}
+
+326 Worker Positions {'u_2': deque([(7, 2), (7, 1), (7, 0)], maxlen=3)}
+
+327 Worker Positions {'u_2': deque([(7, 1), (7, 0), (7, 0)], maxlen=3)}
+
+328 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+328 Looks like a stuck worker u_2 - deque([(7, 0), (7, 0), (7, 0)], maxlen=3)
+
+329 Worker Positions {'u_2': deque([(7, 0), (7, 0), (8, 0)], maxlen=3)}
+
+330 Worker Positions {'u_2': deque([(7, 0), (8, 0), (8, 0)], maxlen=3)}
+
+330 Stuff needed for building a City (c_2) fuel: 260.0, size: 1, enough fuel: False
+
+330: Doing research! 
+
+331 Worker Positions {'u_2': deque([(8, 0), (8, 0), (8, 1)], maxlen=3)}
+
+332 Worker Positions {'u_2': deque([(8, 0), (8, 1), (8, 1)], maxlen=3)}
+
+332 Stuff needed for building a City (c_2) fuel: 260.0, size: 1, enough fuel: False
+
+333 Worker Positions {'u_2': deque([(8, 1), (8, 1), (7, 1)], maxlen=3)}
+
+334 Worker Positions {'u_2': deque([(8, 1), (7, 1), (7, 0)], maxlen=3)}
+
+335 Worker Positions {'u_2': deque([(7, 1), (7, 0), (7, 0)], maxlen=3)}
+
+336 Worker Positions {'u_2': deque([(7, 0), (7, 0), (7, 0)], maxlen=3)}
+
+336 Looks like a stuck worker u_2 - deque([(7, 0), (7, 0), (7, 0)], maxlen=3)
+
+337 Worker Positions {'u_2': deque([(7, 0), (7, 0), (8, 0)], maxlen=3)}
+
+338 Worker Positions {'u_2': deque([(7, 0), (8, 0), (8, 0)], maxlen=3)}
+
+338 Stuff needed for building a City (c_2) fuel: 360.0, size: 1, enough fuel: True
+
+338 We want to build a city!
+
+338: While searching for empty tiles:'list' object has no attribute 'pos'
+
+338: While searching for empty tiles:'list' object has no attribute 'pos'
+
+338: While searching for empty tiles:'list' object has no attribute 'pos'
+
+338: While searching for empty tiles:'list' object has no attribute 'pos'
+
+338: Something likely went wrong, couldn't find any empty tile
+
+338: Unit error 'NoneType' object has no attribute 'pos' 
+
+339 Worker Positions {'u_2': deque([(8, 0), (8, 0), (8, 0)], maxlen=3)}
+
+339 Looks like a stuck worker u_2 - deque([(8, 0), (8, 0), (8, 0)], maxlen=3)
+
+340 Worker Positions {'u_2': deque([(8, 0), (8, 0), (8, 1)], maxlen=3)}
+
+340: Doing research! 
+
+341 Worker Positions {'u_2': deque([(8, 0), (8, 1), (8, 1)], maxlen=3)}
+
+341 Stuff needed for building a City (c_2) fuel: 360.0, size: 1, enough fuel: True
+
+341 We want to build a city!
+
+341: While searching for empty tiles:'list' object has no attribute 'pos'
+
+341: While searching for empty tiles:'list' object has no attribute 'pos'
+
+341: While searching for empty tiles:'list' object has no attribute 'pos'
+
+341: While searching for empty tiles:'list' object has no attribute 'pos'
+
+341: Something likely went wrong, couldn't find any empty tile
+
+341: Unit error 'NoneType' object has no attribute 'pos' 
+
+342 Worker Positions {'u_2': deque([(8, 1), (8, 1), (8, 1)], maxlen=3)}
+
+342 Looks like a stuck worker u_2 - deque([(8, 1), (8, 1), (8, 1)], maxlen=3)
+
+343 Worker Positions {'u_2': deque([(8, 1), (8, 1), (8, 2)], maxlen=3)}
+
+344 Worker Positions {'u_2': deque([(8, 1), (8, 2), (8, 2)], maxlen=3)}
+
+344 Stuff needed for building a City (c_2) fuel: 360.0, size: 1, enough fuel: True
+
+344 We want to build a city!
+
+344: While searching for empty tiles:'list' object has no attribute 'pos'
+
+344: While searching for empty tiles:'list' object has no attribute 'pos'
+
+344: While searching for empty tiles:'list' object has no attribute 'pos'
+
+344: While searching for empty tiles:'list' object has no attribute 'pos'
+
+344: Something likely went wrong, couldn't find any empty tile
+
+344: Unit error 'NoneType' object has no attribute 'pos' 
+
+345 Worker Positions {'u_2': deque([(8, 2), (8, 2), (8, 2)], maxlen=3)}
+
+345 Looks like a stuck worker u_2 - deque([(8, 2), (8, 2), (8, 2)], maxlen=3)
+
+346 Worker Positions {'u_2': deque([(8, 2), (8, 2), (9, 2)], maxlen=3)}
+
+347 Worker Positions {'u_2': deque([(8, 2), (9, 2), (9, 2)], maxlen=3)}
+
+347 Stuff needed for building a City (c_2) fuel: 360.0, size: 1, enough fuel: True
+
+347 We want to build a city!
+
+347: While searching for empty tiles:'list' object has no attribute 'pos'
+
+347: While searching for empty tiles:'list' object has no attribute 'pos'
+
+347: While searching for empty tiles:'list' object has no attribute 'pos'
+
+347: While searching for empty tiles:'list' object has no attribute 'pos'
+
+347: Something likely went wrong, couldn't find any empty tile
+
+347: Unit error 'NoneType' object has no attribute 'pos' 
+
+348 Worker Positions {'u_2': deque([(9, 2), (9, 2), (9, 2)], maxlen=3)}
+
+348 Looks like a stuck worker u_2 - deque([(9, 2), (9, 2), (9, 2)], maxlen=3)
+
+349 Worker Positions {'u_2': deque([(9, 2), (9, 2), (9, 1)], maxlen=3)}
+
+350 Worker Positions {'u_2': deque([(9, 2), (9, 1), (9, 1)], maxlen=3)}
+
+350 Stuff needed for building a City (c_2) fuel: 360.0, size: 1, enough fuel: True
+
+350 We want to build a city!
+
+350: While searching for empty tiles:'list' object has no attribute 'pos'
+
+350: While searching for empty tiles:'list' object has no attribute 'pos'
+
+350: While searching for empty tiles:'list' object has no attribute 'pos'
+
+350: While searching for empty tiles:'list' object has no attribute 'pos'
+
+350: Something likely went wrong, couldn't find any empty tile
+
+350: Unit error 'NoneType' object has no attribute 'pos' 
+
+350: Doing research! 
+
+351 Worker Positions {'u_2': deque([(9, 1), (9, 1), (9, 1)], maxlen=3)}
+
+351 Looks like a stuck worker u_2 - deque([(9, 1), (9, 1), (9, 1)], maxlen=3)
+
+352 Worker Positions {'u_2': deque([(9, 1), (9, 1), (8, 1)], maxlen=3)}
+
+353 Worker Positions {'u_2': deque([(9, 1), (8, 1), (8, 1)], maxlen=3)}
+
+354 Worker Positions {'u_2': deque([(8, 1), (8, 1), (8, 1)], maxlen=3)}
+
+355 Worker Positions {'u_2': deque([(8, 1), (8, 1), (8, 1)], maxlen=3)}
+
+355 Looks like a stuck worker u_2 - deque([(8, 1), (8, 1), (8, 1)], maxlen=3)
+
+356 Worker Positions {'u_2': deque([(8, 1), (8, 1), (8, 2)], maxlen=3)}
+
+357 Worker Positions {'u_2': deque([(8, 1), (8, 2), (8, 2)], maxlen=3)}
+
+358 Worker Positions {'u_2': deque([(8, 2), (8, 2), (8, 2)], maxlen=3)}
+
+359 Worker Positions {'u_2': deque([(8, 2), (8, 2), (8, 2)], maxlen=3)}
+
+359 Looks like a stuck worker u_2 - deque([(8, 2), (8, 2), (8, 2)], maxlen=3)
+
+360 Worker Positions {'u_2': deque([(8, 2), (8, 2), (8, 3)], maxlen=3)}
+
+360: Doing research! 
+

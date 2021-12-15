@@ -1,0 +1,6 @@
+GAME STATS:
+
+Number of City Tiles: 6
+Numer of Workers: 5
+Research Points: 99
+

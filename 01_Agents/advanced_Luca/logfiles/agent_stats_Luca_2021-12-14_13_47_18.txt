@@ -1,0 +1,21 @@
+Number of City Tiles: 0
+Numer of Workers: 2
+Research Points: 45
+
+worker_positions(dict): {'u_2': deque([(19, 22), (19, 22), (19, 22)], maxlen=3), 'u_4': deque([(23, 19), (23, 19), (23, 18)], maxlen=3)}
+
+unit_to_city_dict: {'u_2': <lux.game_objects.CityTile object at 0x000001F8DC612550>, 'u_4': <lux.game_objects.CityTile object at 0x000001F8DC5F9070>}
+
+unit_to_resource_dict: {'u_2': <lux.game_map.Cell object at 0x000001F8DC5F42B0>, 'u_4': <lux.game_map.Cell object at 0x000001F8DC61CD00>}
+
+resource_tiles(list): [<lux.game_map.Cell object at 0x000001F8DC5F9250>, <lux.game_map.Cell object at 0x000001F8DC5F96D0>, <lux.game_map.Cell object at 0x000001F8DC5F9790>, <lux.game_map.Cell object at 0x000001F8DC5F9DF0>, <lux.game_map.Cell object at 0x000001F8DC5F9550>, <lux.game_map.Cell object at 0x000001F8DC5F9FD0>, <lux.game_map.Cell object at 0x000001F8DC5F6D90>, <lux.game_map.Cell object at 0x000001F8DC5CE610>, <lux.game_map.Cell object at 0x000001F8DC5CE6D0>, <lux.game_map.Cell object at 0x000001F8DC5CEC10>, <lux.game_map.Cell object at 0x000001F8DC5E86D0>, <lux.game_map.Cell object at 0x000001F8DC5FC6A0>, <lux.game_map.Cell object at 0x000001F8DC5FC9A0>, <lux.game_map.Cell object at 0x000001F8DC607CA0>, <lux.game_map.Cell object at 0x000001F8DC611370>, <lux.game_map.Cell object at 0x000001F8DC6117F0>, <lux.game_map.Cell object at 0x000001F8DC6118B0>, <lux.game_map.Cell object at 0x000001F8DC614580>, <lux.game_map.Cell object at 0x000001F8DC614640>, <lux.game_map.Cell object at 0x000001F8DC614A00>, <lux.game_map.Cell object at 0x000001F8DC61DA00>, <lux.game_map.Cell object at 0x000001F8DC603FD0>, <lux.game_map.Cell object at 0x000001F8DC62FAF0>, <lux.game_map.Cell object at 0x000001F8DC5FD310>, <lux.game_map.Cell object at 0x000001F8DC5E5B50>, <lux.game_map.Cell object at 0x000001F8DC5E5AC0>, <lux.game_map.Cell object at 0x000001F8DC5E5130>, <lux.game_map.Cell object at 0x000001F8DC5D6550>, <lux.game_map.Cell object at 0x000001F8DC5D6610>, <lux.game_map.Cell object at 0x000001F8DC5D6C10>, <lux.game_map.Cell object at 0x000001F8DC5DF160>, <lux.game_map.Cell object at 0x000001F8DC5DF220>, <lux.game_map.Cell object at 0x000001F8DC5DF820>, <lux.game_map.Cell object at 0x000001F8DC5DF8E0>, <lux.game_map.Cell object at 0x000001F8DC5DF9A0>, <lux.game_map.Cell object at 0x000001F8DC5C5370>, <lux.game_map.Cell object at 0x000001F8DC5DA8B0>, <lux.game_map.Cell object at 0x000001F8DC5C9070>, <lux.game_map.Cell object at 0x000001F8DC5CC1C0>, <lux.game_map.Cell object at 0x000001F8DC5CC280>, <lux.game_map.Cell object at 0x000001F8DC5CC7C0>, <lux.game_map.Cell object at 0x000001F8DC5D5520>, <lux.game_map.Cell object at 0x000001F8DC5D55E0>, <lux.game_map.Cell object at 0x000001F8DC5D59A0>, <lux.game_map.Cell object at 0x000001F8DC5D5A60>, <lux.game_map.Cell object at 0x000001F8DC5D5E20>, <lux.game_map.Cell object at 0x000001F8DC5D5EE0>, <lux.game_map.Cell object at 0x000001F8DC5E31F0>]
+
+resource_tiles[0]: <lux.game_map.Cell object at 0x000001F8DC5F9250>
+
+city_tiles(list): []
+
+actions: ['m u_2 e']
+
+get_close_resource: <lux.game_map.Cell object at 0x000001F8DC5DA8B0>
+
+build_location (variable): <lux.game_map.Cell object at 0x000001F8DC5D2F40>

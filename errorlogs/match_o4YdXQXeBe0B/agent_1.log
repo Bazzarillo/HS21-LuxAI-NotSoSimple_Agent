@@ -1,0 +1,11 @@
+=== Agent Install Log ===
+=== Agent Compile Log ===
+=== Agent Error Log ===
+Traceback (most recent call last):
+  File "main.py", line 3, in <module>
+    from agent import agent
+  File "C:\Users\LucaK\Desktop\Uni Luzern\Master\2. Semester\Introduction to Computer Science and Programming\GitHub_LuxAI\HS21-LuxAI-NotSoSimple_Agent\01_Agents\advanced_Luca\agent.py", line 474
+    f.write(f"Number of City Tiles: {len(city_tiles)}\nNumer of Workers: {len(workers)}\nResearch Points: {player.research_points}\n\nworker_positions(dict): {worker_positions}\n\nunit_to_city_dict: {unit_to_city_dict}\n\nunit_to_resource_dict: {unit_to_resource_dict}\n\nresource_tiles(list): {resource_tiles}\n\nget_close_resouce(list): {}\n\ncity_tiles(list): {city_tiles}\n\nactions: {actions}")
+            ^
+SyntaxError: f-string: empty expression not allowed
+Agent timed out

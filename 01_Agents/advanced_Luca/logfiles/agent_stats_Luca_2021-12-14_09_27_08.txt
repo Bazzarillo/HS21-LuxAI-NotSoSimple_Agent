@@ -1,0 +1,13 @@
+CityTiles: 0
+Numer of Workers: 1
+Research Points: 8
+
+worker_positions(dict): {'u_2': deque([(10, 10), (10, 10), (9, 10)], maxlen=3)}
+
+unit_to_city_dict: {'u_2': <lux.game_objects.CityTile object at 0x000001B9AAF5E0D0>}
+
+unit_to_resource_dict: {'u_2': <lux.game_map.Cell object at 0x000001B9AAF67160>}
+
+city_tiles(list): []
+
+actions: []

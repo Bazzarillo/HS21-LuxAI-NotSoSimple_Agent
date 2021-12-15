@@ -108,7 +108,7 @@ def find_empty_tile_near(near_what, game_state, observation):
         f.write(f"{observation['step']}: Couldn't find a tile next to, checking diagonals instead...\n")
     
         
-    # 2) try other directions
+    # 2) try other directions (diagonals)
     dirs = [(1,-1), (-1,1), (-1,-1), (1,1)] 
     
     for d in dirs:
@@ -126,13 +126,11 @@ def find_empty_tile_near(near_what, game_state, observation):
                 f.write(f"{observation['step']}: While searching for empty tiles:{str(e)}\n")
 
 
-    # PROBABLY should continue our search out with something like dirs = [(2,0), (0,2), (-2,0), (0,-2)]...
-    # and so on
-
 
     with open(logfile,"a") as f:
         f.write(f"{observation['step']}: Something likely went wrong, couldn't find any empty tile\n")
     return None
+
 
 
 ######################## Actual AI-Code starts here ##########################
