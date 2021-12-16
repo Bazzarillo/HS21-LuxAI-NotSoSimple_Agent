@@ -22,6 +22,7 @@ cd "C:\Users\LucaK\Desktop\Uni Luzern\Master\2. Semester\Introduction to Compute
 
 4) advanced_YouTube vs. advanced_Mirco
    => npx lux-ai-2021 01_Agents\advanced_YouTube\main.py 01_Agents\advanced_Luca\main.py 
+   => npx lux-ai-2021 01_Agents\advanced_Mirco\main.py 01_Agents\advanced_Luca\main.py  
    => npx lux-ai-2021 01_Agents\advanced_Merged\main.py 01_Agents\advanced_Luca\main.py    
 
    NOTE: Change path to change players...

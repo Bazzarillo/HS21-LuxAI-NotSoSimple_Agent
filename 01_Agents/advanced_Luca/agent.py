@@ -200,7 +200,7 @@ def agent(observation, configuration):
         if w.id not in unit_to_city_dict:
             
             with open(logfile, "a") as f:
-                f.write(f"{observation['step']} Found worker unaccounted for {w.id}\n\n")
+                f.write(f"{observation['step']}: Found worker unaccounted for {w.id}\n\n")
             
             # assign them to a city
             city_assignment = get_close_city(player, w)
@@ -208,7 +208,7 @@ def agent(observation, configuration):
 
     # log wokers' positions
     with open(logfile, "a") as f:
-        f.write(f"{observation['step']} Worker Positions {worker_positions}\n\n")
+        f.write(f"{observation['step']}: Worker Positions {worker_positions}\n\n")
 
 
 
@@ -218,7 +218,7 @@ def agent(observation, configuration):
         # capture if workers have resources
         if w.id not in unit_to_resource_dict:
             with open(logfile, "a") as f:
-                f.write(f"{observation['step']} Found worker w/o resource {w.id}\n\n")
+                f.write(f"{observation['step']}: Found worker w/o resource {w.id}\n\n")
 
             # resource assignment
             resource_assignment = get_close_resource(w, resource_tiles, player)
@@ -273,7 +273,7 @@ def agent(observation, configuration):
                         
                         # logging
                         with open(logfile, "a") as f:
-                            f.write(f"{observation['step']} Looks like a stuck worker {unit.id} - {last_positions}\n\n")
+                            f.write(f"{observation['step']}: Looks like a stuck worker {unit.id} - {last_positions}\n\n")
                         
                         # collision-solver ("random walk")
                         actions.append(unit.move(random.choice(["n","s","e","w"])))
@@ -321,13 +321,13 @@ def agent(observation, configuration):
                         except: continue
 
                         with open(logfile, "a") as f:
-                            f.write(f"{observation['step']} Stuff needed for building a City ({associated_city_id}) fuel: {unit_city_fuel}, size: {unit_city_size}, enough fuel: {enough_fuel}\n\n")
+                            f.write(f"{observation['step']}: Stuff needed for building a City ({associated_city_id}) fuel: {unit_city_fuel}, size: {unit_city_size}, enough fuel: {enough_fuel}\n\n")
 
                         # if we have enough fuel, we can try to build another city
                         if enough_fuel:
                             
                             with open(logfile, "a") as f:
-                                f.write(f"{observation['step']} We want to build a city!\n\n")
+                                f.write(f"{observation['step']}: We want to build a city!\n\n")
                             
                             
                             # but where do we want to build it?
@@ -358,7 +358,7 @@ def agent(observation, configuration):
                                 build_location = None
                                 
                                 with open(logfile, "a") as f:
-                                    f.write(f"{observation['step']} Built the city!\n\n")
+                                    f.write(f"{observation['step']}: ### We BUILT the city! ###\n        Number of City Tiles: {len(city_tiles)}\n\n")
                                 
                                 continue   
 
@@ -373,6 +373,9 @@ def agent(observation, configuration):
                                 dir_diff = (build_location.pos.x - unit.pos.x, build_location.pos.y - unit.pos.y)
                                 xdiff = dir_diff[0]
                                 ydiff = dir_diff[1]
+
+                                with open(logfile, "a") as f:
+                                    f.write(f"{observation['step']}: dir_diff: {dir_diff} xdiff: {dir_diff[0]} ydiff: {dir_diff[1]}\n\n")
 
                                 # Where to go?
                                 # decrease in x? West
@@ -413,6 +416,8 @@ def agent(observation, configuration):
                                         else:
                                             actions.append(unit.move("n"))
 
+                                with open(logfile, "a") as f:
+                                    f.write(f"{observation['step']}: ### Actions: {actions}\n\n")
 
                                 continue
                         
@@ -463,11 +468,13 @@ def agent(observation, configuration):
                         f.write(f"{observation['step']}: Created a worker! \n\n")
 
                 # if we cannot create a worker: => research!
+                # NOTE: more than 200 research points is a waste of resources!
                 else:
-                    actions.append(city_tile.research())
-                    with open(logfile, "a") as f:
-                        f.write(f"{observation['step']}: Doing research! \n\n")
-
+                    if player.research_points <= 199:
+                        actions.append(city_tile.research())
+                        
+                        with open(logfile, "a") as f:
+                            f.write(f"{observation['step']}: Doing research! \n\n")
 
     if observation["step"] == 359:
 
