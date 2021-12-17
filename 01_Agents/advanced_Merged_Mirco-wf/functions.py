@@ -125,7 +125,7 @@ def get_resource_density(game_state, height, width, observation):
 
 
 ## 4)
-def get_first_resource_max(max_coordinate):
+def get_first_resource_max(max_coordinate, game_state):
     '''
     This function gets the first resource tile in the area with the highest resource density.
     Used to send Workers to this direction.

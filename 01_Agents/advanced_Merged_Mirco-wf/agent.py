@@ -91,7 +91,8 @@ def agent(observation, configuration):
 
         TODO: We shoul maybe optimize the assignment so that it's not 50/50
         '''
-        tasks = ["Explorer","Mantainer"]
+        
+        tasks = ["Explorer","Mantainer", "Max_Explorer"]
 
         # Make sure the first worker is Mantainer, otherwise the city dies out.
         if w.id in ["u_1", "u_2"]:
@@ -106,16 +107,10 @@ def agent(observation, configuration):
             worker_positions[w.id].append((w.pos.x, w.pos.y))
 
         # Make sure that only Mantainer get assigned to a city.
+        # The first worker needs to be assigned to a city as the city otherwise dies out.
         if w.id not in unit_to_city_dict and worker_task[w.id] == "Mantainer":
             with open(logfile, "a") as f:
                 f.write(f"{observation['step']} Found mantainer unaccounted for {w.id}\n")
-            city_assignment = get_close_city(player, w)
-            unit_to_city_dict[w.id] = city_assignment
-
-        # The first worker needs to be assigned to a city as the city otherwise dies out.
-        if w.id not in unit_to_city_dict and w.id in ["u_1", "u_2"]:
-            with open(logfile, "a") as f:
-                f.write(f"{observation['step']} Found worker unaccounted for {w.id}\n")
             city_assignment = get_close_city(player, w)
             unit_to_city_dict[w.id] = city_assignment
 
@@ -124,10 +119,10 @@ def agent(observation, configuration):
 
     # Define the first explorer that directly goes to the max density area
     for w in workers:
-        if w.id not in unit_to_resource_dict and w.id == "u_4":
+        if w.id not in unit_to_resource_dict and worker_task[w.id] == "Max_Explorer":
             with open(logfile, "a") as f:
                 f.write(f"{observation['step']} Found the Max-Density Explorer{w.id}\n")
-            resource_assignment = get_first_resource_max(max_cell)
+            resource_assignment = get_first_resource_max(max_cell, game_state)
             unit_to_resource_dict[w.id] = resource_assignment
         else:
             if w.id not in unit_to_resource_dict:
