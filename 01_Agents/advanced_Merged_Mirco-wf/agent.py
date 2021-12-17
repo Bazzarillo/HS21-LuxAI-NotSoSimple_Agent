@@ -27,8 +27,21 @@ unit_to_city_dict = {}
 unit_to_resource_dict = {}
 worker_positions = {}
 worker_task = {}
-goals = {}
+worker_goal = {}
 
+# A task is constant during the game for every worker
+tasks = [
+    "Explorer", # Builds Cities
+    "Mantainer", # Keeps Cities afloat
+    "Max_Explorer" # Searches for high density resource area
+    ]
+
+# Goals get updated in every round
+goals = [
+    "Gathering", # Not moving, just gathering resources
+    "Walk to resource", # Move DIRECTLY to next resource
+    "Walk to city" # Move DIRECTLY to assigned city
+    ]
 
 # create log-file
 now = datetime.now()
@@ -91,14 +104,14 @@ def agent(observation, configuration):
 
         TODO: We shoul maybe optimize the assignment so that it's not 50/50
         '''
-        
-        tasks = ["Explorer","Mantainer", "Max_Explorer"]
 
         # Make sure the first worker is Mantainer, otherwise the city dies out.
         if w.id in ["u_1", "u_2"]:
             worker_task[w.id] = "Mantainer"
         else:
             worker_task[w.id] = random.choice(tasks)
+            if worker_task[w.id] == "Explorer" and "Max_Explorer" not in worker_task:
+                worker_task[w.id] = "Max_Explorer"
 
         if w.id in worker_positions:
             worker_positions[w.id].append((w.pos.x, w.pos.y))
@@ -108,7 +121,7 @@ def agent(observation, configuration):
 
         # Make sure that only Mantainer get assigned to a city.
         # The first worker needs to be assigned to a city as the city otherwise dies out.
-        if w.id not in unit_to_city_dict and worker_task[w.id] == "Mantainer":
+        if w.id not in unit_to_city_dict:
             with open(logfile, "a") as f:
                 f.write(f"{observation['step']} Found mantainer unaccounted for {w.id}\n")
             city_assignment = get_close_city(player, w)
@@ -121,7 +134,7 @@ def agent(observation, configuration):
     for w in workers:
         if w.id not in unit_to_resource_dict and worker_task[w.id] == "Max_Explorer":
             with open(logfile, "a") as f:
-                f.write(f"{observation['step']} Found the Max-Density Explorer{w.id}\n")
+                f.write(f"{observation['step']} Found the Max-Density Explorer {w.id}\n")
             resource_assignment = get_first_resource_max(max_cell, game_state)
             unit_to_resource_dict[w.id] = resource_assignment
         else:
@@ -199,7 +212,6 @@ def agent(observation, configuration):
                     # yes!
                     if cell.has_resource():
                         actions.append(unit.move(unit.pos.direction_to(intended_resource.pos)))
-
                     # no!
                     else:
                         intended_resource = get_close_resource(unit, resource_tiles, player)
@@ -391,7 +403,7 @@ def agent(observation, configuration):
                 # if we cannot create a worker: => research!
                 # NOTE: more than 200 research points is a waste of resources!
                 else:
-                    if player.research_points <= 199:
+                    if player.research_points <= 200:
                         actions.append(city_tile.research())
                         
                         with open(logfile, "a") as f:
