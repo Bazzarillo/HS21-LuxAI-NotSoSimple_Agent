@@ -191,6 +191,9 @@ def get_close_city(player, unit):
 
 ## 7)
 def find_empty_tile_near(near_what, game_state, observation):
+    """
+    a 5x5 squared area (near_what in the center) gets scanned...
+    """
     
     build_location = None
     

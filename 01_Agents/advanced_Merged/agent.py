@@ -258,19 +258,20 @@ def agent(observation, configuration):
                             ### but where do we want to build it?
                             
                             # if we do not have a build location yet...
+                            # find one!
                             if build_location is None:
 
-                                # near to other cities
-                                # at the beginning it makes sense to build cities near resources
-                                # later we should build cities where the resource-densitiy is high
-                                # no every unit should go further away...
+                                # 1) near to other cities (relative to the unit) or high resource densitiy respectively
+                                # empty_near = get_close_city(player, unit)
+
+                                # 2) vs. near to resources (relative to the unit) 
                                 if  observation["step"] > 120:
+                                    
                                     if worker_task[w.id] == "Explorer":
                                         near_what = max_cell
                                     else:
                                         near_what = get_close_resource(unit, resource_tiles, player)
 
-                            
                                 else: 
                                     near_what = get_close_resource(unit, resource_tiles, player)
 

@@ -86,7 +86,7 @@ def get_close_city(player, unit):
 
 
 ## 4) find_empty_tile_near
-## optimize the function => now a 5x5 squared area (unit in the center) gets scanned...
+## optimize the function => now a 5x5 squared area (near_what in the center) gets scanned...
 def find_empty_tile_near(near_what, game_state, observation):
     
     build_location = None
@@ -324,12 +324,13 @@ def agent(observation, configuration):
                             # but where do we want to build it?
                             
                             # if we do not have a build location yet...
-                            # find one near an existing one 
+                            # find one!
                             if build_location is None:
-                                # near to other cities
+                                
+                                # 1) near to other cities (relative to the unit)
                                 # empty_near = get_close_city(player, unit)
 
-                                # vs. near to resources
+                                # 2) vs. near to resources (relative to the unit)
                                 # maybe it would be better if the cities were built near to resources...
                                 # technically it is better but we need to focus on resource-density instead of single resource-tiles...
                                 # => use Mirco's funtion here!
