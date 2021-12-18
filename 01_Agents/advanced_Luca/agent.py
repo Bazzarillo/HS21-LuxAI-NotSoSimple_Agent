@@ -98,26 +98,17 @@ def find_empty_tile_near(near_what, game_state, observation):
     # get all possible combinations
     dirs = []
     for y in y_coord:
-        for x in x_coord:
-            dirs.append((x, y))
-    
+         for x in x_coord:
+             dirs.append((x, y))
+
     # remove position the worker is on and sort        
     dirs.remove((0, 0))
     dirs = sorted(dirs)
-    
+
+
     # sort the list again (it does not make any sense to start with tiles too far away...)
     # define inidices we want at the first positions (has to be set manually...)
-    index = [7, 11, 12, 16, 6, 8, 15, 17]
-
-    # get the other indices
-    index_other = []
-    for i in range(0, 23):
-        if i not in index:
-            index_other.append(i)
-
-    # get all indices in the right order
-    for i in index_other:
-        index.append(i)
+    index=[7, 11, 16, 12, 6, 15, 17, 8, 2, 10, 21, 13, 1, 14, 22, 9, 3, 5, 20, 18, 0, 19, 23, 4]
 
     # apply order to the list
     dirs = [dirs[ind] for ind in index]

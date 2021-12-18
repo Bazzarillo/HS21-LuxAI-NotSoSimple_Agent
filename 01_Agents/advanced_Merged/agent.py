@@ -429,4 +429,3 @@ def agent(observation, configuration):
 
     
     return actions
-
