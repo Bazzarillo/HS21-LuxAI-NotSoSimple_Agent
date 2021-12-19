@@ -206,7 +206,7 @@ def find_empty_tile_near_1(near_what, game_state, observation):
          for x in x_coord:
              dirs.append((x, y))
 
-    # remove position the worker is on and sort        
+    # remove start position and sort        
     dirs.remove((0, 0))
     dirs = sorted(dirs)
 
@@ -261,7 +261,7 @@ def find_empty_tile_near_2(near_what, game_state, observation):
          for x in x_coord:
              dirs.append((x, y))
 
-    # remove position the worker is on and sort        
+    # remove start position and sort         
     dirs.remove((0, 0))
     dirs = sorted(dirs)
 
