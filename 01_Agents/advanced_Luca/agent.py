@@ -113,34 +113,28 @@ def find_empty_tile_near(near_what, game_state, observation):
     # apply order to the list
     dirs = [dirs[ind] for ind in index]
 
-    # split list into groups of 4
-    n = 4
-    dirs = [dirs[i:i+n] for i in range(0, len(dirs), n)] 
-
-    # search for empty tiles
-    for list_element in dirs:
-        for d in list_element:
-            try:
-              possible_empty_tile = game_state.map.get_cell(near_what.pos.x+d[0], near_what.pos.y+d[1])
-            
-              if possible_empty_tile.resource == None and possible_empty_tile.road == 0 and possible_empty_tile.citytile == None:
-                 build_location = possible_empty_tile
-                
-                 # logging
-                 with open(logfile,"a") as f:
-                     f.write(f"{observation['step']}: Found build location:{build_location.pos}\n\n")
-
-                 return build_location
+    # iterate through the list
+    for d in dirs:
+        try:
+          possible_empty_tile = game_state.map.get_cell(near_what.pos.x+d[0], near_what.pos.y+d[1])
         
-            # catch errors
-            except Exception as e:
+          if possible_empty_tile.resource == None and possible_empty_tile.road == 0 and possible_empty_tile.citytile == None:
+             build_location = possible_empty_tile
+            
+             # logging
              with open(logfile,"a") as f:
-                 f.write(f"{observation['step']}: While searching for empty tiles:{str(e)}\n\n")
+                 f.write(f"{observation['step']}: Found build location:{build_location.pos}\n\n")
+             return build_location
     
-        with open(logfile,"a") as f:
-         f.write(f"{observation['step']}: Something likely went wrong, couldn't find any empty tile\n\n")
-         
-        return None
+        # catch errors
+        except Exception as e:
+         with open(logfile,"a") as f:
+             f.write(f"{observation['step']}: While searching for empty tiles:{str(e)}\n\n")
+
+    with open(logfile,"a") as f:
+     f.write(f"{observation['step']}: Something likely went wrong, couldn't find any empty tile\n\n")
+     
+    return None
 
 
 
@@ -334,9 +328,9 @@ def agent(observation, configuration):
                                 # maybe it would be better if the cities were built near to resources...
                                 # technically it is better but we need to focus on resource-density instead of single resource-tiles...
                                 # => use Mirco's funtion here!
-                                
                                 empty_near = get_close_resource(unit, resource_tiles, player)
 
+                                # define build location
                                 build_location = find_empty_tile_near(empty_near, game_state, observation)
 
                             # If the unit is already on a build location 
