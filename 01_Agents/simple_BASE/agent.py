@@ -37,31 +37,45 @@ def agent(observation, configuration):
 
     # we iterate over all our units and do something with them
     for unit in player.units:
+
         if unit.is_worker() and unit.can_act():
             closest_dist = math.inf
             closest_resource_tile = None
+            
+            # if the unit is a worker and we have space in cargo, lets find the nearest resource tile and try to mine it
             if unit.get_cargo_space_left() > 0:
-                # if the unit is a worker and we have space in cargo, lets find the nearest resource tile and try to mine it
+                
+                # check the resource tile's type and if the resource is already researched or not
                 for resource_tile in resource_tiles:
                     if resource_tile.resource.type == Constants.RESOURCE_TYPES.COAL and not player.researched_coal(): continue
                     if resource_tile.resource.type == Constants.RESOURCE_TYPES.URANIUM and not player.researched_uranium(): continue
+                    
+                    # get the closest resource tile (relative to the unit's position)
                     dist = resource_tile.pos.distance_to(unit.pos)
                     if dist < closest_dist:
                         closest_dist = dist
                         closest_resource_tile = resource_tile
+
+                # check if it is a valid tile and append action
                 if closest_resource_tile is not None:
                     actions.append(unit.move(unit.pos.direction_to(closest_resource_tile.pos)))
+            
             else:
                 # if unit is a worker and there is no cargo space left, and we have cities, lets return to them
                 if len(player.cities) > 0:
                     closest_dist = math.inf
                     closest_city_tile = None
+                    
                     for k, city in player.cities.items():
+                        
+                        # get the closest city tile (relative to the unit's position)
                         for city_tile in city.citytiles:
                             dist = city_tile.pos.distance_to(unit.pos)
                             if dist < closest_dist:
                                 closest_dist = dist
                                 closest_city_tile = city_tile
+
+                    # check if it is a valid tile and append action
                     if closest_city_tile is not None:
                         move_dir = unit.pos.direction_to(closest_city_tile.pos)
                         actions.append(unit.move(move_dir))
@@ -70,3 +84,6 @@ def agent(observation, configuration):
     # actions.append(annotate.circle(0, 0))
     
     return actions
+
+
+

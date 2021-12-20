@@ -212,7 +212,7 @@ def find_empty_tile_near_1(near_what, game_state, observation):
 
 
     # sort the list again (it does not make any sense to start with tiles too far away...)
-    # define inidices we want at the first positions (has to be set manually...)
+    # define indices  we want at the first positions (has to be set manually...)
     index=[7, 11, 16, 12, 6, 15, 17, 8, 2, 10, 21, 13, 1, 14, 22, 9, 3, 5, 20, 18, 0, 19, 23, 4]
 
     # apply order to the list
@@ -267,7 +267,7 @@ def find_empty_tile_near_2(near_what, game_state, observation):
 
 
     # sort the list again (it does not make any sense to start with tiles too far away...)
-    # define inidices we want at the first positions (has to be set manually...)
+    # define indices  we want at the first positions (has to be set manually...)
     index=[7, 11, 16, 12, 6, 15, 17, 8, 2, 10, 21, 13, 1, 14, 22, 9, 3, 5, 20, 18, 0, 19, 23, 4]
 
     # apply order to the list
