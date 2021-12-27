@@ -88,12 +88,6 @@ def agent(observation, configuration):
     ############################################# Setup #############################################
 
     ## 1)
-    if observation["step"] == 0:
-        # Get Cell in high resource density area
-        max_cell = get_resource_density(game_state, height, width, observation)
-
-    
-    ## 2)
 
     for w in workers:
         
@@ -174,7 +168,19 @@ def agent(observation, configuration):
 
     # we iterate over all our units and do something with them
     for unit in player.units:
-        
+
+        if observation["step"] == 0:
+            # Get Cell in high resource density area
+            max_cell = get_resource_density(game_state, height, width, observation, unit, resource_tiles, player)
+
+        if observation["step"] == 99:
+            # Get Cell in high resource density area
+            max_cell = get_resource_density(game_state, height, width, observation, unit, resource_tiles, player)
+
+        if observation["step"] == 200:
+            # Get Cell in high resource density area
+            max_cell = get_resource_density(game_state, height, width, observation, unit, resource_tiles, player)
+
 
         ## workers
         if unit.is_worker() and unit.can_act():
@@ -260,21 +266,25 @@ def agent(observation, configuration):
                                 # at the beginning it makes sense to build cities near resources
                                 # later we should build cities where the resource-densitiy is high
                                 # no every unit should go further away...
-                                if  observation["step"] > 120:
+                                if  observation["step"] > 100:
                                     if worker_task[w.id] == "Explorer":
                                         near_what = max_cell
                                     else:
-                                        near_what = get_close_resource(unit, resource_tiles, player)
+                                        near_what = get_close_city(player, unit)
 
                             
-                                else: 
-                                    near_what = get_close_resource(unit, resource_tiles, player)
+                                else:
+                                    near_what = get_close_city(player, unit)
 
                                 # define build location
                                 if near_what == max_cell:
                                     build_location = find_empty_tile_near_2(near_what, game_state, observation)
+                                    with open(logfile, "a") as f:
+                                        f.write(f"{observation['step']}: Building City in max area {max_cell} \n\n")
                                 else:
                                     build_location = find_empty_tile_near_1(near_what, game_state, observation)
+                                    with open(logfile, "a") as f:
+                                        f.write(f"{observation['step']}: Building City around standard area {near_what} \n\n")
 
 
                             # If the unit is already on a build location 
@@ -417,12 +427,12 @@ def agent(observation, configuration):
         with open(statsfile,"a") as f:
             f.write("\n\n################################# GAME STATS #################################\n\n\n\n")
             f.write(f"### Number of City Tiles: {len(city_tiles)}\n\n### Numer of Workers: {len(workers)}\n\n### Research Points: {player.research_points}\n\n\n\n")
+            f.write(f"### Map stats\n\n### Width: {width}\n\n### Length: {width}\n\n\n\n")
             f.write(f"### All units (list): {player.units}\n\n### Wokers (list): {workers}\n\n### city_tiles(list): {city_tiles}\n\n### resource_tiles(list): {resource_tiles}\n\n### resource_tiles[0]: {resource_tiles[0]}\n\n\n\n")
             f.write(f"### worker_positions(dict): {worker_positions}\n\n### unit_to_city_dict: {unit_to_city_dict}\n\n### unit_to_resource_dict: {unit_to_resource_dict}\n\n\n\n")
             f.write(f"### get_close_resource: {get_close_resource(unit, resource_tiles, player)}\n\n### get_close_city: {get_close_city(player, unit)}\n\n\n\n")
             f.write(f"### max_cell (variable): {max_cell}\n\n### build_location (variable): {build_location}\n\n### actions: {actions}\n\n\n\n")
             f.write(f"empty_near = get_close_resource(unit, resource_tiles, player): {get_close_resource(unit, resource_tiles, player)}")
-
-    
+            
     return actions
 

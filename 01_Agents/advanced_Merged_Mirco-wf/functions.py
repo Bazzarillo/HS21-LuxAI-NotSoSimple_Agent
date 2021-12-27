@@ -75,7 +75,7 @@ def get_ressource_types(game_state, height, width):
 
 
 ## 3)
-def get_resource_density(game_state, height, width, observation):
+def get_resource_density(game_state, height, width, observation, unit, resource_tiles, player):
     '''
     Create a numpy-array that is 01-coded, 1 = resource and 0 = no resource.
     Convolute over the whole array.
@@ -115,9 +115,12 @@ def get_resource_density(game_state, height, width, observation):
     #I stole this list comprehension from stack overflow
     sol = mat[:MK*K, :NL*L].reshape(MK, K, NL, L).mean(axis=(1, 3))
 
-    max = np.where(sol == sol.max())
-    max = max[0]
-    max_coordinate = [int(max[0])*c,int(max[1])*c]
+    try:
+        max = np.where(sol == sol.max())
+        max = max[0]
+        max_coordinate = [int(max[0])*c,int(max[1])*c]
+    except:
+        max_coordinate = get_close_resource(unit,resource_tiles, player)
 
     with open(logfile,"a") as f:
                     f.write(f"{observation['step']}: ### Found a hight density position:{max_coordinate} ###\n\n")
