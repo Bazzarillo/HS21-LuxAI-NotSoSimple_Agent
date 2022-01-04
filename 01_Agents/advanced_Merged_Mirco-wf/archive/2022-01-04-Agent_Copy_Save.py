@@ -232,7 +232,7 @@ def agent(observation, configuration):
                     
                     # Max Explorers should start to build as soon as possible
                     # build_city = true if the worker-city_tile-ratio is 0.75
-                    if build_city:
+                    if build_city or worker_task[unit.id] == "Max_Explorer":
 
                         try:
                             # to which city is the worker assigned to?
@@ -381,7 +381,7 @@ def agent(observation, configuration):
 
 
                     # if unit is a worker and there is no cargo space left, and we have cities, lets return to them
-                    elif unit.get_cargo_space_left() == 0:
+                    elif len(player.cities) > 0:
                         if unit.id in unit_to_city_dict and unit_to_city_dict[unit.id] in city_tiles:
                             move_dir = unit.pos.direction_to(unit_to_city_dict[unit.id].pos)
                             actions.append(unit.move(move_dir))
