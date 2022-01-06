@@ -1,0 +1,1200 @@
+0 Found mantainer unaccounted for u_2
+0 Worker Positions {'u_2': deque([(9, 5)], maxlen=3)}
+0 Found worker w/o resource u_2
+0: ### Found a hight density position:[0, 12] ###
+
+0: Doing research! 
+
+0 Found mantainer unaccounted for u_1
+0 Worker Positions {'u_1': deque([(6, 5)], maxlen=3)}
+0 Found worker w/o resource u_1
+0: ### Found a hight density position:[0, 12] ###
+
+0: Doing research! 
+
+1 Worker Positions {'u_1': deque([(6, 5), (5, 5)], maxlen=3)}
+1 Worker Positions {'u_2': deque([(9, 5), (10, 5)], maxlen=3)}
+2 Worker Positions {'u_1': deque([(6, 5), (5, 5), (5, 5)], maxlen=3)}
+2 Worker Positions {'u_2': deque([(9, 5), (10, 5), (10, 5)], maxlen=3)}
+3 Worker Positions {'u_1': deque([(5, 5), (5, 5), (5, 5)], maxlen=3)}
+3 Worker Positions {'u_2': deque([(10, 5), (10, 5), (10, 5)], maxlen=3)}
+3: Looks like a stuck worker u_1 - deque([(5, 5), (5, 5), (5, 5)], maxlen=3)
+
+3: Looks like a stuck worker u_2 - deque([(10, 5), (10, 5), (10, 5)], maxlen=3)
+
+4 Worker Positions {'u_1': deque([(5, 5), (5, 5), (5, 6)], maxlen=3)}
+4 Worker Positions {'u_2': deque([(10, 5), (10, 5), (10, 4)], maxlen=3)}
+5 Worker Positions {'u_1': deque([(5, 5), (5, 6), (5, 6)], maxlen=3)}
+5 Worker Positions {'u_2': deque([(10, 5), (10, 4), (10, 4)], maxlen=3)}
+5: Stuff needed for building a City (c_1) fuel: 0.0, size: 1, enough fuel: False
+
+5: Unit error 'u_1' 
+
+5: Stuff needed for building a City (c_2) fuel: 0.0, size: 1, enough fuel: False
+
+5: Unit error 'u_2' 
+
+6 Worker Positions {'u_1': deque([(5, 6), (5, 6), (5, 6)], maxlen=3)}
+6 Worker Positions {'u_2': deque([(10, 4), (10, 4), (10, 4)], maxlen=3)}
+6: Looks like a stuck worker u_2 - deque([(10, 4), (10, 4), (10, 4)], maxlen=3)
+
+6: Looks like a stuck worker u_1 - deque([(5, 6), (5, 6), (5, 6)], maxlen=3)
+
+7 Worker Positions {'u_2': deque([(10, 4), (10, 4), (11, 4)], maxlen=3)}
+7 Worker Positions {'u_1': deque([(5, 6), (5, 6), (5, 5)], maxlen=3)}
+8 Worker Positions {'u_1': deque([(5, 6), (5, 5), (5, 5)], maxlen=3)}
+8 Worker Positions {'u_2': deque([(10, 4), (11, 4), (11, 4)], maxlen=3)}
+8: Stuff needed for building a City (c_1) fuel: 0.0, size: 1, enough fuel: False
+
+8: Unit error 'u_1' 
+
+8: Stuff needed for building a City (c_2) fuel: 0.0, size: 1, enough fuel: False
+
+8: Unit error 'u_2' 
+
+9 Worker Positions {'u_1': deque([(5, 5), (5, 5), (5, 5)], maxlen=3)}
+9 Worker Positions {'u_2': deque([(11, 4), (11, 4), (11, 4)], maxlen=3)}
+9: Looks like a stuck worker u_1 - deque([(5, 5), (5, 5), (5, 5)], maxlen=3)
+
+9: Looks like a stuck worker u_2 - deque([(11, 4), (11, 4), (11, 4)], maxlen=3)
+
+10 Worker Positions {'u_1': deque([(5, 5), (5, 5), (4, 5)], maxlen=3)}
+10 Worker Positions {'u_2': deque([(11, 4), (11, 4), (11, 3)], maxlen=3)}
+10: Doing research! 
+
+10: Doing research! 
+
+11 Worker Positions {'u_2': deque([(11, 4), (11, 3), (11, 3)], maxlen=3)}
+11 Worker Positions {'u_1': deque([(5, 5), (4, 5), (4, 5)], maxlen=3)}
+11: Stuff needed for building a City (c_2) fuel: 0.0, size: 1, enough fuel: False
+
+11: Unit error 'u_2' 
+
+11: Stuff needed for building a City (c_1) fuel: 0.0, size: 1, enough fuel: False
+
+11: Unit error 'u_1' 
+
+12 Worker Positions {'u_1': deque([(4, 5), (4, 5), (4, 5)], maxlen=3)}
+12 Worker Positions {'u_2': deque([(11, 3), (11, 3), (11, 3)], maxlen=3)}
+12: Looks like a stuck worker u_1 - deque([(4, 5), (4, 5), (4, 5)], maxlen=3)
+
+12: Looks like a stuck worker u_2 - deque([(11, 3), (11, 3), (11, 3)], maxlen=3)
+
+13 Worker Positions {'u_2': deque([(11, 3), (11, 3), (11, 2)], maxlen=3)}
+13 Worker Positions {'u_1': deque([(4, 5), (4, 5), (4, 4)], maxlen=3)}
+14 Worker Positions {'u_2': deque([(11, 3), (11, 2), (11, 2)], maxlen=3)}
+14 Worker Positions {'u_1': deque([(4, 5), (4, 4), (4, 4)], maxlen=3)}
+14: Stuff needed for building a City (c_2) fuel: 0.0, size: 1, enough fuel: False
+
+14: Unit error 'u_2' 
+
+14: Stuff needed for building a City (c_1) fuel: 0.0, size: 1, enough fuel: False
+
+14: Unit error 'u_1' 
+
+15 Worker Positions {'u_1': deque([(4, 4), (4, 4), (4, 4)], maxlen=3)}
+15 Worker Positions {'u_2': deque([(11, 2), (11, 2), (11, 2)], maxlen=3)}
+15: Looks like a stuck worker u_1 - deque([(4, 4), (4, 4), (4, 4)], maxlen=3)
+
+15: Looks like a stuck worker u_2 - deque([(11, 2), (11, 2), (11, 2)], maxlen=3)
+
+16 Worker Positions {'u_1': deque([(4, 4), (4, 4), (3, 4)], maxlen=3)}
+16 Worker Positions {'u_2': deque([(11, 2), (11, 2), (11, 1)], maxlen=3)}
+17 Worker Positions {'u_1': deque([(4, 4), (3, 4), (3, 4)], maxlen=3)}
+17 Worker Positions {'u_2': deque([(11, 2), (11, 1), (11, 1)], maxlen=3)}
+17: Stuff needed for building a City (c_1) fuel: 0.0, size: 1, enough fuel: False
+
+17: Stuff needed for building a City (c_2) fuel: 0.0, size: 1, enough fuel: False
+
+17: Unit error 'u_1' 
+
+17: Unit error 'u_2' 
+
+18 Worker Positions {'u_2': deque([(11, 1), (11, 1), (11, 1)], maxlen=3)}
+18 Worker Positions {'u_1': deque([(3, 4), (3, 4), (3, 4)], maxlen=3)}
+18: Looks like a stuck worker u_2 - deque([(11, 1), (11, 1), (11, 1)], maxlen=3)
+
+18: Looks like a stuck worker u_1 - deque([(3, 4), (3, 4), (3, 4)], maxlen=3)
+
+19 Worker Positions {'u_1': deque([(3, 4), (3, 4), (2, 4)], maxlen=3)}
+19 Worker Positions {'u_2': deque([(11, 1), (11, 1), (12, 1)], maxlen=3)}
+20 Worker Positions {'u_2': deque([(11, 1), (12, 1), (12, 1)], maxlen=3)}
+20 Worker Positions {'u_1': deque([(3, 4), (2, 4), (2, 4)], maxlen=3)}
+20: Stuff needed for building a City (c_2) fuel: 0.0, size: 1, enough fuel: False
+
+20: Stuff needed for building a City (c_1) fuel: 0.0, size: 1, enough fuel: False
+
+20: Unit error 'u_2' 
+
+20: Unit error 'u_1' 
+
+20: Doing research! 
+
+20: Doing research! 
+
+21 Worker Positions {'u_2': deque([(12, 1), (12, 1), (12, 1)], maxlen=3)}
+21 Worker Positions {'u_1': deque([(2, 4), (2, 4), (2, 4)], maxlen=3)}
+21: Looks like a stuck worker u_2 - deque([(12, 1), (12, 1), (12, 1)], maxlen=3)
+
+21: Looks like a stuck worker u_1 - deque([(2, 4), (2, 4), (2, 4)], maxlen=3)
+
+22 Worker Positions {'u_1': deque([(2, 4), (2, 4), (2, 3)], maxlen=3)}
+22 Worker Positions {'u_2': deque([(12, 1), (12, 1), (12, 2)], maxlen=3)}
+23 Worker Positions {'u_2': deque([(12, 1), (12, 2), (12, 2)], maxlen=3)}
+23 Worker Positions {'u_1': deque([(2, 4), (2, 3), (2, 3)], maxlen=3)}
+23: Stuff needed for building a City (c_2) fuel: 0.0, size: 1, enough fuel: False
+
+23: Unit error 'u_2' 
+
+23: Stuff needed for building a City (c_1) fuel: 0.0, size: 1, enough fuel: False
+
+23: Unit error 'u_1' 
+
+24 Worker Positions {'u_1': deque([(2, 3), (2, 3), (2, 3)], maxlen=3)}
+24 Worker Positions {'u_2': deque([(12, 2), (12, 2), (12, 2)], maxlen=3)}
+24: Looks like a stuck worker u_2 - deque([(12, 2), (12, 2), (12, 2)], maxlen=3)
+
+24: Looks like a stuck worker u_1 - deque([(2, 3), (2, 3), (2, 3)], maxlen=3)
+
+25 Worker Positions {'u_2': deque([(12, 2), (12, 2), (12, 3)], maxlen=3)}
+25 Worker Positions {'u_1': deque([(2, 3), (2, 3), (2, 2)], maxlen=3)}
+26 Worker Positions {'u_1': deque([(2, 3), (2, 2), (2, 2)], maxlen=3)}
+26 Worker Positions {'u_2': deque([(12, 2), (12, 3), (12, 3)], maxlen=3)}
+26: Stuff needed for building a City (c_1) fuel: 0.0, size: 1, enough fuel: False
+
+26: Unit error 'u_1' 
+
+26: Stuff needed for building a City (c_2) fuel: 0.0, size: 1, enough fuel: False
+
+26: Unit error 'u_2' 
+
+27 Worker Positions {'u_1': deque([(2, 2), (2, 2), (2, 2)], maxlen=3)}
+27 Worker Positions {'u_2': deque([(12, 3), (12, 3), (12, 3)], maxlen=3)}
+27: Looks like a stuck worker u_1 - deque([(2, 2), (2, 2), (2, 2)], maxlen=3)
+
+27: Looks like a stuck worker u_2 - deque([(12, 3), (12, 3), (12, 3)], maxlen=3)
+
+28 Worker Positions {'u_2': deque([(12, 3), (12, 3), (12, 4)], maxlen=3)}
+28 Worker Positions {'u_1': deque([(2, 2), (2, 2), (3, 2)], maxlen=3)}
+29 Worker Positions {'u_1': deque([(2, 2), (3, 2), (3, 2)], maxlen=3)}
+29 Worker Positions {'u_2': deque([(12, 3), (12, 4), (12, 4)], maxlen=3)}
+29: Stuff needed for building a City (c_1) fuel: 0.0, size: 1, enough fuel: False
+
+29: Stuff needed for building a City (c_2) fuel: 0.0, size: 1, enough fuel: False
+
+29: Unit error 'u_2' 
+
+29: Unit error 'u_1' 
+
+30 Worker Positions {'u_2': deque([(12, 4), (12, 4), (12, 4)], maxlen=3)}
+30 Worker Positions {'u_1': deque([(3, 2), (3, 2), (3, 2)], maxlen=3)}
+30: Looks like a stuck worker u_2 - deque([(12, 4), (12, 4), (12, 4)], maxlen=3)
+
+30: Looks like a stuck worker u_1 - deque([(3, 2), (3, 2), (3, 2)], maxlen=3)
+
+30: Doing research! 
+
+30: Doing research! 
+
+31 Worker Positions {'u_1': deque([(3, 2), (3, 2), (3, 1)], maxlen=3)}
+31 Worker Positions {'u_2': deque([(12, 4), (12, 4), (12, 3)], maxlen=3)}
+32 Worker Positions {'u_1': deque([(3, 2), (3, 1), (3, 1)], maxlen=3)}
+32 Worker Positions {'u_2': deque([(12, 4), (12, 3), (12, 3)], maxlen=3)}
+33 Worker Positions {'u_1': deque([(3, 1), (3, 1), (3, 1)], maxlen=3)}
+33 Worker Positions {'u_2': deque([(12, 3), (12, 3), (12, 3)], maxlen=3)}
+34 Worker Positions {'u_1': deque([(3, 1), (3, 1), (3, 1)], maxlen=3)}
+34 Worker Positions {'u_2': deque([(12, 3), (12, 3), (12, 3)], maxlen=3)}
+34: Looks like a stuck worker u_1 - deque([(3, 1), (3, 1), (3, 1)], maxlen=3)
+
+34: Looks like a stuck worker u_2 - deque([(12, 3), (12, 3), (12, 3)], maxlen=3)
+
+35 Worker Positions {'u_2': deque([(12, 3), (12, 3), (12, 4)], maxlen=3)}
+35 Worker Positions {'u_1': deque([(3, 1), (3, 1), (3, 0)], maxlen=3)}
+36 Worker Positions {'u_2': deque([(12, 3), (12, 4), (12, 4)], maxlen=3)}
+36 Worker Positions {'u_1': deque([(3, 1), (3, 0), (3, 0)], maxlen=3)}
+37 Worker Positions {'u_1': deque([(3, 0), (3, 0), (3, 0)], maxlen=3)}
+37 Worker Positions {'u_2': deque([(12, 4), (12, 4), (12, 4)], maxlen=3)}
+38 Worker Positions {'u_1': deque([(3, 0), (3, 0), (3, 0)], maxlen=3)}
+38 Worker Positions {'u_2': deque([(12, 4), (12, 4), (12, 4)], maxlen=3)}
+38: Looks like a stuck worker u_1 - deque([(3, 0), (3, 0), (3, 0)], maxlen=3)
+
+38: Looks like a stuck worker u_2 - deque([(12, 4), (12, 4), (12, 4)], maxlen=3)
+
+39 Worker Positions {'u_2': deque([(12, 4), (12, 4), (11, 4)], maxlen=3)}
+39 Worker Positions {'u_1': deque([(3, 0), (3, 0), (3, 1)], maxlen=3)}
+40 Worker Positions {'u_2': deque([(12, 4), (11, 4), (11, 4)], maxlen=3)}
+40 Worker Positions {'u_1': deque([(3, 0), (3, 1), (3, 1)], maxlen=3)}
+41 Worker Positions {'u_2': deque([(11, 4), (11, 4), (11, 4)], maxlen=3)}
+41 Worker Positions {'u_1': deque([(3, 1), (3, 1), (3, 1)], maxlen=3)}
+42 Worker Positions {'u_2': deque([(11, 4), (11, 4), (11, 4)], maxlen=3)}
+42 Worker Positions {'u_1': deque([(3, 1), (3, 1), (3, 1)], maxlen=3)}
+42: Looks like a stuck worker u_2 - deque([(11, 4), (11, 4), (11, 4)], maxlen=3)
+
+42: Looks like a stuck worker u_1 - deque([(3, 1), (3, 1), (3, 1)], maxlen=3)
+
+43 Worker Positions {'u_1': deque([(3, 1), (3, 1), (3, 0)], maxlen=3)}
+43 Worker Positions {'u_2': deque([(11, 4), (11, 4), (11, 3)], maxlen=3)}
+44 Worker Positions {'u_1': deque([(3, 1), (3, 0), (3, 0)], maxlen=3)}
+44 Worker Positions {'u_2': deque([(11, 4), (11, 3), (11, 3)], maxlen=3)}
+45 Worker Positions {'u_2': deque([(11, 3), (11, 3), (11, 4)], maxlen=3)}
+45 Worker Positions {'u_1': deque([(3, 0), (3, 0), (4, 0)], maxlen=3)}
+46 Worker Positions {'u_1': deque([(3, 0), (4, 0), (4, 0)], maxlen=3)}
+46 Worker Positions {'u_2': deque([(11, 3), (11, 4), (11, 4)], maxlen=3)}
+47 Worker Positions {'u_1': deque([(4, 0), (4, 0), (5, 0)], maxlen=3)}
+47 Worker Positions {'u_2': deque([(11, 4), (11, 4), (11, 5)], maxlen=3)}
+48 Worker Positions {'u_2': deque([(11, 4), (11, 5), (11, 5)], maxlen=3)}
+48 Worker Positions {'u_1': deque([(4, 0), (5, 0), (5, 0)], maxlen=3)}
+49 Worker Positions {'u_2': deque([(11, 5), (11, 5), (11, 5)], maxlen=3)}
+49 Worker Positions {'u_1': deque([(5, 0), (5, 0), (5, 1)], maxlen=3)}
+49: Looks like a stuck worker u_2 - deque([(11, 5), (11, 5), (11, 5)], maxlen=3)
+
+50 Worker Positions {'u_2': deque([(11, 5), (11, 5), (11, 6)], maxlen=3)}
+50 Worker Positions {'u_1': deque([(5, 0), (5, 1), (5, 1)], maxlen=3)}
+51 Worker Positions {'u_1': deque([(5, 1), (5, 1), (5, 2)], maxlen=3)}
+51 Worker Positions {'u_2': deque([(11, 5), (11, 6), (11, 6)], maxlen=3)}
+52 Worker Positions {'u_2': deque([(11, 6), (11, 6), (11, 6)], maxlen=3)}
+52 Worker Positions {'u_1': deque([(5, 1), (5, 2), (5, 2)], maxlen=3)}
+52: Looks like a stuck worker u_2 - deque([(11, 6), (11, 6), (11, 6)], maxlen=3)
+
+53 Worker Positions {'u_2': deque([(11, 6), (11, 6), (10, 6)], maxlen=3)}
+53 Worker Positions {'u_1': deque([(5, 2), (5, 2), (5, 3)], maxlen=3)}
+54 Worker Positions {'u_2': deque([(11, 6), (10, 6), (10, 6)], maxlen=3)}
+54 Worker Positions {'u_1': deque([(5, 2), (5, 3), (5, 3)], maxlen=3)}
+55 Worker Positions {'u_2': deque([(10, 6), (10, 6), (10, 6)], maxlen=3)}
+55 Worker Positions {'u_1': deque([(5, 3), (5, 3), (5, 4)], maxlen=3)}
+55: Looks like a stuck worker u_2 - deque([(10, 6), (10, 6), (10, 6)], maxlen=3)
+
+56 Worker Positions {'u_1': deque([(5, 3), (5, 4), (5, 4)], maxlen=3)}
+56 Worker Positions {'u_2': deque([(10, 6), (10, 6), (10, 5)], maxlen=3)}
+57 Worker Positions {'u_1': deque([(5, 4), (5, 4), (5, 4)], maxlen=3)}
+57 Worker Positions {'u_2': deque([(10, 6), (10, 5), (10, 5)], maxlen=3)}
+57: Looks like a stuck worker u_1 - deque([(5, 4), (5, 4), (5, 4)], maxlen=3)
+
+58 Worker Positions {'u_2': deque([(10, 5), (10, 5), (10, 5)], maxlen=3)}
+58 Worker Positions {'u_1': deque([(5, 4), (5, 4), (6, 4)], maxlen=3)}
+58: Looks like a stuck worker u_2 - deque([(10, 5), (10, 5), (10, 5)], maxlen=3)
+
+59 Worker Positions {'u_1': deque([(5, 4), (6, 4), (6, 4)], maxlen=3)}
+59 Worker Positions {'u_2': deque([(10, 5), (10, 5), (9, 5)], maxlen=3)}
+60 Worker Positions {'u_2': deque([(10, 5), (9, 5), (9, 5)], maxlen=3)}
+60 Worker Positions {'u_1': deque([(6, 4), (6, 4), (6, 4)], maxlen=3)}
+60: Looks like a stuck worker u_1 - deque([(6, 4), (6, 4), (6, 4)], maxlen=3)
+
+61 Worker Positions {'u_2': deque([(9, 5), (9, 5), (9, 5)], maxlen=3)}
+61 Worker Positions {'u_1': deque([(6, 4), (6, 4), (5, 4)], maxlen=3)}
+61: Looks like a stuck worker u_2 - deque([(9, 5), (9, 5), (9, 5)], maxlen=3)
+
+62 Worker Positions {'u_2': deque([(9, 5), (9, 5), (9, 4)], maxlen=3)}
+62 Worker Positions {'u_1': deque([(6, 4), (5, 4), (5, 4)], maxlen=3)}
+63 Worker Positions {'u_1': deque([(5, 4), (5, 4), (5, 4)], maxlen=3)}
+63 Worker Positions {'u_2': deque([(9, 5), (9, 4), (9, 4)], maxlen=3)}
+63: Looks like a stuck worker u_1 - deque([(5, 4), (5, 4), (5, 4)], maxlen=3)
+
+64 Worker Positions {'u_1': deque([(5, 4), (5, 4), (5, 3)], maxlen=3)}
+64 Worker Positions {'u_2': deque([(9, 4), (9, 4), (9, 4)], maxlen=3)}
+64: Looks like a stuck worker u_2 - deque([(9, 4), (9, 4), (9, 4)], maxlen=3)
+
+65 Worker Positions {'u_1': deque([(5, 4), (5, 3), (5, 3)], maxlen=3)}
+65 Worker Positions {'u_2': deque([(9, 4), (9, 4), (9, 5)], maxlen=3)}
+66 Worker Positions {'u_1': deque([(5, 3), (5, 3), (5, 3)], maxlen=3)}
+66 Worker Positions {'u_2': deque([(9, 4), (9, 5), (9, 5)], maxlen=3)}
+66: Looks like a stuck worker u_1 - deque([(5, 3), (5, 3), (5, 3)], maxlen=3)
+
+67 Worker Positions {'u_2': deque([(9, 5), (9, 5), (9, 5)], maxlen=3)}
+67 Worker Positions {'u_1': deque([(5, 3), (5, 3), (4, 3)], maxlen=3)}
+67: Looks like a stuck worker u_2 - deque([(9, 5), (9, 5), (9, 5)], maxlen=3)
+
+68 Worker Positions {'u_2': deque([(9, 5), (9, 5), (10, 5)], maxlen=3)}
+68 Worker Positions {'u_1': deque([(5, 3), (4, 3), (4, 3)], maxlen=3)}
+69 Worker Positions {'u_2': deque([(9, 5), (10, 5), (10, 5)], maxlen=3)}
+69 Worker Positions {'u_1': deque([(4, 3), (4, 3), (4, 3)], maxlen=3)}
+69: Looks like a stuck worker u_1 - deque([(4, 3), (4, 3), (4, 3)], maxlen=3)
+
+70 Worker Positions {'u_1': deque([(4, 3), (4, 3), (4, 2)], maxlen=3)}
+70 Worker Positions {'u_2': deque([(10, 5), (10, 5), (10, 5)], maxlen=3)}
+70: Looks like a stuck worker u_2 - deque([(10, 5), (10, 5), (10, 5)], maxlen=3)
+
+71 Worker Positions {'u_1': deque([(4, 3), (4, 2), (4, 2)], maxlen=3)}
+71 Worker Positions {'u_2': deque([(10, 5), (10, 5), (11, 5)], maxlen=3)}
+72 Worker Positions {'u_2': deque([(10, 5), (11, 5), (11, 5)], maxlen=3)}
+72 Worker Positions {'u_1': deque([(4, 2), (4, 2), (5, 2)], maxlen=3)}
+73 Worker Positions {'u_1': deque([(4, 2), (5, 2), (5, 2)], maxlen=3)}
+73 Worker Positions {'u_2': deque([(11, 5), (11, 5), (11, 5)], maxlen=3)}
+74 Worker Positions {'u_1': deque([(5, 2), (5, 2), (5, 2)], maxlen=3)}
+74 Worker Positions {'u_2': deque([(11, 5), (11, 5), (11, 5)], maxlen=3)}
+74: Looks like a stuck worker u_2 - deque([(11, 5), (11, 5), (11, 5)], maxlen=3)
+
+75 Worker Positions {'u_1': deque([(5, 2), (5, 2), (5, 2)], maxlen=3)}
+75 Worker Positions {'u_2': deque([(11, 5), (11, 5), (11, 4)], maxlen=3)}
+75: Looks like a stuck worker u_1 - deque([(5, 2), (5, 2), (5, 2)], maxlen=3)
+
+76 Worker Positions {'u_1': deque([(5, 2), (5, 2), (5, 1)], maxlen=3)}
+76 Worker Positions {'u_2': deque([(11, 5), (11, 4), (11, 4)], maxlen=3)}
+77 Worker Positions {'u_2': deque([(11, 4), (11, 4), (11, 4)], maxlen=3)}
+77 Worker Positions {'u_1': deque([(5, 2), (5, 1), (5, 1)], maxlen=3)}
+78 Worker Positions {'u_2': deque([(11, 4), (11, 4), (11, 4)], maxlen=3)}
+78 Worker Positions {'u_1': deque([(5, 1), (5, 1), (5, 1)], maxlen=3)}
+78: Looks like a stuck worker u_2 - deque([(11, 4), (11, 4), (11, 4)], maxlen=3)
+
+79 Worker Positions {'u_2': deque([(11, 4), (11, 4), (11, 5)], maxlen=3)}
+79 Worker Positions {'u_1': deque([(5, 1), (5, 1), (5, 1)], maxlen=3)}
+79: Looks like a stuck worker u_1 - deque([(5, 1), (5, 1), (5, 1)], maxlen=3)
+
+80 Worker Positions {'u_1': deque([(5, 1), (5, 1), (5, 0)], maxlen=3)}
+80 Worker Positions {'u_2': deque([(11, 4), (11, 5), (11, 5)], maxlen=3)}
+81 Worker Positions {'u_1': deque([(5, 1), (5, 0), (5, 0)], maxlen=3)}
+81 Worker Positions {'u_2': deque([(11, 5), (11, 5), (11, 5)], maxlen=3)}
+82 Worker Positions {'u_2': deque([(11, 5), (11, 5), (11, 5)], maxlen=3)}
+82 Worker Positions {'u_1': deque([(5, 0), (5, 0), (5, 0)], maxlen=3)}
+82: Looks like a stuck worker u_2 - deque([(11, 5), (11, 5), (11, 5)], maxlen=3)
+
+83 Worker Positions {'u_1': deque([(5, 0), (5, 0), (5, 0)], maxlen=3)}
+83 Worker Positions {'u_2': deque([(11, 5), (11, 5), (12, 5)], maxlen=3)}
+83: Looks like a stuck worker u_1 - deque([(5, 0), (5, 0), (5, 0)], maxlen=3)
+
+84 Worker Positions {'u_1': deque([(5, 0), (5, 0), (5, 1)], maxlen=3)}
+84 Worker Positions {'u_2': deque([(11, 5), (12, 5), (12, 5)], maxlen=3)}
+85 Worker Positions {'u_1': deque([(5, 0), (5, 1), (5, 1)], maxlen=3)}
+85 Worker Positions {'u_2': deque([(12, 5), (12, 5), (12, 5)], maxlen=3)}
+85: Looks like a stuck worker u_2 - deque([(12, 5), (12, 5), (12, 5)], maxlen=3)
+
+86 Worker Positions {'u_2': deque([(12, 5), (12, 5), (12, 4)], maxlen=3)}
+86 Worker Positions {'u_1': deque([(5, 1), (5, 1), (5, 2)], maxlen=3)}
+87 Worker Positions {'u_1': deque([(5, 1), (5, 2), (5, 2)], maxlen=3)}
+87 Worker Positions {'u_2': deque([(12, 5), (12, 4), (12, 4)], maxlen=3)}
+88 Worker Positions {'u_1': deque([(5, 2), (5, 2), (5, 3)], maxlen=3)}
+88 Worker Positions {'u_2': deque([(12, 4), (12, 4), (12, 4)], maxlen=3)}
+88: Looks like a stuck worker u_2 - deque([(12, 4), (12, 4), (12, 4)], maxlen=3)
+
+89 Worker Positions {'u_1': deque([(5, 2), (5, 3), (5, 3)], maxlen=3)}
+89 Worker Positions {'u_2': deque([(12, 4), (12, 4), (11, 4)], maxlen=3)}
+90 Worker Positions {'u_1': deque([(5, 3), (5, 3), (5, 4)], maxlen=3)}
+90 Worker Positions {'u_2': deque([(12, 4), (11, 4), (11, 4)], maxlen=3)}
+91 Worker Positions {'u_2': deque([(11, 4), (11, 4), (11, 4)], maxlen=3)}
+91 Worker Positions {'u_1': deque([(5, 3), (5, 4), (5, 4)], maxlen=3)}
+91: Looks like a stuck worker u_2 - deque([(11, 4), (11, 4), (11, 4)], maxlen=3)
+
+92 Worker Positions {'u_1': deque([(5, 4), (5, 4), (5, 4)], maxlen=3)}
+92 Worker Positions {'u_2': deque([(11, 4), (11, 4), (12, 4)], maxlen=3)}
+92: Looks like a stuck worker u_1 - deque([(5, 4), (5, 4), (5, 4)], maxlen=3)
+
+93 Worker Positions {'u_1': deque([(5, 4), (5, 4), (5, 3)], maxlen=3)}
+93 Worker Positions {'u_2': deque([(11, 4), (12, 4), (12, 4)], maxlen=3)}
+94 Worker Positions {'u_2': deque([(12, 4), (12, 4), (12, 4)], maxlen=3)}
+94 Worker Positions {'u_1': deque([(5, 4), (5, 3), (5, 3)], maxlen=3)}
+94: Looks like a stuck worker u_2 - deque([(12, 4), (12, 4), (12, 4)], maxlen=3)
+
+95 Worker Positions {'u_1': deque([(5, 3), (5, 3), (5, 3)], maxlen=3)}
+95 Worker Positions {'u_2': deque([(12, 4), (12, 4), (11, 4)], maxlen=3)}
+95: Looks like a stuck worker u_1 - deque([(5, 3), (5, 3), (5, 3)], maxlen=3)
+
+96 Worker Positions {'u_1': deque([(5, 3), (5, 3), (6, 3)], maxlen=3)}
+96 Worker Positions {'u_2': deque([(12, 4), (11, 4), (11, 4)], maxlen=3)}
+97 Worker Positions {'u_2': deque([(11, 4), (11, 4), (11, 4)], maxlen=3)}
+97 Worker Positions {'u_1': deque([(5, 3), (6, 3), (6, 3)], maxlen=3)}
+97: Looks like a stuck worker u_2 - deque([(11, 4), (11, 4), (11, 4)], maxlen=3)
+
+98 Worker Positions {'u_2': deque([(11, 4), (11, 4), (11, 3)], maxlen=3)}
+98 Worker Positions {'u_1': deque([(6, 3), (6, 3), (6, 3)], maxlen=3)}
+98: Looks like a stuck worker u_1 - deque([(6, 3), (6, 3), (6, 3)], maxlen=3)
+
+99 Worker Positions {'u_2': deque([(11, 4), (11, 3), (11, 3)], maxlen=3)}
+99 Worker Positions {'u_1': deque([(6, 3), (6, 3), (6, 2)], maxlen=3)}
+99: ### Found a hight density position:[0, 12] ###
+
+99: ### Found a hight density position:[0, 12] ###
+
+100 Worker Positions {'u_1': deque([(6, 3), (6, 2), (6, 2)], maxlen=3)}
+100 Worker Positions {'u_2': deque([(11, 3), (11, 3), (11, 3)], maxlen=3)}
+100: Looks like a stuck worker u_2 - deque([(11, 3), (11, 3), (11, 3)], maxlen=3)
+
+101 Worker Positions {'u_1': deque([(6, 2), (6, 2), (6, 2)], maxlen=3)}
+101 Worker Positions {'u_2': deque([(11, 3), (11, 3), (11, 4)], maxlen=3)}
+101: Looks like a stuck worker u_1 - deque([(6, 2), (6, 2), (6, 2)], maxlen=3)
+
+102 Worker Positions {'u_1': deque([(6, 2), (6, 2), (7, 2)], maxlen=3)}
+102 Worker Positions {'u_2': deque([(11, 3), (11, 4), (11, 4)], maxlen=3)}
+103 Worker Positions {'u_2': deque([(11, 4), (11, 4), (11, 4)], maxlen=3)}
+103 Worker Positions {'u_1': deque([(6, 2), (7, 2), (7, 2)], maxlen=3)}
+103: Looks like a stuck worker u_2 - deque([(11, 4), (11, 4), (11, 4)], maxlen=3)
+
+104 Worker Positions {'u_1': deque([(7, 2), (7, 2), (7, 2)], maxlen=3)}
+104 Worker Positions {'u_2': deque([(11, 4), (11, 4), (11, 3)], maxlen=3)}
+104: Looks like a stuck worker u_1 - deque([(7, 2), (7, 2), (7, 2)], maxlen=3)
+
+105 Worker Positions {'u_1': deque([(7, 2), (7, 2), (8, 2)], maxlen=3)}
+105 Worker Positions {'u_2': deque([(11, 4), (11, 3), (11, 3)], maxlen=3)}
+106 Worker Positions {'u_2': deque([(11, 3), (11, 3), (11, 3)], maxlen=3)}
+106 Worker Positions {'u_1': deque([(7, 2), (8, 2), (8, 2)], maxlen=3)}
+106: Looks like a stuck worker u_2 - deque([(11, 3), (11, 3), (11, 3)], maxlen=3)
+
+107 Worker Positions {'u_2': deque([(11, 3), (11, 3), (11, 4)], maxlen=3)}
+107 Worker Positions {'u_1': deque([(8, 2), (8, 2), (8, 2)], maxlen=3)}
+107: Looks like a stuck worker u_1 - deque([(8, 2), (8, 2), (8, 2)], maxlen=3)
+
+108 Worker Positions {'u_2': deque([(11, 3), (11, 4), (11, 4)], maxlen=3)}
+108 Worker Positions {'u_1': deque([(8, 2), (8, 2), (8, 1)], maxlen=3)}
+109 Worker Positions {'u_2': deque([(11, 4), (11, 4), (11, 4)], maxlen=3)}
+109: Looks like a stuck worker u_2 - deque([(11, 4), (11, 4), (11, 4)], maxlen=3)
+
+109 Worker Positions {'u_1': deque([(8, 2), (8, 1), (8, 1)], maxlen=3)}
+110 Worker Positions {'u_2': deque([(11, 4), (11, 4), (12, 4)], maxlen=3)}
+110 Worker Positions {'u_1': deque([(8, 1), (8, 1), (8, 1)], maxlen=3)}
+110: Looks like a stuck worker u_1 - deque([(8, 1), (8, 1), (8, 1)], maxlen=3)
+
+111 Worker Positions {'u_1': deque([(8, 1), (8, 1), (8, 2)], maxlen=3)}
+111 Worker Positions {'u_2': deque([(11, 4), (12, 4), (12, 4)], maxlen=3)}
+112 Worker Positions {'u_1': deque([(8, 1), (8, 2), (8, 2)], maxlen=3)}
+112 Worker Positions {'u_2': deque([(12, 4), (12, 4), (12, 5)], maxlen=3)}
+113 Worker Positions {'u_1': deque([(8, 2), (8, 2), (8, 2)], maxlen=3)}
+113 Worker Positions {'u_2': deque([(12, 4), (12, 5), (12, 5)], maxlen=3)}
+114 Worker Positions {'u_1': deque([(8, 2), (8, 2), (8, 2)], maxlen=3)}
+114 Worker Positions {'u_2': deque([(12, 5), (12, 5), (12, 5)], maxlen=3)}
+114: Looks like a stuck worker u_1 - deque([(8, 2), (8, 2), (8, 2)], maxlen=3)
+
+115 Worker Positions {'u_1': deque([(8, 2), (8, 2), (9, 2)], maxlen=3)}
+115 Worker Positions {'u_2': deque([(12, 5), (12, 5), (12, 5)], maxlen=3)}
+115: Looks like a stuck worker u_2 - deque([(12, 5), (12, 5), (12, 5)], maxlen=3)
+
+116 Worker Positions {'u_2': deque([(12, 5), (12, 5), (12, 4)], maxlen=3)}
+116 Worker Positions {'u_1': deque([(8, 2), (9, 2), (9, 2)], maxlen=3)}
+117 Worker Positions {'u_1': deque([(9, 2), (9, 2), (9, 2)], maxlen=3)}
+117 Worker Positions {'u_2': deque([(12, 5), (12, 4), (12, 4)], maxlen=3)}
+118 Worker Positions {'u_2': deque([(12, 4), (12, 4), (12, 4)], maxlen=3)}
+118 Worker Positions {'u_1': deque([(9, 2), (9, 2), (9, 2)], maxlen=3)}
+118: Looks like a stuck worker u_1 - deque([(9, 2), (9, 2), (9, 2)], maxlen=3)
+
+119 Worker Positions {'u_1': deque([(9, 2), (9, 2), (8, 2)], maxlen=3)}
+119 Worker Positions {'u_2': deque([(12, 4), (12, 4), (12, 4)], maxlen=3)}
+119: Looks like a stuck worker u_2 - deque([(12, 4), (12, 4), (12, 4)], maxlen=3)
+
+120 Worker Positions {'u_1': deque([(9, 2), (8, 2), (8, 2)], maxlen=3)}
+120 Worker Positions {'u_2': deque([(12, 4), (12, 4), (13, 4)], maxlen=3)}
+121 Worker Positions {'u_1': deque([(8, 2), (8, 2), (8, 2)], maxlen=3)}
+121 Worker Positions {'u_2': deque([(12, 4), (13, 4), (13, 4)], maxlen=3)}
+122 Worker Positions {'u_1': deque([(8, 2), (8, 2), (8, 2)], maxlen=3)}
+122 Worker Positions {'u_2': deque([(13, 4), (13, 4), (13, 4)], maxlen=3)}
+122: Looks like a stuck worker u_1 - deque([(8, 2), (8, 2), (8, 2)], maxlen=3)
+
+123 Worker Positions {'u_2': deque([(13, 4), (13, 4), (13, 4)], maxlen=3)}
+123 Worker Positions {'u_1': deque([(8, 2), (8, 2), (8, 3)], maxlen=3)}
+123: Looks like a stuck worker u_2 - deque([(13, 4), (13, 4), (13, 4)], maxlen=3)
+
+124 Worker Positions {'u_2': deque([(13, 4), (13, 4), (14, 4)], maxlen=3)}
+124 Worker Positions {'u_1': deque([(8, 2), (8, 3), (8, 3)], maxlen=3)}
+125 Worker Positions {'u_2': deque([(13, 4), (14, 4), (14, 4)], maxlen=3)}
+125 Worker Positions {'u_1': deque([(8, 3), (8, 3), (8, 4)], maxlen=3)}
+126 Worker Positions {'u_2': deque([(14, 4), (14, 4), (14, 5)], maxlen=3)}
+126 Worker Positions {'u_1': deque([(8, 3), (8, 4), (8, 4)], maxlen=3)}
+127 Worker Positions {'u_1': deque([(8, 4), (8, 4), (8, 5)], maxlen=3)}
+127 Worker Positions {'u_2': deque([(14, 4), (14, 5), (14, 5)], maxlen=3)}
+128 Worker Positions {'u_2': deque([(14, 5), (14, 5), (13, 5)], maxlen=3)}
+128 Worker Positions {'u_1': deque([(8, 4), (8, 5), (8, 5)], maxlen=3)}
+129 Worker Positions {'u_2': deque([(14, 5), (13, 5), (13, 5)], maxlen=3)}
+129 Worker Positions {'u_1': deque([(8, 5), (8, 5), (7, 5)], maxlen=3)}
+130 Worker Positions {'u_1': deque([(8, 5), (7, 5), (7, 5)], maxlen=3)}
+130 Worker Positions {'u_2': deque([(13, 5), (13, 5), (12, 5)], maxlen=3)}
+131 Worker Positions {'u_2': deque([(13, 5), (12, 5), (12, 5)], maxlen=3)}
+131 Worker Positions {'u_1': deque([(7, 5), (7, 5), (6, 5)], maxlen=3)}
+132 Worker Positions {'u_1': deque([(7, 5), (6, 5), (6, 5)], maxlen=3)}
+132 Worker Positions {'u_2': deque([(12, 5), (12, 5), (11, 5)], maxlen=3)}
+133 Worker Positions {'u_1': deque([(6, 5), (6, 5), (6, 5)], maxlen=3)}
+133 Worker Positions {'u_2': deque([(12, 5), (11, 5), (11, 5)], maxlen=3)}
+133: Looks like a stuck worker u_1 - deque([(6, 5), (6, 5), (6, 5)], maxlen=3)
+
+134 Worker Positions {'u_1': deque([(6, 5), (6, 5), (7, 5)], maxlen=3)}
+134 Worker Positions {'u_2': deque([(11, 5), (11, 5), (11, 5)], maxlen=3)}
+134: Looks like a stuck worker u_2 - deque([(11, 5), (11, 5), (11, 5)], maxlen=3)
+
+135 Worker Positions {'u_2': deque([(11, 5), (11, 5), (11, 4)], maxlen=3)}
+135 Worker Positions {'u_1': deque([(6, 5), (7, 5), (7, 5)], maxlen=3)}
+136 Worker Positions {'u_1': deque([(7, 5), (7, 5), (7, 5)], maxlen=3)}
+136 Worker Positions {'u_2': deque([(11, 5), (11, 4), (11, 4)], maxlen=3)}
+136: Looks like a stuck worker u_1 - deque([(7, 5), (7, 5), (7, 5)], maxlen=3)
+
+137 Worker Positions {'u_1': deque([(7, 5), (7, 5), (7, 4)], maxlen=3)}
+137 Worker Positions {'u_2': deque([(11, 4), (11, 4), (11, 4)], maxlen=3)}
+137: Looks like a stuck worker u_2 - deque([(11, 4), (11, 4), (11, 4)], maxlen=3)
+
+138 Worker Positions {'u_1': deque([(7, 5), (7, 4), (7, 4)], maxlen=3)}
+138 Worker Positions {'u_2': deque([(11, 4), (11, 4), (11, 3)], maxlen=3)}
+139 Worker Positions {'u_2': deque([(11, 4), (11, 3), (11, 3)], maxlen=3)}
+139 Worker Positions {'u_1': deque([(7, 4), (7, 4), (7, 4)], maxlen=3)}
+139: Looks like a stuck worker u_1 - deque([(7, 4), (7, 4), (7, 4)], maxlen=3)
+
+140 Worker Positions {'u_2': deque([(11, 3), (11, 3), (11, 3)], maxlen=3)}
+140 Worker Positions {'u_1': deque([(7, 4), (7, 4), (6, 4)], maxlen=3)}
+140: Looks like a stuck worker u_2 - deque([(11, 3), (11, 3), (11, 3)], maxlen=3)
+
+141 Worker Positions {'u_2': deque([(11, 3), (11, 3), (12, 3)], maxlen=3)}
+141 Worker Positions {'u_1': deque([(7, 4), (6, 4), (6, 4)], maxlen=3)}
+142 Worker Positions {'u_1': deque([(6, 4), (6, 4), (6, 4)], maxlen=3)}
+142 Worker Positions {'u_2': deque([(11, 3), (12, 3), (12, 3)], maxlen=3)}
+142: Looks like a stuck worker u_1 - deque([(6, 4), (6, 4), (6, 4)], maxlen=3)
+
+143 Worker Positions {'u_1': deque([(6, 4), (6, 4), (6, 5)], maxlen=3)}
+143 Worker Positions {'u_2': deque([(12, 3), (12, 3), (12, 3)], maxlen=3)}
+143: Looks like a stuck worker u_2 - deque([(12, 3), (12, 3), (12, 3)], maxlen=3)
+
+144 Worker Positions {'u_2': deque([(12, 3), (12, 3), (12, 2)], maxlen=3)}
+144 Worker Positions {'u_1': deque([(6, 4), (6, 5), (6, 5)], maxlen=3)}
+145 Worker Positions {'u_1': deque([(6, 5), (6, 5), (6, 5)], maxlen=3)}
+145 Worker Positions {'u_2': deque([(12, 3), (12, 2), (12, 2)], maxlen=3)}
+145: Looks like a stuck worker u_1 - deque([(6, 5), (6, 5), (6, 5)], maxlen=3)
+
+146 Worker Positions {'u_2': deque([(12, 2), (12, 2), (12, 2)], maxlen=3)}
+146 Worker Positions {'u_1': deque([(6, 5), (6, 5), (7, 5)], maxlen=3)}
+146: Looks like a stuck worker u_2 - deque([(12, 2), (12, 2), (12, 2)], maxlen=3)
+
+147 Worker Positions {'u_1': deque([(6, 5), (7, 5), (7, 5)], maxlen=3)}
+147 Worker Positions {'u_2': deque([(12, 2), (12, 2), (12, 1)], maxlen=3)}
+148 Worker Positions {'u_2': deque([(12, 2), (12, 1), (12, 1)], maxlen=3)}
+148 Worker Positions {'u_1': deque([(7, 5), (7, 5), (7, 5)], maxlen=3)}
+148: Looks like a stuck worker u_1 - deque([(7, 5), (7, 5), (7, 5)], maxlen=3)
+
+149 Worker Positions {'u_2': deque([(12, 1), (12, 1), (12, 1)], maxlen=3)}
+149 Worker Positions {'u_1': deque([(7, 5), (7, 5), (7, 6)], maxlen=3)}
+149: Looks like a stuck worker u_2 - deque([(12, 1), (12, 1), (12, 1)], maxlen=3)
+
+150 Worker Positions {'u_1': deque([(7, 5), (7, 6), (7, 6)], maxlen=3)}
+150 Worker Positions {'u_2': deque([(12, 1), (12, 1), (11, 1)], maxlen=3)}
+151 Worker Positions {'u_1': deque([(7, 6), (7, 6), (7, 6)], maxlen=3)}
+151: Looks like a stuck worker u_1 - deque([(7, 6), (7, 6), (7, 6)], maxlen=3)
+
+151 Worker Positions {'u_2': deque([(12, 1), (11, 1), (11, 1)], maxlen=3)}
+152 Worker Positions {'u_1': deque([(7, 6), (7, 6), (8, 6)], maxlen=3)}
+152 Worker Positions {'u_2': deque([(11, 1), (11, 1), (11, 2)], maxlen=3)}
+153 Worker Positions {'u_1': deque([(7, 6), (8, 6), (8, 6)], maxlen=3)}
+153 Worker Positions {'u_2': deque([(11, 1), (11, 2), (11, 2)], maxlen=3)}
+154 Worker Positions {'u_2': deque([(11, 2), (11, 2), (11, 2)], maxlen=3)}
+154 Worker Positions {'u_1': deque([(8, 6), (8, 6), (8, 6)], maxlen=3)}
+155 Worker Positions {'u_1': deque([(8, 6), (8, 6), (8, 6)], maxlen=3)}
+155 Worker Positions {'u_2': deque([(11, 2), (11, 2), (11, 2)], maxlen=3)}
+155: Looks like a stuck worker u_1 - deque([(8, 6), (8, 6), (8, 6)], maxlen=3)
+
+155: Looks like a stuck worker u_2 - deque([(11, 2), (11, 2), (11, 2)], maxlen=3)
+
+156 Worker Positions {'u_1': deque([(8, 6), (8, 6), (9, 6)], maxlen=3)}
+156 Worker Positions {'u_2': deque([(11, 2), (11, 2), (12, 2)], maxlen=3)}
+157 Worker Positions {'u_2': deque([(11, 2), (12, 2), (12, 2)], maxlen=3)}
+157 Worker Positions {'u_1': deque([(8, 6), (9, 6), (9, 6)], maxlen=3)}
+158 Worker Positions {'u_1': deque([(9, 6), (9, 6), (9, 6)], maxlen=3)}
+158 Worker Positions {'u_2': deque([(12, 2), (12, 2), (12, 2)], maxlen=3)}
+159 Worker Positions {'u_1': deque([(9, 6), (9, 6), (9, 6)], maxlen=3)}
+159 Worker Positions {'u_2': deque([(12, 2), (12, 2), (12, 2)], maxlen=3)}
+159: Looks like a stuck worker u_2 - deque([(12, 2), (12, 2), (12, 2)], maxlen=3)
+
+159: Looks like a stuck worker u_1 - deque([(9, 6), (9, 6), (9, 6)], maxlen=3)
+
+160 Worker Positions {'u_2': deque([(12, 2), (12, 2), (13, 2)], maxlen=3)}
+160 Worker Positions {'u_1': deque([(9, 6), (9, 6), (9, 5)], maxlen=3)}
+161 Worker Positions {'u_2': deque([(12, 2), (13, 2), (13, 2)], maxlen=3)}
+161 Worker Positions {'u_1': deque([(9, 6), (9, 5), (9, 5)], maxlen=3)}
+162 Worker Positions {'u_1': deque([(9, 5), (9, 5), (9, 5)], maxlen=3)}
+162 Worker Positions {'u_2': deque([(13, 2), (13, 2), (13, 2)], maxlen=3)}
+163 Worker Positions {'u_2': deque([(13, 2), (13, 2), (13, 2)], maxlen=3)}
+163 Worker Positions {'u_1': deque([(9, 5), (9, 5), (9, 5)], maxlen=3)}
+163: Looks like a stuck worker u_2 - deque([(13, 2), (13, 2), (13, 2)], maxlen=3)
+
+163: Looks like a stuck worker u_1 - deque([(9, 5), (9, 5), (9, 5)], maxlen=3)
+
+164 Worker Positions {'u_1': deque([(9, 5), (9, 5), (9, 6)], maxlen=3)}
+164 Worker Positions {'u_2': deque([(13, 2), (13, 2), (12, 2)], maxlen=3)}
+165 Worker Positions {'u_1': deque([(9, 5), (9, 6), (9, 6)], maxlen=3)}
+165 Worker Positions {'u_2': deque([(13, 2), (12, 2), (12, 2)], maxlen=3)}
+166 Worker Positions {'u_1': deque([(9, 6), (9, 6), (9, 6)], maxlen=3)}
+166 Worker Positions {'u_2': deque([(12, 2), (12, 2), (12, 3)], maxlen=3)}
+166: Looks like a stuck worker u_1 - deque([(9, 6), (9, 6), (9, 6)], maxlen=3)
+
+167 Worker Positions {'u_1': deque([(9, 6), (9, 6), (8, 6)], maxlen=3)}
+167 Worker Positions {'u_2': deque([(12, 2), (12, 3), (12, 3)], maxlen=3)}
+168 Worker Positions {'u_1': deque([(9, 6), (8, 6), (8, 6)], maxlen=3)}
+168 Worker Positions {'u_2': deque([(12, 3), (12, 3), (12, 4)], maxlen=3)}
+169 Worker Positions {'u_2': deque([(12, 3), (12, 4), (12, 4)], maxlen=3)}
+169 Worker Positions {'u_1': deque([(8, 6), (8, 6), (8, 6)], maxlen=3)}
+169: Looks like a stuck worker u_1 - deque([(8, 6), (8, 6), (8, 6)], maxlen=3)
+
+170 Worker Positions {'u_1': deque([(8, 6), (8, 6), (8, 7)], maxlen=3)}
+170 Worker Positions {'u_2': deque([(12, 4), (12, 4), (12, 5)], maxlen=3)}
+171 Worker Positions {'u_1': deque([(8, 6), (8, 7), (8, 7)], maxlen=3)}
+171 Worker Positions {'u_2': deque([(12, 4), (12, 5), (12, 5)], maxlen=3)}
+172 Worker Positions {'u_1': deque([(8, 7), (8, 7), (8, 7)], maxlen=3)}
+172 Worker Positions {'u_2': deque([(12, 5), (12, 5), (11, 5)], maxlen=3)}
+172: Looks like a stuck worker u_1 - deque([(8, 7), (8, 7), (8, 7)], maxlen=3)
+
+173 Worker Positions {'u_1': deque([(8, 7), (8, 7), (8, 6)], maxlen=3)}
+173 Worker Positions {'u_2': deque([(12, 5), (11, 5), (11, 5)], maxlen=3)}
+174 Worker Positions {'u_1': deque([(8, 7), (8, 6), (8, 6)], maxlen=3)}
+174 Worker Positions {'u_2': deque([(11, 5), (11, 5), (11, 5)], maxlen=3)}
+174: Looks like a stuck worker u_2 - deque([(11, 5), (11, 5), (11, 5)], maxlen=3)
+
+175 Worker Positions {'u_1': deque([(8, 6), (8, 6), (8, 6)], maxlen=3)}
+175 Worker Positions {'u_2': deque([(11, 5), (11, 5), (12, 5)], maxlen=3)}
+175: Looks like a stuck worker u_1 - deque([(8, 6), (8, 6), (8, 6)], maxlen=3)
+
+176 Worker Positions {'u_1': deque([(8, 6), (8, 6), (8, 7)], maxlen=3)}
+176 Worker Positions {'u_2': deque([(11, 5), (12, 5), (12, 5)], maxlen=3)}
+177 Worker Positions {'u_2': deque([(12, 5), (12, 5), (12, 5)], maxlen=3)}
+177 Worker Positions {'u_1': deque([(8, 6), (8, 7), (8, 7)], maxlen=3)}
+177: Looks like a stuck worker u_2 - deque([(12, 5), (12, 5), (12, 5)], maxlen=3)
+
+178 Worker Positions {'u_2': deque([(12, 5), (12, 5), (12, 4)], maxlen=3)}
+178 Worker Positions {'u_1': deque([(8, 7), (8, 7), (8, 7)], maxlen=3)}
+178: Looks like a stuck worker u_1 - deque([(8, 7), (8, 7), (8, 7)], maxlen=3)
+
+179 Worker Positions {'u_1': deque([(8, 7), (8, 7), (8, 8)], maxlen=3)}
+179 Worker Positions {'u_2': deque([(12, 5), (12, 4), (12, 4)], maxlen=3)}
+180 Worker Positions {'u_1': deque([(8, 7), (8, 8), (8, 8)], maxlen=3)}
+180 Worker Positions {'u_2': deque([(12, 4), (12, 4), (12, 4)], maxlen=3)}
+180: Looks like a stuck worker u_2 - deque([(12, 4), (12, 4), (12, 4)], maxlen=3)
+
+181 Worker Positions {'u_1': deque([(8, 8), (8, 8), (8, 8)], maxlen=3)}
+181 Worker Positions {'u_2': deque([(12, 4), (12, 4), (12, 5)], maxlen=3)}
+181: Looks like a stuck worker u_1 - deque([(8, 8), (8, 8), (8, 8)], maxlen=3)
+
+182 Worker Positions {'u_1': deque([(8, 8), (8, 8), (7, 8)], maxlen=3)}
+182 Worker Positions {'u_2': deque([(12, 4), (12, 5), (12, 5)], maxlen=3)}
+183 Worker Positions {'u_2': deque([(12, 5), (12, 5), (12, 5)], maxlen=3)}
+183 Worker Positions {'u_1': deque([(8, 8), (7, 8), (7, 8)], maxlen=3)}
+183: Looks like a stuck worker u_2 - deque([(12, 5), (12, 5), (12, 5)], maxlen=3)
+
+184 Worker Positions {'u_2': deque([(12, 5), (12, 5), (13, 5)], maxlen=3)}
+184 Worker Positions {'u_1': deque([(7, 8), (7, 8), (7, 8)], maxlen=3)}
+184: Looks like a stuck worker u_1 - deque([(7, 8), (7, 8), (7, 8)], maxlen=3)
+
+185 Worker Positions {'u_1': deque([(7, 8), (7, 8), (7, 7)], maxlen=3)}
+185 Worker Positions {'u_2': deque([(12, 5), (13, 5), (13, 5)], maxlen=3)}
+186 Worker Positions {'u_1': deque([(7, 8), (7, 7), (7, 7)], maxlen=3)}
+186 Worker Positions {'u_2': deque([(13, 5), (13, 5), (13, 5)], maxlen=3)}
+186: Looks like a stuck worker u_2 - deque([(13, 5), (13, 5), (13, 5)], maxlen=3)
+
+187 Worker Positions {'u_1': deque([(7, 7), (7, 7), (7, 7)], maxlen=3)}
+187 Worker Positions {'u_2': deque([(13, 5), (13, 5), (13, 4)], maxlen=3)}
+187: Looks like a stuck worker u_1 - deque([(7, 7), (7, 7), (7, 7)], maxlen=3)
+
+188 Worker Positions {'u_1': deque([(7, 7), (7, 7), (6, 7)], maxlen=3)}
+188 Worker Positions {'u_2': deque([(13, 5), (13, 4), (13, 4)], maxlen=3)}
+189 Worker Positions {'u_1': deque([(7, 7), (6, 7), (6, 7)], maxlen=3)}
+189 Worker Positions {'u_2': deque([(13, 4), (13, 4), (13, 4)], maxlen=3)}
+189: Looks like a stuck worker u_2 - deque([(13, 4), (13, 4), (13, 4)], maxlen=3)
+
+190 Worker Positions {'u_1': deque([(6, 7), (6, 7), (6, 7)], maxlen=3)}
+190 Worker Positions {'u_2': deque([(13, 4), (13, 4), (12, 4)], maxlen=3)}
+190: Looks like a stuck worker u_1 - deque([(6, 7), (6, 7), (6, 7)], maxlen=3)
+
+191 Worker Positions {'u_1': deque([(6, 7), (6, 7), (5, 7)], maxlen=3)}
+191 Worker Positions {'u_2': deque([(13, 4), (12, 4), (12, 4)], maxlen=3)}
+192 Worker Positions {'u_1': deque([(6, 7), (5, 7), (5, 7)], maxlen=3)}
+192 Worker Positions {'u_2': deque([(12, 4), (12, 4), (12, 5)], maxlen=3)}
+193 Worker Positions {'u_2': deque([(12, 4), (12, 5), (12, 5)], maxlen=3)}
+193 Worker Positions {'u_1': deque([(5, 7), (5, 7), (5, 7)], maxlen=3)}
+194 Worker Positions {'u_1': deque([(5, 7), (5, 7), (5, 7)], maxlen=3)}
+194 Worker Positions {'u_2': deque([(12, 5), (12, 5), (12, 5)], maxlen=3)}
+194: Looks like a stuck worker u_1 - deque([(5, 7), (5, 7), (5, 7)], maxlen=3)
+
+195 Worker Positions {'u_1': deque([(5, 7), (5, 7), (5, 6)], maxlen=3)}
+195 Worker Positions {'u_2': deque([(12, 5), (12, 5), (12, 5)], maxlen=3)}
+195: Looks like a stuck worker u_2 - deque([(12, 5), (12, 5), (12, 5)], maxlen=3)
+
+196 Worker Positions {'u_2': deque([(12, 5), (12, 5), (13, 5)], maxlen=3)}
+196 Worker Positions {'u_1': deque([(5, 7), (5, 6), (5, 6)], maxlen=3)}
+197 Worker Positions {'u_1': deque([(5, 6), (5, 6), (5, 6)], maxlen=3)}
+197 Worker Positions {'u_2': deque([(12, 5), (13, 5), (13, 5)], maxlen=3)}
+198 Worker Positions {'u_1': deque([(5, 6), (5, 6), (5, 6)], maxlen=3)}
+198 Worker Positions {'u_2': deque([(13, 5), (13, 5), (13, 5)], maxlen=3)}
+198: Looks like a stuck worker u_1 - deque([(5, 6), (5, 6), (5, 6)], maxlen=3)
+
+199 Worker Positions {'u_1': deque([(5, 6), (5, 6), (5, 7)], maxlen=3)}
+199 Worker Positions {'u_2': deque([(13, 5), (13, 5), (13, 5)], maxlen=3)}
+199: Looks like a stuck worker u_2 - deque([(13, 5), (13, 5), (13, 5)], maxlen=3)
+
+200 Worker Positions {'u_1': deque([(5, 6), (5, 7), (5, 7)], maxlen=3)}
+200 Worker Positions {'u_2': deque([(13, 5), (13, 5), (13, 6)], maxlen=3)}
+200: ### Found a hight density position:[0, 12] ###
+
+200: ### Found a hight density position:[0, 12] ###
+
+201 Worker Positions {'u_1': deque([(5, 7), (5, 7), (5, 7)], maxlen=3)}
+201 Worker Positions {'u_2': deque([(13, 5), (13, 6), (13, 6)], maxlen=3)}
+202 Worker Positions {'u_1': deque([(5, 7), (5, 7), (5, 7)], maxlen=3)}
+202 Worker Positions {'u_2': deque([(13, 6), (13, 6), (13, 6)], maxlen=3)}
+202: Looks like a stuck worker u_1 - deque([(5, 7), (5, 7), (5, 7)], maxlen=3)
+
+203 Worker Positions {'u_1': deque([(5, 7), (5, 7), (4, 7)], maxlen=3)}
+203 Worker Positions {'u_2': deque([(13, 6), (13, 6), (13, 6)], maxlen=3)}
+203: Looks like a stuck worker u_2 - deque([(13, 6), (13, 6), (13, 6)], maxlen=3)
+
+204 Worker Positions {'u_1': deque([(5, 7), (4, 7), (4, 7)], maxlen=3)}
+204 Worker Positions {'u_2': deque([(13, 6), (13, 6), (13, 7)], maxlen=3)}
+205 Worker Positions {'u_1': deque([(4, 7), (4, 7), (4, 7)], maxlen=3)}
+205 Worker Positions {'u_2': deque([(13, 6), (13, 7), (13, 7)], maxlen=3)}
+205: Looks like a stuck worker u_1 - deque([(4, 7), (4, 7), (4, 7)], maxlen=3)
+
+206 Worker Positions {'u_1': deque([(4, 7), (4, 7), (4, 6)], maxlen=3)}
+206 Worker Positions {'u_2': deque([(13, 7), (13, 7), (13, 6)], maxlen=3)}
+207 Worker Positions {'u_1': deque([(4, 7), (4, 6), (4, 6)], maxlen=3)}
+207 Worker Positions {'u_2': deque([(13, 7), (13, 6), (13, 6)], maxlen=3)}
+208 Worker Positions {'u_1': deque([(4, 6), (4, 6), (4, 6)], maxlen=3)}
+208 Worker Positions {'u_2': deque([(13, 6), (13, 6), (13, 5)], maxlen=3)}
+208: Looks like a stuck worker u_1 - deque([(4, 6), (4, 6), (4, 6)], maxlen=3)
+
+209 Worker Positions {'u_2': deque([(13, 6), (13, 5), (13, 5)], maxlen=3)}
+209 Worker Positions {'u_1': deque([(4, 6), (4, 6), (5, 6)], maxlen=3)}
+210 Worker Positions {'u_1': deque([(4, 6), (5, 6), (5, 6)], maxlen=3)}
+210 Worker Positions {'u_2': deque([(13, 5), (13, 5), (12, 5)], maxlen=3)}
+211 Worker Positions {'u_1': deque([(5, 6), (5, 6), (5, 6)], maxlen=3)}
+211 Worker Positions {'u_2': deque([(13, 5), (12, 5), (12, 5)], maxlen=3)}
+211: Looks like a stuck worker u_1 - deque([(5, 6), (5, 6), (5, 6)], maxlen=3)
+
+212 Worker Positions {'u_1': deque([(5, 6), (5, 6), (5, 5)], maxlen=3)}
+212 Worker Positions {'u_2': deque([(12, 5), (12, 5), (11, 5)], maxlen=3)}
+213 Worker Positions {'u_2': deque([(12, 5), (11, 5), (11, 5)], maxlen=3)}
+213 Worker Positions {'u_1': deque([(5, 6), (5, 5), (5, 5)], maxlen=3)}
+214 Worker Positions {'u_1': deque([(5, 5), (5, 5), (5, 5)], maxlen=3)}
+214 Worker Positions {'u_2': deque([(11, 5), (11, 5), (11, 5)], maxlen=3)}
+214: Looks like a stuck worker u_2 - deque([(11, 5), (11, 5), (11, 5)], maxlen=3)
+
+214: Looks like a stuck worker u_1 - deque([(5, 5), (5, 5), (5, 5)], maxlen=3)
+
+215 Worker Positions {'u_1': deque([(5, 5), (5, 5), (5, 6)], maxlen=3)}
+215 Worker Positions {'u_2': deque([(11, 5), (11, 5), (11, 6)], maxlen=3)}
+216 Worker Positions {'u_1': deque([(5, 5), (5, 6), (5, 6)], maxlen=3)}
+216 Worker Positions {'u_2': deque([(11, 5), (11, 6), (11, 6)], maxlen=3)}
+217 Worker Positions {'u_1': deque([(5, 6), (5, 6), (5, 6)], maxlen=3)}
+217 Worker Positions {'u_2': deque([(11, 6), (11, 6), (11, 6)], maxlen=3)}
+217: Looks like a stuck worker u_1 - deque([(5, 6), (5, 6), (5, 6)], maxlen=3)
+
+217: Looks like a stuck worker u_2 - deque([(11, 6), (11, 6), (11, 6)], maxlen=3)
+
+218 Worker Positions {'u_1': deque([(5, 6), (5, 6), (4, 6)], maxlen=3)}
+218 Worker Positions {'u_2': deque([(11, 6), (11, 6), (11, 7)], maxlen=3)}
+219 Worker Positions {'u_1': deque([(5, 6), (4, 6), (4, 6)], maxlen=3)}
+219 Worker Positions {'u_2': deque([(11, 6), (11, 7), (11, 7)], maxlen=3)}
+220 Worker Positions {'u_2': deque([(11, 7), (11, 7), (11, 7)], maxlen=3)}
+220 Worker Positions {'u_1': deque([(4, 6), (4, 6), (4, 6)], maxlen=3)}
+220: Looks like a stuck worker u_2 - deque([(11, 7), (11, 7), (11, 7)], maxlen=3)
+
+220: Looks like a stuck worker u_1 - deque([(4, 6), (4, 6), (4, 6)], maxlen=3)
+
+221 Worker Positions {'u_1': deque([(4, 6), (4, 6), (3, 6)], maxlen=3)}
+221 Worker Positions {'u_2': deque([(11, 7), (11, 7), (10, 7)], maxlen=3)}
+222 Worker Positions {'u_1': deque([(4, 6), (3, 6), (3, 6)], maxlen=3)}
+222 Worker Positions {'u_2': deque([(11, 7), (10, 7), (10, 7)], maxlen=3)}
+223 Worker Positions {'u_1': deque([(3, 6), (3, 6), (3, 6)], maxlen=3)}
+223 Worker Positions {'u_2': deque([(10, 7), (10, 7), (10, 7)], maxlen=3)}
+223: Looks like a stuck worker u_1 - deque([(3, 6), (3, 6), (3, 6)], maxlen=3)
+
+223: Looks like a stuck worker u_2 - deque([(10, 7), (10, 7), (10, 7)], maxlen=3)
+
+224 Worker Positions {'u_2': deque([(10, 7), (10, 7), (10, 6)], maxlen=3)}
+224 Worker Positions {'u_1': deque([(3, 6), (3, 6), (3, 7)], maxlen=3)}
+225 Worker Positions {'u_1': deque([(3, 6), (3, 7), (3, 7)], maxlen=3)}
+225 Worker Positions {'u_2': deque([(10, 7), (10, 6), (10, 6)], maxlen=3)}
+226 Worker Positions {'u_1': deque([(3, 7), (3, 7), (3, 7)], maxlen=3)}
+226 Worker Positions {'u_2': deque([(10, 6), (10, 6), (10, 6)], maxlen=3)}
+226: Looks like a stuck worker u_2 - deque([(10, 6), (10, 6), (10, 6)], maxlen=3)
+
+226: Looks like a stuck worker u_1 - deque([(3, 7), (3, 7), (3, 7)], maxlen=3)
+
+227 Worker Positions {'u_2': deque([(10, 6), (10, 6), (10, 7)], maxlen=3)}
+227 Worker Positions {'u_1': deque([(3, 7), (3, 7), (2, 7)], maxlen=3)}
+228 Worker Positions {'u_1': deque([(3, 7), (2, 7), (2, 7)], maxlen=3)}
+228 Worker Positions {'u_2': deque([(10, 6), (10, 7), (10, 7)], maxlen=3)}
+229 Worker Positions {'u_2': deque([(10, 7), (10, 7), (10, 7)], maxlen=3)}
+229 Worker Positions {'u_1': deque([(2, 7), (2, 7), (2, 7)], maxlen=3)}
+229: Looks like a stuck worker u_2 - deque([(10, 7), (10, 7), (10, 7)], maxlen=3)
+
+229: Looks like a stuck worker u_1 - deque([(2, 7), (2, 7), (2, 7)], maxlen=3)
+
+230 Worker Positions {'u_2': deque([(10, 7), (10, 7), (11, 7)], maxlen=3)}
+230 Worker Positions {'u_1': deque([(2, 7), (2, 7), (1, 7)], maxlen=3)}
+231 Worker Positions {'u_2': deque([(10, 7), (11, 7), (11, 7)], maxlen=3)}
+231 Worker Positions {'u_1': deque([(2, 7), (1, 7), (1, 7)], maxlen=3)}
+232 Worker Positions {'u_2': deque([(11, 7), (11, 7), (11, 6)], maxlen=3)}
+232 Worker Positions {'u_1': deque([(1, 7), (1, 7), (1, 6)], maxlen=3)}
+233 Worker Positions {'u_1': deque([(1, 7), (1, 6), (1, 6)], maxlen=3)}
+233 Worker Positions {'u_2': deque([(11, 7), (11, 6), (11, 6)], maxlen=3)}
+234 Worker Positions {'u_1': deque([(1, 6), (1, 6), (1, 6)], maxlen=3)}
+234 Worker Positions {'u_2': deque([(11, 6), (11, 6), (11, 6)], maxlen=3)}
+235 Worker Positions {'u_2': deque([(11, 6), (11, 6), (11, 6)], maxlen=3)}
+235 Worker Positions {'u_1': deque([(1, 6), (1, 6), (1, 6)], maxlen=3)}
+235: Looks like a stuck worker u_2 - deque([(11, 6), (11, 6), (11, 6)], maxlen=3)
+
+235: Looks like a stuck worker u_1 - deque([(1, 6), (1, 6), (1, 6)], maxlen=3)
+
+236 Worker Positions {'u_1': deque([(1, 6), (1, 6), (1, 5)], maxlen=3)}
+236 Worker Positions {'u_2': deque([(11, 6), (11, 6), (12, 6)], maxlen=3)}
+237 Worker Positions {'u_2': deque([(11, 6), (12, 6), (12, 6)], maxlen=3)}
+237 Worker Positions {'u_1': deque([(1, 6), (1, 5), (1, 5)], maxlen=3)}
+238 Worker Positions {'u_1': deque([(1, 5), (1, 5), (1, 5)], maxlen=3)}
+238 Worker Positions {'u_2': deque([(12, 6), (12, 6), (12, 6)], maxlen=3)}
+239 Worker Positions {'u_1': deque([(1, 5), (1, 5), (1, 5)], maxlen=3)}
+239 Worker Positions {'u_2': deque([(12, 6), (12, 6), (12, 6)], maxlen=3)}
+239: Looks like a stuck worker u_1 - deque([(1, 5), (1, 5), (1, 5)], maxlen=3)
+
+239: Looks like a stuck worker u_2 - deque([(12, 6), (12, 6), (12, 6)], maxlen=3)
+
+240 Worker Positions {'u_1': deque([(1, 5), (1, 5), (1, 6)], maxlen=3)}
+240 Worker Positions {'u_2': deque([(12, 6), (12, 6), (13, 6)], maxlen=3)}
+241 Worker Positions {'u_2': deque([(12, 6), (13, 6), (13, 6)], maxlen=3)}
+241 Worker Positions {'u_1': deque([(1, 5), (1, 6), (1, 6)], maxlen=3)}
+242 Worker Positions {'u_2': deque([(13, 6), (13, 6), (13, 6)], maxlen=3)}
+242 Worker Positions {'u_1': deque([(1, 6), (1, 6), (1, 6)], maxlen=3)}
+243 Worker Positions {'u_2': deque([(13, 6), (13, 6), (13, 6)], maxlen=3)}
+243 Worker Positions {'u_1': deque([(1, 6), (1, 6), (1, 6)], maxlen=3)}
+243: Looks like a stuck worker u_2 - deque([(13, 6), (13, 6), (13, 6)], maxlen=3)
+
+243: Looks like a stuck worker u_1 - deque([(1, 6), (1, 6), (1, 6)], maxlen=3)
+
+244 Worker Positions {'u_2': deque([(13, 6), (13, 6), (13, 7)], maxlen=3)}
+244 Worker Positions {'u_1': deque([(1, 6), (1, 6), (1, 7)], maxlen=3)}
+245 Worker Positions {'u_2': deque([(13, 6), (13, 7), (13, 7)], maxlen=3)}
+245 Worker Positions {'u_1': deque([(1, 6), (1, 7), (1, 7)], maxlen=3)}
+246 Worker Positions {'u_2': deque([(13, 7), (13, 7), (13, 6)], maxlen=3)}
+246 Worker Positions {'u_1': deque([(1, 7), (1, 7), (1, 6)], maxlen=3)}
+247 Worker Positions {'u_2': deque([(13, 7), (13, 6), (13, 6)], maxlen=3)}
+247 Worker Positions {'u_1': deque([(1, 7), (1, 6), (1, 6)], maxlen=3)}
+248 Worker Positions {'u_1': deque([(1, 6), (1, 6), (1, 5)], maxlen=3)}
+248 Worker Positions {'u_2': deque([(13, 6), (13, 6), (13, 5)], maxlen=3)}
+249 Worker Positions {'u_1': deque([(1, 6), (1, 5), (1, 5)], maxlen=3)}
+249 Worker Positions {'u_2': deque([(13, 6), (13, 5), (13, 5)], maxlen=3)}
+250 Worker Positions {'u_1': deque([(1, 5), (1, 5), (2, 5)], maxlen=3)}
+250 Worker Positions {'u_2': deque([(13, 5), (13, 5), (12, 5)], maxlen=3)}
+251 Worker Positions {'u_1': deque([(1, 5), (2, 5), (2, 5)], maxlen=3)}
+251 Worker Positions {'u_2': deque([(13, 5), (12, 5), (12, 5)], maxlen=3)}
+252 Worker Positions {'u_1': deque([(2, 5), (2, 5), (3, 5)], maxlen=3)}
+252 Worker Positions {'u_2': deque([(12, 5), (12, 5), (11, 5)], maxlen=3)}
+253 Worker Positions {'u_2': deque([(12, 5), (11, 5), (11, 5)], maxlen=3)}
+253 Worker Positions {'u_1': deque([(2, 5), (3, 5), (3, 5)], maxlen=3)}
+254 Worker Positions {'u_1': deque([(3, 5), (3, 5), (4, 5)], maxlen=3)}
+254 Worker Positions {'u_2': deque([(11, 5), (11, 5), (11, 5)], maxlen=3)}
+254: Looks like a stuck worker u_2 - deque([(11, 5), (11, 5), (11, 5)], maxlen=3)
+
+255 Worker Positions {'u_1': deque([(3, 5), (4, 5), (4, 5)], maxlen=3)}
+255 Worker Positions {'u_2': deque([(11, 5), (11, 5), (12, 5)], maxlen=3)}
+256 Worker Positions {'u_2': deque([(11, 5), (12, 5), (12, 5)], maxlen=3)}
+256 Worker Positions {'u_1': deque([(4, 5), (4, 5), (4, 5)], maxlen=3)}
+256: Looks like a stuck worker u_1 - deque([(4, 5), (4, 5), (4, 5)], maxlen=3)
+
+257 Worker Positions {'u_1': deque([(4, 5), (4, 5), (4, 4)], maxlen=3)}
+257 Worker Positions {'u_2': deque([(12, 5), (12, 5), (12, 5)], maxlen=3)}
+257: Looks like a stuck worker u_2 - deque([(12, 5), (12, 5), (12, 5)], maxlen=3)
+
+258 Worker Positions {'u_2': deque([(12, 5), (12, 5), (12, 4)], maxlen=3)}
+258 Worker Positions {'u_1': deque([(4, 5), (4, 4), (4, 4)], maxlen=3)}
+259 Worker Positions {'u_1': deque([(4, 4), (4, 4), (4, 4)], maxlen=3)}
+259 Worker Positions {'u_2': deque([(12, 5), (12, 4), (12, 4)], maxlen=3)}
+259: Looks like a stuck worker u_1 - deque([(4, 4), (4, 4), (4, 4)], maxlen=3)
+
+260 Worker Positions {'u_2': deque([(12, 4), (12, 4), (12, 4)], maxlen=3)}
+260: Looks like a stuck worker u_2 - deque([(12, 4), (12, 4), (12, 4)], maxlen=3)
+
+260 Worker Positions {'u_1': deque([(4, 4), (4, 4), (3, 4)], maxlen=3)}
+261 Worker Positions {'u_2': deque([(12, 4), (12, 4), (12, 3)], maxlen=3)}
+261 Worker Positions {'u_1': deque([(4, 4), (3, 4), (3, 4)], maxlen=3)}
+262 Worker Positions {'u_1': deque([(3, 4), (3, 4), (3, 4)], maxlen=3)}
+262 Worker Positions {'u_2': deque([(12, 4), (12, 3), (12, 3)], maxlen=3)}
+262: Looks like a stuck worker u_1 - deque([(3, 4), (3, 4), (3, 4)], maxlen=3)
+
+263 Worker Positions {'u_2': deque([(12, 3), (12, 3), (12, 3)], maxlen=3)}
+263 Worker Positions {'u_1': deque([(3, 4), (3, 4), (2, 4)], maxlen=3)}
+263: Looks like a stuck worker u_2 - deque([(12, 3), (12, 3), (12, 3)], maxlen=3)
+
+264 Worker Positions {'u_2': deque([(12, 3), (12, 3), (13, 3)], maxlen=3)}
+264 Worker Positions {'u_1': deque([(3, 4), (2, 4), (2, 4)], maxlen=3)}
+265 Worker Positions {'u_2': deque([(12, 3), (13, 3), (13, 3)], maxlen=3)}
+265 Worker Positions {'u_1': deque([(2, 4), (2, 4), (2, 4)], maxlen=3)}
+265: Looks like a stuck worker u_1 - deque([(2, 4), (2, 4), (2, 4)], maxlen=3)
+
+266 Worker Positions {'u_2': deque([(13, 3), (13, 3), (13, 3)], maxlen=3)}
+266 Worker Positions {'u_1': deque([(2, 4), (2, 4), (2, 3)], maxlen=3)}
+266: Looks like a stuck worker u_2 - deque([(13, 3), (13, 3), (13, 3)], maxlen=3)
+
+267 Worker Positions {'u_2': deque([(13, 3), (13, 3), (13, 4)], maxlen=3)}
+267 Worker Positions {'u_1': deque([(2, 4), (2, 3), (2, 3)], maxlen=3)}
+268 Worker Positions {'u_2': deque([(13, 3), (13, 4), (13, 4)], maxlen=3)}
+268 Worker Positions {'u_1': deque([(2, 3), (2, 3), (2, 3)], maxlen=3)}
+268: Looks like a stuck worker u_1 - deque([(2, 3), (2, 3), (2, 3)], maxlen=3)
+
+269 Worker Positions {'u_1': deque([(2, 3), (2, 3), (1, 3)], maxlen=3)}
+269 Worker Positions {'u_2': deque([(13, 4), (13, 4), (13, 4)], maxlen=3)}
+269: Looks like a stuck worker u_2 - deque([(13, 4), (13, 4), (13, 4)], maxlen=3)
+
+270 Worker Positions {'u_1': deque([(2, 3), (1, 3), (1, 3)], maxlen=3)}
+270 Worker Positions {'u_2': deque([(13, 4), (13, 4), (13, 3)], maxlen=3)}
+271 Worker Positions {'u_2': deque([(13, 4), (13, 3), (13, 3)], maxlen=3)}
+271 Worker Positions {'u_1': deque([(1, 3), (1, 3), (1, 3)], maxlen=3)}
+271: Looks like a stuck worker u_1 - deque([(1, 3), (1, 3), (1, 3)], maxlen=3)
+
+272 Worker Positions {'u_1': deque([(1, 3), (1, 3), (1, 2)], maxlen=3)}
+272 Worker Positions {'u_2': deque([(13, 3), (13, 3), (13, 4)], maxlen=3)}
+273 Worker Positions {'u_1': deque([(1, 3), (1, 2), (1, 2)], maxlen=3)}
+273 Worker Positions {'u_2': deque([(13, 3), (13, 4), (13, 4)], maxlen=3)}
+274 Worker Positions {'u_1': deque([(1, 2), (1, 2), (1, 2)], maxlen=3)}
+274 Worker Positions {'u_2': deque([(13, 4), (13, 4), (13, 4)], maxlen=3)}
+275 Worker Positions {'u_2': deque([(13, 4), (13, 4), (13, 4)], maxlen=3)}
+275 Worker Positions {'u_1': deque([(1, 2), (1, 2), (1, 2)], maxlen=3)}
+275: Looks like a stuck worker u_2 - deque([(13, 4), (13, 4), (13, 4)], maxlen=3)
+
+275: Looks like a stuck worker u_1 - deque([(1, 2), (1, 2), (1, 2)], maxlen=3)
+
+276 Worker Positions {'u_1': deque([(1, 2), (1, 2), (2, 2)], maxlen=3)}
+276 Worker Positions {'u_2': deque([(13, 4), (13, 4), (13, 5)], maxlen=3)}
+277 Worker Positions {'u_2': deque([(13, 4), (13, 5), (13, 5)], maxlen=3)}
+277 Worker Positions {'u_1': deque([(1, 2), (2, 2), (2, 2)], maxlen=3)}
+278 Worker Positions {'u_2': deque([(13, 5), (13, 5), (13, 5)], maxlen=3)}
+278 Worker Positions {'u_1': deque([(2, 2), (2, 2), (2, 2)], maxlen=3)}
+279 Worker Positions {'u_1': deque([(2, 2), (2, 2), (2, 2)], maxlen=3)}
+279 Worker Positions {'u_2': deque([(13, 5), (13, 5), (13, 5)], maxlen=3)}
+279: Looks like a stuck worker u_1 - deque([(2, 2), (2, 2), (2, 2)], maxlen=3)
+
+279: Looks like a stuck worker u_2 - deque([(13, 5), (13, 5), (13, 5)], maxlen=3)
+
+280 Worker Positions {'u_1': deque([(2, 2), (2, 2), (2, 1)], maxlen=3)}
+280 Worker Positions {'u_2': deque([(13, 5), (13, 5), (12, 5)], maxlen=3)}
+281 Worker Positions {'u_1': deque([(2, 2), (2, 1), (2, 1)], maxlen=3)}
+281 Worker Positions {'u_2': deque([(13, 5), (12, 5), (12, 5)], maxlen=3)}
+282 Worker Positions {'u_2': deque([(12, 5), (12, 5), (12, 5)], maxlen=3)}
+282 Worker Positions {'u_1': deque([(2, 1), (2, 1), (2, 1)], maxlen=3)}
+283 Worker Positions {'u_2': deque([(12, 5), (12, 5), (12, 5)], maxlen=3)}
+283 Worker Positions {'u_1': deque([(2, 1), (2, 1), (2, 1)], maxlen=3)}
+283: Looks like a stuck worker u_1 - deque([(2, 1), (2, 1), (2, 1)], maxlen=3)
+
+283: Looks like a stuck worker u_2 - deque([(12, 5), (12, 5), (12, 5)], maxlen=3)
+
+284 Worker Positions {'u_2': deque([(12, 5), (12, 5), (11, 5)], maxlen=3)}
+284 Worker Positions {'u_1': deque([(2, 1), (2, 1), (2, 2)], maxlen=3)}
+285 Worker Positions {'u_2': deque([(12, 5), (11, 5), (11, 5)], maxlen=3)}
+285 Worker Positions {'u_1': deque([(2, 1), (2, 2), (2, 2)], maxlen=3)}
+286 Worker Positions {'u_2': deque([(11, 5), (11, 5), (11, 5)], maxlen=3)}
+286 Worker Positions {'u_1': deque([(2, 2), (2, 2), (3, 2)], maxlen=3)}
+286: Looks like a stuck worker u_2 - deque([(11, 5), (11, 5), (11, 5)], maxlen=3)
+
+287 Worker Positions {'u_2': deque([(11, 5), (11, 5), (12, 5)], maxlen=3)}
+287 Worker Positions {'u_1': deque([(2, 2), (3, 2), (3, 2)], maxlen=3)}
+288 Worker Positions {'u_2': deque([(11, 5), (12, 5), (12, 5)], maxlen=3)}
+288 Worker Positions {'u_1': deque([(3, 2), (3, 2), (4, 2)], maxlen=3)}
+289 Worker Positions {'u_2': deque([(12, 5), (12, 5), (12, 5)], maxlen=3)}
+289 Worker Positions {'u_1': deque([(3, 2), (4, 2), (4, 2)], maxlen=3)}
+289: Looks like a stuck worker u_2 - deque([(12, 5), (12, 5), (12, 5)], maxlen=3)
+
+290 Worker Positions {'u_1': deque([(4, 2), (4, 2), (5, 2)], maxlen=3)}
+290 Worker Positions {'u_2': deque([(12, 5), (12, 5), (12, 6)], maxlen=3)}
+291 Worker Positions {'u_1': deque([(4, 2), (5, 2), (5, 2)], maxlen=3)}
+291 Worker Positions {'u_2': deque([(12, 5), (12, 6), (12, 6)], maxlen=3)}
+292 Worker Positions {'u_1': deque([(5, 2), (5, 2), (5, 3)], maxlen=3)}
+292 Worker Positions {'u_2': deque([(12, 6), (12, 6), (12, 6)], maxlen=3)}
+292: Looks like a stuck worker u_2 - deque([(12, 6), (12, 6), (12, 6)], maxlen=3)
+
+293 Worker Positions {'u_1': deque([(5, 2), (5, 3), (5, 3)], maxlen=3)}
+293 Worker Positions {'u_2': deque([(12, 6), (12, 6), (13, 6)], maxlen=3)}
+294 Worker Positions {'u_1': deque([(5, 3), (5, 3), (5, 4)], maxlen=3)}
+294 Worker Positions {'u_2': deque([(12, 6), (13, 6), (13, 6)], maxlen=3)}
+295 Worker Positions {'u_2': deque([(13, 6), (13, 6), (13, 6)], maxlen=3)}
+295 Worker Positions {'u_1': deque([(5, 3), (5, 4), (5, 4)], maxlen=3)}
+295: Looks like a stuck worker u_2 - deque([(13, 6), (13, 6), (13, 6)], maxlen=3)
+
+296 Worker Positions {'u_2': deque([(13, 6), (13, 6), (14, 6)], maxlen=3)}
+296 Worker Positions {'u_1': deque([(5, 4), (5, 4), (5, 4)], maxlen=3)}
+296: Looks like a stuck worker u_1 - deque([(5, 4), (5, 4), (5, 4)], maxlen=3)
+
+297 Worker Positions {'u_1': deque([(5, 4), (5, 4), (5, 5)], maxlen=3)}
+297 Worker Positions {'u_2': deque([(13, 6), (14, 6), (14, 6)], maxlen=3)}
+298 Worker Positions {'u_1': deque([(5, 4), (5, 5), (5, 5)], maxlen=3)}
+298 Worker Positions {'u_2': deque([(14, 6), (14, 6), (14, 6)], maxlen=3)}
+298: Looks like a stuck worker u_2 - deque([(14, 6), (14, 6), (14, 6)], maxlen=3)
+
+299 Worker Positions {'u_2': deque([(14, 6), (14, 6), (14, 5)], maxlen=3)}
+299 Worker Positions {'u_1': deque([(5, 5), (5, 5), (5, 5)], maxlen=3)}
+299: Looks like a stuck worker u_1 - deque([(5, 5), (5, 5), (5, 5)], maxlen=3)
+
+300 Worker Positions {'u_1': deque([(5, 5), (5, 5), (5, 4)], maxlen=3)}
+300 Worker Positions {'u_2': deque([(14, 6), (14, 5), (14, 5)], maxlen=3)}
+301 Worker Positions {'u_1': deque([(5, 5), (5, 4), (5, 4)], maxlen=3)}
+301 Worker Positions {'u_2': deque([(14, 5), (14, 5), (14, 5)], maxlen=3)}
+301: Looks like a stuck worker u_2 - deque([(14, 5), (14, 5), (14, 5)], maxlen=3)
+
+302 Worker Positions {'u_2': deque([(14, 5), (14, 5), (14, 4)], maxlen=3)}
+302 Worker Positions {'u_1': deque([(5, 4), (5, 4), (5, 4)], maxlen=3)}
+302: Looks like a stuck worker u_1 - deque([(5, 4), (5, 4), (5, 4)], maxlen=3)
+
+303 Worker Positions {'u_1': deque([(5, 4), (5, 4), (5, 5)], maxlen=3)}
+303 Worker Positions {'u_2': deque([(14, 5), (14, 4), (14, 4)], maxlen=3)}
+304 Worker Positions {'u_1': deque([(5, 4), (5, 5), (5, 5)], maxlen=3)}
+304 Worker Positions {'u_2': deque([(14, 4), (14, 4), (14, 4)], maxlen=3)}
+304: Looks like a stuck worker u_2 - deque([(14, 4), (14, 4), (14, 4)], maxlen=3)
+
+305 Worker Positions {'u_1': deque([(5, 5), (5, 5), (5, 5)], maxlen=3)}
+305 Worker Positions {'u_2': deque([(14, 4), (14, 4), (14, 3)], maxlen=3)}
+305: Looks like a stuck worker u_1 - deque([(5, 5), (5, 5), (5, 5)], maxlen=3)
+
+306 Worker Positions {'u_1': deque([(5, 5), (5, 5), (5, 4)], maxlen=3)}
+306 Worker Positions {'u_2': deque([(14, 4), (14, 3), (14, 3)], maxlen=3)}
+307 Worker Positions {'u_1': deque([(5, 5), (5, 4), (5, 4)], maxlen=3)}
+307 Worker Positions {'u_2': deque([(14, 3), (14, 3), (14, 3)], maxlen=3)}
+307: Looks like a stuck worker u_2 - deque([(14, 3), (14, 3), (14, 3)], maxlen=3)
+
+308 Worker Positions {'u_1': deque([(5, 4), (5, 4), (5, 4)], maxlen=3)}
+308 Worker Positions {'u_2': deque([(14, 3), (14, 3), (14, 4)], maxlen=3)}
+308: Looks like a stuck worker u_1 - deque([(5, 4), (5, 4), (5, 4)], maxlen=3)
+
+309 Worker Positions {'u_2': deque([(14, 3), (14, 4), (14, 4)], maxlen=3)}
+309 Worker Positions {'u_1': deque([(5, 4), (5, 4), (4, 4)], maxlen=3)}
+310 Worker Positions {'u_1': deque([(5, 4), (4, 4), (4, 4)], maxlen=3)}
+310 Worker Positions {'u_2': deque([(14, 4), (14, 4), (14, 4)], maxlen=3)}
+310: Looks like a stuck worker u_2 - deque([(14, 4), (14, 4), (14, 4)], maxlen=3)
+
+311 Worker Positions {'u_1': deque([(4, 4), (4, 4), (4, 4)], maxlen=3)}
+311 Worker Positions {'u_2': deque([(14, 4), (14, 4), (13, 4)], maxlen=3)}
+311: Looks like a stuck worker u_1 - deque([(4, 4), (4, 4), (4, 4)], maxlen=3)
+
+312 Worker Positions {'u_1': deque([(4, 4), (4, 4), (4, 5)], maxlen=3)}
+312 Worker Positions {'u_2': deque([(14, 4), (13, 4), (13, 4)], maxlen=3)}
+313 Worker Positions {'u_2': deque([(13, 4), (13, 4), (13, 4)], maxlen=3)}
+313 Worker Positions {'u_1': deque([(4, 4), (4, 5), (4, 5)], maxlen=3)}
+314 Worker Positions {'u_1': deque([(4, 5), (4, 5), (4, 5)], maxlen=3)}
+314 Worker Positions {'u_2': deque([(13, 4), (13, 4), (13, 4)], maxlen=3)}
+314: Looks like a stuck worker u_2 - deque([(13, 4), (13, 4), (13, 4)], maxlen=3)
+
+315 Worker Positions {'u_2': deque([(13, 4), (13, 4), (13, 5)], maxlen=3)}
+315 Worker Positions {'u_1': deque([(4, 5), (4, 5), (4, 5)], maxlen=3)}
+315: Looks like a stuck worker u_1 - deque([(4, 5), (4, 5), (4, 5)], maxlen=3)
+
+316 Worker Positions {'u_1': deque([(4, 5), (4, 5), (3, 5)], maxlen=3)}
+316 Worker Positions {'u_2': deque([(13, 4), (13, 5), (13, 5)], maxlen=3)}
+317 Worker Positions {'u_2': deque([(13, 5), (13, 5), (13, 5)], maxlen=3)}
+317 Worker Positions {'u_1': deque([(4, 5), (3, 5), (3, 5)], maxlen=3)}
+318 Worker Positions {'u_1': deque([(3, 5), (3, 5), (3, 5)], maxlen=3)}
+318 Worker Positions {'u_2': deque([(13, 5), (13, 5), (13, 5)], maxlen=3)}
+318: Looks like a stuck worker u_2 - deque([(13, 5), (13, 5), (13, 5)], maxlen=3)
+
+319 Worker Positions {'u_2': deque([(13, 5), (13, 5), (13, 4)], maxlen=3)}
+319 Worker Positions {'u_1': deque([(3, 5), (3, 5), (3, 5)], maxlen=3)}
+319: Looks like a stuck worker u_1 - deque([(3, 5), (3, 5), (3, 5)], maxlen=3)
+
+320 Worker Positions {'u_2': deque([(13, 5), (13, 4), (13, 4)], maxlen=3)}
+320 Worker Positions {'u_1': deque([(3, 5), (3, 5), (4, 5)], maxlen=3)}
+321 Worker Positions {'u_2': deque([(13, 4), (13, 4), (13, 4)], maxlen=3)}
+321 Worker Positions {'u_1': deque([(3, 5), (4, 5), (4, 5)], maxlen=3)}
+322 Worker Positions {'u_1': deque([(4, 5), (4, 5), (4, 5)], maxlen=3)}
+322 Worker Positions {'u_2': deque([(13, 4), (13, 4), (13, 4)], maxlen=3)}
+322: Looks like a stuck worker u_2 - deque([(13, 4), (13, 4), (13, 4)], maxlen=3)
+
+323 Worker Positions {'u_2': deque([(13, 4), (13, 4), (13, 5)], maxlen=3)}
+323 Worker Positions {'u_1': deque([(4, 5), (4, 5), (4, 5)], maxlen=3)}
+323: Looks like a stuck worker u_1 - deque([(4, 5), (4, 5), (4, 5)], maxlen=3)
+
+324 Worker Positions {'u_1': deque([(4, 5), (4, 5), (3, 5)], maxlen=3)}
+324 Worker Positions {'u_2': deque([(13, 4), (13, 5), (13, 5)], maxlen=3)}
+325 Worker Positions {'u_1': deque([(4, 5), (3, 5), (3, 5)], maxlen=3)}
+325 Worker Positions {'u_2': deque([(13, 5), (13, 5), (12, 5)], maxlen=3)}
+326 Worker Positions {'u_1': deque([(3, 5), (3, 5), (3, 5)], maxlen=3)}
+326 Worker Positions {'u_2': deque([(13, 5), (12, 5), (12, 5)], maxlen=3)}
+326: Looks like a stuck worker u_1 - deque([(3, 5), (3, 5), (3, 5)], maxlen=3)
+
+327 Worker Positions {'u_1': deque([(3, 5), (3, 5), (4, 5)], maxlen=3)}
+327 Worker Positions {'u_2': deque([(12, 5), (12, 5), (11, 5)], maxlen=3)}
+328 Worker Positions {'u_1': deque([(3, 5), (4, 5), (4, 5)], maxlen=3)}
+328 Worker Positions {'u_2': deque([(12, 5), (11, 5), (11, 5)], maxlen=3)}
+329 Worker Positions {'u_2': deque([(11, 5), (11, 5), (11, 5)], maxlen=3)}
+329 Worker Positions {'u_1': deque([(4, 5), (4, 5), (4, 5)], maxlen=3)}
+329: Looks like a stuck worker u_1 - deque([(4, 5), (4, 5), (4, 5)], maxlen=3)
+
+329: Looks like a stuck worker u_2 - deque([(11, 5), (11, 5), (11, 5)], maxlen=3)
+
+330 Worker Positions {'u_1': deque([(4, 5), (4, 5), (4, 6)], maxlen=3)}
+330 Worker Positions {'u_2': deque([(11, 5), (11, 5), (11, 4)], maxlen=3)}
+331 Worker Positions {'u_1': deque([(4, 5), (4, 6), (4, 6)], maxlen=3)}
+331 Worker Positions {'u_2': deque([(11, 5), (11, 4), (11, 4)], maxlen=3)}
+332 Worker Positions {'u_2': deque([(11, 4), (11, 4), (11, 4)], maxlen=3)}
+332 Worker Positions {'u_1': deque([(4, 6), (4, 6), (4, 6)], maxlen=3)}
+332: Looks like a stuck worker u_2 - deque([(11, 4), (11, 4), (11, 4)], maxlen=3)
+
+332: Looks like a stuck worker u_1 - deque([(4, 6), (4, 6), (4, 6)], maxlen=3)
+
+333 Worker Positions {'u_1': deque([(4, 6), (4, 6), (5, 6)], maxlen=3)}
+333 Worker Positions {'u_2': deque([(11, 4), (11, 4), (11, 5)], maxlen=3)}
+334 Worker Positions {'u_1': deque([(4, 6), (5, 6), (5, 6)], maxlen=3)}
+334 Worker Positions {'u_2': deque([(11, 4), (11, 5), (11, 5)], maxlen=3)}
+335 Worker Positions {'u_1': deque([(5, 6), (5, 6), (5, 6)], maxlen=3)}
+335 Worker Positions {'u_2': deque([(11, 5), (11, 5), (11, 5)], maxlen=3)}
+335: Looks like a stuck worker u_1 - deque([(5, 6), (5, 6), (5, 6)], maxlen=3)
+
+335: Looks like a stuck worker u_2 - deque([(11, 5), (11, 5), (11, 5)], maxlen=3)
+
+336 Worker Positions {'u_2': deque([(11, 5), (11, 5), (10, 5)], maxlen=3)}
+336 Worker Positions {'u_1': deque([(5, 6), (5, 6), (5, 7)], maxlen=3)}
+337 Worker Positions {'u_2': deque([(11, 5), (10, 5), (10, 5)], maxlen=3)}
+337 Worker Positions {'u_1': deque([(5, 6), (5, 7), (5, 7)], maxlen=3)}
+338 Worker Positions {'u_1': deque([(5, 7), (5, 7), (5, 7)], maxlen=3)}
+338 Worker Positions {'u_2': deque([(10, 5), (10, 5), (10, 5)], maxlen=3)}
+338: Looks like a stuck worker u_1 - deque([(5, 7), (5, 7), (5, 7)], maxlen=3)
+
+338: Looks like a stuck worker u_2 - deque([(10, 5), (10, 5), (10, 5)], maxlen=3)
+
+339 Worker Positions {'u_1': deque([(5, 7), (5, 7), (5, 8)], maxlen=3)}
+339 Worker Positions {'u_2': deque([(10, 5), (10, 5), (9, 5)], maxlen=3)}
+340 Worker Positions {'u_2': deque([(10, 5), (9, 5), (9, 5)], maxlen=3)}
+340 Worker Positions {'u_1': deque([(5, 7), (5, 8), (5, 8)], maxlen=3)}
+341 Worker Positions {'u_2': deque([(9, 5), (9, 5), (9, 5)], maxlen=3)}
+341 Worker Positions {'u_1': deque([(5, 8), (5, 8), (5, 8)], maxlen=3)}
+341: Looks like a stuck worker u_2 - deque([(9, 5), (9, 5), (9, 5)], maxlen=3)
+
+341: Looks like a stuck worker u_1 - deque([(5, 8), (5, 8), (5, 8)], maxlen=3)
+
+342 Worker Positions {'u_1': deque([(5, 8), (5, 8), (6, 8)], maxlen=3)}
+342 Worker Positions {'u_2': deque([(9, 5), (9, 5), (10, 5)], maxlen=3)}
+343 Worker Positions {'u_1': deque([(5, 8), (6, 8), (6, 8)], maxlen=3)}
+343 Worker Positions {'u_2': deque([(9, 5), (10, 5), (10, 5)], maxlen=3)}
+344 Worker Positions {'u_1': deque([(6, 8), (6, 8), (6, 8)], maxlen=3)}
+344 Worker Positions {'u_2': deque([(10, 5), (10, 5), (10, 5)], maxlen=3)}
+344: Looks like a stuck worker u_1 - deque([(6, 8), (6, 8), (6, 8)], maxlen=3)
+
+344: Looks like a stuck worker u_2 - deque([(10, 5), (10, 5), (10, 5)], maxlen=3)
+
+345 Worker Positions {'u_2': deque([(10, 5), (10, 5), (9, 5)], maxlen=3)}
+345 Worker Positions {'u_1': deque([(6, 8), (6, 8), (5, 8)], maxlen=3)}
+346 Worker Positions {'u_2': deque([(10, 5), (9, 5), (9, 5)], maxlen=3)}
+346 Worker Positions {'u_1': deque([(6, 8), (5, 8), (5, 8)], maxlen=3)}
+347 Worker Positions {'u_2': deque([(9, 5), (9, 5), (9, 5)], maxlen=3)}
+347 Worker Positions {'u_1': deque([(5, 8), (5, 8), (5, 8)], maxlen=3)}
+347: Looks like a stuck worker u_2 - deque([(9, 5), (9, 5), (9, 5)], maxlen=3)
+
+347: Looks like a stuck worker u_1 - deque([(5, 8), (5, 8), (5, 8)], maxlen=3)
+
+348 Worker Positions {'u_1': deque([(5, 8), (5, 8), (6, 8)], maxlen=3)}
+348 Worker Positions {'u_2': deque([(9, 5), (9, 5), (10, 5)], maxlen=3)}
+349 Worker Positions {'u_1': deque([(5, 8), (6, 8), (6, 8)], maxlen=3)}
+349 Worker Positions {'u_2': deque([(9, 5), (10, 5), (10, 5)], maxlen=3)}
+350 Worker Positions {'u_2': deque([(10, 5), (10, 5), (10, 5)], maxlen=3)}
+350 Worker Positions {'u_1': deque([(6, 8), (6, 8), (6, 8)], maxlen=3)}
+350: Looks like a stuck worker u_2 - deque([(10, 5), (10, 5), (10, 5)], maxlen=3)
+
+350: Looks like a stuck worker u_1 - deque([(6, 8), (6, 8), (6, 8)], maxlen=3)
+
+351 Worker Positions {'u_1': deque([(6, 8), (6, 8), (7, 8)], maxlen=3)}
+351 Worker Positions {'u_2': deque([(10, 5), (10, 5), (10, 6)], maxlen=3)}
+352 Worker Positions {'u_1': deque([(6, 8), (7, 8), (7, 8)], maxlen=3)}
+352 Worker Positions {'u_2': deque([(10, 5), (10, 6), (10, 6)], maxlen=3)}
+353 Worker Positions {'u_1': deque([(7, 8), (7, 8), (7, 8)], maxlen=3)}
+353 Worker Positions {'u_2': deque([(10, 6), (10, 6), (10, 6)], maxlen=3)}
+354 Worker Positions {'u_2': deque([(10, 6), (10, 6), (10, 6)], maxlen=3)}
+354 Worker Positions {'u_1': deque([(7, 8), (7, 8), (7, 8)], maxlen=3)}
+354: Looks like a stuck worker u_2 - deque([(10, 6), (10, 6), (10, 6)], maxlen=3)
+
+354: Looks like a stuck worker u_1 - deque([(7, 8), (7, 8), (7, 8)], maxlen=3)
+
+355 Worker Positions {'u_1': deque([(7, 8), (7, 8), (8, 8)], maxlen=3)}
+355 Worker Positions {'u_2': deque([(10, 6), (10, 6), (10, 5)], maxlen=3)}
+356 Worker Positions {'u_1': deque([(7, 8), (8, 8), (8, 8)], maxlen=3)}
+356 Worker Positions {'u_2': deque([(10, 6), (10, 5), (10, 5)], maxlen=3)}
+357 Worker Positions {'u_2': deque([(10, 5), (10, 5), (10, 5)], maxlen=3)}
+357 Worker Positions {'u_1': deque([(8, 8), (8, 8), (8, 8)], maxlen=3)}
+358 Worker Positions {'u_1': deque([(8, 8), (8, 8), (8, 8)], maxlen=3)}
+358 Worker Positions {'u_2': deque([(10, 5), (10, 5), (10, 5)], maxlen=3)}
+358: Looks like a stuck worker u_1 - deque([(8, 8), (8, 8), (8, 8)], maxlen=3)
+
+358: Looks like a stuck worker u_2 - deque([(10, 5), (10, 5), (10, 5)], maxlen=3)
+
+359 Worker Positions {'u_1': deque([(8, 8), (8, 8), (8, 7)], maxlen=3)}
+359 Worker Positions {'u_2': deque([(10, 5), (10, 5), (10, 6)], maxlen=3)}

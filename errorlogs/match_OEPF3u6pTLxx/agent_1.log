@@ -1,0 +1,5 @@
+=== Agent Install Log ===
+=== Agent Compile Log ===
+=== Agent Error Log ===
+/Users/mircobazzani/Desktop/HS21-LuxAI-NotSoSimple_Agent/01_Agents/advanced_Merged_Mirco-wf/agent.py:264: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if (enough_fuel or worker_task[unit.id] == "Max_Explorer") and worker_goal[unit.id] is not "Drop Ressources":

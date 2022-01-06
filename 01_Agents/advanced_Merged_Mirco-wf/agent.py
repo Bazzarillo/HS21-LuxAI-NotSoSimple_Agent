@@ -30,7 +30,6 @@ unit_to_resource_dict = {}
 worker_positions = {}
 worker_task = {}
 worker_goal = {}
-worker_goal_city = {}
 
 
 # A task describes the behavioir of a worker.
@@ -43,7 +42,6 @@ tasks = [
 
 goals = [
     "Build City",
-    "Gather Resources",
     "Drop Resources"
 ]
 
@@ -56,26 +54,6 @@ logfile = "agent_MERGED_" + day + "_" + current_time + ".log"
 # create statsfile (captures number of city tiles at the end of the game)
 statsfile = "agent_stats_MERGED_" + day + "_" + current_time + ".txt"
 
-######################## Game constants that could be optimized ##########################
-
-### Ratio of cities over workers
-
-# Currently, this value is held constant at 3/4.
-# We could optimize it by trying out random floats between 0.45 and 0.95
-# and see what works best. uncomment code below to test.
-
-#worker_per_city = round(random.uniform(.45, .95),2)
-worker_per_city = 0.75
-
-### Ratio of city fuel
-
-# Currently held constant at 300. 
-# Every worker is assigned to a city of n city tiles. Each city tile should at least have a resource
-# reserve of 300. This could be further optimized. To do so, uncomment code below.
-
-#fuel_constant = randint(50, 400)
-fuel_constant = 300
-
 ######################## Actual AI-Code starts here ##########################
 
 def agent(observation, configuration):
@@ -85,6 +63,8 @@ def agent(observation, configuration):
     global unit_to_resource_dict
     global worker_positions
     global max_cell
+    global worker_per_city
+    global fuel_constant
 
     ### Do not edit ###
     if observation["step"] == 0:
@@ -106,6 +86,27 @@ def agent(observation, configuration):
 
     ############################################# Setup #############################################
 
+    ######################## Game constants that could be optimized ##########################
+
+    ### Ratio of cities over workers
+
+    # Currently, this value is held constant at 3/4.
+    # We could optimize it by trying out random floats between 0.45 and 0.95
+    # and see what works best. uncomment code below to test.
+
+    #worker_per_city = round(random.uniform(.45, .95),2)
+    worker_per_city = 0.75
+
+    ### Ratio of city fuel
+
+    # Currently held constant at 300. 
+    # Every worker is assigned to a city of n city tiles. Each city tile should at least have a resource
+    # reserve of 300. This could be further optimized. To do so, uncomment code below.
+
+    #fuel_constant = randint(50, 400)
+    fuel_constant = 250
+
+    ######################## Actual AI-Code starts here ##########################
     ## 1)
 
     for w in workers:
@@ -187,6 +188,8 @@ def agent(observation, configuration):
         if observation["step"] in [0,99,200]:
             # Get Cell in high resource density area
             max_cell = get_resource_density(game_state, height, width, observation, unit, resource_tiles, player)
+            with open(logfile, "a") as f:
+                f.write(f"{observation['step']} Defining Max Density area\n")
 
         ## workers
         if unit.is_worker() and unit.can_act():
@@ -246,7 +249,6 @@ def agent(observation, configuration):
                             
                             # we need some fuel to survive the night, but how much?
                             # assumption: ~300 
-                            # TODO: Optimize Value
                             enough_fuel = (unit_city_fuel/unit_city_size) > fuel_constant
                         
                         except: continue
@@ -255,7 +257,7 @@ def agent(observation, configuration):
                             f.write(f"{observation['step']}: Stuff needed for building a City ({associated_city_id}) fuel: {unit_city_fuel}, size: {unit_city_size}, enough fuel: {enough_fuel}\n\n")
 
                         # if we have enough fuel, we can try to build another city
-                        if enough_fuel or worker_task[unit.id] == "Max_Explorer":
+                        if (enough_fuel or worker_task[unit.id] == "Max_Explorer") and worker_goal[unit.id] != "Drop Ressources":
                             
                             with open(logfile, "a") as f:
                                 f.write(f"{observation['step']}: We WANT to build a city!\n\n")
@@ -275,11 +277,16 @@ def agent(observation, configuration):
                                 if  observation["step"] > 100:
                                     if worker_task[unit.id] == "Explorer" or worker_task[unit.id] == "Max_Explorer":
                                         near_what = max_cell
+                                    elif len(player.cities) == 0:
+                                        near_what = unit.pos
                                     else:
                                         near_what = get_close_city(player, unit)
 
                                 else:
-                                    near_what = get_close_city(player, unit)
+                                    if len(player.cities) == 0:
+                                        near_what = unit.pos
+                                    else:
+                                        near_what = get_close_city(player, unit)
 
                                 # define build location
                                 if near_what == max_cell:
@@ -293,13 +300,14 @@ def agent(observation, configuration):
 
                             # If the unit is already on a build location 
                             # => build!
-                            if unit.pos == build_location.pos:
+                            if unit.pos == build_location[unit.id].pos:
                                 action = unit.build_city()
                                 actions.append(action)
-                                worker_goal[unit.id] = "Gather Resources"
                                 
+                                # Change Explorer to maintainer of it's city
                                 if worker_task[unit.id] == "Explorer" or worker_task[unit.id] == "Max_Explorer":
                                     worker_task[unit.id] = "Mantainer"
+                                    unit_to_city_dict[unit.id] = get_close_city(player,unit)
 
                                 # reset variables if city is built!
                                 build_city = False
@@ -320,7 +328,7 @@ def agent(observation, configuration):
                                 
                                 # Navigating to where we wish to build a City
                                 # actions.append(unit.move(unit.pos.direction_to(build_location.pos)))
-                                dir_diff = (build_location.pos.x - unit.pos.x, build_location.pos.y - unit.pos.y)
+                                dir_diff = (build_location[unit.id].pos.x - unit.pos.x, build_location[unit.id].pos.y - unit.pos.y)
                                 xdiff = dir_diff[0]
                                 ydiff = dir_diff[1]
 
@@ -371,7 +379,11 @@ def agent(observation, configuration):
 
                                 continue
 
-                        elif len(player.cities) > 0:
+                        #elif len(player.cities) > 0:
+                        else:
+                            
+                            worker_goal[unit.id] = "Drop Resources"
+
                             if unit.id in unit_to_city_dict and unit_to_city_dict[unit.id] in city_tiles:
                                 move_dir = unit.pos.direction_to(unit_to_city_dict[unit.id].pos)
                                 actions.append(unit.move(move_dir))
@@ -382,25 +394,34 @@ def agent(observation, configuration):
                                 actions.append(unit.move(move_dir))
 
                     # if unit is a worker and there is no cargo space left, and we have cities, lets return to them
-                    elif (unit.get_cargo_space_left() == 0 and worker_goal[unit.id] == "Mantainer") or worker_goal[unit.id] == "Drop Resources":
+                    else:
                     
                         worker_goal[unit.id] = "Drop Resources"
 
-                        if unit.id in unit_to_city_dict and unit_to_city_dict[unit.id] in city_tiles:
-                            
-                            # If unit is already on city, change goal to gather resources
-                            if unit.pos == unit_to_city_dict[unit.id].pos:
-                                worker_goal[unit.id] = "Gather Resources"
+                        with open(logfile, "a") as f:
+                            f.write(f"{observation['step']} We want to drop of resources\n")
 
-                            else:
-                                move_dir = unit.pos.direction_to(unit_to_city_dict[unit.id].pos)
-                                actions.append(unit.move(move_dir))
+                        if unit.id in unit_to_city_dict and unit_to_city_dict[unit.id] in city_tiles:
+                        
+                            move_dir = unit.pos.direction_to(unit_to_city_dict[unit.id].pos)
+                            actions.append(unit.move(move_dir))
+                            with open(logfile, "a") as f:
+                                f.write(f"{observation['step']} We need to get closer to the city\n")
 
                         # if appointed city died out, assign an other
                         else:
                             unit_to_city_dict[unit.id] = get_close_city(player,unit)
                             move_dir = unit.pos.direction_to(unit_to_city_dict[unit.id].pos)
                             actions.append(unit.move(move_dir))
+
+                # if there are no city tiles left, build a new one
+
+                if len(city_tiles) == 0:
+                    if unit.get_cargo_space_left() == 0:
+                        action = unit.build_city()
+                        actions.append(action)
+                        worker_task[unit.id] = "Mantainer"
+                        unit_to_city_dict[unit.id] = get_close_city(player,unit)
             
             except Exception as e:
                 with open(logfile, "a") as f:
