@@ -21,7 +21,7 @@ import csv
 # specify variables
 DIRECTIONS = Constants.DIRECTIONS
 game_state = None
-build_location = {}
+build_location = None
 ml_logger = csv.reader("ml_logger_lux.csv")
 
 # create dictonaries needed to store relevant information
@@ -263,11 +263,7 @@ def agent(observation, configuration):
                             ### but where do we want to build it?
                             
                             # if we do not have a build location yet...
-                            if unit.id not in build_location:
-
-                                build_location[unit.id] = None
-
-                            if build_location[unit.id] is None:
+                            if build_location is None:
 
                                 # near to other cities
                                 # later we should build cities where the resource-densitiy is high
@@ -283,11 +279,11 @@ def agent(observation, configuration):
 
                                 # define build location
                                 if near_what == max_cell:
-                                    build_location[unit.id] = find_empty_tile_near_2(near_what, game_state, observation)
+                                    build_location = find_empty_tile_near_2(near_what, game_state, observation)
                                     with open(logfile, "a") as f:
                                         f.write(f"{observation['step']}: Building City in max area {max_cell} \n\n")
                                 else:
-                                    build_location[unit.id] = find_empty_tile_near_1(near_what, game_state, observation)
+                                    build_location = find_empty_tile_near_1(near_what, game_state, observation)
                                     with open(logfile, "a") as f:
                                         f.write(f"{observation['step']}: Building City around standard area {near_what} \n\n")
 
@@ -303,7 +299,7 @@ def agent(observation, configuration):
 
                                 # reset variables if city is built!
                                 build_city = False
-                                build_location[unit.id] = None
+                                build_location = None
                                 
                                 with open(logfile, "a") as f:
                                     f.write(f"{observation['step']}: ### We BUILT the city! ###\n        Number of City Tiles: {len(city_tiles)}\n\n")
