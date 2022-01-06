@@ -1,0 +1,11 @@
+=== Agent Install Log ===
+=== Agent Compile Log ===
+=== Agent Error Log ===
+Traceback (most recent call last):
+  File "main.py", line 32, in <module>
+    actions = agent(observation, None)
+  File "/Users/mircobazzani/Desktop/HS21-LuxAI-NotSoSimple_Agent/agent.py", line 393, in agent
+    df = get_ressource_types(resource_tiles, game_state, height, width)
+  File "/Users/mircobazzani/Desktop/HS21-LuxAI-NotSoSimple_Agent/agent.py", line 68, in get_ressource_types
+    cell = game_state.map.get_cell(x, y)
+AttributeError: 'list' object has no attribute 'map'

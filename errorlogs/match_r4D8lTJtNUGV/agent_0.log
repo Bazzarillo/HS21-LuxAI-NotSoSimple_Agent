@@ -1,0 +1,12 @@
+=== Agent Install Log ===
+=== Agent Compile Log ===
+=== Agent Error Log ===
+Traceback (most recent call last):
+  File "main.py", line 32, in <module>
+    actions = agent(observation, None)
+  File "C:\Users\LucaK\Desktop\Uni Luzern\Master\2. Semester\Introduction to Computer Science and Programming\GitHub_LuxAI\HS21-LuxAI-NotSoSimple_Agent\01_Agents\advanced_Mirco\agent.py", line 134, in agent
+    resource_assignment = get_first_resource_max(max_cell, game_state)
+  File "C:\Users\LucaK\Desktop\Uni Luzern\Master\2. Semester\Introduction to Computer Science and Programming\GitHub_LuxAI\HS21-LuxAI-NotSoSimple_Agent\01_Agents\advanced_Mirco\functions.py", line 139, in get_first_resource_max
+    cell = game_state.map.get_cell(max_coordinate[0],max_coordinate[1]+y)
+TypeError: 'Cell' object is not subscriptable
+Agent timed out

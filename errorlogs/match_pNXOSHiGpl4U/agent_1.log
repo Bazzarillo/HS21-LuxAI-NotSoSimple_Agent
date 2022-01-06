@@ -1,0 +1,10 @@
+=== Agent Install Log ===
+=== Agent Compile Log ===
+=== Agent Error Log ===
+Traceback (most recent call last):
+  File "main.py", line 32, in <module>
+    actions = agent(observation, None)
+  File "C:\Users\LucaK\Desktop\Uni Luzern\Master\2. Semester\Introduction to Computer Science and Programming\GitHub_LuxAI\HS21-LuxAI-NotSoSimple_Agent\01_Agents\advanced_Luca\agent.py", line 379, in agent
+    f.write(f"### max_cell (variable): {max_cell}\n\n### build_location (variable): {build_location}\n\n### actions: {actions}\n\n\n\n")
+NameError: name 'max_cell' is not defined
+Agent timed out

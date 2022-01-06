@@ -1,4 +1,9 @@
-import math, sys
+# Code associated w/: https://youtu.be/6_GXTbTL9Uc
+import math
+from os import sep
+import sys
+
+from pandas.core.frame import DataFrame
 from lux.game import Game
 from lux.game_map import Cell, RESOURCE_TYPES
 from lux.constants import Constants
@@ -8,6 +13,8 @@ import numpy as np
 from collections import deque
 import random
 from datetime import datetime
+import pandas as pd
+from functions import *
 
 
 # specify variables
@@ -19,6 +26,9 @@ build_location = None
 unit_to_city_dict = {}
 unit_to_resource_dict = {}
 worker_positions = {}
+worker_task = {}
+goals = {}
+
 
 # create log-file
 now = datetime.now()
@@ -29,112 +39,6 @@ logfile = "agent_Luca_" + day + "_" + current_time + ".log"
 # create statsfile (captures number of city tiles at the end of the game)
 statsfile = "agent_stats_Luca_" + day + "_" + current_time + ".txt"
 
-
-
-
-
-######################## define funtions needed below ########################
-
-## 1) get_resource_tiles
-# creates a list of cells (x- and y-coordinates) with resources
-def get_resource_tiles(game_state, width, height):
-    resource_tiles: list[Cell] = []
-    for y in range(height):
-        for x in range(width):
-            cell = game_state.map.get_cell(x, y)
-            if cell.has_resource():
-                resource_tiles.append(cell)
-
-    return resource_tiles
-
-
-## 2) get_close_resource
-def get_close_resource(unit, resource_tiles, player):
-    closest_dist = math.inf
-    closest_resource_tile = None
-    
-    # if the unit is a worker and we have space in cargo, lets find the nearest resource tile and try to mine it
-    for resource_tile in resource_tiles:
-
-        # check the resource tile's type and if the resource is already researched or not
-        if resource_tile.resource.type == Constants.RESOURCE_TYPES.COAL and not player.researched_coal(): continue
-        if resource_tile.resource.type == Constants.RESOURCE_TYPES.URANIUM and not player.researched_uranium(): continue
-
-        # add resource_tile to the unit_to_resource_dict
-        if resource_tile in unit_to_resource_dict.values(): continue    
-
-        dist = resource_tile.pos.distance_to(unit.pos)
-        if dist < closest_dist:
-            closest_dist = dist
-            closest_resource_tile = resource_tile
-    
-    return closest_resource_tile
-
-
-## 3) get_close_city
-def get_close_city(player, unit):
-    closest_dist = math.inf
-    closest_city_tile = None
-    for k, city in player.cities.items():
-        for city_tile in city.citytiles:
-            dist = city_tile.pos.distance_to(unit.pos)
-            if dist < closest_dist:
-                closest_dist = dist
-                closest_city_tile = city_tile
-    
-    return closest_city_tile
-
-
-## 4) find_empty_tile_near
-## optimize the function => now a 5x5 squared area (near_what in the center) gets scanned...
-def find_empty_tile_near(near_what, game_state, observation):
-    
-    build_location = None
-    
-    # set the search-scope (5x5-square)
-    x_coord = range(-2, 3)
-    y_coord = range(-2, 3)
-
-    # get all possible combinations
-    dirs = []
-    for y in y_coord:
-         for x in x_coord:
-             dirs.append((x, y))
-
-    # remove start position and sort        
-    dirs.remove((0, 0))
-    dirs = sorted(dirs)
-
-
-    # sort the list again (it does not make any sense to start with tiles too far away...)
-    # define indices  we want at the first positions (has to be set manually...)
-    index=[7, 11, 16, 12, 6, 15, 17, 8, 2, 10, 21, 13, 1, 14, 22, 9, 3, 5, 20, 18, 0, 19, 23, 4]
-
-    # apply order to the list
-    dirs = [dirs[ind] for ind in index]
-
-    # iterate through the list
-    for d in dirs:
-        try:
-          possible_empty_tile = game_state.map.get_cell(near_what.pos.x+d[0], near_what.pos.y+d[1])
-        
-          if possible_empty_tile.resource == None and possible_empty_tile.road == 0 and possible_empty_tile.citytile == None:
-             build_location = possible_empty_tile
-            
-             # logging
-             with open(logfile,"a") as f:
-                 f.write(f"{observation['step']}: Found build location:{build_location.pos}\n\n")
-             return build_location
-    
-        # catch errors
-        except Exception as e:
-         with open(logfile,"a") as f:
-             f.write(f"{observation['step']}: While searching for empty tiles:{str(e)}\n\n")
-
-    with open(logfile,"a") as f:
-     f.write(f"{observation['step']}: Something likely went wrong, couldn't find any empty tile\n\n")
-     
-    return None
 
 
 
@@ -331,7 +235,7 @@ def agent(observation, configuration):
                                 empty_near = get_close_resource(unit, resource_tiles, player)
 
                                 # define build location
-                                build_location = find_empty_tile_near(empty_near, game_state, observation)
+                                build_location = find_empty_tile_near_1(empty_near, game_state, observation)
 
                             # If the unit is already on a build location 
                             # => build!

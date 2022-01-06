@@ -34,6 +34,8 @@ cd "C:\Users\LucaK\Desktop\Uni Luzern\Master\2. Semester\Introduction to Compute
    
    => npx lux-ai-2021 01_Agents\advanced_Merged\main.py 01_Agents\advanced_Luca\main.py    
 
+   => npx lux-ai-2021 01_Agents\advanced_Mirco\01_Agents\advanced_Merged_Mirco-wf\main.py 01_Agents\advanced_Luca\main.py    
+
    NOTE: Change path to change players...
 
 5) check the "replays" folder 
@@ -45,3 +47,14 @@ cd "C:\Users\LucaK\Desktop\Uni Luzern\Master\2. Semester\Introduction to Compute
 
 6b) upload json file to "Lux-Viewer" 
     => https://github.com/Lux-AI-Challenge/Lux-Viewer-2021
+
+
+To Do:
+- clean up & correct funtion find_empty_tile_near => just one function/clean up indices...
+- get rid of error-message (Mirco's code "cell": object is not subscriptable => clean up code, logging causes sometimes some errors
+- make sure the logging/stats files are consistent
+- Merge agents to one boss-file
+- write a README-file
+
+
+
