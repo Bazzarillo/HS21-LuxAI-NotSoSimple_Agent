@@ -1,0 +1,4 @@
+0 Found worker unaccounted for u_2
+0 Worker Positions {'u_2': deque([(11, 7)], maxlen=3)}
+0 Found worker w/o resource u_2
+0: Doing research! 

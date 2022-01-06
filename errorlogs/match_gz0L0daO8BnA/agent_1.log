@@ -1,0 +1,9 @@
+=== Agent Install Log ===
+=== Agent Compile Log ===
+=== Agent Error Log ===
+Traceback (most recent call last):
+  File "main.py", line 32, in <module>
+    actions = agent(observation, None)
+  File "/Users/mircobazzani/Desktop/HS21-LuxAI-NotSoSimple_Agent/agent.py", line 392, in agent
+    df = DataFrame(df, columns = ["Test","test2","test 3", "test 4"], separator = ",")
+TypeError: __init__() got an unexpected keyword argument 'separator'
