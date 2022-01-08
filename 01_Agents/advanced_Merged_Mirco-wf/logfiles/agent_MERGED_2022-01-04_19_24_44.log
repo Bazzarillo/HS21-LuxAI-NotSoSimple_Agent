@@ -1,6 +1,0 @@
-0 Found mantainer unaccounted for u_2
-0 Found mantainer unaccounted for u_1
-0 Worker Positions {'u_1': deque([(10, 22)], maxlen=3)}
-0 Worker Positions {'u_2': deque([(21, 22)], maxlen=3)}
-0 Found worker w/o resource u_2
-0 Found worker w/o resource u_1

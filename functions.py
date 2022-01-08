@@ -1,4 +1,9 @@
-#All of the self-written functions for the game lux.ai
+
+######################### FUNCTIONS #########################
+
+import math
+from os import sep
+import sys
 
 from pandas.core.frame import DataFrame
 from lux.game import Game
@@ -11,21 +16,37 @@ from collections import deque
 import random
 from datetime import datetime
 import pandas as pd
+from functions import *
 
+
+# specify variables
+DIRECTIONS = Constants.DIRECTIONS
+game_state = None
+build_location = None
+
+# create dictonaries needed to store relevant information
+unit_to_city_dict = {}
+unit_to_resource_dict = {}
+worker_positions = {}
+worker_task = {}
+goals = {}
+
+
+
+# create log-file
 now = datetime.now()
-
 day = now.strftime("%Y-%m-%d")
 current_time = now.strftime("%H_%M_%S")
+logfile = "log_and_statsfiles\\agent_LOG_" + day + "_" + current_time + ".log"
 
-logfile = "agent_" + day + "_" + current_time + ".log"
 
+# create statsfile (captures number of city tiles at the end of the game)
+statsfile = "log_and_statsfiles\\agent_STATS_" + day + "_" + current_time + ".txt"
 
-open(logfile, "w")
-
+## 1)
 def get_resource_tiles(game_state, width, height):
     '''
     Recreating the get_ressources()-function to declutter the agent
-
     It creates a list of cells out of the coordinates of every ressource tile.
     ''' 
     resource_tiles: list[Cell] = []
@@ -37,6 +58,7 @@ def get_resource_tiles(game_state, width, height):
     return resource_tiles
 
 
+## 2)
 def get_ressource_types(game_state, height, width):
     '''
     Seperate approach. Will be needed to create a df containing
@@ -51,7 +73,9 @@ def get_ressource_types(game_state, height, width):
                 full_df.append(step)
     return full_df
 
-def get_resource_density(game_state, height, width, observation):
+
+## 3)
+def get_resource_density(game_state, height, width, observation, unit, resource_tiles, player):
     '''
     Create a numpy-array that is 01-coded, 1 = resource and 0 = no resource.
     Convolute over the whole array.
@@ -91,15 +115,20 @@ def get_resource_density(game_state, height, width, observation):
     #I stole this list comprehension from stack overflow
     sol = mat[:MK*K, :NL*L].reshape(MK, K, NL, L).mean(axis=(1, 3))
 
-    max = np.where(sol == sol.max())
-    max = max[0]
-    max_coordinate = [int(max[0])*c,int(max[1])*c]
+    try:
+        max = np.where(sol == sol.max())
+        max = max[0]
+        max_coordinate = [int(max[0])*c,int(max[1])*c]
+    except:
+        max_coordinate = get_close_resource(unit,resource_tiles, player)
 
     with open(logfile,"a") as f:
-                    f.write(f"{observation['step']}: Found a hight density position:{max_coordinate}\n")
+                    f.write(f"{observation['step']}: ### Found a hight density position:{max_coordinate} ###\n\n")
     return max_coordinate
 
-def get_first_resource_max(max_coordinate):
+
+## 4)
+def get_first_resource_max(max_coordinate, game_state):
     '''
     This function gets the first resource tile in the area with the highest resource density.
     Used to send Workers to this direction.
@@ -108,18 +137,24 @@ def get_first_resource_max(max_coordinate):
     while has_res == False:
         for y in range(4):
             cell = game_state.map.get_cell(max_coordinate[0],max_coordinate[1]+y)
-            if cell.has_resource():
+            if cell.has_resource() != None:
                 goal = cell
                 has_res = True
             for x in range(4):
-                cell = game_state.map.get_cell(max_coordinate[0]+x,max_coordinate[1])
-                if cell.has_resource():
+                cell = game_state.map.get_cell(max_coordinate[0]+x,max_coordinate[1]+y)
+                if cell.has_resource() != None:
                     goal = cell
                     has_res = True
     
     return goal
 
+
+## 5)
+
 def get_close_resource(unit, resource_tiles, player):
+    """
+    finds close resource tiles
+    """
     closest_dist = math.inf
     closest_resource_tile = None
     # if the unit is a worker and we have space in cargo, lets find the nearest resource tile and try to mine it
@@ -140,8 +175,11 @@ def get_close_resource(unit, resource_tiles, player):
     return closest_resource_tile
 
 
-
+## 6)
 def get_close_city(player, unit):
+    """
+    finds close city tiles
+    """
     closest_dist = math.inf
     closest_city_tile = None
     
@@ -154,51 +192,109 @@ def get_close_city(player, unit):
     return closest_city_tile
 
 
-def find_empty_tile_near(near_what, game_state, observation):
+## 7)
+def find_empty_tile_near_1(near_what, game_state, observation):
+    """
+    a 5x5 squared area (near_what in the center) gets scanned...
+    """    
     build_location = None
-    dirs = [(1,0), (0,1), (-1,0), (0,-1)]
-    # may later need to try: dirs = [(1,-1), (-1,1), (-1,-1), (1,1)] too.
+    
+    # set the search-scope (5x5-square)
+    x_coord = range(-2, 3)
+    y_coord = range(-2, 3)
+
+    # get all possible combinations
+    dirs = []
+    for y in y_coord:
+         for x in x_coord:
+             dirs.append((x, y))
+
+    # remove start position and sort        
+    dirs.remove((0, 0))
+    dirs = sorted(dirs)
+
+
+    # sort the list again (it does not make any sense to start with tiles too far away...)
+    # define indices  we want at the first positions (has to be set manually...)
+    index=[7, 11, 16, 12, 6, 15, 17, 8, 2, 10, 21, 13, 1, 14, 22, 9, 3, 5, 20, 18, 0, 19, 23, 4]
+
+    # apply order to the list
+    dirs = [dirs[ind] for ind in index]
+
+    # iterate through the list
     for d in dirs:
         try:
-            possible_empty_tile = game_state.map.get_cell(near_what.pos.x+d[0], near_what.pos.y+d[1])
-            # logging.INFO(f"{observation['step']}: Checking:{possible_empty_tile.pos}")
-            if possible_empty_tile.resource == None and possible_empty_tile.road == 0 and possible_empty_tile.citytile == None:
-                build_location = possible_empty_tile
-                with open(logfile,"a") as f:
-                    f.write(f"{observation['step']}: Found build location:{build_location.pos}\n")
-
-                return build_location
+          possible_empty_tile = game_state.map.get_cell(near_what.pos.x+d[0], near_what.pos.y+d[1])
+        
+          if possible_empty_tile.resource == None and possible_empty_tile.road == 0 and possible_empty_tile.citytile == None:
+             build_location = possible_empty_tile
+            
+             # logging
+             with open(logfile,"a") as f:
+                 f.write(f"{observation['step']}: Found build location:{build_location.pos}\n\n")
+             return build_location
+    
+        # catch errors
         except Exception as e:
-            with open(logfile,"a") as f:
-                f.write(f"{observation['step']}: While searching for empty tiles:{str(e)}\n")
-
+         with open(logfile,"a") as f:
+             f.write(f"{observation['step']}: While searching for empty tiles:{str(e)}\n\n")
 
     with open(logfile,"a") as f:
-        f.write(f"{observation['step']}: Couldn't find a tile next to, checking diagonals instead...\n")
-
-    dirs = [(1,-1), (-1,1), (-1,-1), (1,1)] 
-    # may later need to try: dirs = [(1,-1), (-1,1), (-1,-1), (1,1)] too.
-    for d in dirs:
-        try:
-            possible_empty_tile = game_state.map.get_cell(near_what.pos.x+d[0], near_what.pos.y+d[1])
-            # logging.INFO(f"{observation['step']}: Checking:{possible_empty_tile.pos}")
-            if possible_empty_tile.resource == None and possible_empty_tile.road == 0 and possible_empty_tile.citytile == None:
-                build_location = possible_empty_tile
-                with open(logfile,"a") as f:
-                    f.write(f"{observation['step']}: Found build location:{build_location.pos}\n")
-
-                return build_location
-        except Exception as e:
-            with open(logfile,"a") as f:
-                f.write(f"{observation['step']}: While searching for empty tiles:{str(e)}\n")
-
-
-    # PROBABLY should continue our search out with something like dirs = [(2,0), (0,2), (-2,0), (0,-2)]...
-    # and so on
-
-
-    with open(logfile,"a") as f:
-        f.write(f"{observation['step']}: Something likely went wrong, couldn't find any empty tile\n")
+     f.write(f"{observation['step']}: Something likely went wrong, couldn't find any empty tile\n\n")
+     
     return None
 
 
+
+
+## 8)
+def find_empty_tile_near_2(near_what, game_state, observation):
+    """
+    optimize the function => now a 5x5 squared area (unit in the center) gets scanned...
+    """
+    build_location = None
+    
+    # set the search-scope (5x5-square)
+    x_coord = range(-2, 3)
+    y_coord = range(-2, 3)
+
+    # get all possible combinations
+    dirs = []
+    for y in y_coord:
+         for x in x_coord:
+             dirs.append((x, y))
+
+    # remove start position and sort         
+    dirs.remove((0, 0))
+    dirs = sorted(dirs)
+
+
+    # sort the list again (it does not make any sense to start with tiles too far away...)
+    # define indices  we want at the first positions (has to be set manually...)
+    index=[7, 11, 16, 12, 6, 15, 17, 8, 2, 10, 21, 13, 1, 14, 22, 9, 3, 5, 20, 18, 0, 19, 23, 4]
+
+    # apply order to the list
+    dirs = [dirs[ind] for ind in index]
+
+    # iterate through the list
+    for d in dirs:
+        try:
+          possible_empty_tile = game_state.map.get_cell(near_what[0]+d[0], near_what[1]+d[1])
+        
+          if possible_empty_tile.resource == None and possible_empty_tile.road == 0 and possible_empty_tile.citytile == None:
+             build_location = possible_empty_tile
+            
+             # logging
+             with open(logfile,"a") as f:
+                 f.write(f"{observation['step']}: Found build location:{build_location.pos}\n\n")
+             return build_location
+    
+        # catch errors
+        except Exception as e:
+         with open(logfile,"a") as f:
+             f.write(f"{observation['step']}: While searching for empty tiles:{str(e)}\n\n")
+
+    with open(logfile,"a") as f:
+     f.write(f"{observation['step']}: Something likely went wrong, couldn't find any empty tile\n\n")
+     
+    return None

@@ -1,9 +1,0 @@
-=== Agent Install Log ===
-=== Agent Compile Log ===
-=== Agent Error Log ===
-Traceback (most recent call last):
-  File "main.py", line 32, in <module>
-    actions = agent(observation, None)
-  File "/Users/mircobazzani/Desktop/HS21-LuxAI-NotSoSimple_Agent/agent.py", line 261, in agent
-    if (int(w.id) % 2) == 0:
-ValueError: invalid literal for int() with base 10: 'u_1'

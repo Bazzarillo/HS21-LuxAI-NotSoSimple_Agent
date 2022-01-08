@@ -1,3 +1,0 @@
-0 Worker Positions {'u_1': deque([(6, 7)], maxlen=3)}
-0 Found worker unaccounted for u_2
-0 Worker Positions {'u_2': deque([(6, 8)], maxlen=3)}

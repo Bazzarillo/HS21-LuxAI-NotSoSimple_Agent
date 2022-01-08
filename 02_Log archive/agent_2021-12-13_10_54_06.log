@@ -1,5 +1,0 @@
-0: Found a hight density position:[9, 9]
-0: Found a hight density position:[9, 9]
-0 Found worker unaccounted for u_1
-0 Worker Positions {'u_2': deque([(10, 10)], maxlen=3)}
-0 Worker Positions {'u_1': deque([(10, 1)], maxlen=3)}
