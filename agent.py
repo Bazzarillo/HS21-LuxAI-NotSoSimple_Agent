@@ -105,7 +105,7 @@ def agent(observation, configuration):
     # and see what works best. Uncomment code below to test.
 
     #worker_per_city = round(random.uniform(.45, .95),2)
-    worker_per_city = 0.75
+    worker_per_city = 0.9
 
     ### Ratio of city fuel
 
@@ -124,8 +124,8 @@ def agent(observation, configuration):
     ## 1)
 
     for unit in player.units:
-        # We need to update the max_cell as resources get deprivated over time
-        if observation["step"] in [0,99,200]:
+        # if roughly 70% of the playtime has passed and a daycicle starts: search for new building spots.
+        if observation["step"] == 239:
             # Get the cell with the highest resource density
             max_cell = get_resource_density(game_state, height, width, observation, unit, resource_tiles, player)
             with open(logfile, "a") as f:
@@ -172,17 +172,11 @@ def agent(observation, configuration):
 
     # The first explorer should directly go to the max density area
     for w in workers:
-        if w.id not in unit_to_resource_dict and worker_task[w.id] == "Max_Explorer":
+        if w.id not in unit_to_resource_dict:
             with open(logfile, "a") as f:
-                f.write(f"{observation['step']:} Found the Max-Density Explorer {w.id}\n\n")
-            resource_assignment = get_first_resource_max(max_cell, game_state)
+                f.write(f"{observation['step']:}: Found worker w/o resource {w.id}\n\n")
+            resource_assignment = get_close_resource(w, resource_tiles, player)
             unit_to_resource_dict[w.id] = resource_assignment
-        else:
-            if w.id not in unit_to_resource_dict:
-                with open(logfile, "a") as f:
-                    f.write(f"{observation['step']:}: Found worker w/o resource {w.id}\n\n")
-                resource_assignment = get_close_resource(w, resource_tiles, player)
-                unit_to_resource_dict[w.id] = resource_assignment
 
 
     
@@ -203,7 +197,6 @@ def agent(observation, configuration):
         """
         What is a good worker to city-tiles-ratio?
         Assumption: 3/4 => more city tiles is better...
-        TODO: Optimize Ratio
         """
         if len(workers) / len(city_tiles) >= worker_per_city:
             build_city = True
@@ -261,7 +254,7 @@ def agent(observation, configuration):
                 else:
                     # Max Explorers should start to build as soon as possible
                     # build_city = true if the worker-city_tile-ratio is 0.75
-                    if build_city:
+                    if build_city == True:
 
                         try:
                             # to which city is the worker assigned to?
@@ -281,7 +274,7 @@ def agent(observation, configuration):
                             f.write(f"{observation['step']:}: Stuff needed for building a City ({associated_city_id}) fuel: {unit_city_fuel}, size: {unit_city_size}, enough fuel: {enough_fuel}\n\n")
 
                         # if we have enough fuel, we can try to build another city
-                        if (enough_fuel or worker_task[unit.id] == "Max_Explorer") and worker_goal[unit.id] != "Drop Ressources":
+                        if enough_fuel  and worker_goal[unit.id] != "Drop Ressources":
                             
                             with open(logfile, "a") as f:
                                 f.write(f"{observation['step']:}: We WANT to build a city!\n\n")
@@ -296,27 +289,29 @@ def agent(observation, configuration):
                                 # at the beginning: near to other cities
                                 # later: build cities where the resource-density is high
                                 # not every unit should go further away...
-                                if  observation["step"] > 100:
+                                if  observation["step"] >= 240:
                                     if worker_task[unit.id] == "Explorer" or worker_task[unit.id] == "Max_Explorer":
                                         near_what = max_cell
+                                        build_location[unit.id] = find_empty_tile_near_2(near_what, game_state, observation)
+                                        with open(logfile, "a") as f:
+                                            f.write(f"{observation['step']:}: Building City in max area {max_cell}\n\n")
                                     elif len(player.cities) == 0:
                                         near_what = unit.pos
                                     else:
                                         near_what = get_close_city(player, unit)
 
                                 else:
+                                    # We mostly want to build next to other cities, but spread out to resources.
+                                    loc_list = ["City","Resource"]
+                                    near = random.choices(loc_list,weights = [60,40], k = 1)
+
                                     if len(player.cities) == 0:
                                         near_what = unit.pos
+                                    elif near == "Resource":
+                                        near_what = get_close_resource(unit, resource_tiles, player)
                                     else:
                                         near_what = get_close_city(player, unit)
-
-                                # define build location
-                                if near_what == max_cell:
-                                    build_location[unit.id] = find_empty_tile_near_2(near_what, game_state, observation)
-                                    with open(logfile, "a") as f:
-                                        f.write(f"{observation['step']:}: Building City in max area {max_cell}\n\n")
-                                
-                                else:
+                                    
                                     build_location[unit.id] = find_empty_tile_near_1(near_what, game_state, observation)
                                     with open(logfile, "a") as f:
                                         f.write(f"{observation['step']:}: Building City around standard area {near_what}\n\n")
@@ -401,8 +396,7 @@ def agent(observation, configuration):
 
                                 continue
 
-                        #elif len(player.cities) > 0:
-                        else:
+                        elif len(player.cities) > 0:
                             worker_goal[unit.id] = "Drop Resources"
 
                             if unit.id in unit_to_city_dict and unit_to_city_dict[unit.id] in city_tiles:

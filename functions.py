@@ -93,29 +93,38 @@ def get_resource_density(game_state, height, width, observation, unit, resource_
             else:
                 zero_array[x][y] = 0
 
-    # Convolution (condensing the grid by a density value by looping over the whole grid and calculating the mean
+    # Pooling (condensing the grid by a density value by looping over the whole grid and calculating the mean
     # resource density in this area)
     mat = zero_array  
 
     M, N = mat.shape
-    # K & L are the convolution filter sizes.
+    # K & L are the pooling filter sizes.
+
+    # take a filter size of 3 by 3 if the playfield with is 12, otherwise 4 by 4
     if width == 12:
         c = 3
     else:
         c = 4
+
     K = c
     L = c
 
     MK = M // K
     NL = N // L
 
-    #I stole this list comprehension from stack overflow
+    # I stole this list comprehension from stack overflow
+    # searches for the mean in the filter area
     sol = mat[:MK*K, :NL*L].reshape(MK, K, NL, L).mean(axis=(1, 3))
 
     try:
+        # find max resource
         max = np.where(sol == sol.max())
+        # select first one (if there are multiple max tiles)
         max = max[0]
+        # Mutliply by c as max is a pooled array
         max_coordinate = [int(max[0])*c,int(max[1])*c]
+
+    # if an error occurs, search for a close resource.
     except:
         max_coordinate = get_close_resource(unit,resource_tiles, player)
 
@@ -159,7 +168,6 @@ def get_close_resource(unit, resource_tiles, player):
         # Check if ressource tile is coal and if uranium is already researched.
         if resource_tile.resource.type == Constants.RESOURCE_TYPES.COAL and not player.researched_coal(): continue
         # Check if ressource tile is uranium and if uranium is already researched.
-        # TODO: Implement ressource optimization - Always carry 80% wood, 15% Coal, 5% Uraniuum
         if resource_tile.resource.type == Constants.RESOURCE_TYPES.URANIUM and not player.researched_uranium(): continue
         # This dict contains a mapping of every active Unit. It gets assigned a ressource tile which it is going to harvest.
         if resource_tile in unit_to_resource_dict.values(): continue    
