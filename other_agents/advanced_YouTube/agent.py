@@ -22,10 +22,10 @@ build_location = None
 now = datetime.now()
 day = now.strftime("%Y-%m-%d")
 current_time = now.strftime("%H_%M_%S")
-logfile = "agent_YouTube_" + day + "_" + current_time + ".log"
+logfile = "log_and_statsfiles\\agent_YouTube_" + day + "_" + current_time + ".log"
 
 # statsfile captures number of city tiles...
-statsfile = "agent_stats_YouTube_" + day + "_" + current_time + ".txt"
+statsfile = "log_and_statsfiles\\agent_stats_YouTube_" + day + "_" + current_time + ".txt"
 
 unit_to_city_dict = {}
 unit_to_resource_dict = {}

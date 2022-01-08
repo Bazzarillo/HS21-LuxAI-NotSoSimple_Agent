@@ -37,7 +37,7 @@ goals = {}
 now = datetime.now()
 day = now.strftime("%Y-%m-%d")
 current_time = now.strftime("%H_%M_%S")
-logfile = "agent_1_" + day + "_" + current_time + ".log"
+logfile = "log_and_statsfiles\\agent_1_" + day + "_" + current_time + ".log"
 
 
 ## 1)

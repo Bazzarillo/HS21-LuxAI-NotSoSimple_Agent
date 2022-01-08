@@ -20,7 +20,7 @@ now = datetime.now()
 day = now.strftime("%Y-%m-%d")
 current_time = now.strftime("%H_%M_%S")
 
-logfile = "agent_2" + day + "_" + current_time + ".log"
+logfile = "log_and_statsfiles\\agent_2_" + day + "_" + current_time + ".log"
 
 
 open(logfile, "w")

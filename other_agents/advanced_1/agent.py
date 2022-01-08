@@ -34,10 +34,10 @@ goals = {}
 now = datetime.now()
 day = now.strftime("%Y-%m-%d")
 current_time = now.strftime("%H_%M_%S")
-logfile = "agent_1_" + day + "_" + current_time + ".log"
+logfile = "log_and_statsfiles\\agent_1_" + day + "_" + current_time + ".log"
 
 # create statsfile (captures number of city tiles at the end of the game)
-statsfile = "agent_stats_1_" + day + "_" + current_time + ".txt"
+statsfile = "log_and_statsfiles\\agent_stats_1_" + day + "_" + current_time + ".txt"
 
 
 

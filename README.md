@@ -20,7 +20,9 @@ As a final project, the authors will participate in the public Kaggle Challenge 
 ### 1. Read the [Getting Started]( https://github.com/Lux-AI-Challenge/Lux-Design-2021#getting-started) section and install the challenge.
 
 
+
 ### 2. Get our agent form the [GitHub-repository](https://github.com/Bazzarillo/HS21-LuxAI-NotSoSimple_Agent) and take a look at it.
+
 
 
 ### 3. In order to run the code please make sure you have installed the following libraries:
@@ -37,7 +39,25 @@ As a final project, the authors will participate in the public Kaggle Challenge 
 
 ### 4. In order to run a game you have to type the following code into the command prompt:
 (NOTE: make sure you have set the working directory correctly)
-#### npx lux-ai-2021 main.py main.py 
+
+
+#### main agent vs. main agent 
+npx lux-ai-2021 main.py main.py 
+
+
+#### main agnet vs. advanced_1
+npx lux-ai-2021 main.py other_agents\advanced_1\main.py
+
+
+#### main agent vs. advanced_2
+npx lux-ai-2021 main.py other_agents\advanced_2\main.py
+
+
+etc.
+
+
+Please note that the other agents are all test agents, which represent the different working steps/progresses. They are neither tidy nor uniformly coded. In a way they serve as a reference point for the main agent.
+
 
 
 ### 5. Check out the following folders:
