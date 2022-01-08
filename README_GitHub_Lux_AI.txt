@@ -50,11 +50,12 @@ cd "C:\Users\LucaK\Desktop\Uni Luzern\Master\2. Semester\Introduction to Compute
 
 
 To Do:
-- clean up & correct funtion find_empty_tile_near => just one function/clean up indices...
+- clean up & correct funtion find_empty_tile_near => just one function/clean up indices... (near_what = nearest_city! depends on the unit: max_explorer)
 - get rid of error-message (Mirco's code "cell": object is not subscriptable => clean up code, logging causes sometimes some errors
 - make sure the logging/stats files are consistent
 - Merge agents to one boss-file
 - write a README-file
 
+- Zeile 361ff. (Mircos code!)
 
 
