@@ -74,6 +74,7 @@ def agent(observation, configuration):
     global max_cell
     global worker_per_city
     global fuel_constant
+    global city_weight
 
     ### Do not edit ###
     if observation["step"] == 0:
@@ -473,11 +474,20 @@ def agent(observation, configuration):
                             f.write(f"{observation['step']:}: Doing research!\n\n")     
 
     if observation["step"] == 359:
+        cities = player.cities.values()
+        total_fuel = 0
+        
+        for city in cities:
+            fuel = city.fuel
+            total_fuel += fuel
 
         # capture number of CityTiles at the end of the game
         with open(statsfile,"a") as f:
             f.write("\n\n################################# GAME STATS #################################\n\n\n\n")
             f.write(f"### Map stats\n\n### Width: {width}\n\n### Length: {width}\n\n\n\n")
             f.write(f"### Number of City Tiles: {len(city_tiles)}\n\n### Numer of Workers: {len(workers)}\n\n### Research Points: {player.research_points}\n\n\n\n")
+        with open("ml_logger_lux.csv","a") as fd:
+            #ID,Workers,Cities,Ressources_Total,Workers_per_City,Ressources_per_City,City_weight
+            fd.write(f"{random.randint(0,1000000)},{len(workers)},{len(city_tiles)},{total_fuel},{worker_per_city},{fuel_constant},{city_weight}\n")
 
     return actions
