@@ -65,3 +65,4 @@ Please note that the other agents are all test agents, which represent the diffe
 - errorlogs 
 - log_and_statsfiles
 - replays (you can upload the json-file [here](https://2021vis.lux-ai.org/) in order to watch an actual game)
+- the ml_logger.csv may be used in the future for regression models by randomly chanig the value of some core variables. The variables and game results are stored in here.
