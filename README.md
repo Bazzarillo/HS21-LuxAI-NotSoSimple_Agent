@@ -23,7 +23,7 @@ As a final project, the authors will participate in the public Kaggle Challenge 
 ### 2. Get our agent form the [GitHub-repository](https://github.com/Bazzarillo/HS21-LuxAI-NotSoSimple_Agent) and take a look at it.
 
 
-### 3. In order to run the code please make sure you have installed the following packages:
+### 3. In order to run the code please make sure you have installed the following libraries:
 
 - all the lux-packages (should be installed in with the 1. step)
 - math
