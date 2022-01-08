@@ -105,7 +105,7 @@ def agent(observation, configuration):
     # and see what works best. Uncomment code below to test.
 
     #worker_per_city = round(random.uniform(.45, .95),2)
-    worker_per_city = 0.9
+    worker_per_city = 0.7
 
     ### Ratio of city fuel
 
@@ -114,7 +114,7 @@ def agent(observation, configuration):
     # reserve of 300. This could be further optimized. Uncomment the code below to test.
 
     #fuel_constant = randint(50, 400)
-    fuel_constant = 300
+    fuel_constant = 250
 
     
     
@@ -291,7 +291,8 @@ def agent(observation, configuration):
                                 # not every unit should go further away...
                                 if  observation["step"] >= 240:
                                     if worker_task[unit.id] == "Explorer" or worker_task[unit.id] == "Max_Explorer":
-                                        near_what = max_cell
+                                        max_res = get_first_resource_max(max_cell, game_state)
+                                        near_what = [max_res.pos.x, max_res.pos.y]
                                         build_location[unit.id] = find_empty_tile_near_2(near_what, game_state, observation)
                                         with open(logfile, "a") as f:
                                             f.write(f"{observation['step']:}: Building City in max area {max_cell}\n\n")
@@ -303,7 +304,9 @@ def agent(observation, configuration):
                                 else:
                                     # We mostly want to build next to other cities, but spread out to resources.
                                     loc_list = ["City","Resource"]
-                                    near = random.choices(loc_list,weights = [60,40], k = 1)
+                                    city_weight = 6
+                                    resource_weight = 10 - city_weight
+                                    near = random.choices(loc_list,weights = [city_weight,resource_weight], k = 1)
 
                                     if len(player.cities) == 0:
                                         near_what = unit.pos
@@ -416,7 +419,8 @@ def agent(observation, configuration):
                             f.write(f"{observation['step']:}: We want to drop of resources\n\n")
 
                         if unit.id in unit_to_city_dict and unit_to_city_dict[unit.id] in city_tiles:
-                        
+                            # TODO: Test and delete.
+                            unit_to_city_dict[unit.id] = get_close_city(player,unit)
                             move_dir = unit.pos.direction_to(unit_to_city_dict[unit.id].pos)
                             actions.append(unit.move(move_dir))
                             with open(logfile, "a") as f:
