@@ -458,12 +458,7 @@ def agent(observation, configuration):
         # capture number of CityTiles at the end of the game
         with open(statsfile,"a") as f:
             f.write("\n\n################################# GAME STATS #################################\n\n\n\n")
-            f.write(f"### Number of City Tiles: {len(city_tiles)}\n\n### Numer of Workers: {len(workers)}\n\n### Research Points: {player.research_points}\n\n\n\n")
             f.write(f"### Map stats\n\n### Width: {width}\n\n### Length: {width}\n\n\n\n")
-            f.write(f"### All units (list): {player.units}\n\n### Wokers (list): {workers}\n\n### city_tiles(list): {city_tiles}\n\n### resource_tiles(list): {resource_tiles}\n\n### resource_tiles[0]: {resource_tiles[0]}\n\n\n\n")
-            f.write(f"### worker_positions(dict): {worker_positions}\n\n### unit_to_city_dict: {unit_to_city_dict}\n\n### unit_to_resource_dict: {unit_to_resource_dict}\n\n\n\n")
-            f.write(f"### get_close_resource: {get_close_resource(unit, resource_tiles, player)}\n\n### get_close_city: {get_close_city(player, unit)}\n\n\n\n")
-            f.write(f"### max_cell (variable): {max_cell}\n\n### build_location (variable): {build_location}\n\n### actions: {actions}\n\n\n\n")
-            f.write(f"empty_near = get_close_resource(unit, resource_tiles, player): {get_close_resource(unit, resource_tiles, player)}")
+            f.write(f"### Number of City Tiles: {len(city_tiles)}\n\n### Numer of Workers: {len(workers)}\n\n### Research Points: {player.research_points}\n\n\n\n")
 
     return actions

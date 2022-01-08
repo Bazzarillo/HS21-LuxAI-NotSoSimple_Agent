@@ -11,9 +11,37 @@ As a final project, the authors will participate in the public Kaggle Challenge 
 - Quote from the Kaggle-page of the challenge, 23.11.2021
 
 
-## Files and Folders
 
-### 01_Agents
 
-Most of the work that goes into this project revolves around the "agent.py"-File, where we build up our automated agent. The active agent stays in the root folder, legacy code or alternated versions may be found in here. 
+## Instructions
 
+
+1. Read the [Getting Started]( https://github.com/Lux-AI-Challenge/Lux-Design-2021#getting-started) section and install the challenge.
+
+
+2. Get our agent form the [GitHub-repository](https://github.com/Bazzarillo/HS21-LuxAI-NotSoSimple_Agent) and take a look at it.
+
+
+3. In order to run the code please make sure you have installed the following packages:
+
+- all the lux-packages (should be installed in with the 1. step)
+- math
+- random
+- pandas
+- numpy
+- csv
+- collections
+- datetime
+
+
+4. In order to run a game you have to type the following code into the command prompt:
+(NOTE: make sure you have set the working directory correctly)
+
+npx lux-ai-2021 main.py main.py
+
+
+5. Check out the following folders:
+
+- errorlogs 
+- log_and_statsfiles
+- replays (you can upload the json-file [here](https://2021vis.lux-ai.org/) in order to watch an actual game)

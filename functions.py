@@ -40,9 +40,6 @@ current_time = now.strftime("%H_%M_%S")
 logfile = "log_and_statsfiles\\agent_LOG_" + day + "_" + current_time + ".log"
 
 
-# create statsfile (captures number of city tiles at the end of the game)
-statsfile = "log_and_statsfiles\\agent_STATS_" + day + "_" + current_time + ".txt"
-
 ## 1)
 def get_resource_tiles(game_state, width, height):
     '''
