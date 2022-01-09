@@ -41,7 +41,7 @@ As a final project, the authors will participate in the public Kaggle Challenge 
 (NOTE: make sure you have set the working directory correctly)
 
 
-#### main agent vs. main agent 
+#### main agent vs. main agent (the log file looks a little confusing because it is created twice for the same agent.)
 npx lux-ai-2021 main.py main.py 
 
 
