@@ -1,6 +1,6 @@
 # Code associated w/: https://youtu.be/6_GXTbTL9Uc
 import math
-from os import sep
+import os
 import sys
 
 from pandas.core.frame import DataFrame
@@ -34,10 +34,10 @@ goals = {}
 now = datetime.now()
 day = now.strftime("%Y-%m-%d")
 current_time = now.strftime("%H_%M_%S")
-logfile = "log_and_statsfiles\\agent_3_" + day + "_" + current_time + ".log"
+logfile = os.path.join("log_and_statsfiles", "agent_3_" + day + "_" + current_time + ".log")
 
 # create statsfile (captures number of city tiles at the end of the game)
-statsfile = "log_and_statsfiles\\agent_stats_3_" + day + "_" + current_time + ".txt"
+statsfile = os.path.join("log_and_statsfiles", "agent_stats_3_" + day + "_" + current_time + ".txt")
 
 
 

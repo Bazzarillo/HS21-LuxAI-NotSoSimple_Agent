@@ -1,6 +1,6 @@
 # Code associated w/: https://youtu.be/6_GXTbTL9Uc
 import math
-from os import sep
+import os
 import sys
 
 from pandas.core.frame import DataFrame
@@ -19,8 +19,8 @@ now = datetime.now()
 
 day = now.strftime("%Y-%m-%d")
 current_time = now.strftime("%H_%M_%S")
+logfile = os.path.join("log_and_statsfiles", "agent_2_" + day + "_" + current_time + ".log")
 
-logfile = "log_and_statsfiles\\agent_2_" + day + "_" + current_time + ".log"
 
 
 open(logfile, "w")
@@ -217,7 +217,8 @@ worker_positions = {}
 worker_task = {}
 goals = {}
 
-statsfile = "agent.txt"
+# create statsfile (captures number of city tiles at the end of the game)
+statsfile = os.path.join("log_and_statsfiles", "agent_2_" + day + "_" + current_time + ".txt")
 
 def agent(observation, configuration):
     global game_state

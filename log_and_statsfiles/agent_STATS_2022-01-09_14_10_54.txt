@@ -6,17 +6,17 @@
 
 ### Map stats
 
-### Width: 24
+### Width: 32
 
-### Length: 24
+### Length: 32
 
 
 
-### Number of City Tiles: 3
+### Number of City Tiles: 6
 
-### Numer of Workers: 3
+### Numer of Workers: 5
 
-### Research Points: 88
+### Research Points: 115
 
 
 
@@ -28,17 +28,17 @@
 
 ### Map stats
 
-### Width: 24
+### Width: 32
 
-### Length: 24
+### Length: 32
 
 
 
-### Number of City Tiles: 11
+### Number of City Tiles: 14
 
-### Numer of Workers: 10
+### Numer of Workers: 14
 
-### Research Points: 194
+### Research Points: 201
 
 
 

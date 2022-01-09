@@ -12,11 +12,11 @@
 
 
 
-### Number of City Tiles: 12
+### Number of City Tiles: 7
 
-### Numer of Workers: 12
+### Numer of Workers: 8
 
-### Research Points: 194
+### Research Points: 170
 
 
 

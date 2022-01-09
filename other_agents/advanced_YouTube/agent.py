@@ -8,6 +8,7 @@ import numpy as np
 from collections import deque
 import random
 from datetime import datetime
+import os
 
 # create log-file
 # import logging 
@@ -22,10 +23,11 @@ build_location = None
 now = datetime.now()
 day = now.strftime("%Y-%m-%d")
 current_time = now.strftime("%H_%M_%S")
-logfile = "log_and_statsfiles\\agent_YouTube_" + day + "_" + current_time + ".log"
+logfile = os.path.join("log_and_statsfiles", "agent_YouTube_" + day + "_" + current_time + ".log")
 
-# statsfile captures number of city tiles...
-statsfile = "log_and_statsfiles\\agent_stats_YouTube_" + day + "_" + current_time + ".txt"
+
+# create statsfile (captures number of city tiles at the end of the game)
+statsfile = os.path.join("log_and_statsfiles", "agent_YouTube_" + day + "_" + current_time + ".txt")
 
 unit_to_city_dict = {}
 unit_to_resource_dict = {}
