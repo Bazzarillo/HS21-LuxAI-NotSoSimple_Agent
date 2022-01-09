@@ -9,7 +9,7 @@ from lux.game_map import Cell, RESOURCE_TYPES
 from lux.constants import Constants
 from lux.game_constants import GAME_CONSTANTS
 from lux import annotate
-from os import sep
+import os
 import sys
 import math
 import random
@@ -54,13 +54,10 @@ goals = [
 now = datetime.now()
 day = now.strftime("%Y-%m-%d")
 current_time = now.strftime("%H_%M_%S")
-logfile = "log_and_statsfiles\\agent_LOG_" + day + "_" + current_time + ".log"
-
+logfile = os.path.join("log_and_statsfiles", "agent_LOG_" + day + "_" + current_time + ".log")
 
 # create statsfile (captures number of city tiles at the end of the game)
-statsfile = "log_and_statsfiles\\agent_STATS_" + day + "_" + current_time + ".txt"
-
-
+statsfile = os.path.join("log_and_statsfiles", "agent_STATS_" + day + "_" + current_time + ".txt")
 
 ######################## Actual AI-Code starts here ##########################
 

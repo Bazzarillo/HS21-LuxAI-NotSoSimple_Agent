@@ -1,0 +1,44 @@
+
+
+################################# GAME STATS #################################
+
+
+
+### Map stats
+
+### Width: 16
+
+### Length: 16
+
+
+
+### Number of City Tiles: 5
+
+### Numer of Workers: 5
+
+### Research Points: 133
+
+
+
+
+
+################################# GAME STATS #################################
+
+
+
+### Map stats
+
+### Width: 16
+
+### Length: 16
+
+
+
+### Number of City Tiles: 11
+
+### Numer of Workers: 11
+
+### Research Points: 200
+
+
+
